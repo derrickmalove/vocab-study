@@ -1,0 +1,21388 @@
+const vocabData = [
+  {
+    "id": "ios开发完整词汇大全",
+    "name": "iOS 开发完整技术词汇大全",
+    "description": "iOS 开发完整技术词汇大全相关词汇",
+    "sections": [
+      {
+        "name": "第一组 - 语言核心概念",
+        "description": "语言核心概念",
+        "vocabs": [
+          {
+            "word": "syntax",
+            "pronunciation": "ˈsɪntæks",
+            "meaning": "语法"
+          },
+          {
+            "word": "semantics",
+            "pronunciation": "sɪˈmæntɪks",
+            "meaning": "语义"
+          },
+          {
+            "word": "variable",
+            "pronunciation": "ˈveriəbl",
+            "meaning": "变量"
+          },
+          {
+            "word": "constant",
+            "pronunciation": "ˈkɑːnstənt",
+            "meaning": "常量"
+          },
+          {
+            "word": "literal",
+            "pronunciation": "ˈlɪtərəl",
+            "meaning": "字面量"
+          }
+        ]
+      },
+      {
+        "name": "第二组 - 数据类型",
+        "description": "数据类型",
+        "vocabs": [
+          {
+            "word": "integer",
+            "pronunciation": "ˈɪntɪdʒər",
+            "meaning": "整数"
+          },
+          {
+            "word": "string",
+            "pronunciation": "strɪŋ",
+            "meaning": "字符串"
+          },
+          {
+            "word": "boolean",
+            "pronunciation": "ˈbuːliən",
+            "meaning": "布尔值"
+          },
+          {
+            "word": "array",
+            "pronunciation": "əˈreɪ",
+            "meaning": "数组"
+          },
+          {
+            "word": "dictionary",
+            "pronunciation": "ˈdɪkʃəneri",
+            "meaning": "字典"
+          }
+        ]
+      },
+      {
+        "name": "第三组 - 集合类型",
+        "description": "集合类型",
+        "vocabs": [
+          {
+            "word": "optional",
+            "pronunciation": "ˈɑːpʃənl",
+            "meaning": "可选类型"
+          },
+          {
+            "word": "tuple",
+            "pronunciation": "ˈtuːpl",
+            "meaning": "元组"
+          },
+          {
+            "word": "set",
+            "pronunciation": "set",
+            "meaning": "集合"
+          },
+          {
+            "word": "enumeration",
+            "pronunciation": "ɪˌnjuːməˈreɪʃn",
+            "meaning": "枚举"
+          },
+          {
+            "word": "struct",
+            "pronunciation": "strʌkt",
+            "meaning": "结构体"
+          }
+        ]
+      },
+      {
+        "name": "第四组 - 函数与闭包",
+        "description": "函数与闭包",
+        "vocabs": [
+          {
+            "word": "function",
+            "pronunciation": "ˈfʌŋkʃn",
+            "meaning": "函数"
+          },
+          {
+            "word": "method",
+            "pronunciation": "ˈmeθəd",
+            "meaning": "方法"
+          },
+          {
+            "word": "closure",
+            "pronunciation": "ˈkloʊʒər",
+            "meaning": "闭包"
+          },
+          {
+            "word": "parameter",
+            "pronunciation": "pəˈræmɪtər",
+            "meaning": "参数"
+          },
+          {
+            "word": "argument",
+            "pronunciation": "ˈɑːrɡjumənt",
+            "meaning": "实参"
+          }
+        ]
+      },
+      {
+        "name": "第五组 - 面向对象",
+        "description": "面向对象",
+        "vocabs": [
+          {
+            "word": "class",
+            "pronunciation": "klæs",
+            "meaning": "类"
+          },
+          {
+            "word": "object",
+            "pronunciation": "ˈɑːbdʒekt",
+            "meaning": "对象"
+          },
+          {
+            "word": "instance",
+            "pronunciation": "ˈɪnstəns",
+            "meaning": "实例"
+          },
+          {
+            "word": "inheritance",
+            "pronunciation": "ɪnˈherɪtəns",
+            "meaning": "继承"
+          },
+          {
+            "word": "override",
+            "pronunciation": "ˌoʊvərˈraɪd",
+            "meaning": "重写"
+          }
+        ]
+      },
+      {
+        "name": "第六组 - Objective-C核心",
+        "description": "Objective-C核心",
+        "vocabs": [
+          {
+            "word": "objective-c",
+            "pronunciation": "əbˈdʒektɪv siː",
+            "meaning": "Objective-C语言"
+          },
+          {
+            "word": "header file",
+            "pronunciation": "ˈhedər faɪl",
+            "meaning": "头文件"
+          },
+          {
+            "word": "implementation",
+            "pronunciation": "ˌɪmplɪmenˈteɪʃn",
+            "meaning": "实现文件"
+          },
+          {
+            "word": "interface",
+            "pronunciation": "ˈɪntərfeɪs",
+            "meaning": "接口"
+          },
+          {
+            "word": "implementation file",
+            "pronunciation": "ˌɪmplɪmenˈteɪʃn faɪl",
+            "meaning": "实现文件"
+          }
+        ]
+      },
+      {
+        "name": "第七组 - Objective-C特性",
+        "description": "Objective-C特性",
+        "vocabs": [
+          {
+            "word": "selector",
+            "pronunciation": "sɪˈlektər",
+            "meaning": "选择器"
+          },
+          {
+            "word": "imp",
+            "pronunciation": "aɪ em piː",
+            "meaning": "方法实现指针"
+          },
+          {
+            "word": "runtime",
+            "pronunciation": "ˈrʌntaɪm",
+            "meaning": "运行时"
+          },
+          {
+            "word": "nsstring",
+            "pronunciation": "en es strɪŋ",
+            "meaning": "字符串对象"
+          },
+          {
+            "word": "nsarray",
+            "pronunciation": "en es əˈreɪ",
+            "meaning": "数组对象"
+          }
+        ]
+      },
+      {
+        "name": "第八组 - Objective-C语法",
+        "description": "Objective-C语法",
+        "vocabs": [
+          {
+            "word": "at sign",
+            "pronunciation": "æt saɪn",
+            "meaning": "@符号"
+          },
+          {
+            "word": "property attribute",
+            "pronunciation": "ˈprɑːpərti ˈætribjuːt",
+            "meaning": "属性特性"
+          },
+          {
+            "word": "nonatomic",
+            "pronunciation": "nɒnəˈtɒmɪk",
+            "meaning": "非原子性"
+          },
+          {
+            "word": "atomic",
+            "pronunciation": "əˈtɒmɪk",
+            "meaning": "原子性"
+          },
+          {
+            "word": "copy",
+            "pronunciation": "ˈkɒpi",
+            "meaning": "拷贝"
+          }
+        ]
+      },
+      {
+        "name": "第九组 - 属性修饰符",
+        "description": "属性修饰符",
+        "vocabs": [
+          {
+            "word": "strong",
+            "pronunciation": "strɔːŋ",
+            "meaning": "强引用"
+          },
+          {
+            "word": "weak",
+            "pronunciation": "wiːk",
+            "meaning": "弱引用"
+          },
+          {
+            "word": "assign",
+            "pronunciation": "əˈsaɪn",
+            "meaning": "赋值"
+          },
+          {
+            "word": "retain",
+            "pronunciation": "rɪˈteɪn",
+            "meaning": "保留"
+          },
+          {
+            "word": "readonly",
+            "pronunciation": "ˈriːdˈoʊnli",
+            "meaning": "只读"
+          }
+        ]
+      },
+      {
+        "name": "第十组 - 声明与实现",
+        "description": "声明与实现",
+        "vocabs": [
+          {
+            "word": "synthesize",
+            "pronunciation": "ˈsɪnθəsaɪz",
+            "meaning": "合成"
+          },
+          {
+            "word": "dynamic",
+            "pronunciation": "daɪˈnæmɪk",
+            "meaning": "动态的"
+          },
+          {
+            "word": "forward declaration",
+            "pronunciation": "ˈfɔːrwərd ˌdekləˈreɪʃn",
+            "meaning": "前向声明"
+          },
+          {
+            "word": "category",
+            "pronunciation": "ˈkætəɡəri",
+            "meaning": "分类"
+          },
+          {
+            "word": "extension",
+            "pronunciation": "ɪkˈstenʃn",
+            "meaning": "类扩展"
+          }
+        ]
+      },
+      {
+        "name": "第十一组 - Objective-C Blocks",
+        "description": "Objective-C Blocks",
+        "vocabs": [
+          {
+            "word": "block",
+            "pronunciation": "blɑːk",
+            "meaning": "代码块"
+          },
+          {
+            "word": "capture",
+            "pronunciation": "ˈkæptʃər",
+            "meaning": "捕获"
+          },
+          {
+            "word": "block variable",
+            "pronunciation": "blɑːk ˈveriəbl",
+            "meaning": "块变量"
+          },
+          {
+            "word": "block pointer",
+            "pronunciation": "blɑːk ˈpɔɪntər",
+            "meaning": "块指针"
+          },
+          {
+            "word": "block invocation",
+            "pronunciation": "blɑːk ˌɪnvəˈkeɪʃn",
+            "meaning": "块调用"
+          },
+          {
+            "word": "block copy",
+            "pronunciation": "blɑːk ˈkɒpi",
+            "meaning": "块复制"
+          },
+          {
+            "word": "block storage",
+            "pronunciation": "blɑːk ˈstɔːrɪdʒ",
+            "meaning": "块存储"
+          },
+          {
+            "word": "block type",
+            "pronunciation": "blɑːk taɪp",
+            "meaning": "块类型"
+          },
+          {
+            "word": "block signature",
+            "pronunciation": "blɑːk ˈsɪɡnətʃər",
+            "meaning": "块签名"
+          }
+        ]
+      },
+      {
+        "name": "第十二组 - Swift核心",
+        "description": "Swift核心",
+        "vocabs": [
+          {
+            "word": "swift",
+            "pronunciation": "swɪft",
+            "meaning": "Swift语言"
+          },
+          {
+            "word": "playground",
+            "pronunciation": "ˈpleɪɡraʊnd",
+            "meaning": "Swift Playground"
+          },
+          {
+            "word": "import",
+            "pronunciation": "ɪmˈpɔːrt",
+            "meaning": "导入"
+          }
+        ]
+      },
+      {
+        "name": "第十三组 - 协议与委托",
+        "description": "协议与委托",
+        "vocabs": [
+          {
+            "word": "protocol",
+            "pronunciation": "ˈproʊtəkɔːl",
+            "meaning": "协议"
+          },
+          {
+            "word": "delegate",
+            "pronunciation": "ˈdelɪɡət",
+            "meaning": "委托代理"
+          },
+          {
+            "word": "data source",
+            "pronunciation": "ˈdeɪtə sɔːrs",
+            "meaning": "数据源"
+          },
+          {
+            "word": "conformance",
+            "pronunciation": "kənˈfɔːrməns",
+            "meaning": "遵循"
+          },
+          {
+            "word": "optional chaining",
+            "pronunciation": "ˈɑːpʃənl tʃeɪnɪŋ",
+            "meaning": "可选链"
+          },
+          {
+            "word": "type casting",
+            "pronunciation": "taɪp ˈkæstɪŋ",
+            "meaning": "类型转换"
+          }
+        ]
+      },
+      {
+        "name": "第十四组 - 错误处理",
+        "description": "错误处理",
+        "vocabs": [
+          {
+            "word": "error",
+            "pronunciation": "ˈerər",
+            "meaning": "错误"
+          },
+          {
+            "word": "exception",
+            "pronunciation": "ɪkˈsepʃn",
+            "meaning": "异常"
+          },
+          {
+            "word": "throw",
+            "pronunciation": "θroʊ",
+            "meaning": "抛出"
+          },
+          {
+            "word": "catch",
+            "pronunciation": "kætʃ",
+            "meaning": "捕获"
+          },
+          {
+            "word": "try",
+            "pronunciation": "traɪ",
+            "meaning": "尝试"
+          },
+          {
+            "word": "result type",
+            "pronunciation": "rɪˈzʌlt taɪp",
+            "meaning": "Result类型"
+          },
+          {
+            "word": "rethrows",
+            "pronunciation": "riːˈθroʊz",
+            "meaning": "重新抛出"
+          },
+          {
+            "word": "defer",
+            "pronunciation": "dɪˈfɜːr",
+            "meaning": "延迟执行"
+          },
+          {
+            "word": "fatal error",
+            "pronunciation": "ˈfeɪtl ˈerər",
+            "meaning": "致命错误"
+          },
+          {
+            "word": "error propagation",
+            "pronunciation": "ˈerər ˌprɑːpəˈɡeɪʃn",
+            "meaning": "错误传播"
+          },
+          {
+            "word": "custom error",
+            "pronunciation": "ˈkʌstəm ˈerər",
+            "meaning": "自定义错误"
+          }
+        ]
+      },
+      {
+        "name": "第十五组 - 泛型与高级特性",
+        "description": "泛型与高级特性",
+        "vocabs": [
+          {
+            "word": "generics",
+            "pronunciation": "dʒəˈnerɪks",
+            "meaning": "泛型"
+          },
+          {
+            "word": "typealias",
+            "pronunciation": "taɪp ˈeɪliəs",
+            "meaning": "类型别名"
+          },
+          {
+            "word": "opaque type",
+            "pronunciation": "oʊˈpeɪk taɪp",
+            "meaning": "不透明类型"
+          },
+          {
+            "word": "associated type",
+            "pronunciation": "əˈsoʊsieɪtɪd taɪp",
+            "meaning": "关联类型"
+          },
+          {
+            "word": "where clause",
+            "pronunciation": "wer klɔːz",
+            "meaning": "where子句"
+          },
+          {
+            "word": "generic constraint",
+            "pronunciation": "dʒəˈnerɪk kənˈstreɪnt",
+            "meaning": "泛型约束"
+          },
+          {
+            "word": "type parameter",
+            "pronunciation": "taɪp pəˈræmɪtər",
+            "meaning": "类型参数"
+          },
+          {
+            "word": "type argument",
+            "pronunciation": "taɪp ˈɑːrɡjumənt",
+            "meaning": "类型实参"
+          },
+          {
+            "word": "conformance requirement",
+            "pronunciation": "kənˈfɔːrməns rɪˈkwaɪərmənt",
+            "meaning": "遵循要求"
+          },
+          {
+            "word": "protocol constraint",
+            "pronunciation": "ˈproʊtəkɔːl kənˈstreɪnt",
+            "meaning": "协议约束"
+          },
+          {
+            "word": "self",
+            "pronunciation": "self",
+            "meaning": "Self类型"
+          },
+          {
+            "word": "type inference",
+            "pronunciation": "taɪp ˈɪnfərəns",
+            "meaning": "类型推断"
+          }
+        ]
+      },
+      {
+        "name": "第十六组 - 访问控制",
+        "description": "访问控制",
+        "vocabs": [
+          {
+            "word": "access control",
+            "pronunciation": "ækses kənˈtroʊl",
+            "meaning": "访问控制"
+          },
+          {
+            "word": "public",
+            "pronunciation": "ˈpʌblɪk",
+            "meaning": "公开的"
+          },
+          {
+            "word": "private",
+            "pronunciation": "ˈpraɪvət",
+            "meaning": "私有的"
+          },
+          {
+            "word": "internal",
+            "pronunciation": "ɪnˈtɜːrnl",
+            "meaning": "内部的"
+          },
+          {
+            "word": "fileprivate",
+            "pronunciation": "faɪlˈpraɪvət",
+            "meaning": "文件私有的"
+          }
+        ]
+      },
+      {
+        "name": "第十七组 - 属性包装器",
+        "description": "属性包装器",
+        "vocabs": [
+          {
+            "word": "property wrapper",
+            "pronunciation": "ˈprɑːpərti ˈræpər",
+            "meaning": "属性包装器"
+          },
+          {
+            "word": "wrapped value",
+            "pronunciation": "ræpt ˈvæljuː",
+            "meaning": "包装值"
+          },
+          {
+            "word": "projected value",
+            "pronunciation": "prəˈdʒektɪd ˈvæljuː",
+            "meaning": "投影值"
+          },
+          {
+            "word": "state",
+            "pronunciation": "steɪt",
+            "meaning": "状态属性包装器"
+          },
+          {
+            "word": "binding",
+            "pronunciation": "ˈbaɪndɪŋ",
+            "meaning": "绑定属性包装器"
+          },
+          {
+            "word": "published",
+            "pronunciation": "ˈpʌblɪʃt",
+            "meaning": "发布属性包装器"
+          },
+          {
+            "word": "observed",
+            "pronunciation": "əbˈzɜːrvd",
+            "meaning": "观察属性包装器"
+          },
+          {
+            "word": "environment",
+            "pronunciation": "ɪnˈvaɪrənmənt",
+            "meaning": "环境属性包装器"
+          }
+        ]
+      },
+      {
+        "name": "第十八组 - 常用关键词",
+        "description": "常用关键词",
+        "vocabs": [
+          {
+            "word": "guard",
+            "pronunciation": "ɡɑːrd",
+            "meaning": "守卫语句"
+          },
+          {
+            "word": "if let",
+            "pronunciation": "ɪf let",
+            "meaning": "条件绑定"
+          },
+          {
+            "word": "switch",
+            "pronunciation": "swɪtʃ",
+            "meaning": "switch语句"
+          },
+          {
+            "word": "case",
+            "pronunciation": "keɪs",
+            "meaning": "case分支"
+          }
+        ]
+      },
+      {
+        "name": "第十九组 - 常用修饰符",
+        "description": "常用修饰符",
+        "vocabs": [
+          {
+            "word": "lazy",
+            "pronunciation": "ˈleɪzi",
+            "meaning": "延迟初始化"
+          },
+          {
+            "word": "mutating",
+            "pronunciation": "ˈmjuːteɪtɪŋ",
+            "meaning": "可变方法"
+          },
+          {
+            "word": "inout",
+            "pronunciation": "ˈɪn aʊt",
+            "meaning": "输入输出参数"
+          },
+          {
+            "word": "final",
+            "pronunciation": "ˈfaɪnl",
+            "meaning": "最终的"
+          },
+          {
+            "word": "static",
+            "pronunciation": "ˈstætɪk",
+            "meaning": "静态的"
+          }
+        ]
+      },
+      {
+        "name": "第二十组 - Swift进阶特性",
+        "description": "Swift进阶特性",
+        "vocabs": [
+          {
+            "word": "keypath",
+            "pronunciation": "kiː pæθ",
+            "meaning": "键路径"
+          },
+          {
+            "word": "mirror",
+            "pronunciation": "ˈmɪrər",
+            "meaning": "镜像"
+          },
+          {
+            "word": "result builder",
+            "pronunciation": "rɪˈzʌlt ˈbɪldər",
+            "meaning": "结果构建器"
+          },
+          {
+            "word": "option set",
+            "pronunciation": "ˈɑːpʃn set",
+            "meaning": "选项集"
+          },
+          {
+            "word": "associated value",
+            "pronunciation": "əˈsoʊsieɪtɪd ˈvæljuː",
+            "meaning": "关联值"
+          },
+          {
+            "word": "indirect",
+            "pronunciation": "ɪnˈdaɪrəkt",
+            "meaning": "间接的"
+          }
+        ]
+      },
+      {
+        "name": "第二十一组 - Foundation框架",
+        "description": "Foundation框架",
+        "vocabs": [
+          {
+            "word": "foundation",
+            "pronunciation": "faʊnˈdeɪʃn",
+            "meaning": "基础框架"
+          },
+          {
+            "word": "bundle",
+            "pronunciation": "ˈbʌndl",
+            "meaning": "资源包"
+          },
+          {
+            "word": "notification",
+            "pronunciation": "ˌnoʊtɪfɪˈkeɪʃn",
+            "meaning": "通知"
+          },
+          {
+            "word": "timer",
+            "pronunciation": "ˈtaɪmər",
+            "meaning": "计时器"
+          },
+          {
+            "word": "operation",
+            "pronunciation": "ˌɑːpəˈreɪʃn",
+            "meaning": "操作"
+          }
+        ]
+      },
+      {
+        "name": "第二十二组 - UIKit框架基础",
+        "description": "UIKit框架基础",
+        "vocabs": [
+          {
+            "word": "uikit",
+            "pronunciation": "juː aɪˈkɪt",
+            "meaning": "UIKit框架"
+          },
+          {
+            "word": "view",
+            "pronunciation": "vjuː",
+            "meaning": "视图"
+          },
+          {
+            "word": "layer",
+            "pronunciation": "ˈleɪər",
+            "meaning": "层"
+          },
+          {
+            "word": "window",
+            "pronunciation": "ˈwɪndoʊ",
+            "meaning": "窗口"
+          },
+          {
+            "word": "screen",
+            "pronunciation": "skriːn",
+            "meaning": "屏幕"
+          }
+        ]
+      },
+      {
+        "name": "第二十三组 - 视图层级",
+        "description": "视图层级",
+        "vocabs": [
+          {
+            "word": "superview",
+            "pronunciation": "ˈsuːpərvjuː",
+            "meaning": "父视图"
+          },
+          {
+            "word": "subview",
+            "pronunciation": "ˈsʌbvjuː",
+            "meaning": "子视图"
+          },
+          {
+            "word": "hierarchy",
+            "pronunciation": "ˈhaɪərɑːrki",
+            "meaning": "层级结构"
+          },
+          {
+            "word": "bounds",
+            "pronunciation": "baʊndz",
+            "meaning": "边界"
+          },
+          {
+            "word": "frame",
+            "pronunciation": "freɪm",
+            "meaning": "框架矩形"
+          }
+        ]
+      },
+      {
+        "name": "第二十四组 - 视图属性",
+        "description": "视图属性",
+        "vocabs": [
+          {
+            "word": "property",
+            "pronunciation": "ˈprɑːpərti",
+            "meaning": "属性"
+          },
+          {
+            "word": "constraint",
+            "pronunciation": "kənˈstreɪnt",
+            "meaning": "约束"
+          },
+          {
+            "word": "layout",
+            "pronunciation": "ˈleɪaʊt",
+            "meaning": "布局"
+          },
+          {
+            "word": "autolayout",
+            "pronunciation": "ˌɔːtoʊˈleɪaʊt",
+            "meaning": "自动布局"
+          },
+          {
+            "word": "intrinsic size",
+            "pronunciation": "ˌɪntrɪnsɪk saɪz",
+            "meaning": "固有尺寸"
+          }
+        ]
+      },
+      {
+        "name": "第二十五组 - 视图控制器",
+        "description": "视图控制器",
+        "vocabs": [
+          {
+            "word": "view controller",
+            "pronunciation": "vjuː kənˈtroʊlər",
+            "meaning": "视图控制器"
+          },
+          {
+            "word": "lifecycle",
+            "pronunciation": "ˈlaɪfsaɪkl",
+            "meaning": "生命周期"
+          },
+          {
+            "word": "appear",
+            "pronunciation": "əˈpɪr",
+            "meaning": "出现"
+          },
+          {
+            "word": "disappear",
+            "pronunciation": "ˌdɪsəˈpɪr",
+            "meaning": "消失"
+          },
+          {
+            "word": "rotate",
+            "pronunciation": "roʊˈteɪt",
+            "meaning": "旋转"
+          }
+        ]
+      },
+      {
+        "name": "第二十六组 - 视图生命周期",
+        "description": "视图生命周期",
+        "vocabs": [
+          {
+            "word": "will appear",
+            "pronunciation": "wɪl əˈpɪr",
+            "meaning": "将要出现"
+          },
+          {
+            "word": "did appear",
+            "pronunciation": "dɪd əˈpɪr",
+            "meaning": "已经出现"
+          },
+          {
+            "word": "will disappear",
+            "pronunciation": "wɪl ˌdɪsəˈpɪr",
+            "meaning": "将要消失"
+          },
+          {
+            "word": "did disappear",
+            "pronunciation": "dɪd ˌdɪsəˈpɪr",
+            "meaning": "已经消失"
+          },
+          {
+            "word": "view did layout subviews",
+            "pronunciation": "vjuː dɪd ˈleɪaʊt ˈsʌbvjuːz",
+            "meaning": "视图布局子视图完成"
+          },
+          {
+            "word": "view did load",
+            "pronunciation": "vjuː dɪd loʊd",
+            "meaning": "视图加载完成"
+          }
+        ]
+      },
+      {
+        "name": "第二十七组 - UIApplication与UIWindow",
+        "description": "UIApplication与UIWindow",
+        "vocabs": [
+          {
+            "word": "uiapplication",
+            "pronunciation": "juː aɪ ˌæplɪˈkeɪʃn",
+            "meaning": "UIApplication单例"
+          },
+          {
+            "word": "shared application",
+            "pronunciation": "ʃerd ˌæplɪˈkeɪʃn",
+            "meaning": "共享应用实例"
+          },
+          {
+            "word": "key window",
+            "pronunciation": "kiː ˈwɪndoʊ",
+            "meaning": "主窗口"
+          },
+          {
+            "word": "scene session",
+            "pronunciation": "siːn ˈseʃn",
+            "meaning": "场景会话"
+          },
+          {
+            "word": "active",
+            "pronunciation": "ˈæktɪv",
+            "meaning": "活跃状态"
+          },
+          {
+            "word": "inactive",
+            "pronunciation": "ɪnˈæktɪv",
+            "meaning": "非活跃状态"
+          }
+        ]
+      },
+      {
+        "name": "第二十八组 - 几何数据类型",
+        "description": "几何数据类型",
+        "vocabs": [
+          {
+            "word": "cgpoint",
+            "pronunciation": "siː dʒiː pɔɪnt",
+            "meaning": "点"
+          },
+          {
+            "word": "cgsize",
+            "pronunciation": "siː dʒiː saɪz",
+            "meaning": "尺寸"
+          },
+          {
+            "word": "cgrect",
+            "pronunciation": "siː dʒiː rekt",
+            "meaning": "矩形"
+          },
+          {
+            "word": "uiedgeinsets",
+            "pronunciation": "juː aɪ edʒ ˈɪnsets",
+            "meaning": "边缘内边距"
+          },
+          {
+            "word": "uinset",
+            "pronunciation": "juː aɪnˈset",
+            "meaning": "内边距"
+          },
+          {
+            "word": "uioffset",
+            "pronunciation": "juː aɪ ˈɔːfset",
+            "meaning": "偏移量"
+          }
+        ]
+      },
+      {
+        "name": "第二十九组 - UIColor与UIFont",
+        "description": "UIColor与UIFont",
+        "vocabs": [
+          {
+            "word": "uicolor",
+            "pronunciation": "juː aɪ ˈkʌlər",
+            "meaning": "颜色"
+          },
+          {
+            "word": "uifont",
+            "pronunciation": "juː aɪ fʌnt",
+            "meaning": "字体"
+          },
+          {
+            "word": "system font",
+            "pronunciation": "ˈsɪstəm fʌnt",
+            "meaning": "系统字体"
+          },
+          {
+            "word": "bold system font",
+            "pronunciation": "boʊld ˈsɪstəm fʌnt",
+            "meaning": "粗体系统字体"
+          },
+          {
+            "word": "dynamic type",
+            "pronunciation": "daɪˈnæmɪk taɪp",
+            "meaning": "动态字体"
+          }
+        ]
+      },
+      {
+        "name": "第三十组 - 基础控件",
+        "description": "基础控件",
+        "vocabs": [
+          {
+            "word": "label",
+            "pronunciation": "ˈleɪbl",
+            "meaning": "标签"
+          },
+          {
+            "word": "button",
+            "pronunciation": "ˈbʌtn",
+            "meaning": "按钮"
+          },
+          {
+            "word": "text field",
+            "pronunciation": "tekst fiːld",
+            "meaning": "文本框"
+          },
+          {
+            "word": "text view",
+            "pronunciation": "tekst vjuː",
+            "meaning": "文本视图"
+          },
+          {
+            "word": "image view",
+            "pronunciation": "ˈɪmɪdʒ vjuː",
+            "meaning": "图片视图"
+          }
+        ]
+      },
+      {
+        "name": "第三十一组 - 容器控件",
+        "description": "容器控件",
+        "vocabs": [
+          {
+            "word": "scroll view",
+            "pronunciation": "skroʊl vjuː",
+            "meaning": "滚动视图"
+          },
+          {
+            "word": "table view",
+            "pronunciation": "ˈteɪbl vjuː",
+            "meaning": "表格视图"
+          },
+          {
+            "word": "collection view",
+            "pronunciation": "kəˈlekʃn vjuː",
+            "meaning": "集合视图"
+          },
+          {
+            "word": "stack view",
+            "pronunciation": "stæk vjuː",
+            "meaning": "堆叠视图"
+          },
+          {
+            "word": "segmented control",
+            "pronunciation": "seɡˈmentɪd kənˈtroʊl",
+            "meaning": "分段控件"
+          }
+        ]
+      },
+      {
+        "name": "第三十二组 - 导航组件",
+        "description": "导航组件",
+        "vocabs": [
+          {
+            "word": "navigation bar",
+            "pronunciation": "ˌnævɪˈɡeɪʃn bɑːr",
+            "meaning": "导航栏"
+          },
+          {
+            "word": "tab bar",
+            "pronunciation": "tæb bɑːr",
+            "meaning": "标签栏"
+          },
+          {
+            "word": "toolbar",
+            "pronunciation": "ˈtuːlbɑːr",
+            "meaning": "工具栏"
+          },
+          {
+            "word": "status bar",
+            "pronunciation": "ˈsteɪtəs bɑːr",
+            "meaning": "状态栏"
+          },
+          {
+            "word": "search bar",
+            "pronunciation": "sɜːrtʃ bɑːr",
+            "meaning": "搜索栏"
+          }
+        ]
+      },
+      {
+        "name": "第三十三组 - 表格与列表",
+        "description": "表格与列表",
+        "vocabs": [
+          {
+            "word": "table view cell",
+            "pronunciation": "ˈteɪbl vjuː sel",
+            "meaning": "表格单元格"
+          },
+          {
+            "word": "reusable cell",
+            "pronunciation": "riːˈjuːzəbl sel",
+            "meaning": "可复用单元格"
+          },
+          {
+            "word": "dequeue reusable cell",
+            "pronunciation": "dɪˈkjuː riːˈjuːzəbl sel",
+            "meaning": "出队复用单元格"
+          },
+          {
+            "word": "section",
+            "pronunciation": "ˈsekʃn",
+            "meaning": "分区"
+          },
+          {
+            "word": "header",
+            "pronunciation": "ˈhedər",
+            "meaning": "表头"
+          },
+          {
+            "word": "footer",
+            "pronunciation": "ˈfoʊtər",
+            "meaning": "表尾"
+          },
+          {
+            "word": "separator",
+            "pronunciation": "ˈsepəreɪtər",
+            "meaning": "分隔线"
+          },
+          {
+            "word": "editing mode",
+            "pronunciation": "ˈedɪtɪŋ moʊd",
+            "meaning": "编辑模式"
+          }
+        ]
+      },
+      {
+        "name": "第三十四组 - 高级控件",
+        "description": "高级控件",
+        "vocabs": [
+          {
+            "word": "picker view",
+            "pronunciation": "ˈpɪkər vjuː",
+            "meaning": "选择器视图"
+          },
+          {
+            "word": "date picker",
+            "pronunciation": "deɪt ˈpɪkər",
+            "meaning": "日期选择器"
+          },
+          {
+            "word": "slider",
+            "pronunciation": "ˈslaɪdər",
+            "meaning": "滑块"
+          },
+          {
+            "word": "switch",
+            "pronunciation": "swɪtʃ",
+            "meaning": "开关"
+          },
+          {
+            "word": "progress indicator",
+            "pronunciation": "ˈprɑːɡres ˈɪndɪkeɪtər",
+            "meaning": "进度指示器"
+          },
+          {
+            "word": "activity indicator",
+            "pronunciation": "ækˈtɪvəti ˈɪndɪkeɪtər",
+            "meaning": "活动指示器"
+          },
+          {
+            "word": "stepper",
+            "pronunciation": "ˈstepər",
+            "meaning": "步进器"
+          },
+          {
+            "word": "page control",
+            "pronunciation": "peɪdʒ kənˈtroʊl",
+            "meaning": "页面控制"
+          },
+          {
+            "word": "refresh control",
+            "pronunciation": "rɪˈfrɛʃ kənˈtroʊl",
+            "meaning": "刷新控件"
+          }
+        ]
+      },
+      {
+        "name": "第三十五组 - 警告与提示",
+        "description": "警告与提示",
+        "vocabs": [
+          {
+            "word": "alert controller",
+            "pronunciation": "əˈlɜːrt kənˈtroʊlər",
+            "meaning": "警告控制器"
+          },
+          {
+            "word": "action sheet",
+            "pronunciation": "ˈækʃn ʃiːt",
+            "meaning": "操作表单"
+          },
+          {
+            "word": "alert",
+            "pronunciation": "əˈlɜːrt",
+            "meaning": "警告框"
+          },
+          {
+            "word": "banner",
+            "pronunciation": "ˈbɑːrnər",
+            "meaning": "横幅"
+          }
+        ]
+      },
+      {
+        "name": "第三十六组 - NavigationController",
+        "description": "NavigationController",
+        "vocabs": [
+          {
+            "word": "navigation controller",
+            "pronunciation": "ˌnævɪˈɡeɪʃn kənˈtroʊlər",
+            "meaning": "导航控制器"
+          },
+          {
+            "word": "push",
+            "pronunciation": "pʊʃ",
+            "meaning": "推入"
+          },
+          {
+            "word": "pop",
+            "pronunciation": "pɑːp",
+            "meaning": "弹出"
+          },
+          {
+            "word": "push view controller",
+            "pronunciation": "pʊʃ vjuː kənˈtroʊlər",
+            "meaning": "推入视图控制器"
+          },
+          {
+            "word": "pop view controller",
+            "pronunciation": "pɑːp vjuː kənˈtroʊlər",
+            "meaning": "弹出视图控制器"
+          },
+          {
+            "word": "top view controller",
+            "pronunciation": "tɑːp vjuː kənˈtroʊlər",
+            "meaning": "顶部视图控制器"
+          },
+          {
+            "word": "navigation item",
+            "pronunciation": "ˌnævɪˈɡeɪʃn ˈaɪtəm",
+            "meaning": "导航项"
+          },
+          {
+            "word": "back button",
+            "pronunciation": "bæk ˈbʌtn",
+            "meaning": "返回按钮"
+          },
+          {
+            "word": "bar button item",
+            "pronunciation": "bɑːr ˈbʌtn ˈaɪtəm",
+            "meaning": "栏按钮项"
+          }
+        ]
+      },
+      {
+        "name": "第三十七组 - TabBarController",
+        "description": "TabBarController",
+        "vocabs": [
+          {
+            "word": "tab bar controller",
+            "pronunciation": "tæb bɑːr kənˈtroʊlər",
+            "meaning": "标签栏控制器"
+          },
+          {
+            "word": "tab",
+            "pronunciation": "tæb",
+            "meaning": "标签"
+          },
+          {
+            "word": "selected tab",
+            "pronunciation": "sɪˈlektɪd tæb",
+            "meaning": "选中的标签"
+          },
+          {
+            "word": "more tab",
+            "pronunciation": "mɔːr tæb",
+            "meaning": "更多标签"
+          }
+        ]
+      },
+      {
+        "name": "第三十八组 - TableView进阶",
+        "description": "TableView进阶",
+        "vocabs": [
+          {
+            "word": "diffable data source",
+            "pronunciation": "ˈdɪfəbl ˈdeɪtə sɔːrs",
+            "meaning": "差异化数据源"
+          },
+          {
+            "word": "cell registration",
+            "pronunciation": "sel ˌreɡɪˈstreɪʃn",
+            "meaning": "单元格注册"
+          },
+          {
+            "word": "cell configuration",
+            "pronunciation": "sel kənˌfɪɡjʊˈreɪʃn",
+            "meaning": "单元格配置"
+          },
+          {
+            "word": "supplementary view",
+            "pronunciation": "səpˈlɪmənteri vjuː",
+            "meaning": "补充视图"
+          },
+          {
+            "word": "section header",
+            "pronunciation": "ˈsekʃn ˈhedər",
+            "meaning": "分区头"
+          },
+          {
+            "word": "section footer",
+            "pronunciation": "ˈsekʃn ˈfoʊtər",
+            "meaning": "分区尾"
+          },
+          {
+            "word": "estimated row height",
+            "pronunciation": "ˈestɪmeɪtɪd roʊ haɪt",
+            "meaning": "估算行高"
+          },
+          {
+            "word": "row height",
+            "pronunciation": "roʊ haɪt",
+            "meaning": "行高"
+          },
+          {
+            "word": "estimated section header height",
+            "pronunciation": "ˈestɪmeɪtɪd ˈsekʃn ˈhedər haɪt",
+            "meaning": "估算分区头高度"
+          },
+          {
+            "word": "estimated section footer height",
+            "pronunciation": "ˈestɪmeɪtɪd ˈsekʃn ˈfoʊtər haɪt",
+            "meaning": "估算分区尾高度"
+          }
+        ]
+      },
+      {
+        "name": "第三十九组 - CollectionView进阶",
+        "description": "CollectionView进阶",
+        "vocabs": [
+          {
+            "word": "compositional layout",
+            "pronunciation": "kəmˈpɑːzɪʃnəl ˈleɪaʊt",
+            "meaning": "组合布局"
+          },
+          {
+            "word": "list configuration",
+            "pronunciation": "lɪst kənˌfɪɡjʊˈreɪʃn",
+            "meaning": "列表配置"
+          },
+          {
+            "word": "grid configuration",
+            "pronunciation": "ɡrɪd kənˌfɪɡjʊˈreɪʃn",
+            "meaning": "网格配置"
+          },
+          {
+            "word": "item spacing",
+            "pronunciation": "ˈaɪtəm ˈspeɪsɪŋ",
+            "meaning": "元素间距"
+          },
+          {
+            "word": "group spacing",
+            "pronunciation": "ɡruːp ˈspeɪsɪŋ",
+            "meaning": "组间距"
+          },
+          {
+            "word": "section inset",
+            "pronunciation": "ˈsekʃn ɪnˈset",
+            "meaning": "分区内边距"
+          },
+          {
+            "word": "orthogonal scrolling",
+            "pronunciation": "ˌɔːrθəˈɡɑːnəl ˈskroʊlɪŋ",
+            "meaning": "正交滚动"
+          }
+        ]
+      },
+      {
+        "name": "第四十组 - UISearchController",
+        "description": "UISearchController",
+        "vocabs": [
+          {
+            "word": "search controller",
+            "pronunciation": "sɜːrtʃ kənˈtroʊlər",
+            "meaning": "搜索控制器"
+          },
+          {
+            "word": "search text field",
+            "pronunciation": "sɜːrtʃ tekst fiːld",
+            "meaning": "搜索文本框"
+          },
+          {
+            "word": "scope button",
+            "pronunciation": "skɔːp ˈbʌtn",
+            "meaning": "范围按钮"
+          },
+          {
+            "word": "search results",
+            "pronunciation": "sɜːrtʃ rɪˈzʌlts",
+            "meaning": "搜索结果"
+          },
+          {
+            "word": "cancel button",
+            "pronunciation": "ˈkænsəl ˈbʌtn",
+            "meaning": "取消按钮"
+          }
+        ]
+      },
+      {
+        "name": "第四十一组 - 手势识别器",
+        "description": "手势识别器",
+        "vocabs": [
+          {
+            "word": "gesture recognizer",
+            "pronunciation": "ˈdʒestʃər ˈrekəɡnaɪzər",
+            "meaning": "手势识别器"
+          },
+          {
+            "word": "tap gesture",
+            "pronunciation": "tæp ˈdʒestʃər",
+            "meaning": "点击手势"
+          },
+          {
+            "word": "pan gesture",
+            "pronunciation": "pæn ˈdʒestʃər",
+            "meaning": "拖动手势"
+          },
+          {
+            "word": "pinch gesture",
+            "pronunciation": "pɪntʃ ˈdʒestʃər",
+            "meaning": "缩放手势"
+          },
+          {
+            "word": "rotation gesture",
+            "pronunciation": "roʊˈteɪʃn ˈdʒestʃər",
+            "meaning": "旋转手势"
+          },
+          {
+            "word": "swipe gesture",
+            "pronunciation": "swaɪp ˈdʒestʃər",
+            "meaning": "滑动手势"
+          },
+          {
+            "word": "long press gesture",
+            "pronunciation": "lɔːŋ pres ˈdʒestʃər",
+            "meaning": "长按手势"
+          },
+          {
+            "word": "screen edge pan",
+            "pronunciation": "skriːn edʒ pæn",
+            "meaning": "屏幕边缘拖动"
+          }
+        ]
+      },
+      {
+        "name": "第四十二组 - 手势状态",
+        "description": "手势状态",
+        "vocabs": [
+          {
+            "word": "began",
+            "pronunciation": "bɪˈɡæn",
+            "meaning": "开始"
+          },
+          {
+            "word": "changed",
+            "pronunciation": "tʃeɪndʒd",
+            "meaning": "变化"
+          },
+          {
+            "word": "ended",
+            "pronunciation": "ˈendɪd",
+            "meaning": "结束"
+          },
+          {
+            "word": "cancelled",
+            "pronunciation": "ˈkænsəld",
+            "meaning": "取消"
+          },
+          {
+            "word": "failed",
+            "pronunciation": "feɪld",
+            "meaning": "失败"
+          },
+          {
+            "word": "recognized",
+            "pronunciation": "ˈrekəɡnaɪzd",
+            "meaning": "识别成功"
+          }
+        ]
+      },
+      {
+        "name": "第四十三组 - Auto Layout进阶",
+        "description": "Auto Layout进阶",
+        "vocabs": [
+          {
+            "word": "safe area",
+            "pronunciation": "seɪf ˈeriə",
+            "meaning": "安全区域"
+          },
+          {
+            "word": "layout guide",
+            "pronunciation": "ˈleɪaʊt ɡaɪd",
+            "meaning": "布局引导"
+          },
+          {
+            "word": "leading",
+            "pronunciation": "ˈledɪŋ",
+            "meaning": "左边"
+          },
+          {
+            "word": "trailing",
+            "pronunciation": "ˈtreɪlɪŋ",
+            "meaning": "右边"
+          },
+          {
+            "word": "alignment",
+            "pronunciation": "əˈlaɪnmənt",
+            "meaning": "对齐"
+          },
+          {
+            "word": "spacing",
+            "pronunciation": "ˈspeɪsɪŋ",
+            "meaning": "间距"
+          },
+          {
+            "word": "aspect ratio",
+            "pronunciation": "ˈæspekt ˈreɪʃioʊ",
+            "meaning": "宽高比"
+          },
+          {
+            "word": "priority",
+            "pronunciation": "praɪˈɔːrəti",
+            "meaning": "优先级"
+          },
+          {
+            "word": "content hugging",
+            "pronunciation": "ˈkɑːntent ˈhʌɡɪŋ",
+            "meaning": "内容拥抱"
+          },
+          {
+            "word": "compression resistance",
+            "pronunciation": "kəmˈpreʃn rɪˈzɪstəns",
+            "meaning": "压缩阻力"
+          }
+        ]
+      },
+      {
+        "name": "第四十四组 - Masonry / SnapKit",
+        "description": "Masonry / SnapKit",
+        "vocabs": [
+          {
+            "word": "masonry",
+            "pronunciation": "ˈmeɪsənri",
+            "meaning": "Masonry自动布局库"
+          },
+          {
+            "word": "snapkit",
+            "pronunciation": "snæp kɪt",
+            "meaning": "SnapKit自动布局库"
+          },
+          {
+            "word": "make",
+            "pronunciation": "meɪk",
+            "meaning": "创建约束"
+          },
+          {
+            "word": "update",
+            "pronunciation": "ʌpˈdeɪt",
+            "meaning": "更新约束"
+          },
+          {
+            "word": "remake",
+            "pronunciation": "riːˈmeɪk",
+            "meaning": "重新创建约束"
+          },
+          {
+            "word": "edges",
+            "pronunciation": "ˈedʒɪz",
+            "meaning": "边缘"
+          },
+          {
+            "word": "offset",
+            "pronunciation": "ˈɔːfset",
+            "meaning": "偏移"
+          },
+          {
+            "word": "inset",
+            "pronunciation": "ɪnˈset",
+            "meaning": "内边距"
+          },
+          {
+            "word": "multiplied by",
+            "pronunciation": "ˈmʌltɪplaɪd baɪ",
+            "meaning": "乘以"
+          }
+        ]
+      },
+      {
+        "name": "第四十五组 - 图形绑定",
+        "description": "图形绑定",
+        "vocabs": [
+          {
+            "word": "core graphics",
+            "pronunciation": "kɔːr ˈɡræfɪks",
+            "meaning": "核心绘图"
+          },
+          {
+            "word": "quartz",
+            "pronunciation": "ˈkwɔːrts",
+            "meaning": "石英"
+          },
+          {
+            "word": "context",
+            "pronunciation": "ˈkɑːntekst",
+            "meaning": "图形上下文"
+          },
+          {
+            "word": "path",
+            "pronunciation": "pæθ",
+            "meaning": "路径"
+          },
+          {
+            "word": "bezier curve",
+            "pronunciation": "ˈbenziər kɜːrv",
+            "meaning": "贝塞尔曲线"
+          }
+        ]
+      },
+      {
+        "name": "第四十六组 - 颜色与图像",
+        "description": "颜色与图像",
+        "vocabs": [
+          {
+            "word": "color",
+            "pronunciation": "ˈkʌlər",
+            "meaning": "颜色"
+          },
+          {
+            "word": "gradient",
+            "pronunciation": "ˈɡreɪdiənt",
+            "meaning": "渐变"
+          },
+          {
+            "word": "shadow",
+            "pronunciation": "ˈʃædoʊ",
+            "meaning": "阴影"
+          },
+          {
+            "word": "blend mode",
+            "pronunciation": "blend moʊd",
+            "meaning": "混合模式"
+          },
+          {
+            "word": "mask",
+            "pronunciation": "mæsk",
+            "meaning": "蒙版"
+          }
+        ]
+      },
+      {
+        "name": "第四十七组 - 动画基础",
+        "description": "动画基础",
+        "vocabs": [
+          {
+            "word": "animation",
+            "pronunciation": "ˌænɪˈmeɪʃn",
+            "meaning": "动画"
+          },
+          {
+            "word": "transition",
+            "pronunciation": "trænˈzɪʃn",
+            "meaning": "转场"
+          },
+          {
+            "word": "transform",
+            "pronunciation": "trænsˈfɔːrm",
+            "meaning": "变换"
+          },
+          {
+            "word": "duration",
+            "pronunciation": "djuːˈreɪʃn",
+            "meaning": "持续时间"
+          },
+          {
+            "word": "timing function",
+            "pronunciation": "ˈtaɪmɪŋ ˈfʌŋkʃn",
+            "meaning": "时间函数"
+          }
+        ]
+      },
+      {
+        "name": "第四十八组 - Core Animation",
+        "description": "Core Animation",
+        "vocabs": [
+          {
+            "word": "core animation",
+            "pronunciation": "kɔːr ˌænɪˈmeɪʃn",
+            "meaning": "核心动画"
+          },
+          {
+            "word": "layer animation",
+            "pronunciation": "ˈleɪər ˌænɪˈmeɪʃn",
+            "meaning": "层动画"
+          },
+          {
+            "word": "keyframe",
+            "pronunciation": "ˈkiːfreɪm",
+            "meaning": "关键帧"
+          },
+          {
+            "word": "easing",
+            "pronunciation": "ˈiːzɪŋ",
+            "meaning": "缓动"
+          },
+          {
+            "word": "spring animation",
+            "pronunciation": "sprɪŋ ˌænɪˈmeɪʃn",
+            "meaning": "弹性动画"
+          }
+        ]
+      },
+      {
+        "name": "第四十九组 - 动画属性与曲线",
+        "description": "动画属性与曲线",
+        "vocabs": [
+          {
+            "word": "opacity",
+            "pronunciation": "oʊˈpæsəti",
+            "meaning": "不透明度"
+          },
+          {
+            "word": "alpha",
+            "pronunciation": "ˈælfə",
+            "meaning": "透明度"
+          },
+          {
+            "word": "transform scale",
+            "pronunciation": "trænsˈfɔːrm skeɪl",
+            "meaning": "缩放变换"
+          },
+          {
+            "word": "transform rotate",
+            "pronunciation": "trænsˈfɔːrm roʊˈteɪt",
+            "meaning": "旋转变换"
+          },
+          {
+            "word": "transform translate",
+            "pronunciation": "trænsˈfɔːrm trænsˈleɪt",
+            "meaning": "平移变换"
+          },
+          {
+            "word": "anchor point",
+            "pronunciation": "ˈæŋkər pɔɪnt",
+            "meaning": "锚点"
+          },
+          {
+            "word": "linear",
+            "pronunciation": "ˈlɪniər",
+            "meaning": "线性"
+          },
+          {
+            "word": "ease in",
+            "pronunciation": "iːz ɪn",
+            "meaning": "渐入"
+          },
+          {
+            "word": "ease out",
+            "pronunciation": "iːz aʊt",
+            "meaning": "渐出"
+          },
+          {
+            "word": "ease in out",
+            "pronunciation": "iːz ɪn aʊt",
+            "meaning": "渐入渐出"
+          }
+        ]
+      },
+      {
+        "name": "第五十组 - 视觉效果",
+        "description": "视觉效果",
+        "vocabs": [
+          {
+            "word": "render",
+            "pronunciation": "ˈrendər",
+            "meaning": "渲染"
+          },
+          {
+            "word": "redraw",
+            "pronunciation": "riːˈdrɔː",
+            "meaning": "重绘"
+          },
+          {
+            "word": "corner radius",
+            "pronunciation": "ˈkɔːrnər ˈreɪdiəs",
+            "meaning": "圆角"
+          },
+          {
+            "word": "border",
+            "pronunciation": "ˈbɔːrdər",
+            "meaning": "边框"
+          }
+        ]
+      },
+      {
+        "name": "第五十一组 - CAShapeLayer与CAGradientLayer",
+        "description": "CAShapeLayer与CAGradientLayer",
+        "vocabs": [
+          {
+            "word": "cashapelayer",
+            "pronunciation": "kæʃ eɪp ˈleɪər",
+            "meaning": "形状图层"
+          },
+          {
+            "word": "cagradientlayer",
+            "pronunciation": "kæ ɡreɪdiənt ˈleɪər",
+            "meaning": "渐变图层"
+          },
+          {
+            "word": "fill color",
+            "pronunciation": "fɪl ˈkʌlər",
+            "meaning": "填充颜色"
+          },
+          {
+            "word": "stroke color",
+            "pronunciation": "stroʊk ˈkʌlər",
+            "meaning": "描边颜色"
+          },
+          {
+            "word": "stroke width",
+            "pronunciation": "stroʊk wɪdθ",
+            "meaning": "描边宽度"
+          },
+          {
+            "word": "line cap",
+            "pronunciation": "laɪn kæp",
+            "meaning": "线帽"
+          },
+          {
+            "word": "line join",
+            "pronunciation": "laɪn dʒɔɪn",
+            "meaning": "线连接"
+          },
+          {
+            "word": "start point",
+            "pronunciation": "stɑːrt pɔɪnt",
+            "meaning": "起始点"
+          },
+          {
+            "word": "end point",
+            "pronunciation": "end pɔɪnt",
+            "meaning": "结束点"
+          },
+          {
+            "word": "locations",
+            "pronunciation": "loʊˈkeɪʃnz",
+            "meaning": "位置数组"
+          }
+        ]
+      },
+      {
+        "name": "第五十二组 - UIView动画",
+        "description": "UIView动画",
+        "vocabs": [
+          {
+            "word": "animate with duration",
+            "pronunciation": "ˈænɪmeɪt wɪð djuːˈreɪʃn",
+            "meaning": "动画持续时间"
+          },
+          {
+            "word": "animate with spring",
+            "pronunciation": "ˈænɪmeɪt wɪð sprɪŋ",
+            "meaning": "弹性动画"
+          },
+          {
+            "word": "animate with curve",
+            "pronunciation": "ˈænɪmeɪt wɪð kɜːrv",
+            "meaning": "曲线动画"
+          },
+          {
+            "word": "view animation options",
+            "pronunciation": "vjuː ˌænɪˈmeɪʃn ˈɑːpʃnz",
+            "meaning": "视图动画选项"
+          },
+          {
+            "word": "repeat count",
+            "pronunciation": "rɪˈpiːt kaʊnt",
+            "meaning": "重复次数"
+          },
+          {
+            "word": "autoreverse",
+            "pronunciation": "ˌɔːtoʊrɪˈvɜːrs",
+            "meaning": "自动反转"
+          },
+          {
+            "word": "curve",
+            "pronunciation": "kɜːrv",
+            "meaning": "曲线"
+          }
+        ]
+      },
+      {
+        "name": "第五十三组 - 数据存储基础",
+        "description": "数据存储基础",
+        "vocabs": [
+          {
+            "word": "persistence",
+            "pronunciation": "pərˈsɪstəns",
+            "meaning": "持久化"
+          },
+          {
+            "word": "sandbox",
+            "pronunciation": "ˈsændbɑːks",
+            "meaning": "沙盒"
+          },
+          {
+            "word": "file manager",
+            "pronunciation": "faɪl ˈmænɪdʒər",
+            "meaning": "文件管理器"
+          },
+          {
+            "word": "user defaults",
+            "pronunciation": "ˈjuːzər dɪˈfɔːltz",
+            "meaning": "用户默认设置"
+          },
+          {
+            "word": "keychain",
+            "pronunciation": "ˈkiːtʃeɪn",
+            "meaning": "钥匙串"
+          }
+        ]
+      },
+      {
+        "name": "第五十四组 - 数据库",
+        "description": "数据库",
+        "vocabs": [
+          {
+            "word": "core data",
+            "pronunciation": "kɔːr ˈdeɪtə",
+            "meaning": "Core Data框架"
+          },
+          {
+            "word": "managed object",
+            "pronunciation": "ˈmænɪdʒd ˈɑːbdʒekt",
+            "meaning": "被管理对象"
+          },
+          {
+            "word": "context",
+            "pronunciation": "ˈkɑːntekst",
+            "meaning": "上下文"
+          },
+          {
+            "word": "fetch request",
+            "pronunciation": "festʃ rɪˈkwest",
+            "meaning": "获取请求"
+          },
+          {
+            "word": "predicate",
+            "pronunciation": "ˈpredɪkət",
+            "meaning": "谓词"
+          },
+          {
+            "word": "sqlite",
+            "pronunciation": "ˈsiːkwəlaɪt",
+            "meaning": "SQLite数据库"
+          },
+          {
+            "word": "database",
+            "pronunciation": "ˈdeɪtəbeɪs",
+            "meaning": "数据库"
+          },
+          {
+            "word": "query",
+            "pronunciation": "ˈkweri",
+            "meaning": "查询"
+          },
+          {
+            "word": "transaction",
+            "pronunciation": "trænˈzækʃn",
+            "meaning": "事务"
+          },
+          {
+            "word": "migration",
+            "pronunciation": "maɪˈɡreɪʃn",
+            "meaning": "数据迁移"
+          }
+        ]
+      },
+      {
+        "name": "第五十五组 - 归档与序列化",
+        "description": "归档与序列化",
+        "vocabs": [
+          {
+            "word": "encoding",
+            "pronunciation": "ɪnˈkoʊdɪŋ",
+            "meaning": "编码"
+          },
+          {
+            "word": "decoding",
+            "pronunciation": "diːˈkoʊdɪŋ",
+            "meaning": "解码"
+          },
+          {
+            "word": "serialization",
+            "pronunciation": "ˌsɪriəlaɪˈzeɪʃn",
+            "meaning": "序列化"
+          },
+          {
+            "word": "archive",
+            "pronunciation": "ˈɑːrkaɪv",
+            "meaning": "归档"
+          },
+          {
+            "word": "codable",
+            "pronunciation": "ˈkoʊdəbl",
+            "meaning": "可编码的"
+          },
+          {
+            "word": "keyed container",
+            "pronunciation": "kiːd kənˈteɪnər",
+            "meaning": "键容器"
+          },
+          {
+            "word": "unkeyed container",
+            "pronunciation": "ʌnˈkiːd kənˈteɪnər",
+            "meaning": "无键容器"
+          },
+          {
+            "word": "coding keys",
+            "pronunciation": "ˈkoʊdɪŋ kiːz",
+            "meaning": "编码键"
+          }
+        ]
+      },
+      {
+        "name": "第五十六组 - JSON与网络数据",
+        "description": "JSON与网络数据",
+        "vocabs": [
+          {
+            "word": "json",
+            "pronunciation": "ˈdʒeɪsɑːn",
+            "meaning": "JSON数据格式"
+          },
+          {
+            "word": "parse",
+            "pronunciation": "pɑːrs",
+            "meaning": "解析"
+          },
+          {
+            "word": "serialize",
+            "pronunciation": "ˈsɪriəlaɪz",
+            "meaning": "序列化"
+          },
+          {
+            "word": "deserialize",
+            "pronunciation": "diːˌsɪriəˈlaɪz",
+            "meaning": "反序列化"
+          },
+          {
+            "word": "model",
+            "pronunciation": "ˈmɑːdl",
+            "meaning": "模型"
+          }
+        ]
+      },
+      {
+        "name": "第五十七组 - Core Data进阶",
+        "description": "Core Data进阶",
+        "vocabs": [
+          {
+            "word": "nsfetchrequest",
+            "pronunciation": "en es festʃ rɪˈkwest",
+            "meaning": "获取请求对象"
+          },
+          {
+            "word": "nsmanagedobjectcontext",
+            "pronunciation": "en es ˈmænɪdʒd ˈɑːbdʒekt ˈkɑːntekst",
+            "meaning": "托管对象上下文"
+          },
+          {
+            "word": "nsmanagedobjectmodel",
+            "pronunciation": "en es ˈmænɪdʒd ˈɑːbdʒekt ˈmɑːdl",
+            "meaning": "托管对象模型"
+          },
+          {
+            "word": "nsfetchedresultscontroller",
+            "pronunciation": "en es festʃt rɪˈzʌlts kənˈtroʊlər",
+            "meaning": "获取结果控制器"
+          },
+          {
+            "word": "nsbatchupdaterequest",
+            "pronunciation": "en es bætʃ ʌpˈdeɪt rɪˈkwest",
+            "meaning": "批量更新请求"
+          },
+          {
+            "word": "nsbatchdeleterequest",
+            "pronunciation": "en es bætʃ dɪˈliːt rɪˈkwest",
+            "meaning": "批量删除请求"
+          },
+          {
+            "word": "lightweight migration",
+            "pronunciation": "ˈlaɪtweɪt maɪˈɡreɪʃn",
+            "meaning": "轻量级迁移"
+          },
+          {
+            "word": "data model",
+            "pronunciation": "ˈdeɪtə mɑːdl",
+            "meaning": "数据模型"
+          },
+          {
+            "word": "entity",
+            "pronunciation": "ˈentəti",
+            "meaning": "实体"
+          },
+          {
+            "word": "attribute",
+            "pronunciation": "əˈtrɪbjuːt",
+            "meaning": "属性"
+          },
+          {
+            "word": "relationship",
+            "pronunciation": "rɪˈleɪʃnʃɪp",
+            "meaning": "关系"
+          }
+        ]
+      },
+      {
+        "name": "第五十八组 - FileManager",
+        "description": "FileManager",
+        "vocabs": [
+          {
+            "word": "file manager",
+            "pronunciation": "faɪl ˈmænɪdʒər",
+            "meaning": "文件管理器"
+          },
+          {
+            "word": "document directory",
+            "pronunciation": "ˈdɑːkjəmənt dɪˈrektəri",
+            "meaning": "文档目录"
+          },
+          {
+            "word": "cache directory",
+            "pronunciation": "kæʃ dɪˈrektəri",
+            "meaning": "缓存目录"
+          },
+          {
+            "word": "temporary directory",
+            "pronunciation": "ˈtempərəri dɪˈrektəri",
+            "meaning": "临时目录"
+          },
+          {
+            "word": "create directory",
+            "pronunciation": "kriːˈeɪt dɪˈrektəri",
+            "meaning": "创建目录"
+          },
+          {
+            "word": "remove item",
+            "pronunciation": "rɪˈmuːv ˈaɪtəm",
+            "meaning": "删除项目"
+          },
+          {
+            "word": "copy item",
+            "pronunciation": "ˈkɑːpi ˈaɪtəm",
+            "meaning": "复制项目"
+          },
+          {
+            "word": "move item",
+            "pronunciation": "muːv ˈaɪtəm",
+            "meaning": "移动项目"
+          },
+          {
+            "word": "file exists",
+            "pronunciation": "faɪl ɪɡˈzɪsts",
+            "meaning": "文件存在"
+          },
+          {
+            "word": "is directory",
+            "pronunciation": "ɪz dɪˈrektəri",
+            "meaning": "是否为目录"
+          }
+        ]
+      },
+      {
+        "name": "第五十九组 - 网络基础",
+        "description": "网络基础",
+        "vocabs": [
+          {
+            "word": "networking",
+            "pronunciation": "ˈnetwɜːrkɪŋ",
+            "meaning": "网络编程"
+          },
+          {
+            "word": "http",
+            "pronunciation": "eɪtʃ tiː piː",
+            "meaning": "HTTP协议"
+          },
+          {
+            "word": "https",
+            "pronunciation": "eɪtʃ tiː tiː es piː",
+            "meaning": "HTTPS协议"
+          },
+          {
+            "word": "url",
+            "pronunciation": "juː ar el",
+            "meaning": "统一资源定位符"
+          },
+          {
+            "word": "request",
+            "pronunciation": "rɪˈkwest",
+            "meaning": "请求"
+          }
+        ]
+      },
+      {
+        "name": "第六十组 - 请求与响应",
+        "description": "请求与响应",
+        "vocabs": [
+          {
+            "word": "response",
+            "pronunciation": "rɪˈspɑːns",
+            "meaning": "响应"
+          },
+          {
+            "word": "header",
+            "pronunciation": "ˈhedər",
+            "meaning": "请求头"
+          },
+          {
+            "word": "body",
+            "pronunciation": "ˈbɑːdi",
+            "meaning": "请求体"
+          },
+          {
+            "word": "status code",
+            "pronunciation": "ˈsteɪtəs koʊd",
+            "meaning": "状态码"
+          },
+          {
+            "word": "timeout",
+            "pronunciation": "ˈtaɪmaʊt",
+            "meaning": "超时"
+          }
+        ]
+      },
+      {
+        "name": "第六十一组 - 网络框架",
+        "description": "网络框架",
+        "vocabs": [
+          {
+            "word": "urlsession",
+            "pronunciation": "juː ar el ˈseʃn",
+            "meaning": "URL会话"
+          },
+          {
+            "word": "task",
+            "pronunciation": "tæsk",
+            "meaning": "任务"
+          },
+          {
+            "word": "download",
+            "pronunciation": "ˈdaʊnloʊd",
+            "meaning": "下载"
+          },
+          {
+            "word": "upload",
+            "pronunciation": "ˌʌpˈloʊd",
+            "meaning": "上传"
+          },
+          {
+            "word": "session",
+            "pronunciation": "ˈseʃn",
+            "meaning": "会话"
+          }
+        ]
+      },
+      {
+        "name": "第六十二组 - REST API",
+        "description": "REST API",
+        "vocabs": [
+          {
+            "word": "api",
+            "pronunciation": "eɪ piː aɪ",
+            "meaning": "应用程序接口"
+          },
+          {
+            "word": "endpoint",
+            "pronunciation": "ˈendpoint",
+            "meaning": "端点"
+          },
+          {
+            "word": "restful",
+            "pronunciation": "ˈrestfʊl",
+            "meaning": "REST风格的"
+          },
+          {
+            "word": "resource",
+            "pronunciation": "ˈriːsɔːrs",
+            "meaning": "资源"
+          },
+          {
+            "word": "authentication",
+            "pronunciation": "ɔːˌθentɪˈkeɪʃn",
+            "meaning": "认证"
+          }
+        ]
+      },
+      {
+        "name": "第六十三组 - 网络安全",
+        "description": "网络安全",
+        "vocabs": [
+          {
+            "word": "ssl",
+            "pronunciation": "es es el",
+            "meaning": "安全套接层"
+          },
+          {
+            "word": "tls",
+            "pronunciation": "tiː el es",
+            "meaning": "传输层安全"
+          },
+          {
+            "word": "certificate",
+            "pronunciation": "sərˈtɪfɪkət",
+            "meaning": "证书"
+          },
+          {
+            "word": "encryption",
+            "pronunciation": "ɪnˈkrɪpʃn",
+            "meaning": "加密"
+          },
+          {
+            "word": "decryption",
+            "pronunciation": "diːkrɪpʃn",
+            "meaning": "解密"
+          }
+        ]
+      },
+      {
+        "name": "第六十四组 - 网络监控",
+        "description": "网络监控",
+        "vocabs": [
+          {
+            "word": "reachability",
+            "pronunciation": "ˌriːtʃəˈbɪləti",
+            "meaning": "网络可达性"
+          },
+          {
+            "word": "network status",
+            "pronunciation": "ˈnetwɜːrk ˈsteɪtəs",
+            "meaning": "网络状态"
+          },
+          {
+            "word": "wifi",
+            "pronunciation": "ˈwaɪfaɪ",
+            "meaning": "无线网络"
+          },
+          {
+            "word": "cellular",
+            "pronunciation": "ˈseljʊlər",
+            "meaning": "蜂窝网络"
+          },
+          {
+            "word": "connection",
+            "pronunciation": "kəˈnekʃn",
+            "meaning": "连接"
+          }
+        ]
+      },
+      {
+        "name": "第六十五组 - 图片缓存",
+        "description": "图片缓存",
+        "vocabs": [
+          {
+            "word": "image cache",
+            "pronunciation": "ˈɪmɪdʒ kæʃ",
+            "meaning": "图片缓存"
+          },
+          {
+            "word": "memory cache",
+            "pronunciation": "ˈmeməri kæʃ",
+            "meaning": "内存缓存"
+          },
+          {
+            "word": "disk cache",
+            "pronunciation": "dɪsk kæʃ",
+            "meaning": "磁盘缓存"
+          },
+          {
+            "word": "sdwebimage",
+            "pronunciation": "es diː web ˈɪmɪdʒ",
+            "meaning": "SDWebImage图片缓存库"
+          },
+          {
+            "word": "kingfisher",
+            "pronunciation": "ˈkɪŋfɪʃər",
+            "meaning": "Kingfisher图片缓存库"
+          },
+          {
+            "word": "placeholder",
+            "pronunciation": "ˈpleɪshoʊldər",
+            "meaning": "占位图"
+          },
+          {
+            "word": "fade in",
+            "pronunciation": "feɪd ɪn",
+            "meaning": "淡入"
+          }
+        ]
+      },
+      {
+        "name": "第六十六组 - URLSession进阶",
+        "description": "URLSession进阶",
+        "vocabs": [
+          {
+            "word": "urlsessionconfiguration",
+            "pronunciation": "juː ar el ˈseʃn kənˌfɪɡjʊˈreɪʃn",
+            "meaning": "会话配置"
+          },
+          {
+            "word": "datasession",
+            "pronunciation": "ˈdeɪtə ˈseʃn",
+            "meaning": "数据会话"
+          },
+          {
+            "word": "upload task",
+            "pronunciation": "ˌʌpˈloʊd tæsk",
+            "meaning": "上传任务"
+          },
+          {
+            "word": "download task",
+            "pronunciation": "ˈdaʊnloʊd tæsk",
+            "meaning": "下载任务"
+          },
+          {
+            "word": "datatask",
+            "pronunciation": "ˈdeɪtə tæsk",
+            "meaning": "数据任务"
+          },
+          {
+            "word": "session delegate",
+            "pronunciation": "ˈseʃn ˈdelɪɡət",
+            "meaning": "会话代理"
+          },
+          {
+            "word": "background session",
+            "pronunciation": "ˈbækɡraʊnd ˈseʃn",
+            "meaning": "后台会话"
+          },
+          {
+            "word": "ephemeral session",
+            "pronunciation": "ɪˈfemərəl ˈseʃn",
+            "meaning": "临时会话"
+          }
+        ]
+      },
+      {
+        "name": "第六十七组 - HTTP方法与Header",
+        "description": "HTTP方法与Header",
+        "vocabs": [
+          {
+            "word": "get",
+            "pronunciation": "get",
+            "meaning": "GET请求"
+          },
+          {
+            "word": "post",
+            "pronunciation": "poʊst",
+            "meaning": "POST请求"
+          },
+          {
+            "word": "put",
+            "pronunciation": "pʊt",
+            "meaning": "PUT请求"
+          },
+          {
+            "word": "patch",
+            "pronunciation": "pætʃ",
+            "meaning": "PATCH请求"
+          },
+          {
+            "word": "delete",
+            "pronunciation": "dɪˈliːt",
+            "meaning": "DELETE请求"
+          },
+          {
+            "word": "content type",
+            "pronunciation": "ˈkɑːntent taɪp",
+            "meaning": "内容类型"
+          },
+          {
+            "word": "authorization header",
+            "pronunciation": "ˌɔːθərəˈzeɪʃn ˈhedər",
+            "meaning": "授权头"
+          },
+          {
+            "word": "accept header",
+            "pronunciation": "əkˈsept ˈhedər",
+            "meaning": "接受头"
+          },
+          {
+            "word": "cache control",
+            "pronunciation": "kæʃ kənˈtroʊl",
+            "meaning": "缓存控制"
+          }
+        ]
+      },
+      {
+        "name": "第六十八组 - 并发基础",
+        "description": "并发基础",
+        "vocabs": [
+          {
+            "word": "concurrency",
+            "pronunciation": "kənˈkʌrənsi",
+            "meaning": "并发"
+          },
+          {
+            "word": "asynchronous",
+            "pronunciation": "eɪˈsɪŋkrənəs",
+            "meaning": "异步的"
+          },
+          {
+            "word": "synchronous",
+            "pronunciation": "ˈsɪŋkrənəs",
+            "meaning": "同步的"
+          },
+          {
+            "word": "thread",
+            "pronunciation": "θred",
+            "meaning": "线程"
+          },
+          {
+            "word": "process",
+            "pronunciation": "ˈprɑːses",
+            "meaning": "进程"
+          }
+        ]
+      },
+      {
+        "name": "第六十九组 - Grand Central Dispatch",
+        "description": "Grand Central Dispatch",
+        "vocabs": [
+          {
+            "word": "gcd",
+            "pronunciation": "dʒiː siː diː",
+            "meaning": "Grand Central Dispatch"
+          },
+          {
+            "word": "dispatch queue",
+            "pronunciation": "dɪˈspætʃ kjuː",
+            "meaning": "调度队列"
+          },
+          {
+            "word": "main queue",
+            "pronunciation": "meɪn kjuː",
+            "meaning": "主队列"
+          },
+          {
+            "word": "global queue",
+            "pronunciation": "ˈɡloʊbl kjuː",
+            "meaning": "全局队列"
+          },
+          {
+            "word": "custom queue",
+            "pronunciation": "ˈkʌstəm kjuː",
+            "meaning": "自定义队列"
+          },
+          {
+            "word": "serial queue",
+            "pronunciation": "ˈsɪriəl kjuː",
+            "meaning": "串行队列"
+          },
+          {
+            "word": "concurrent queue",
+            "pronunciation": "kənˈkʌrənt kjuː",
+            "meaning": "并行队列"
+          },
+          {
+            "word": "quality of service",
+            "pronunciation": "ˈkwɒləti əv ˈsɜːrvɪs",
+            "meaning": "服务质量"
+          }
+        ]
+      },
+      {
+        "name": "第七十组 - 队列操作",
+        "description": "队列操作",
+        "vocabs": [
+          {
+            "word": "async",
+            "pronunciation": "eɪˈsɪŋk",
+            "meaning": "异步"
+          },
+          {
+            "word": "sync",
+            "pronunciation": "sɪŋk",
+            "meaning": "同步"
+          },
+          {
+            "word": "barrier",
+            "pronunciation": "ˈbæriər",
+            "meaning": "栅栏"
+          },
+          {
+            "word": "group",
+            "pronunciation": "ɡruːp",
+            "meaning": "组"
+          },
+          {
+            "word": "semaphore",
+            "pronunciation": "ˈseməfɔːr",
+            "meaning": "信号量"
+          },
+          {
+            "word": "work item",
+            "pronunciation": "wɜːrk ˈaɪtəm",
+            "meaning": "工作项"
+          },
+          {
+            "word": "notify",
+            "pronunciation": "noʊˈtɪfaɪ",
+            "meaning": "通知"
+          },
+          {
+            "word": "wait",
+            "pronunciation": "weɪt",
+            "meaning": "等待"
+          },
+          {
+            "word": "suspend",
+            "pronunciation": "səˈspend",
+            "meaning": "挂起"
+          },
+          {
+            "word": "resume",
+            "pronunciation": "rɪˈzjuːm",
+            "meaning": "恢复"
+          }
+        ]
+      },
+      {
+        "name": "第七十一组 - 异步模式",
+        "description": "异步模式",
+        "vocabs": [
+          {
+            "word": "callback",
+            "pronunciation": "ˈkɔːlbæk",
+            "meaning": "回调"
+          },
+          {
+            "word": "completion handler",
+            "pronunciation": "kəmˈpliːʃn ˈhændlər",
+            "meaning": "完成处理器"
+          },
+          {
+            "word": "promise",
+            "pronunciation": "ˈprɑːmɪs",
+            "meaning": "Promise"
+          },
+          {
+            "word": "future",
+            "pronunciation": "ˈfjuːtʃər",
+            "meaning": "Future"
+          },
+          {
+            "word": "async await",
+            "pronunciation": "eɪˈsɪŋk əˈweɪt",
+            "meaning": "异步等待"
+          }
+        ]
+      },
+      {
+        "name": "第七十二组 - Operation与Task",
+        "description": "Operation与Task",
+        "vocabs": [
+          {
+            "word": "operation",
+            "pronunciation": "ˌɑːpəˈreɪʃn",
+            "meaning": "操作"
+          },
+          {
+            "word": "operation queue",
+            "pronunciation": "ˌɑːpəˈreɪʃn kjuː",
+            "meaning": "操作队列"
+          },
+          {
+            "word": "block operation",
+            "pronunciation": "blɑːk ˌɑːpəˈreɪʃn",
+            "meaning": "块操作"
+          },
+          {
+            "word": "detached task",
+            "pronunciation": "dɪˈtætʃt tæsk",
+            "meaning": "分离任务"
+          },
+          {
+            "word": "add dependency",
+            "pronunciation": "æd dɪˈpendənsi",
+            "meaning": "添加依赖"
+          },
+          {
+            "word": "cancel",
+            "pronunciation": "ˈkænsəl",
+            "meaning": "取消"
+          }
+        ]
+      },
+      {
+        "name": "第七十三组 - 内存基础",
+        "description": "内存基础",
+        "vocabs": [
+          {
+            "word": "memory management",
+            "pronunciation": "ˈmeməri ˈmænɪdʒmənt",
+            "meaning": "内存管理"
+          },
+          {
+            "word": "allocation",
+            "pronunciation": "ˌæləˈkeɪʃn",
+            "meaning": "内存分配"
+          },
+          {
+            "word": "deallocation",
+            "pronunciation": "diːˌæləˈkeɪʃn",
+            "meaning": "内存释放"
+          },
+          {
+            "word": "heap",
+            "pronunciation": "hiːp",
+            "meaning": "堆"
+          },
+          {
+            "word": "stack",
+            "pronunciation": "stæk",
+            "meaning": "栈"
+          }
+        ]
+      },
+      {
+        "name": "第七十四组 - 引用计数",
+        "description": "引用计数",
+        "vocabs": [
+          {
+            "word": "reference counting",
+            "pronunciation": "ˈrefrəns ˈkaʊntɪŋ",
+            "meaning": "引用计数"
+          },
+          {
+            "word": "retain",
+            "pronunciation": "rɪˈteɪn",
+            "meaning": "保留"
+          },
+          {
+            "word": "release",
+            "pronunciation": "rɪˈles",
+            "meaning": "释放"
+          },
+          {
+            "word": "autorelease",
+            "pronunciation": "ˌɔːtərɪˈles",
+            "meaning": "自动释放"
+          },
+          {
+            "word": "retain count",
+            "pronunciation": "rɪˈteɪn kaʊnt",
+            "meaning": "引用计数"
+          }
+        ]
+      },
+      {
+        "name": "第七十五组 - 引用类型",
+        "description": "引用类型",
+        "vocabs": [
+          {
+            "word": "strong reference",
+            "pronunciation": "strɔːŋ ˈrefrəns",
+            "meaning": "强引用"
+          },
+          {
+            "word": "weak reference",
+            "pronunciation": "wiːk ˈrefrəns",
+            "meaning": "弱引用"
+          },
+          {
+            "word": "unowned reference",
+            "pronunciation": "ˌʌnˈoʊnd ˈrefrəns",
+            "meaning": "无主引用"
+          },
+          {
+            "word": "retain cycle",
+            "pronunciation": "rɪˈteɪn ˈsaɪkl",
+            "meaning": "循环引用"
+          },
+          {
+            "word": "memory leak",
+            "pronunciation": "ˈmeməri liːk",
+            "meaning": "内存泄漏"
+          }
+        ]
+      },
+      {
+        "name": "第七十六组 - ARC与内存问题",
+        "description": "ARC与内存问题",
+        "vocabs": [
+          {
+            "word": "arc",
+            "pronunciation": "ɑːrk",
+            "meaning": "自动引用计数"
+          },
+          {
+            "word": "mrc",
+            "pronunciation": "em ar siː",
+            "meaning": "手动引用计数"
+          },
+          {
+            "word": "deinit",
+            "pronunciation": "diː ɪˈnaɪt",
+            "meaning": "析构器"
+          },
+          {
+            "word": "dealloc",
+            "pronunciation": "diːˈælək",
+            "meaning": "释放"
+          },
+          {
+            "word": "zombie",
+            "pronunciation": "ˈzɑːmbi",
+            "meaning": "僵尸对象"
+          }
+        ]
+      },
+      {
+        "name": "第七十七组 - 内存优化",
+        "description": "内存优化",
+        "vocabs": [
+          {
+            "word": "memory warning",
+            "pronunciation": "ˈmeməri ˈwɔːrnɪŋ",
+            "meaning": "内存警告"
+          },
+          {
+            "word": "cache",
+            "pronunciation": "kæʃ",
+            "meaning": "缓存"
+          },
+          {
+            "word": "pool",
+            "pronunciation": "puːl",
+            "meaning": "池"
+          },
+          {
+            "word": "buffer",
+            "pronunciation": "ˈbʌfər",
+            "meaning": "缓冲区"
+          }
+        ]
+      },
+      {
+        "name": "第七十八组 - 内存安全",
+        "description": "内存安全",
+        "vocabs": [
+          {
+            "word": "memory safety",
+            "pronunciation": "ˈmeməri ˈseɪfti",
+            "meaning": "内存安全"
+          },
+          {
+            "word": "type safety",
+            "pronunciation": "taɪp ˈseɪfti",
+            "meaning": "类型安全"
+          },
+          {
+            "word": "null safety",
+            "pronunciation": "nʌl ˈseɪfti",
+            "meaning": "空安全"
+          },
+          {
+            "word": "thread safety",
+            "pronunciation": "θred ˈseɪfti",
+            "meaning": "线程安全"
+          },
+          {
+            "word": "data race",
+            "pronunciation": "ˈdeɪtə reɪs",
+            "meaning": "数据竞争"
+          }
+        ]
+      },
+      {
+        "name": "第七十九组 - 调试基础",
+        "description": "调试基础",
+        "vocabs": [
+          {
+            "word": "debug",
+            "pronunciation": "diːˈbʌɡ",
+            "meaning": "调试"
+          },
+          {
+            "word": "breakpoint",
+            "pronunciation": "ˈbreɪkpɔɪnt",
+            "meaning": "断点"
+          },
+          {
+            "word": "watchpoint",
+            "pronunciation": "ˈwɔːtʃpɔɪnt",
+            "meaning": "监视点"
+          },
+          {
+            "word": "step over",
+            "pronunciation": "step ˈoʊvər",
+            "meaning": "跳过"
+          },
+          {
+            "word": "step into",
+            "pronunciation": "step ˈɪntuː",
+            "meaning": "步入"
+          }
+        ]
+      },
+      {
+        "name": "第八十组 - LLDB调试命令",
+        "description": "LLDB调试命令",
+        "vocabs": [
+          {
+            "word": "po",
+            "pronunciation": "piː oʊ",
+            "meaning": "打印对象"
+          },
+          {
+            "word": "expression",
+            "pronunciation": "ɪkˈspreʃn",
+            "meaning": "表达式求值"
+          },
+          {
+            "word": "bt",
+            "pronunciation": "biː tiː",
+            "meaning": "打印堆栈"
+          },
+          {
+            "word": "frame",
+            "pronunciation": "freɪm",
+            "meaning": "查看栈帧"
+          },
+          {
+            "word": "thread list",
+            "pronunciation": "θred lɪst",
+            "meaning": "线程列表"
+          }
+        ]
+      },
+      {
+        "name": "第八十一组 - 调试工具",
+        "description": "调试工具",
+        "vocabs": [
+          {
+            "word": "xcode",
+            "pronunciation": "eks koʊd",
+            "meaning": "Xcode IDE"
+          },
+          {
+            "word": "instrument",
+            "pronunciation": "ˈɪnstrəmənt",
+            "meaning": "性能分析工具"
+          },
+          {
+            "word": "lldb",
+            "pronunciation": "el el diː biː",
+            "meaning": "LLDB调试器"
+          },
+          {
+            "word": "console",
+            "pronunciation": "ˈkɑːnsoʊl",
+            "meaning": "控制台"
+          },
+          {
+            "word": "log",
+            "pronunciation": "lɔːɡ",
+            "meaning": "日志"
+          }
+        ]
+      },
+      {
+        "name": "第八十二组 - Instruments工具",
+        "description": "Instruments工具",
+        "vocabs": [
+          {
+            "word": "allocations",
+            "pronunciation": "əˈleɪʃnz",
+            "meaning": "内存分配分析"
+          },
+          {
+            "word": "Leaks",
+            "pronunciation": "liːks",
+            "meaning": "内存泄漏检测"
+          },
+          {
+            "word": "Time Profiler",
+            "pronunciation": "taɪm ˈproʊfaɪlər",
+            "meaning": "时间分析器"
+          },
+          {
+            "word": "Core Animation",
+            "pronunciation": "kɔːr ˌænɪˈmeɪʃn",
+            "meaning": "核心动画调试"
+          },
+          {
+            "word": "Network",
+            "pronunciation": "ˈnetwɜːrk",
+            "meaning": "网络调试"
+          }
+        ]
+      },
+      {
+        "name": "第八十三组 - 性能分析",
+        "description": "性能分析",
+        "vocabs": [
+          {
+            "word": "profiler",
+            "pronunciation": "ˈproʊfaɪlər",
+            "meaning": "性能分析器"
+          },
+          {
+            "word": "benchmark",
+            "pronunciation": "ˈbentʃmɑːrk",
+            "meaning": "基准测试"
+          },
+          {
+            "word": "memory graph",
+            "pronunciation": "ˈmeməri ɡræf",
+            "meaning": "内存图"
+          },
+          {
+            "word": "time profiler",
+            "pronunciation": "taɪm ˈproʊfaɪlər",
+            "meaning": "时间分析器"
+          },
+          {
+            "word": "energy log",
+            "pronunciation": "ˈenərdʒi lɔːɡ",
+            "meaning": "能量日志"
+          },
+          {
+            "word": "launch time",
+            "pronunciation": "lɔːntʃ taɪm",
+            "meaning": "启动时间"
+          },
+          {
+            "word": "binary size",
+            "pronunciation": "ˈbaɪnəri saɪz",
+            "meaning": "二进制大小"
+          },
+          {
+            "word": "app thinning",
+            "pronunciation": "æp θaɪnɪŋ",
+            "meaning": "应用裁剪"
+          }
+        ]
+      },
+      {
+        "name": "第八十四组 - 测试",
+        "description": "测试",
+        "vocabs": [
+          {
+            "word": "unit test",
+            "pronunciation": "ˈjuːnɪt test",
+            "meaning": "单元测试"
+          },
+          {
+            "word": "integration test",
+            "pronunciation": "ˌɪntɪˈɡreɪʃn test",
+            "meaning": "集成测试"
+          },
+          {
+            "word": "ui test",
+            "pronunciation": "juː aɪ test",
+            "meaning": "UI测试"
+          },
+          {
+            "word": "test case",
+            "pronunciation": "test keɪs",
+            "meaning": "测试用例"
+          },
+          {
+            "word": "assertion",
+            "pronunciation": "əˈserʃn",
+            "meaning": "断言"
+          }
+        ]
+      },
+      {
+        "name": "第八十五组 - 测试框架",
+        "description": "测试框架",
+        "vocabs": [
+          {
+            "word": "xcuitest",
+            "pronunciation": "eks juː aɪ juː test",
+            "meaning": "XCTest框架"
+          },
+          {
+            "word": "quick",
+            "pronunciation": "kwɪk",
+            "meaning": "Quick测试框架"
+          },
+          {
+            "word": "nimble",
+            "pronunciation": "ˈnɪmbl",
+            "meaning": "Nimble匹配框架"
+          },
+          {
+            "word": "mock",
+            "pronunciation": "mɑːk",
+            "meaning": "模拟对象"
+          },
+          {
+            "word": "coverage",
+            "pronunciation": "ˈkʌvərɪdʒ",
+            "meaning": "代码覆盖率"
+          },
+          {
+            "word": "code coverage",
+            "pronunciation": "koʊd ˈkʌvərɪdʒ",
+            "meaning": "代码覆盖率"
+          }
+        ]
+      },
+      {
+        "name": "第八十六组 - XCTest进阶",
+        "description": "XCTest进阶",
+        "vocabs": [
+          {
+            "word": "xctestcase",
+            "pronunciation": "eks juː test keɪs",
+            "meaning": "测试用例类"
+          },
+          {
+            "word": "set up",
+            "pronunciation": "set ʌp",
+            "meaning": "初始化设置"
+          },
+          {
+            "word": "tear down",
+            "pronunciation": "ter daʊn",
+            "meaning": "清理"
+          },
+          {
+            "word": "xctassert",
+            "pronunciation": "eks juː siː əˈsɜːrt",
+            "meaning": "XCTest断言"
+          },
+          {
+            "word": "xctasserttrue",
+            "pronunciation": "eks juː siː əˈsɜːrt truː",
+            "meaning": "断言为真"
+          },
+          {
+            "word": "xctassertfalse",
+            "pronunciation": "eks juː siː əˈsɜːrt ˈfɔːls",
+            "meaning": "断言为假"
+          },
+          {
+            "word": "xctassertequal",
+            "pronunciation": "eks juː siː əˈsɜːrt ˈiːkwəl",
+            "meaning": "断言相等"
+          },
+          {
+            "word": "xctassertnil",
+            "pronunciation": "eks juː siː əˈsɜːrt nɪl",
+            "meaning": "断言为空"
+          },
+          {
+            "word": "given",
+            "pronunciation": "ˈɡɪvɪn",
+            "meaning": "Given阶段"
+          },
+          {
+            "word": "when",
+            "pronunciation": "wen",
+            "meaning": "When阶段"
+          },
+          {
+            "word": "then",
+            "pronunciation": "ðen",
+            "meaning": "Then阶段"
+          }
+        ]
+      },
+      {
+        "name": "第八十七组 - Xcode操作",
+        "description": "Xcode操作",
+        "vocabs": [
+          {
+            "word": "clean",
+            "pronunciation": "kliːn",
+            "meaning": "清理"
+          },
+          {
+            "word": "build",
+            "pronunciation": "bɪld",
+            "meaning": "构建"
+          },
+          {
+            "word": "run",
+            "pronunciation": "rʌn",
+            "meaning": "运行"
+          },
+          {
+            "word": "stop",
+            "pronunciation": "stɑːp",
+            "meaning": "停止"
+          },
+          {
+            "word": "pause",
+            "pronunciation": "pɔːz",
+            "meaning": "暂停"
+          },
+          {
+            "word": "profile",
+            "pronunciation": "ˈproʊfaɪl",
+            "meaning": "性能分析"
+          },
+          {
+            "word": "analyze",
+            "pronunciation": "ˈænəlaɪz",
+            "meaning": "分析"
+          },
+          {
+            "word": "archive",
+            "pronunciation": "ˈɑːrkaɪv",
+            "meaning": "归档"
+          }
+        ]
+      },
+      {
+        "name": "第八十八组 - Xcode项目结构",
+        "description": "Xcode项目结构",
+        "vocabs": [
+          {
+            "word": "workspace",
+            "pronunciation": "ˈwɜːrkpleɪs",
+            "meaning": "工作空间"
+          },
+          {
+            "word": "project",
+            "pronunciation": "ˈprɑːdʒekt",
+            "meaning": "项目"
+          },
+          {
+            "word": "scheme",
+            "pronunciation": "skiːm",
+            "meaning": "方案"
+          },
+          {
+            "word": "target",
+            "pronunciation": "ˈtɑːrɡɪt",
+            "meaning": "目标"
+          },
+          {
+            "word": "build setting",
+            "pronunciation": "bɪld ˈsetɪŋ",
+            "meaning": "构建设置"
+          },
+          {
+            "word": "configuration",
+            "pronunciation": "kənˌfɪɡjʊˈreɪʃn",
+            "meaning": "配置"
+          },
+          {
+            "word": "capability",
+            "pronunciation": "kəˈpæləti",
+            "meaning": "功能"
+          },
+          {
+            "word": "entitlement",
+            "pronunciation": "ɪnˈtaɪtlmənt",
+            "meaning": "权限"
+          }
+        ]
+      },
+      {
+        "name": "第八十九组 - SwiftUI基础",
+        "description": "SwiftUI基础",
+        "vocabs": [
+          {
+            "word": "swiftui",
+            "pronunciation": "swɪft juː aɪ",
+            "meaning": "SwiftUI框架"
+          },
+          {
+            "word": "declarative",
+            "pronunciation": "dɪˈklærətɪv",
+            "meaning": "声明式的"
+          },
+          {
+            "word": "imperative",
+            "pronunciation": "ɪmˈperətɪv",
+            "meaning": "命令式的"
+          },
+          {
+            "word": "modifier",
+            "pronunciation": "ˈmɑːdɪfaɪər",
+            "meaning": "修饰符"
+          },
+          {
+            "word": "view builder",
+            "pronunciation": "vjuː ˈbɪldər",
+            "meaning": "视图构建器"
+          }
+        ]
+      },
+      {
+        "name": "第九十组 - SwiftUI核心概念",
+        "description": "SwiftUI核心概念",
+        "vocabs": [
+          {
+            "word": "state",
+            "pronunciation": "steɪt",
+            "meaning": "状态"
+          },
+          {
+            "word": "binding",
+            "pronunciation": "ˈbaɪndɪŋ",
+            "meaning": "绑定"
+          },
+          {
+            "word": "observed object",
+            "pronunciation": "əbˈzɜːrvd ˈɑːbdʒekt",
+            "meaning": "观察对象"
+          },
+          {
+            "word": "environment object",
+            "pronunciation": "ɪnˈvaɪrənmənt ˈɑːbdʒekt",
+            "meaning": "环境对象"
+          },
+          {
+            "word": "published",
+            "pronunciation": "ˈpʌblɪʃt",
+            "meaning": "发布属性"
+          }
+        ]
+      },
+      {
+        "name": "第九十一组 - SwiftUI控件",
+        "description": "SwiftUI控件",
+        "vocabs": [
+          {
+            "word": "text",
+            "pronunciation": "tekst",
+            "meaning": "文本"
+          },
+          {
+            "word": "button",
+            "pronunciation": "ˈbʌtn",
+            "meaning": "按钮"
+          },
+          {
+            "word": "image",
+            "pronunciation": "ˈɪmɪdʒ",
+            "meaning": "图片"
+          },
+          {
+            "word": "list",
+            "pronunciation": "lɪst",
+            "meaning": "列表"
+          },
+          {
+            "word": "navigation stack",
+            "pronunciation": "ˌnævɪˈɡeɪʃn stæk",
+            "meaning": "导航栈"
+          }
+        ]
+      },
+      {
+        "name": "第九十二组 - SwiftUI布局",
+        "description": "SwiftUI布局",
+        "vocabs": [
+          {
+            "word": "vstack",
+            "pronunciation": "viː stæk",
+            "meaning": "垂直堆栈"
+          },
+          {
+            "word": "hstack",
+            "pronunciation": "eɪtʃ stæk",
+            "meaning": "水平堆栈"
+          },
+          {
+            "word": "zstack",
+            "pronunciation": "ziː stæk",
+            "meaning": "层叠堆栈"
+          },
+          {
+            "word": "spacer",
+            "pronunciation": "ˈspeɪsər",
+            "meaning": "间距"
+          },
+          {
+            "word": "padding",
+            "pronunciation": "ˈpædɪŋ",
+            "meaning": "内边距"
+          }
+        ]
+      },
+      {
+        "name": "第九十三组 - SwiftUI特性",
+        "description": "SwiftUI特性",
+        "vocabs": [
+          {
+            "word": "preview",
+            "pronunciation": "ˈpriːvjuː",
+            "meaning": "预览"
+          },
+          {
+            "word": "live preview",
+            "pronunciation": "laɪv ˈpriːvjuː",
+            "meaning": "实时预览"
+          },
+          {
+            "word": "canvas",
+            "pronunciation": "ˈkænvəs",
+            "meaning": "画布"
+          },
+          {
+            "word": "inspector",
+            "pronunciation": "ɪnˈspektər",
+            "meaning": "检查器"
+          }
+        ]
+      },
+      {
+        "name": "第九十四组 - SwiftUI进阶",
+        "description": "SwiftUI进阶",
+        "vocabs": [
+          {
+            "word": "lazyvstack",
+            "pronunciation": "ˈleɪzi viː stæk",
+            "meaning": "懒加载垂直堆栈"
+          },
+          {
+            "word": "lazyhstack",
+            "pronunciation": "ˈleɪzi eɪtʃ stæk",
+            "meaning": "懒加载水平堆栈"
+          },
+          {
+            "word": "foreach",
+            "pronunciation": "fɔːr iːtʃ",
+            "meaning": "ForEach循环"
+          },
+          {
+            "word": "group",
+            "pronunciation": "ɡruːp",
+            "meaning": "组"
+          },
+          {
+            "word": "navigationlink",
+            "pronunciation": "ˌnævɪˈɡeɪʃn lɪŋk",
+            "meaning": "导航链接"
+          },
+          {
+            "word": "toolbar item",
+            "pronunciation": "ˈtuːlbɑːr ˈaɪtəm",
+            "meaning": "工具栏项"
+          },
+          {
+            "word": "sheet",
+            "pronunciation": "ʃiːt",
+            "meaning": "弹窗"
+          },
+          {
+            "word": "fullscreencover",
+            "pronunciation": "ˈfʊlskriːn ˈkʌvər",
+            "meaning": "全屏覆盖"
+          },
+          {
+            "word": "alert",
+            "pronunciation": "əˈlɜːrt",
+            "meaning": "警告框"
+          },
+          {
+            "word": "confirmation dialog",
+            "pronunciation": "ˌkɑːnfərˈmeɪʃn ˈdaɪəlɑːɡ",
+            "meaning": "确认对话框"
+          },
+          {
+            "word": "environment variable",
+            "pronunciation": "ɪnˈvaɪrənmənt ˈveriəbl",
+            "meaning": "环境变量"
+          }
+        ]
+      },
+      {
+        "name": "第九十五组 - MVC模式",
+        "description": "MVC模式",
+        "vocabs": [
+          {
+            "word": "mvc",
+            "pronunciation": "em viː siː",
+            "meaning": "模型-视图-控制器"
+          },
+          {
+            "word": "model",
+            "pronunciation": "ˈmɑːdl",
+            "meaning": "模型"
+          },
+          {
+            "word": "view",
+            "pronunciation": "vjuː",
+            "meaning": "视图"
+          },
+          {
+            "word": "controller",
+            "pronunciation": "kənˈtroʊlər",
+            "meaning": "控制器"
+          },
+          {
+            "word": "separation of concerns",
+            "pronunciation": "ˌsepəˈreɪʃn əv kənˈsɜːrnz",
+            "meaning": "关注点分离"
+          }
+        ]
+      },
+      {
+        "name": "第九十六组 - MVVM模式",
+        "description": "MVVM模式",
+        "vocabs": [
+          {
+            "word": "mvvm",
+            "pronunciation": "em viː viː em",
+            "meaning": "模型-视图-视图模型"
+          },
+          {
+            "word": "view model",
+            "pronunciation": "vjuː ˈmɑːdl",
+            "meaning": "视图模型"
+          },
+          {
+            "word": "data binding",
+            "pronunciation": "ˈdeɪtə ˈbaɪndɪŋ",
+            "meaning": "数据绑定"
+          },
+          {
+            "word": "observable",
+            "pronunciation": "ˌɑːbzərˈveɪəbl",
+            "meaning": "可观察的"
+          },
+          {
+            "word": "subscriber",
+            "pronunciation": "səbˈskraɪbər",
+            "meaning": "订阅者"
+          }
+        ]
+      },
+      {
+        "name": "第九十七组 - VIPER架构",
+        "description": "VIPER架构",
+        "vocabs": [
+          {
+            "word": "viper",
+            "pronunciation": "ˈvaɪpər",
+            "meaning": "VIPER架构"
+          },
+          {
+            "word": "interactor",
+            "pronunciation": "ˌɪntərˈæktər",
+            "meaning": "交互器"
+          },
+          {
+            "word": "presenter",
+            "pronunciation": "prɪˈzentər",
+            "meaning": "展示器"
+          },
+          {
+            "word": "entity",
+            "pronunciation": "ˈentəti",
+            "meaning": "实体"
+          },
+          {
+            "word": "wireframe",
+            "pronunciation": "ˈwaɪərfreɪm",
+            "meaning": "路由"
+          },
+          {
+            "word": "router",
+            "pronunciation": "ˈruːtər",
+            "meaning": "路由器"
+          }
+        ]
+      },
+      {
+        "name": "第九十八组 - Coordinator模式",
+        "description": "Coordinator模式",
+        "vocabs": [
+          {
+            "word": "coordinator",
+            "pronunciation": "koʊˈɔːrdɪneɪtər",
+            "meaning": "协调器"
+          },
+          {
+            "word": "navigation coordinator",
+            "pronunciation": "ˌnævɪˈɡeɪʃn koʊˈɔːrdɪneɪtər",
+            "meaning": "导航协调器"
+          },
+          {
+            "word": "child coordinator",
+            "pronunciation": "tʃaɪld koʊˈɔːrdɪneɪtər",
+            "meaning": "子协调器"
+          },
+          {
+            "word": "present coordinator",
+            "pronunciation": "prɪˈzent koʊˈɔːrdɪneɪtər",
+            "meaning": "呈现协调器"
+          },
+          {
+            "word": "deep link",
+            "pronunciation": "diːp lɪŋk",
+            "meaning": "深度链接"
+          }
+        ]
+      },
+      {
+        "name": "第九十九组 - 设计原则",
+        "description": "设计原则",
+        "vocabs": [
+          {
+            "word": "single responsibility",
+            "pronunciation": "ˈsɪŋɡl rɪˌspɑːnsəˈbɪləti",
+            "meaning": "单一职责原则"
+          },
+          {
+            "word": "open closed",
+            "pronunciation": "oʊpən kl oʊzd",
+            "meaning": "开闭原则"
+          },
+          {
+            "word": "liskov substitution",
+            "pronunciation": "ˈlɪskɔːf ˌsʌbstɪˈtuːʃn",
+            "meaning": "里氏替换原则"
+          },
+          {
+            "word": "dependency inversion",
+            "pronunciation": "dɪˈpendənsi ɪnˈvɜːrʒn",
+            "meaning": "依赖倒置原则"
+          },
+          {
+            "word": "interface segregation",
+            "pronunciation": "ˈɪntərfeɪs ˌseɡrɪˈɡeɪʃn",
+            "meaning": "接口隔离原则"
+          }
+        ]
+      },
+      {
+        "name": "第一〇〇组 - 其他设计模式",
+        "description": "其他设计模式",
+        "vocabs": [
+          {
+            "word": "singleton",
+            "pronunciation": "ˈsɪŋɡltən",
+            "meaning": "单例模式"
+          },
+          {
+            "word": "factory",
+            "pronunciation": "ˈfæktəri",
+            "meaning": "工厂模式"
+          },
+          {
+            "word": "observer pattern",
+            "pronunciation": "əbˈzɜːrvər ˈpætərn",
+            "meaning": "观察者模式"
+          },
+          {
+            "word": "strategy pattern",
+            "pronunciation": "ˈstrætədʒi ˈpætərn",
+            "meaning": "策略模式"
+          },
+          {
+            "word": "decorator pattern",
+            "pronunciation": "ˈdekəreɪtər ˈpætərn",
+            "meaning": "装饰器模式"
+          }
+        ]
+      },
+      {
+        "name": "第一〇一组 - Combine框架",
+        "description": "Combine框架",
+        "vocabs": [
+          {
+            "word": "combine",
+            "pronunciation": "kəmˈbaɪn",
+            "meaning": "Combine框架"
+          },
+          {
+            "word": "publisher",
+            "pronunciation": "ˈpʌblɪʃər",
+            "meaning": "发布者"
+          },
+          {
+            "word": "subscription",
+            "pronunciation": "səbˈskrɪpʃn",
+            "meaning": "订阅"
+          },
+          {
+            "word": "operator",
+            "pronunciation": "ˈɑːpəreɪtər",
+            "meaning": "操作符"
+          },
+          {
+            "word": "sink",
+            "pronunciation": "sɪŋk",
+            "meaning": "接收"
+          },
+          {
+            "word": "currentvaluesubject",
+            "pronunciation": "ˈkʌrənt ˈvæljuː ˈsʌbdʒɪkt",
+            "meaning": "当前值主题"
+          },
+          {
+            "word": "passthroughsubject",
+            "pronunciation": "pɑːsˈθruː ˈsʌbdʒɪkt",
+            "meaning": "直通主题"
+          },
+          {
+            "word": "anycancellable",
+            "pronunciation": "ˈeni ˌkænsəˈleɪəbl",
+            "meaning": "任意可取消"
+          },
+          {
+            "word": "anypublisher",
+            "pronunciation": "ˈeni ˈpʌblɪʃər",
+            "meaning": "任意发布者"
+          },
+          {
+            "word": "just",
+            "pronunciation": "dʒʌst",
+            "meaning": "单一值发布者"
+          },
+          {
+            "word": "future",
+            "pronunciation": "ˈfjuːtʃər",
+            "meaning": "未来值发布者"
+          },
+          {
+            "word": "fail",
+            "pronunciation": "feɪl",
+            "meaning": "失败发布者"
+          }
+        ]
+      },
+      {
+        "name": "第一〇二组 - Combine操作符",
+        "description": "Combine操作符",
+        "vocabs": [
+          {
+            "word": "map operator",
+            "pronunciation": "mæp ˈɑːpəreɪtər",
+            "meaning": "映射操作符"
+          },
+          {
+            "word": "filter operator",
+            "pronunciation": "ˈfɪltər ˈɑːpəreɪtər",
+            "meaning": "过滤操作符"
+          },
+          {
+            "word": "reduce operator",
+            "pronunciation": "rɪˈdjuːs ˈɑːpəreɪtər",
+            "meaning": "归约操作符"
+          },
+          {
+            "word": "flatmap",
+            "pronunciation": "flæt mæp",
+            "meaning": "扁平映射"
+          },
+          {
+            "word": "merge",
+            "pronunciation": "mɜːrdʒ",
+            "meaning": "合并"
+          },
+          {
+            "word": "combine latest",
+            "pronunciation": "kəmˈbaɪn ˈlaɪtɪst",
+            "meaning": "合并最新值"
+          },
+          {
+            "word": "remove duplicates",
+            "pronunciation": "rɪˈmuːv ˈdjuːplɪkɪts",
+            "meaning": "去重"
+          },
+          {
+            "word": "timeout",
+            "pronunciation": "ˈtaɪmaʊt",
+            "meaning": "超时"
+          },
+          {
+            "word": "retry",
+            "pronunciation": "rɪˈtraɪ",
+            "meaning": "重试"
+          }
+        ]
+      },
+      {
+        "name": "第一〇三组 - RxSwift",
+        "description": "RxSwift",
+        "vocabs": [
+          {
+            "word": "rxswift",
+            "pronunciation": "ɑːr eks swɪft",
+            "meaning": "RxSwift响应式编程库"
+          },
+          {
+            "word": "observable",
+            "pronunciation": "ˌɑːbzərˈveɪəbl",
+            "meaning": "可观察序列"
+          },
+          {
+            "word": "disposable",
+            "pronunciation": "dɪˈspoʊzəbl",
+            "meaning": "可处置的"
+          },
+          {
+            "word": "disposebag",
+            "pronunciation": "dɪˈspoʊz bæɡ",
+            "meaning": "处置袋"
+          },
+          {
+            "word": "subscribe",
+            "pronunciation": "səbˈskraɪb",
+            "meaning": "订阅"
+          }
+        ]
+      },
+      {
+        "name": "第一〇四组 - 数据流与架构",
+        "description": "数据流与架构",
+        "vocabs": [
+          {
+            "word": "data flow",
+            "pronunciation": "ˈdeɪtə floʊ",
+            "meaning": "数据流"
+          },
+          {
+            "word": "unidirectional",
+            "pronunciation": "juːnɪdɪˈrekʃənl",
+            "meaning": "单向数据流"
+          },
+          {
+            "word": "bidirectional",
+            "pronunciation": "ˌbaɪdɪˈrekʃənl",
+            "meaning": "双向数据流"
+          },
+          {
+            "word": "dependency injection",
+            "pronunciation": "dɪˈpendənsi ɪnˈdʒekʃn",
+            "meaning": "依赖注入"
+          },
+          {
+            "word": "service locator",
+            "pronunciation": "ˈsɜːrvɪs loʊˈkeɪtər",
+            "meaning": "服务定位器"
+          }
+        ]
+      },
+      {
+        "name": "第一〇五组 - 函数式编程",
+        "description": "函数式编程",
+        "vocabs": [
+          {
+            "word": "functional programming",
+            "pronunciation": "ˈfʌŋkʃnəl ˈproʊɡræmɪŋ",
+            "meaning": "函数式编程"
+          },
+          {
+            "word": "pure function",
+            "pronunciation": "pjʊr ˈfʌŋkʃn",
+            "meaning": "纯函数"
+          },
+          {
+            "word": "side effect",
+            "pronunciation": "saɪd ɪˈfekt",
+            "meaning": "副作用"
+          },
+          {
+            "word": "higher order function",
+            "pronunciation": "ˈhaɪər ˈɔːrdər ˈfʌŋkʃn",
+            "meaning": "高阶函数"
+          },
+          {
+            "word": "immutable",
+            "pronunciation": "ɪˈmjuːtəbl",
+            "meaning": "不可变的"
+          },
+          {
+            "word": "map",
+            "pronunciation": "mæp",
+            "meaning": "映射"
+          },
+          {
+            "word": "filter",
+            "pronunciation": "ˈfɪltər",
+            "meaning": "过滤"
+          },
+          {
+            "word": "reduce",
+            "pronunciation": "rɪˈdjuːs",
+            "meaning": "归约"
+          },
+          {
+            "word": "fold",
+            "pronunciation": "foʊld",
+            "meaning": "折叠"
+          }
+        ]
+      },
+      {
+        "name": "第一〇六组 - 值类型与引用类型",
+        "description": "值类型与引用类型",
+        "vocabs": [
+          {
+            "word": "value type",
+            "pronunciation": "ˈvæljuː taɪp",
+            "meaning": "值类型"
+          },
+          {
+            "word": "reference type",
+            "pronunciation": "ˈrefrəns taɪp",
+            "meaning": "引用类型"
+          },
+          {
+            "word": "copy on write",
+            "pronunciation": "ˈkɒpi ɑːn raɪt",
+            "meaning": "写时复制"
+          },
+          {
+            "word": "immutable data",
+            "pronunciation": "ɪˈmjuːtəbl ˈdeɪtə",
+            "meaning": "不可变数据"
+          },
+          {
+            "word": "struct vs class",
+            "pronunciation": "strʌkt vɜːrsəs klæs",
+            "meaning": "结构体与类"
+          }
+        ]
+      },
+      {
+        "name": "第一〇七组 - 设备信息",
+        "description": "设备信息",
+        "vocabs": [
+          {
+            "word": "device",
+            "pronunciation": "dɪˈvaɪs",
+            "meaning": "设备"
+          },
+          {
+            "word": "model",
+            "pronunciation": "ˈmɑːdl",
+            "meaning": "型号"
+          },
+          {
+            "word": "identifier",
+            "pronunciation": "aɪˈdentɪfaɪər",
+            "meaning": "标识符"
+          },
+          {
+            "word": "platform",
+            "pronunciation": "ˈplætfɔːrm",
+            "meaning": "平台"
+          },
+          {
+            "word": "operating system",
+            "pronunciation": "ˈɑːpəreɪtɪŋ ˈsɪstəm",
+            "meaning": "操作系统"
+          }
+        ]
+      },
+      {
+        "name": "第一〇八组 - 屏幕相关",
+        "description": "屏幕相关",
+        "vocabs": [
+          {
+            "word": "screen size",
+            "pronunciation": "skriːn saɪz",
+            "meaning": "屏幕尺寸"
+          },
+          {
+            "word": "screen scale",
+            "pronunciation": "skriːn skeɪl",
+            "meaning": "屏幕比例"
+          },
+          {
+            "word": "retina",
+            "pronunciation": "rɪˈtaɪnə",
+            "meaning": "Retina显示屏"
+          },
+          {
+            "word": "density",
+            "pronunciation": "ˈdensəti",
+            "meaning": "像素密度"
+          },
+          {
+            "word": "points",
+            "pronunciation": "pɔɪnts",
+            "meaning": "点"
+          }
+        ]
+      },
+      {
+        "name": "第一〇九组 - 传感器",
+        "description": "传感器",
+        "vocabs": [
+          {
+            "word": "accelerometer",
+            "pronunciation": "əkˌseləˈrɑːmɪtər",
+            "meaning": "加速度计"
+          },
+          {
+            "word": "gyroscope",
+            "pronunciation": "ˈdʒaɪrəskoʊp",
+            "meaning": "陀螺仪"
+          },
+          {
+            "word": "magnetometer",
+            "pronunciation": "ˌmæɡnɪˈtɑːmɪtər",
+            "meaning": "磁力计"
+          },
+          {
+            "word": "gps",
+            "pronunciation": "dʒiː piː es",
+            "meaning": "全球定位系统"
+          },
+          {
+            "word": "bluetooth",
+            "pronunciation": "ˈbluːtuːθ",
+            "meaning": "蓝牙"
+          }
+        ]
+      },
+      {
+        "name": "第一一〇组 - 摄像头与拍照",
+        "description": "摄像头与拍照",
+        "vocabs": [
+          {
+            "word": "camera",
+            "pronunciation": "ˈkæmərə",
+            "meaning": "摄像头"
+          },
+          {
+            "word": "photo library",
+            "pronunciation": "ˈfoʊtoʊ ˈlaɪbreri",
+            "meaning": "照片库"
+          },
+          {
+            "word": "capture",
+            "pronunciation": "ˈkæptʃər",
+            "meaning": "捕获"
+          },
+          {
+            "word": "snapshot",
+            "pronunciation": "ˈsnæpʃɑːt",
+            "meaning": "快照"
+          },
+          {
+            "word": "crop",
+            "pronunciation": "krɑːp",
+            "meaning": "裁剪"
+          }
+        ]
+      },
+      {
+        "name": "第一一一组 - 生物识别",
+        "description": "生物识别",
+        "vocabs": [
+          {
+            "word": "face id",
+            "pronunciation": "feɪs aɪ diː",
+            "meaning": "Face ID"
+          },
+          {
+            "word": "touch id",
+            "pronunciation": "tʌtʃ aɪ diː",
+            "meaning": "Touch ID"
+          },
+          {
+            "word": "biometric",
+            "pronunciation": "ˌbaɪoʊˈmetrɪk",
+            "meaning": "生物识别的"
+          },
+          {
+            "word": "authentication",
+            "pronunciation": "ɔːˌθentɪˈkeɪʃn",
+            "meaning": "认证"
+          },
+          {
+            "word": "passcode",
+            "pronunciation": "ˈpæskoʊd",
+            "meaning": "密码"
+          }
+        ]
+      },
+      {
+        "name": "第一一二组 - 本地通知",
+        "description": "本地通知",
+        "vocabs": [
+          {
+            "word": "local notification",
+            "pronunciation": "ˈloʊkl ˌnoʊtɪfɪˈkeɪʃn",
+            "meaning": "本地通知"
+          },
+          {
+            "word": "push notification",
+            "pronunciation": "pʊʃ ˌnoʊtɪfɪˈkeɪʃn",
+            "meaning": "推送通知"
+          },
+          {
+            "word": "user notification",
+            "pronunciation": "ˈjuːzər ˌnoʊtɪfɪˈkeɪʃn",
+            "meaning": "用户通知"
+          }
+        ]
+      },
+      {
+        "name": "第一一三组 - 通知设置",
+        "description": "通知设置",
+        "vocabs": [
+          {
+            "word": "authorization",
+            "pronunciation": "ˌɔːθərəˈzeɪʃn",
+            "meaning": "授权"
+          },
+          {
+            "word": "permission",
+            "pronunciation": "pərˈmɪʃn",
+            "meaning": "权限"
+          },
+          {
+            "word": "settings",
+            "pronunciation": "ˈsetɪŋz",
+            "meaning": "设置"
+          },
+          {
+            "word": "sound",
+            "pronunciation": "saʊnd",
+            "meaning": "声音"
+          },
+          {
+            "word": "badge",
+            "pronunciation": "bædʒ",
+            "meaning": "角标"
+          }
+        ]
+      },
+      {
+        "name": "第一一四组 - 应用状态",
+        "description": "应用状态",
+        "vocabs": [
+          {
+            "word": "foreground",
+            "pronunciation": "ˈfɔːrɡraʊnd",
+            "meaning": "前台"
+          },
+          {
+            "word": "background",
+            "pronunciation": "ˈbækɡraʊnd",
+            "meaning": "后台"
+          },
+          {
+            "word": "inactive",
+            "pronunciation": "ɪnˈæktɪv",
+            "meaning": "非活跃"
+          },
+          {
+            "word": "suspended",
+            "pronunciation": "səˈspendɪd",
+            "meaning": "挂起"
+          },
+          {
+            "word": "terminate",
+            "pronunciation": "ˈtɜːrmɪneɪt",
+            "meaning": "终止"
+          }
+        ]
+      },
+      {
+        "name": "第一一五组 - 音视频基础",
+        "description": "音视频基础",
+        "vocabs": [
+          {
+            "word": "avfoundation",
+            "pronunciation": "eɪ viː faʊnˈdeɪʃn",
+            "meaning": "AVFoundation框架"
+          },
+          {
+            "word": "audio",
+            "pronunciation": "ˈɔːdioʊ",
+            "meaning": "音频"
+          },
+          {
+            "word": "video",
+            "pronunciation": "ˈvɪdioʊ",
+            "meaning": "视频"
+          },
+          {
+            "word": "media",
+            "pronunciation": "ˈmiːdiə",
+            "meaning": "媒体"
+          },
+          {
+            "word": "player",
+            "pronunciation": "ˈpleɪər",
+            "meaning": "播放器"
+          }
+        ]
+      },
+      {
+        "name": "第一一六组 - 音频相关",
+        "description": "音频相关",
+        "vocabs": [
+          {
+            "word": "audio session",
+            "pronunciation": "ˈɔːdioʊ ˈseʃn",
+            "meaning": "音频会话"
+          },
+          {
+            "word": "playback",
+            "pronunciation": "ˈpleɪbæk",
+            "meaning": "播放"
+          },
+          {
+            "word": "recording",
+            "pronunciation": "rɪˈkɔːrdɪŋ",
+            "meaning": "录音"
+          },
+          {
+            "word": "volume",
+            "pronunciation": "ˈvɑːljuːm",
+            "meaning": "音量"
+          },
+          {
+            "word": "mute",
+            "pronunciation": "mjuːt",
+            "meaning": "静音"
+          }
+        ]
+      },
+      {
+        "name": "第一一七组 - 视频播放",
+        "description": "视频播放",
+        "vocabs": [
+          {
+            "word": "avplayer",
+            "pronunciation": "eɪ viː ˈpleɪər",
+            "meaning": "AVPlayer"
+          },
+          {
+            "word": "avplayerlayer",
+            "pronunciation": "eɪ viː ˈpleɪər ˈleɪər",
+            "meaning": "播放器层"
+          },
+          {
+            "word": "time control",
+            "pronunciation": "taɪm kənˈtroʊl",
+            "meaning": "时间控制"
+          },
+          {
+            "word": "seek",
+            "pronunciation": "siːk",
+            "meaning": "跳转"
+          },
+          {
+            "word": "rate",
+            "pronunciation": "reɪt",
+            "meaning": "播放速率"
+          }
+        ]
+      },
+      {
+        "name": "第一一八组 - 图像处理",
+        "description": "图像处理",
+        "vocabs": [
+          {
+            "word": "core image",
+            "pronunciation": "kɔːr ˈɪmɪdʒ",
+            "meaning": "Core Image框架"
+          },
+          {
+            "word": "core graphics",
+            "pronunciation": "kɔːr ˈɡræfɪks",
+            "meaning": "核心绘图"
+          },
+          {
+            "word": "image processing",
+            "pronunciation": "ˈɪmɪdʒ ˈprɑːsesɪŋ",
+            "meaning": "图像处理"
+          },
+          {
+            "word": "filter",
+            "pronunciation": "ˈfɪltər",
+            "meaning": "滤镜"
+          },
+          {
+            "word": "transform",
+            "pronunciation": "trænsˈfɔːrm",
+            "meaning": "变换"
+          }
+        ]
+      },
+      {
+        "name": "第一一九组 - 应用状态",
+        "description": "应用状态",
+        "vocabs": [
+          {
+            "word": "app delegate",
+            "pronunciation": "æp ˈdelɪɡət",
+            "meaning": "应用代理"
+          },
+          {
+            "word": "application",
+            "pronunciation": "ˌæplɪˈkeɪʃn",
+            "meaning": "应用程序"
+          },
+          {
+            "word": "scene",
+            "pronunciation": "siːn",
+            "meaning": "场景"
+          },
+          {
+            "word": "scene delegate",
+            "pronunciation": "siːn ˈdelɪɡət",
+            "meaning": "场景代理"
+          },
+          {
+            "word": "lifecycle",
+            "pronunciation": "ˈlaɪfsaɪkl",
+            "meaning": "生命周期"
+          }
+        ]
+      },
+      {
+        "name": "第一二〇组 - 应用启动",
+        "description": "应用启动",
+        "vocabs": [
+          {
+            "word": "launch",
+            "pronunciation": "lɔːntʃ",
+            "meaning": "启动"
+          },
+          {
+            "word": "launch screen",
+            "pronunciation": "lɔːntʃ skriːn",
+            "meaning": "启动屏幕"
+          },
+          {
+            "word": "cold start",
+            "pronunciation": "koʊld stɑːrt",
+            "meaning": "冷启动"
+          },
+          {
+            "word": "warm start",
+            "pronunciation": "wɔːrm stɑːrt",
+            "meaning": "热启动"
+          },
+          {
+            "word": "initialization",
+            "pronunciation": "ɪˌnɪʃələˈzeɪʃn",
+            "meaning": "初始化"
+          }
+        ]
+      },
+      {
+        "name": "第一二一组 - 应用状态转换",
+        "description": "应用状态转换",
+        "vocabs": [
+          {
+            "word": "will finish launching",
+            "pronunciation": "wɪl ˈfɪnɪʃ ˈlɔːntʃɪŋ",
+            "meaning": "将要启动完成"
+          },
+          {
+            "word": "did finish launching",
+            "pronunciation": "dɪd ˈfɪnɪʃ ˈlɔːntʃɪŋ",
+            "meaning": "已启动完成"
+          },
+          {
+            "word": "will resign active",
+            "pronunciation": "wɪl rɪˈzaɪn ˈæktɪv",
+            "meaning": "将要失去活跃"
+          },
+          {
+            "word": "did become active",
+            "pronunciation": "dɪd bɪˈkʌm ˈæktɪv",
+            "meaning": "已变得活跃"
+          },
+          {
+            "word": "will enter foreground",
+            "pronunciation": "wɪl ˈentər ˈfɔːrɡraʊnd",
+            "meaning": "将要进入前台"
+          },
+          {
+            "word": "will enter background",
+            "pronunciation": "wɪl ˈentər ˈbækɡraʊnd",
+            "meaning": "将要进入后台"
+          },
+          {
+            "word": "will terminate",
+            "pronunciation": "wɪl ˈtɜːrmɪneɪt",
+            "meaning": "将要终止"
+          }
+        ]
+      },
+      {
+        "name": "第一二二组 - 权限管理",
+        "description": "权限管理",
+        "vocabs": [
+          {
+            "word": "permission",
+            "pronunciation": "pərˈmɪʃn",
+            "meaning": "权限"
+          },
+          {
+            "word": "authorization",
+            "pronunciation": "ˌɔːθərəˈzeɪʃn",
+            "meaning": "授权"
+          },
+          {
+            "word": "grant",
+            "pronunciation": "ɡrænt",
+            "meaning": "授予"
+          },
+          {
+            "word": "deny",
+            "pronunciation": "dɪˈnaɪ",
+            "meaning": "拒绝"
+          },
+          {
+            "word": "restrict",
+            "pronunciation": "rɪˈstrɪkt",
+            "meaning": "限制"
+          }
+        ]
+      },
+      {
+        "name": "第一二三组 - 常见权限",
+        "description": "常见权限",
+        "vocabs": [
+          {
+            "word": "camera permission",
+            "pronunciation": "ˈkæmərə pərˈmɪʃn",
+            "meaning": "摄像头权限"
+          },
+          {
+            "word": "microphone permission",
+            "pronunciation": "ˈmaɪkrəfoʊn pərˈmɪʃn",
+            "meaning": "麦克风权限"
+          },
+          {
+            "word": "location permission",
+            "pronunciation": "loʊˈkeɪʃn pərˈmɪʃn",
+            "meaning": "位置权限"
+          },
+          {
+            "word": "photo library permission",
+            "pronunciation": "ˈfoʊtoʊ ˈlaɪbreri pərˈmɪʃn",
+            "meaning": "照片库权限"
+          },
+          {
+            "word": "notification permission",
+            "pronunciation": "ˌnoʊtɪfɪˈkeɪʃn pərˈmɪʃn",
+            "meaning": "通知权限"
+          }
+        ]
+      },
+      {
+        "name": "第一二四组 - 安全相关",
+        "description": "安全相关",
+        "vocabs": [
+          {
+            "word": "security",
+            "pronunciation": "sɪˈkjʊrəti",
+            "meaning": "安全性"
+          },
+          {
+            "word": "encryption",
+            "pronunciation": "ɪnˈkrɪpʃn",
+            "meaning": "加密"
+          },
+          {
+            "word": "decryption",
+            "pronunciation": "diːkrɪpʃn",
+            "meaning": "解密"
+          },
+          {
+            "word": "keychain",
+            "pronunciation": "ˈkiːtʃeɪn",
+            "meaning": "钥匙串"
+          },
+          {
+            "word": "secure enclave",
+            "pronunciation": "sɪˈkjʊr ɪnˈkleɪv",
+            "meaning": "安全飞地"
+          }
+        ]
+      },
+      {
+        "name": "第一二五组 - App安全",
+        "description": "App安全",
+        "vocabs": [
+          {
+            "word": "sandbox",
+            "pronunciation": "ˈsændbɑːks",
+            "meaning": "沙盒"
+          },
+          {
+            "word": "code signing",
+            "pronunciation": "koʊd ˈsaɪnɪŋ",
+            "meaning": "代码签名"
+          },
+          {
+            "word": "provisioning profile",
+            "pronunciation": "prəˈvɪʒənɪŋ ˈproʊfaɪl",
+            "meaning": "供应配置文件"
+          },
+          {
+            "word": "entitlement",
+            "pronunciation": "ɪnˈtaɪtlmənt",
+            "meaning": "权限属性"
+          },
+          {
+            "word": "app id",
+            "pronunciation": "æp aɪ diː",
+            "meaning": "应用标识符"
+          }
+        ]
+      },
+      {
+        "name": "第一二六组 - 应用商店",
+        "description": "应用商店",
+        "vocabs": [
+          {
+            "word": "app store",
+            "pronunciation": "æp stɔːr",
+            "meaning": "应用商店"
+          },
+          {
+            "word": "testflight",
+            "pronunciation": "test flaɪt",
+            "meaning": "TestFlight测试"
+          },
+          {
+            "word": "beta",
+            "pronunciation": "ˈbeɪtə",
+            "meaning": "测试版"
+          },
+          {
+            "word": "release",
+            "pronunciation": "rɪˈliːs",
+            "meaning": "发布"
+          },
+          {
+            "word": "submit",
+            "pronunciation": "səbˈmɪt",
+            "meaning": "提交"
+          }
+        ]
+      },
+      {
+        "name": "第一二七组 - 构建与打包",
+        "description": "构建与打包",
+        "vocabs": [
+          {
+            "word": "build",
+            "pronunciation": "bɪld",
+            "meaning": "构建"
+          },
+          {
+            "word": "archive",
+            "pronunciation": "ˈɑːrkaɪv",
+            "meaning": "归档"
+          },
+          {
+            "word": "export",
+            "pronunciation": "ɪkˈspɔːrt",
+            "meaning": "导出"
+          },
+          {
+            "word": "ipa",
+            "pronunciation": "aɪ piː eɪ",
+            "meaning": "iOS应用包"
+          },
+          {
+            "word": "bundle id",
+            "pronunciation": "ˈbʌndl aɪ diː",
+            "meaning": "应用包标识符"
+          }
+        ]
+      },
+      {
+        "name": "第一二八组 - 版本管理",
+        "description": "版本管理",
+        "vocabs": [
+          {
+            "word": "version",
+            "pronunciation": "ˈvɜːrʒn",
+            "meaning": "版本号"
+          },
+          {
+            "word": "build number",
+            "pronunciation": "bɪld ˈnʌmbər",
+            "meaning": "构建号"
+          },
+          {
+            "word": "changelog",
+            "pronunciation": "ˈtʃeɪndʒlɔːɡ",
+            "meaning": "更新日志"
+          },
+          {
+            "word": "upgrade",
+            "pronunciation": "ʌpˈɡreɪd",
+            "meaning": "升级"
+          },
+          {
+            "word": "downgrade",
+            "pronunciation": "ˌdaʊnˈɡreɪd",
+            "meaning": "降级"
+          }
+        ]
+      },
+      {
+        "name": "第一二九组 - 应用审核",
+        "description": "应用审核",
+        "vocabs": [
+          {
+            "word": "review",
+            "pronunciation": "rɪˈvjuː",
+            "meaning": "审核"
+          },
+          {
+            "word": "reject",
+            "pronunciation": "rɪˈdʒekt",
+            "meaning": "拒绝"
+          },
+          {
+            "word": "approve",
+            "pronunciation": "əˈpruːv",
+            "meaning": "批准"
+          },
+          {
+            "word": "guideline",
+            "pronunciation": "ˈɡaɪdlaɪn",
+            "meaning": "审核指南"
+          },
+          {
+            "word": "appeal",
+            "pronunciation": "əˈpiːl",
+            "meaning": "申诉"
+          }
+        ]
+      },
+      {
+        "name": "第一三〇组 - MapKit相关",
+        "description": "MapKit相关",
+        "vocabs": [
+          {
+            "word": "mapkit",
+            "pronunciation": "mæp kɪt",
+            "meaning": "MapKit地图框架"
+          },
+          {
+            "word": "map view",
+            "pronunciation": "mæp vjuː",
+            "meaning": "地图视图"
+          },
+          {
+            "word": "annotation",
+            "pronunciation": "ˌænəˈteɪʃn",
+            "meaning": "标注"
+          },
+          {
+            "word": "pin",
+            "pronunciation": "pɪn",
+            "meaning": "大头针"
+          },
+          {
+            "word": "coordinate",
+            "pronunciation": "koʊˈɔːrdɪneɪt",
+            "meaning": "坐标"
+          }
+        ]
+      },
+      {
+        "name": "第一三一组 - MapKit进阶",
+        "description": "MapKit进阶",
+        "vocabs": [
+          {
+            "word": "region",
+            "pronunciation": "ˈriːdʒən",
+            "meaning": "区域"
+          },
+          {
+            "word": "center",
+            "pronunciation": "ˈsentər",
+            "meaning": "中心点"
+          },
+          {
+            "word": "span",
+            "pronunciation": "spæn",
+            "meaning": "跨度"
+          },
+          {
+            "word": "zoom",
+            "pronunciation": "zuːm",
+            "meaning": "缩放"
+          },
+          {
+            "word": "user location",
+            "pronunciation": "ˈjuːzər loʊˈkeɪʃn",
+            "meaning": "用户位置"
+          }
+        ]
+      },
+      {
+        "name": "第一三二组 - Core Location",
+        "description": "Core Location",
+        "vocabs": [
+          {
+            "word": "core location",
+            "pronunciation": "kɔːr loʊˈkeɪʃn",
+            "meaning": "Core Location定位框架"
+          },
+          {
+            "word": "location manager",
+            "pronunciation": "loʊˈkeɪʃn ˈmænɪdʒər",
+            "meaning": "位置管理器"
+          },
+          {
+            "word": "desired accuracy",
+            "pronunciation": "dɪˈzaɪərd ˈækjərəsi",
+            "meaning": "期望精度"
+          },
+          {
+            "word": "distance filter",
+            "pronunciation": "ˈdɪstəns ˈfɪltər",
+            "meaning": "距离过滤器"
+          },
+          {
+            "word": "location service",
+            "pronunciation": "loʊˈkeɪʃn ˈsɜːrvɪs",
+            "meaning": "定位服务"
+          }
+        ]
+      },
+      {
+        "name": "第一三三组 - 位置权限",
+        "description": "位置权限",
+        "vocabs": [
+          {
+            "word": "when in use",
+            "pronunciation": "wen ɪn juːs",
+            "meaning": "使用时"
+          },
+          {
+            "word": "always",
+            "pronunciation": "ɔːlˈweɪz",
+            "meaning": "始终"
+          },
+          {
+            "word": "authorization status",
+            "pronunciation": "ˌɔːθərəˈzeɪʃn ˈsteɪtəs",
+            "meaning": "授权状态"
+          }
+        ]
+      },
+      {
+        "name": "第一三四组 - CloudKit",
+        "description": "CloudKit",
+        "vocabs": [
+          {
+            "word": "cloudkit",
+            "pronunciation": "klaʊd kɪt",
+            "meaning": "CloudKit云服务框架"
+          },
+          {
+            "word": "container",
+            "pronunciation": "kənˈteɪnər",
+            "meaning": "容器"
+          },
+          {
+            "word": "record",
+            "pronunciation": "ˈrekərd",
+            "meaning": "记录"
+          },
+          {
+            "word": "zone",
+            "pronunciation": "zoʊn",
+            "meaning": "区域"
+          }
+        ]
+      },
+      {
+        "name": "第一三五组 - HealthKit",
+        "description": "HealthKit",
+        "vocabs": [
+          {
+            "word": "healthkit",
+            "pronunciation": "helθ kɪt",
+            "meaning": "HealthKit健康框架"
+          },
+          {
+            "word": "health store",
+            "pronunciation": "helθ stɔːr",
+            "meaning": "健康数据存储"
+          },
+          {
+            "word": "anchor",
+            "pronunciation": "ˈæŋkər",
+            "meaning": "锚点"
+          },
+          {
+            "word": "statistics",
+            "pronunciation": "stəˈtɪstɪks",
+            "meaning": "统计数据"
+          }
+        ]
+      },
+      {
+        "name": "第一三六组 - HomeKit",
+        "description": "HomeKit",
+        "vocabs": [
+          {
+            "word": "homekit",
+            "pronunciation": "hoʊm kɪt",
+            "meaning": "HomeKit智能家居框架"
+          },
+          {
+            "word": "home",
+            "pronunciation": "hoʊm",
+            "meaning": "家庭"
+          },
+          {
+            "word": "room",
+            "pronunciation": "ruːm",
+            "meaning": "房间"
+          },
+          {
+            "word": "accessory",
+            "pronunciation": "əkˈsesəri",
+            "meaning": "配件"
+          }
+        ]
+      },
+      {
+        "name": "第一三七组 - AR与3D",
+        "description": "AR与3D",
+        "vocabs": [
+          {
+            "word": "arkit",
+            "pronunciation": "ɑːr kɪt",
+            "meaning": "ARKit增强现实框架"
+          },
+          {
+            "word": "scene kit",
+            "pronunciation": "siːn kɪt",
+            "meaning": "SceneKit 3D框架"
+          },
+          {
+            "word": "reality kit",
+            "pronunciation": "riːˈæləti kɪt",
+            "meaning": "RealityKit AR框架"
+          },
+          {
+            "word": "sprite kit",
+            "pronunciation": "ˈspraɪt kɪt",
+            "meaning": "SpriteKit 2D游戏框架"
+          },
+          {
+            "word": "node",
+            "pronunciation": "noʊd",
+            "meaning": "节点"
+          },
+          {
+            "word": "mesh",
+            "pronunciation": "meʃ",
+            "meaning": "网格"
+          },
+          {
+            "word": "material",
+            "pronunciation": "məˈtiːriəl",
+            "meaning": "材质"
+          },
+          {
+            "word": "light",
+            "pronunciation": "laɪt",
+            "meaning": "光照"
+          }
+        ]
+      },
+      {
+        "name": "第一三八组 - WidgetKit",
+        "description": "WidgetKit",
+        "vocabs": [
+          {
+            "word": "widgetkit",
+            "pronunciation": "ˈwɪdʒɪt kɪt",
+            "meaning": "WidgetKit小组件框架"
+          },
+          {
+            "word": "widget configuration",
+            "pronunciation": "ˈwɪdʒɪt kənˌfɪɡjʊˈreɪʃn",
+            "meaning": "小组件配置"
+          },
+          {
+            "word": "timeline provider",
+            "pronunciation": "ˈtaɪmlaɪn prəˈvaɪdər",
+            "meaning": "时间线提供者"
+          },
+          {
+            "word": "intent",
+            "pronunciation": "ɪnˈtent",
+            "meaning": "意图"
+          }
+        ]
+      },
+      {
+        "name": "第一三九组 - App Clip",
+        "description": "App Clip",
+        "vocabs": [
+          {
+            "word": "app clip",
+            "pronunciation": "æp klɪp",
+            "meaning": "App Clip轻应用"
+          },
+          {
+            "word": "on demand",
+            "pronunciation": "ɑːn dɪˈmænd",
+            "meaning": "按需加载"
+          },
+          {
+            "word": "invocation",
+            "pronunciation": "ˌɪnvəˈkeɪʃn",
+            "meaning": "调用"
+          },
+          {
+            "word": "launch experience",
+            "pronunciation": "lɔːntʃ ɪkˈspɪəriəns",
+            "meaning": "启动体验"
+          }
+        ]
+      },
+      {
+        "name": "第一四〇组 - 依赖管理工具",
+        "description": "依赖管理工具",
+        "vocabs": [
+          {
+            "word": "cocoapods",
+            "pronunciation": "ˈkoʊkoʊpɒdz",
+            "meaning": "CocoaPods依赖管理器"
+          },
+          {
+            "word": "spm",
+            "pronunciation": "es piː em",
+            "meaning": "Swift Package Manager"
+          },
+          {
+            "word": "carthage",
+            "pronunciation": "ˈkɑːrtɪdʒ",
+            "meaning": "Carthage依赖管理器"
+          },
+          {
+            "word": "podfile",
+            "pronunciation": "ˈpɒdfaɪl",
+            "meaning": "Pod配置文件"
+          },
+          {
+            "word": "pod install",
+            "pronunciation": "pɒd ɪnˈstɔːl",
+            "meaning": "安装依赖"
+          },
+          {
+            "word": "swift package",
+            "pronunciation": "swɪft ˈpækɪdʒ",
+            "meaning": "Swift包"
+          },
+          {
+            "word": "package manifest",
+            "pronunciation": "ˈpækdʒ ˈmænɪfest",
+            "meaning": "包清单"
+          },
+          {
+            "word": "dependency graph",
+            "pronunciation": "dɪˈpendənsi ɡræf",
+            "meaning": "依赖图"
+          }
+        ]
+      },
+      {
+        "name": "第一四一组 - 编译与构建",
+        "description": "编译与构建",
+        "vocabs": [
+          {
+            "word": "compilation",
+            "pronunciation": "ˌkɑːmpɪˈleɪʃn",
+            "meaning": "编译"
+          },
+          {
+            "word": "optimization",
+            "pronunciation": "ˌɑːptɪmɪˈzeɪʃn",
+            "meaning": "优化"
+          },
+          {
+            "word": "linker",
+            "pronunciation": "ˈlɪŋkər",
+            "meaning": "链接器"
+          },
+          {
+            "word": "compiler",
+            "pronunciation": "kəmˈpaɪlər",
+            "meaning": "编译器"
+          },
+          {
+            "word": "preprocessor",
+            "pronunciation": "priːˈprɑːsesər",
+            "meaning": "预处理器"
+          },
+          {
+            "word": "bitcode",
+            "pronunciation": "ˈbɪtkoʊd",
+            "meaning": "Bitcode"
+          }
+        ]
+      },
+      {
+        "name": "第一四二组 - 链接库",
+        "description": "链接库",
+        "vocabs": [
+          {
+            "word": "framework",
+            "pronunciation": "ˈfreɪmwɜːrk",
+            "meaning": "框架"
+          },
+          {
+            "word": "library",
+            "pronunciation": "ˈlaɪbreri",
+            "meaning": "库"
+          },
+          {
+            "word": "static library",
+            "pronunciation": "ˈstætɪk ˈlaɪbreri",
+            "meaning": "静态库"
+          },
+          {
+            "word": "dynamic library",
+            "pronunciation": "daɪˈnæmɪk ˈlaɪbreri",
+            "meaning": "动态库"
+          },
+          {
+            "word": "dependency",
+            "pronunciation": "dɪˈpendənsi",
+            "meaning": "依赖"
+          }
+        ]
+      },
+      {
+        "name": "第一四三组 - 国际化",
+        "description": "国际化",
+        "vocabs": [
+          {
+            "word": "localization",
+            "pronunciation": "ˌloʊkəlaɪˈzeɪʃn",
+            "meaning": "本地化"
+          },
+          {
+            "word": "internationalization",
+            "pronunciation": "ˌɪntərˌnæʃənəlaɪˈzeɪʃn",
+            "meaning": "国际化"
+          },
+          {
+            "word": "string catalog",
+            "pronunciation": "strɪŋ ˈkætəlɔːɡ",
+            "meaning": "字符串目录"
+          },
+          {
+            "word": "locale",
+            "pronunciation": "loʊˈkeɪl",
+            "meaning": "语言区域"
+          },
+          {
+            "word": "translation",
+            "pronunciation": "trænzˈleɪʃn",
+            "meaning": "翻译"
+          }
+        ]
+      },
+      {
+        "name": "第一四四组 - 辅助功能",
+        "description": "辅助功能",
+        "vocabs": [
+          {
+            "word": "accessibility",
+            "pronunciation": "əkˌsesəˈbɪləti",
+            "meaning": "辅助功能"
+          },
+          {
+            "word": "voiceover",
+            "pronunciation": "vɔɪs ˈoʊvər",
+            "meaning": "旁白"
+          },
+          {
+            "word": "dynamic type",
+            "pronunciation": "daɪˈnæmɪk taɪp",
+            "meaning": "动态字体"
+          },
+          {
+            "word": "accessibility trait",
+            "pronunciation": "əkˌsesəˈbɪləti treɪt",
+            "meaning": "辅助功能特征"
+          },
+          {
+            "word": "accessibility label",
+            "pronunciation": "əkˌsesəˈbɪləti ˈleɪbl",
+            "meaning": "辅助功能标签"
+          }
+        ]
+      },
+      {
+        "name": "第一四五组 - Widget与Extension",
+        "description": "Widget与Extension",
+        "vocabs": [
+          {
+            "word": "widget",
+            "pronunciation": "ˈwɪdʒɪt",
+            "meaning": "小组件"
+          },
+          {
+            "word": "extension",
+            "pronunciation": "ɪkˈstenʃn",
+            "meaning": "扩展"
+          },
+          {
+            "word": "app extension",
+            "pronunciation": "æp ɪkˈstenʃn",
+            "meaning": "应用扩展"
+          },
+          {
+            "word": "share extension",
+            "pronunciation": "ʃer ɪkˈstenʃn",
+            "meaning": "分享扩展"
+          }
+        ]
+      },
+      {
+        "name": "第一四六组 - 其他高级特性",
+        "description": "其他高级特性",
+        "vocabs": [
+          {
+            "word": "drag and drop",
+            "pronunciation": "dræɡ ænd drɑːp",
+            "meaning": "拖放"
+          },
+          {
+            "word": "multitasking",
+            "pronunciation": "ˌmʌltiˈtæskɪŋ",
+            "meaning": "多任务"
+          },
+          {
+            "word": "handoff",
+            "pronunciation": "ˈhændɔːf",
+            "meaning": "接续互通"
+          },
+          {
+            "word": "siri",
+            "pronunciation": "ˈsɪri",
+            "meaning": "Siri语音助手"
+          },
+          {
+            "word": "shortcuts",
+            "pronunciation": "ˈʃɔːrtkʌts",
+            "meaning": "快捷指令"
+          }
+        ]
+      },
+      {
+        "name": "第一四七组 - async/await",
+        "description": "async/await",
+        "vocabs": [
+          {
+            "word": "async",
+            "pronunciation": "eɪˈsɪŋk",
+            "meaning": "异步函数"
+          },
+          {
+            "word": "await",
+            "pronunciation": "əˈweɪt",
+            "meaning": "等待"
+          },
+          {
+            "word": "throws",
+            "pronunciation": "θroʊz",
+            "meaning": "抛出错误"
+          },
+          {
+            "word": "async sequence",
+            "pronunciation": "eɪˈsɪŋk ˈsiːkwəns",
+            "meaning": "异步序列"
+          }
+        ]
+      },
+      {
+        "name": "第一四八组 - Actor",
+        "description": "Actor",
+        "vocabs": [
+          {
+            "word": "actor",
+            "pronunciation": "ˈæktər",
+            "meaning": "Actor"
+          },
+          {
+            "word": "isolated",
+            "pronunciation": "ˈaɪsəleɪtɪd",
+            "meaning": "隔离的"
+          },
+          {
+            "word": "nonisolated",
+            "pronunciation": "ˌnɒnˈaɪsəleɪtɪd",
+            "meaning": "非隔离的"
+          },
+          {
+            "word": "sendable",
+            "pronunciation": "ˈsendəbl",
+            "meaning": "可发送的"
+          },
+          {
+            "word": "main actor",
+            "pronunciation": "meɪn ˈæktər",
+            "meaning": "主 Actor"
+          }
+        ]
+      },
+      {
+        "name": "第一四九组 - Structured Concurrency",
+        "description": "Structured Concurrency",
+        "vocabs": [
+          {
+            "word": "with task group",
+            "pronunciation": "wɪð tæsk ɡruːp",
+            "meaning": "任务组"
+          },
+          {
+            "word": "detach",
+            "pronunciation": "dɪˈtætʃ",
+            "meaning": "分离任务"
+          },
+          {
+            "word": "cancellation",
+            "pronunciation": "ˌkænsəˈleɪʃn",
+            "meaning": "取消"
+          },
+          {
+            "word": "priority",
+            "pronunciation": "praɪˈɔːrəti",
+            "meaning": "优先级"
+          },
+          {
+            "word": "task local",
+            "pronunciation": "tæsk loʊkl",
+            "meaning": "任务本地存储"
+          }
+        ]
+      },
+      {
+        "name": "第一五〇组 - Swift Concurrency进阶",
+        "description": "Swift Concurrency进阶",
+        "vocabs": [
+          {
+            "word": "task",
+            "pronunciation": "tæsk",
+            "meaning": "任务"
+          },
+          {
+            "word": "async let",
+            "pronunciation": "eɪˈsɪŋk let",
+            "meaning": "异步变量绑定"
+          },
+          {
+            "word": "task group",
+            "pronunciation": "tæsk ɡruːp",
+            "meaning": "任务组"
+          },
+          {
+            "word": "checked continuation",
+            "pronunciation": "tʃekt kənˈtɪnjuːeɪʃn",
+            "meaning": "检查型续体"
+          },
+          {
+            "word": "unsafe continuation",
+            "pronunciation": "ˌʌnseɪf kənˈtɪnjuːeɪʃn",
+            "meaning": "非安全续体"
+          },
+          {
+            "word": "acquire release",
+            "pronunciation": "əˈkwaɪər rɪˈliːs",
+            "meaning": "获取释放语义"
+          },
+          {
+            "word": "actor isolation",
+            "pronunciation": "ˈæktər ˌaɪsəˈleɪʃn",
+            "meaning": "Actor隔离"
+          }
+        ]
+      },
+      {
+        "name": "第一五一组 - Git基础",
+        "description": "Git基础",
+        "vocabs": [
+          {
+            "word": "git",
+            "pronunciation": "ɡɪt",
+            "meaning": "Git版本控制系统"
+          },
+          {
+            "word": "repository",
+            "pronunciation": "rɪˈpɑːzətɔːri",
+            "meaning": "代码仓库"
+          },
+          {
+            "word": "commit",
+            "pronunciation": "kəˈmɪt",
+            "meaning": "提交"
+          },
+          {
+            "word": "branch",
+            "pronunciation": "bræntʃ",
+            "meaning": "分支"
+          },
+          {
+            "word": "merge",
+            "pronunciation": "mɜːrdʒ",
+            "meaning": "合并"
+          }
+        ]
+      },
+      {
+        "name": "第一五二组 - Git操作",
+        "description": "Git操作",
+        "vocabs": [
+          {
+            "word": "pull request",
+            "pronunciation": "pʊl rɪˈkwest",
+            "meaning": "拉取请求"
+          },
+          {
+            "word": "code review",
+            "pronunciation": "koʊd rɪˈvjuː",
+            "meaning": "代码审查"
+          },
+          {
+            "word": "fork",
+            "pronunciation": "fɔːrk",
+            "meaning": "分叉"
+          },
+          {
+            "word": "clone",
+            "pronunciation": "kloʊn",
+            "meaning": "克隆"
+          },
+          {
+            "word": "push",
+            "pronunciation": "pʊʃ",
+            "meaning": "推送"
+          }
+        ]
+      },
+      {
+        "name": "第一五三组 - Git进阶",
+        "description": "Git进阶",
+        "vocabs": [
+          {
+            "word": "rebase",
+            "pronunciation": "riːˈbeɪs",
+            "meaning": "变基"
+          },
+          {
+            "word": "cherry pick",
+            "pronunciation": "ˈtʃeri pɪk",
+            "meaning": "拣选"
+          },
+          {
+            "word": "stash",
+            "pronunciation": "stæʃ",
+            "meaning": "暂存"
+          },
+          {
+            "word": "reset",
+            "pronunciation": "rɪˈset",
+            "meaning": "重置"
+          },
+          {
+            "word": "revert",
+            "pronunciation": "rɪˈvɜːrt",
+            "meaning": "撤销"
+          },
+          {
+            "word": "conflict",
+            "pronunciation": "ˈkɑːnflɪkt",
+            "meaning": "冲突"
+          },
+          {
+            "word": "diff",
+            "pronunciation": "dɪf",
+            "meaning": "差异"
+          },
+          {
+            "word": "log",
+            "pronunciation": "lɔːɡ",
+            "meaning": "日志"
+          }
+        ]
+      },
+      {
+        "name": "第一五四组 - URLComponents",
+        "description": "URLComponents",
+        "vocabs": [
+          {
+            "word": "url components",
+            "pronunciation": "juː ar el kəmˈpoʊnənts",
+            "meaning": "URL组件"
+          },
+          {
+            "word": "scheme",
+            "pronunciation": "skiːm",
+            "meaning": "协议"
+          },
+          {
+            "word": "host",
+            "pronunciation": "hoʊst",
+            "meaning": "主机"
+          },
+          {
+            "word": "port",
+            "pronunciation": "pɔːrt",
+            "meaning": "端口"
+          },
+          {
+            "word": "query items",
+            "pronunciation": "ˈkweri ˈaɪtəmz",
+            "meaning": "查询参数"
+          },
+          {
+            "word": "percent encoding",
+            "pronunciation": "pərˈsent ɪnˈkoʊdɪŋ",
+            "meaning": "百分号编码"
+          }
+        ]
+      },
+      {
+        "name": "第一五五组 - 标准库概念",
+        "description": "标准库概念",
+        "vocabs": [
+          {
+            "word": "standard library",
+            "pronunciation": "ˈstændərd ˈlaɪbreri",
+            "meaning": "标准库"
+          },
+          {
+            "word": "dispatch",
+            "pronunciation": "dɪˈspætʃ",
+            "meaning": "分发"
+          },
+          {
+            "word": "simd",
+            "pronunciation": "sɪmdi",
+            "meaning": "SIMD向量数学"
+          }
+        ]
+      },
+      {
+        "name": "第一五六组 - 代码质量",
+        "description": "代码质量",
+        "vocabs": [
+          {
+            "word": "refactor",
+            "pronunciation": "riːˈfæktər",
+            "meaning": "重构"
+          },
+          {
+            "word": "lint",
+            "pronunciation": "lɪnt",
+            "meaning": "代码检查"
+          },
+          {
+            "word": "technical debt",
+            "pronunciation": "ˈteknɪkl det",
+            "meaning": "技术债务"
+          },
+          {
+            "word": "code smell",
+            "pronunciation": "koʊd smel",
+            "meaning": "代码异味"
+          },
+          {
+            "word": "best practice",
+            "pronunciation": "best ˈpræktɪs",
+            "meaning": "最佳实践"
+          }
+        ]
+      },
+      {
+        "name": "第一五七组 - 通用编程概念",
+        "description": "通用编程概念",
+        "vocabs": [
+          {
+            "word": "algorithm",
+            "pronunciation": "ˈælɡərɪðəm",
+            "meaning": "算法"
+          },
+          {
+            "word": "data structure",
+            "pronunciation": "ˈdeɪtə ˈstrʌktʃər",
+            "meaning": "数据结构"
+          },
+          {
+            "word": "complexity",
+            "pronunciation": "kəmˈpleksəti",
+            "meaning": "复杂度"
+          },
+          {
+            "word": "optimize",
+            "pronunciation": "ˈɑːptɪmaɪz",
+            "meaning": "优化"
+          },
+          {
+            "word": "debug",
+            "pronunciation": "diːˈbʌɡ",
+            "meaning": "调试"
+          }
+        ]
+      },
+      {
+        "name": "第一五八组 - WWDC相关",
+        "description": "WWDC相关",
+        "vocabs": [
+          {
+            "word": "wwdc",
+            "pronunciation": "dʌbəl juː diː siː",
+            "meaning": "全球开发者大会"
+          },
+          {
+            "word": "session",
+            "pronunciation": "ˈseʃn",
+            "meaning": "演讲"
+          },
+          {
+            "word": "lab",
+            "pronunciation": "læb",
+            "meaning": "实验区"
+          },
+          {
+            "word": "workshop",
+            "pronunciation": "ˈwɜːrkʃɑːp",
+            "meaning": "工作坊"
+          }
+        ]
+      },
+      {
+        "name": "第一五九组 - TextKit与PDFKit",
+        "description": "TextKit与PDFKit",
+        "vocabs": [
+          {
+            "word": "textkit",
+            "pronunciation": "tekst kɪt",
+            "meaning": "TextKit文本框架"
+          },
+          {
+            "word": "text storage",
+            "pronunciation": "tekst ˈstɔːrɪdʒ",
+            "meaning": "文本存储"
+          },
+          {
+            "word": "layout manager",
+            "pronunciation": "ˈleɪaʊt ˈmænɪdʒər",
+            "meaning": "布局管理器"
+          },
+          {
+            "word": "text container",
+            "pronunciation": "tekst kənˈteɪnər",
+            "meaning": "文本容器"
+          },
+          {
+            "word": "glyph",
+            "pronunciation": "ɡliːf",
+            "meaning": "字形"
+          },
+          {
+            "word": "pdfkit",
+            "pronunciation": "piː diː ef kɪt",
+            "meaning": "PDFKit框架"
+          },
+          {
+            "word": "pdf document",
+            "pronunciation": "piː diː ef ˈdɑːkjəmənt",
+            "meaning": "PDF文档"
+          },
+          {
+            "word": "pdf page",
+            "pronunciation": "piː diː ef peɪdʒ",
+            "meaning": "PDF页面"
+          },
+          {
+            "word": "pdf view",
+            "pronunciation": "piː diː ef vjuː",
+            "meaning": "PDF视图"
+          }
+        ]
+      },
+      {
+        "name": "第一六〇组 - Metal与GPU",
+        "description": "Metal与GPU",
+        "vocabs": [
+          {
+            "word": "metal",
+            "pronunciation": "ˈmetl",
+            "meaning": "Metal图形框架"
+          },
+          {
+            "word": "shader",
+            "pronunciation": "ˈʃeɪdər",
+            "meaning": "着色器"
+          },
+          {
+            "word": "pipeline",
+            "pronunciation": "ˈpaɪplaɪn",
+            "meaning": "管线"
+          },
+          {
+            "word": "vertex",
+            "pronunciation": "ˈvɜːrteks",
+            "meaning": "顶点"
+          },
+          {
+            "word": "fragment",
+            "pronunciation": "ˈfræɡmənt",
+            "meaning": "片元"
+          },
+          {
+            "word": "texture",
+            "pronunciation": "ˈtekstʃər",
+            "meaning": "纹理"
+          }
+        ]
+      },
+      {
+        "name": "第一六一组 - PencilKit",
+        "description": "PencilKit",
+        "vocabs": [
+          {
+            "word": "pencilkit",
+            "pronunciation": "ˈpensl kɪt",
+            "meaning": "PencilKit绘图框架"
+          },
+          {
+            "word": "canvas",
+            "pronunciation": "ˈkænvəs",
+            "meaning": "画布"
+          },
+          {
+            "word": "ink",
+            "pronunciation": "ɪŋk",
+            "meaning": "墨迹"
+          },
+          {
+            "word": "pencil",
+            "pronunciation": "ˈpensl",
+            "meaning": "Apple Pencil"
+          },
+          {
+            "word": "drawing",
+            "pronunciation": "ˈdrɔːɪŋ",
+            "meaning": "绘图"
+          },
+          {
+            "word": "stroke",
+            "pronunciation": "stroʊk",
+            "meaning": "笔触"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "harmonyos开发完整词汇",
+    "name": "HarmonyOS 开发完整技术词汇大全",
+    "description": "HarmonyOS 开发完整技术词汇大全相关词汇",
+    "sections": [
+      {
+        "name": "第一组 - 语言核心概念",
+        "description": "语言核心概念",
+        "vocabs": [
+          {
+            "word": "typescript",
+            "pronunciation": "ˈtaɪpˌskrɪpt",
+            "meaning": "TypeScript语言"
+          },
+          {
+            "word": "arkts",
+            "pronunciation": "ɑːrk tiː es",
+            "meaning": "ArkTS语言"
+          },
+          {
+            "word": "syntax",
+            "pronunciation": "ˈsɪntæks",
+            "meaning": "语法"
+          },
+          {
+            "word": "semantics",
+            "pronunciation": "sɪˈmæntɪks",
+            "meaning": "语义"
+          },
+          {
+            "word": "variable",
+            "pronunciation": "ˈveriəbl",
+            "meaning": "变量"
+          }
+        ]
+      },
+      {
+        "name": "第二组 - 数据类型",
+        "description": "数据类型",
+        "vocabs": [
+          {
+            "word": "string",
+            "pronunciation": "strɪŋ",
+            "meaning": "字符串"
+          },
+          {
+            "word": "number",
+            "pronunciation": "ˈnʌmbər",
+            "meaning": "数字"
+          },
+          {
+            "word": "boolean",
+            "pronunciation": "ˈbuːliən",
+            "meaning": "布尔值"
+          },
+          {
+            "word": "array",
+            "pronunciation": "əˈreɪ",
+            "meaning": "数组"
+          },
+          {
+            "word": "object",
+            "pronunciation": "ˈɑːbdʒekt",
+            "meaning": "对象"
+          }
+        ]
+      },
+      {
+        "name": "第三组 - 集合与泛型",
+        "description": "集合与泛型",
+        "vocabs": [
+          {
+            "word": "tuple",
+            "pronunciation": "ˈtuːpl",
+            "meaning": "元组"
+          },
+          {
+            "word": "enum",
+            "pronunciation": "ˈiːnʌm",
+            "meaning": "枚举"
+          },
+          {
+            "word": "union",
+            "pronunciation": "ˈjuːniən",
+            "meaning": "联合类型"
+          },
+          {
+            "word": "interface",
+            "pronunciation": "ˈɪntərfeɪs",
+            "meaning": "接口"
+          },
+          {
+            "word": "generic",
+            "pronunciation": "dʒəˈnerɪk",
+            "meaning": "泛型"
+          }
+        ]
+      },
+      {
+        "name": "第四组 - 函数与异步",
+        "description": "函数与异步",
+        "vocabs": [
+          {
+            "word": "function",
+            "pronunciation": "ˈfʌŋkʃn",
+            "meaning": "函数"
+          },
+          {
+            "word": "async",
+            "pronunciation": "eɪˈsɪŋk",
+            "meaning": "异步函数"
+          },
+          {
+            "word": "await",
+            "pronunciation": "əˈweɪt",
+            "meaning": "等待"
+          },
+          {
+            "word": "promise",
+            "pronunciation": "ˈprɑːmɪs",
+            "meaning": "Promise"
+          },
+          {
+            "word": "callback",
+            "pronunciation": "ˈkɔːlbæk",
+            "meaning": "回调"
+          }
+        ]
+      },
+      {
+        "name": "第五组 - 面向对象",
+        "description": "面向对象",
+        "vocabs": [
+          {
+            "word": "class",
+            "pronunciation": "klæs",
+            "meaning": "类"
+          },
+          {
+            "word": "inheritance",
+            "pronunciation": "ɪnˈherɪtəns",
+            "meaning": "继承"
+          },
+          {
+            "word": "override",
+            "pronunciation": "ˌoʊvərˈraɪd",
+            "meaning": "重写"
+          },
+          {
+            "word": "polymorphism",
+            "pronunciation": "ˌpɒliˈmɔːrfɪzəm",
+            "meaning": "多态"
+          },
+          {
+            "word": "encapsulation",
+            "pronunciation": "ɪnˌkæpsjuˈleɪʃn",
+            "meaning": "封装"
+          }
+        ]
+      },
+      {
+        "name": "第六组 - ArkTS核心",
+        "description": "ArkTS核心",
+        "vocabs": [
+          {
+            "word": "arkts",
+            "pronunciation": "ɑːrk tiː es",
+            "meaning": "ArkTS声明式开发语言"
+          },
+          {
+            "word": "declarative",
+            "pronunciation": "dɪˈklærətɪv",
+            "meaning": "声明式的"
+          },
+          {
+            "word": "imperative",
+            "pronunciation": "ɪmˈperətɪv",
+            "meaning": "命令式的"
+          },
+          {
+            "word": "annotation",
+            "pronunciation": "ˌænəˈteɪʃn",
+            "meaning": "注解"
+          },
+          {
+            "word": "decorator",
+            "pronunciation": "ˈdekəreɪtər",
+            "meaning": "装饰器"
+          }
+        ]
+      },
+      {
+        "name": "第七组 - 类型系统",
+        "description": "类型系统",
+        "vocabs": [
+          {
+            "word": "type",
+            "pronunciation": "taɪp",
+            "meaning": "类型"
+          },
+          {
+            "word": "type inference",
+            "pronunciation": "taɪp ˈɪnfərəns",
+            "meaning": "类型推断"
+          },
+          {
+            "word": "type casting",
+            "pronunciation": "taɪp ˈkæstɪŋ",
+            "meaning": "类型转换"
+          },
+          {
+            "word": "type guard",
+            "pronunciation": "taɪp ɡɑːrd",
+            "meaning": "类型守卫"
+          },
+          {
+            "word": "narrowing",
+            "pronunciation": "ˈnæroʊɪŋ",
+            "meaning": "类型收窄"
+          }
+        ]
+      },
+      {
+        "name": "第八组 - 可空类型",
+        "description": "可空类型",
+        "vocabs": [
+          {
+            "word": "null",
+            "pronunciation": "nʌl",
+            "meaning": "空值"
+          },
+          {
+            "word": "undefined",
+            "pronunciation": "ˌʌndɪˈfaɪnd",
+            "meaning": "未定义"
+          },
+          {
+            "word": "optional",
+            "pronunciation": "ˈɑːpʃənl",
+            "meaning": "可选类型"
+          },
+          {
+            "word": "non-null",
+            "pronunciation": "nɒn nʌl",
+            "meaning": "非空"
+          },
+          {
+            "word": "nullable",
+            "pronunciation": "ˈnʌləbl",
+            "meaning": "可空类型"
+          }
+        ]
+      },
+      {
+        "name": "第九组 - 模块与导入",
+        "description": "模块与导入",
+        "vocabs": [
+          {
+            "word": "module",
+            "pronunciation": "ˈmɑːdʒuːl",
+            "meaning": "模块"
+          },
+          {
+            "word": "import",
+            "pronunciation": "ɪmˈpɔːrt",
+            "meaning": "导入"
+          },
+          {
+            "word": "export",
+            "pronunciation": "ɪkˈspɔːrt",
+            "meaning": "导出"
+          },
+          {
+            "word": "namespace",
+            "pronunciation": "ˈneɪmspeɪs",
+            "meaning": "命名空间"
+          },
+          {
+            "word": "default export",
+            "pronunciation": "dɪˈfɔːlt ɪkˈspɔːrt",
+            "meaning": "默认导出"
+          }
+        ]
+      },
+      {
+        "name": "第十组 - 高级特性",
+        "description": "高级特性",
+        "vocabs": [
+          {
+            "word": "arrow function",
+            "pronunciation": "ˈæroʊ ˈfʌŋkʃn",
+            "meaning": "箭头函数"
+          },
+          {
+            "word": "spread operator",
+            "pronunciation": "spred ˈɑːpəreɪtər",
+            "meaning": "展开运算符"
+          },
+          {
+            "word": "destructuring",
+            "pronunciation": "diːˈstrʌktʃərɪŋ",
+            "meaning": "解构"
+          },
+          {
+            "word": "template literal",
+            "pronunciation": "ˈtemplət ˈlɪtərəl",
+            "meaning": "模板字符串"
+          },
+          {
+            "word": "optional chaining",
+            "pronunciation": "ˈɑːpʃənl ˈtʃeɪnɪŋ",
+            "meaning": "可选链"
+          }
+        ]
+      },
+      {
+        "name": "第十一组 - ArkUI基础",
+        "description": "ArkUI基础",
+        "vocabs": [
+          {
+            "word": "arkui",
+            "pronunciation": "ɑːrk juː aɪ",
+            "meaning": "ArkUI声明式UI框架"
+          },
+          {
+            "word": "component",
+            "pronunciation": "kəmˈpoʊnənt",
+            "meaning": "组件"
+          },
+          {
+            "word": "container",
+            "pronunciation": "kənˈteɪnər",
+            "meaning": "容器组件"
+          },
+          {
+            "word": "element",
+            "pronunciation": "ˈelɪmənt",
+            "meaning": "元素"
+          },
+          {
+            "word": "render",
+            "pronunciation": "ˈrendər",
+            "meaning": "渲染"
+          }
+        ]
+      },
+      {
+        "name": "第十二组 - 基础组件",
+        "description": "基础组件",
+        "vocabs": [
+          {
+            "word": "text",
+            "pronunciation": "tekst",
+            "meaning": "文本"
+          },
+          {
+            "word": "button",
+            "pronunciation": "ˈbʌtn",
+            "meaning": "按钮"
+          },
+          {
+            "word": "image",
+            "pronunciation": "ˈɪmɪdʒ",
+            "meaning": "图片"
+          },
+          {
+            "word": "input",
+            "pronunciation": "ˈɪnpʊt",
+            "meaning": "输入框"
+          },
+          {
+            "word": "checkbox",
+            "pronunciation": "ˈtʃekbɑːks",
+            "meaning": "复选框"
+          }
+        ]
+      },
+      {
+        "name": "第十三组 - 容器组件",
+        "description": "容器组件",
+        "vocabs": [
+          {
+            "word": "column",
+            "pronunciation": "ˈkɑːləm",
+            "meaning": "垂直容器"
+          },
+          {
+            "word": "row",
+            "pronunciation": "roʊ",
+            "meaning": "水平容器"
+          },
+          {
+            "word": "stack",
+            "pronunciation": "stæk",
+            "meaning": "堆叠容器"
+          },
+          {
+            "word": "flex",
+            "pronunciation": "fleks",
+            "meaning": "弹性容器"
+          },
+          {
+            "word": "list",
+            "pronunciation": "lɪst",
+            "meaning": "列表"
+          }
+        ]
+      },
+      {
+        "name": "第十四组 - 高级容器",
+        "description": "高级容器",
+        "vocabs": [
+          {
+            "word": "grid",
+            "pronunciation": "ɡrɪd",
+            "meaning": "网格容器"
+          },
+          {
+            "word": "swiper",
+            "pronunciation": "ˈswɪpər",
+            "meaning": "轮播容器"
+          },
+          {
+            "word": "scroll",
+            "pronunciation": "skroʊl",
+            "meaning": "滚动容器"
+          },
+          {
+            "word": "tabs",
+            "pronunciation": "tæbz",
+            "meaning": "标签容器"
+          },
+          {
+            "word": "if else",
+            "pronunciation": "ɪf ˈels",
+            "meaning": "条件渲染"
+          }
+        ]
+      },
+      {
+        "name": "第十五组 - 循环渲染",
+        "description": "循环渲染",
+        "vocabs": [
+          {
+            "word": "foreach",
+            "pronunciation": "fɔːr iːtʃ",
+            "meaning": "ForEach循环渲染"
+          },
+          {
+            "word": "lazy foreach",
+            "pronunciation": "ˈleɪzi fɔːr iːtʃ",
+            "meaning": "懒加载循环"
+          },
+          {
+            "word": "repeat",
+            "pronunciation": "rɪˈpiːt",
+            "meaning": "重复渲染"
+          },
+          {
+            "word": "item",
+            "pronunciation": "ˈaɪtəm",
+            "meaning": "列表项"
+          },
+          {
+            "word": "index",
+            "pronunciation": "ˈɪndeks",
+            "meaning": "索引"
+          }
+        ]
+      },
+      {
+        "name": "第十六组 - 状态装饰器",
+        "description": "状态装饰器",
+        "vocabs": [
+          {
+            "word": "state",
+            "pronunciation": "steɪt",
+            "meaning": "状态装饰器"
+          },
+          {
+            "word": "prop",
+            "pronunciation": "prɑːp",
+            "meaning": "属性装饰器"
+          },
+          {
+            "word": "link",
+            "pronunciation": "lɪŋk",
+            "meaning": "链接装饰器"
+          },
+          {
+            "word": "storage",
+            "pronunciation": "ˈstɔːrɪdʒ",
+            "meaning": "本地存储装饰器"
+          },
+          {
+            "word": "watch",
+            "pronunciation": "wɑːtʃ",
+            "meaning": "监听装饰器"
+          }
+        ]
+      },
+      {
+        "name": "第十七组 - 应用状态",
+        "description": "应用状态",
+        "vocabs": [
+          {
+            "word": "appstorage",
+            "pronunciation": "æp ˈstɔːrɪdʒ",
+            "meaning": "应用级存储"
+          },
+          {
+            "word": "localstorage",
+            "pronunciation": "ˈloʊkl ˈstɔːrɪdʒ",
+            "meaning": "本地存储"
+          },
+          {
+            "word": "persistentstorage",
+            "pronunciation": "pərˈsɪstənt ˈstɔːrɪdʒ",
+            "meaning": "持久化存储"
+          },
+          {
+            "word": "environment",
+            "pronunciation": "ɪnˈvaɪrənmənt",
+            "meaning": "环境变量"
+          },
+          {
+            "word": "registry",
+            "pronunciation": "ˈredʒɪstri",
+            "meaning": "注册表"
+          }
+        ]
+      },
+      {
+        "name": "第十八组 - 状态共享",
+        "description": "状态共享",
+        "vocabs": [
+          {
+            "word": "stateless",
+            "pronunciation": "ˈsteɪtləs",
+            "meaning": "无状态组件"
+          },
+          {
+            "word": "stateful",
+            "pronunciation": "ˈsteɪtfʊl",
+            "meaning": "有状态组件"
+          },
+          {
+            "word": "provide",
+            "pronunciation": "prəˈvaɪd",
+            "meaning": "提供数据"
+          },
+          {
+            "word": "consume",
+            "pronunciation": "kənˈsjuːm",
+            "meaning": "消费数据"
+          },
+          {
+            "word": "observable",
+            "pronunciation": "ˌɑːbzərˈveɪəbl",
+            "meaning": "可观察对象"
+          }
+        ]
+      },
+      {
+        "name": "第十九组 - 状态装饰器进阶",
+        "description": "状态装饰器进阶",
+        "vocabs": [
+          {
+            "word": "objectlink",
+            "pronunciation": "ˈɑːbdʒekt lɪŋk",
+            "meaning": "对象链接装饰器"
+          },
+          {
+            "word": "storagelink",
+            "pronunciation": "ˈstɔːrɪdʒ lɪŋk",
+            "meaning": "存储链接装饰器"
+          },
+          {
+            "word": "storageprop",
+            "pronunciation": "ˈstɔːrɪdʒ prɑːp",
+            "meaning": "存储属性装饰器"
+          },
+          {
+            "word": "consume",
+            "pronunciation": "kənˈsjuːm",
+            "meaning": "消费装饰器"
+          },
+          {
+            "word": "link",
+            "pronunciation": "lɪŋk",
+            "meaning": "双向链接装饰器"
+          }
+        ]
+      },
+      {
+        "name": "第二十组 - 组件生命周期",
+        "description": "组件生命周期",
+        "vocabs": [
+          {
+            "word": "about to appear",
+            "pronunciation": "əˈbaʊt tuː əˈpɪr",
+            "meaning": "即将显示"
+          },
+          {
+            "word": "about to disappear",
+            "pronunciation": "əˈbaʊt tuː ˌdɪsəˈpɪr",
+            "meaning": "即将消失"
+          },
+          {
+            "word": "on page show",
+            "pronunciation": "ɑːn peɪdʒ ʃoʊ",
+            "meaning": "页面显示"
+          },
+          {
+            "word": "on page hide",
+            "pronunciation": "ɑːn peɪdʒ haɪd",
+            "meaning": "页面隐藏"
+          },
+          {
+            "word": "on back press",
+            "pronunciation": "ɑːn bæk pres",
+            "meaning": "返回按键"
+          }
+        ]
+      },
+      {
+        "name": "第二十一组 - 应用生命周期",
+        "description": "应用生命周期",
+        "vocabs": [
+          {
+            "word": "abilitystage",
+            "pronunciation": "əˈbɪləti steɪdʒ",
+            "meaning": "AbilityStage容器"
+          },
+          {
+            "word": "oncreate",
+            "pronunciation": "ɑːn ˈkriːeɪt",
+            "meaning": "创建时"
+          },
+          {
+            "word": "onterminate",
+            "pronunciation": "ɑːn ˈtɜːrmɪneɪt",
+            "meaning": "终止时"
+          },
+          {
+            "word": "onforeground",
+            "pronunciation": "ɑːn ˈfɔːrɡraʊnd",
+            "meaning": "进入前台"
+          },
+          {
+            "word": "onbackground",
+            "pronunciation": "ɑːn ˈbækɡraʊnd",
+            "meaning": "进入后台"
+          }
+        ]
+      },
+      {
+        "name": "第二十二组 - 组件渲染回调",
+        "description": "组件渲染回调",
+        "vocabs": [
+          {
+            "word": "about to render",
+            "pronunciation": "əˈbaʊt tuː ˈrendər",
+            "meaning": "即将渲染"
+          },
+          {
+            "word": "on render",
+            "pronunciation": "ɑːn ˈrendər",
+            "meaning": "渲染完成"
+          },
+          {
+            "word": "re-render",
+            "pronunciation": "riːˈrendər",
+            "meaning": "重新渲染"
+          },
+          {
+            "word": "invalidate",
+            "pronunciation": "ɪnˈvælɪdeɪt",
+            "meaning": "失效"
+          },
+          {
+            "word": "measure",
+            "pronunciation": "ˈmeʒər",
+            "meaning": "测量"
+          }
+        ]
+      },
+      {
+        "name": "第二十三组 - Ability基础",
+        "description": "Ability基础",
+        "vocabs": [
+          {
+            "word": "ability",
+            "pronunciation": "əˈbɪləti",
+            "meaning": "Ability应用能力"
+          },
+          {
+            "word": "entry ability",
+            "pronunciation": "ˈentri əˈbɪləti",
+            "meaning": "入口Ability"
+          },
+          {
+            "word": "feature ability",
+            "pronunciation": "ˈfiːtʃər əˈbɪləti",
+            "meaning": "功能Ability"
+          },
+          {
+            "word": "page ability",
+            "pronunciation": "peɪdʒ əˈbɪləti",
+            "meaning": "页面Ability"
+          },
+          {
+            "word": "service ability",
+            "pronunciation": "ˈsɜːrvɪs əˈbɪləti",
+            "meaning": "服务Ability"
+          }
+        ]
+      },
+      {
+        "name": "第二十四组 - Stage模型",
+        "description": "Stage模型",
+        "vocabs": [
+          {
+            "word": "stage",
+            "pronunciation": "steɪdʒ",
+            "meaning": "Stage模型"
+          },
+          {
+            "word": "windowstage",
+            "pronunciation": "ˈwɪndoʊ steɪdʒ",
+            "meaning": "窗口舞台"
+          },
+          {
+            "word": "context",
+            "pronunciation": "ˈkɑːntekst",
+            "meaning": "上下文"
+          },
+          {
+            "word": "want",
+            "pronunciation": "wɑːnt",
+            "meaning": "意图"
+          },
+          {
+            "word": "abilitycontext",
+            "pronunciation": "əˈbɪləti ˈkɑːntekst",
+            "meaning": "Ability上下文"
+          }
+        ]
+      },
+      {
+        "name": "第二十五组 - Ability操作",
+        "description": "Ability操作",
+        "vocabs": [
+          {
+            "word": "startability",
+            "pronunciation": "stɑːrt əˈbɪləti",
+            "meaning": "启动Ability"
+          },
+          {
+            "word": "stopability",
+            "pronunciation": "stɒp əˈbɪləti",
+            "meaning": "停止Ability"
+          },
+          {
+            "word": "connectability",
+            "pronunciation": "kəˈnektəbɪləti",
+            "meaning": "连接Ability"
+          },
+          {
+            "word": "disconnectability",
+            "pronunciation": "ˌdɪskəˈnektəbɪləti",
+            "meaning": "断开连接"
+          },
+          {
+            "word": "terminate",
+            "pronunciation": "ˈtɜːrmɪneɪt",
+            "meaning": "终止"
+          }
+        ]
+      },
+      {
+        "name": "第二十六组 - UIAbility",
+        "description": "UIAbility",
+        "vocabs": [
+          {
+            "word": "uiability",
+            "pronunciation": "juː aɪ əˈbɪləti",
+            "meaning": "UIAbility"
+          },
+          {
+            "word": "window",
+            "pronunciation": "ˈwɪndoʊ",
+            "meaning": "窗口"
+          },
+          {
+            "word": "content",
+            "pronunciation": "ˈkɑːntent",
+            "meaning": "内容"
+          },
+          {
+            "word": "launch",
+            "pronunciation": "lɔːntʃ",
+            "meaning": "启动"
+          },
+          {
+            "word": "callback",
+            "pronunciation": "ˈkɔːlbæk",
+            "meaning": "回调"
+          }
+        ]
+      },
+      {
+        "name": "第二十七组 - ServiceExtensionAbility",
+        "description": "ServiceExtensionAbility",
+        "vocabs": [
+          {
+            "word": "serviceextensionability",
+            "pronunciation": "ˈsɜːrvɪs ɪkˈstenʃn əˈbɪləti",
+            "meaning": "服务扩展Ability"
+          },
+          {
+            "word": "backgroundservice",
+            "pronunciation": "ˈbækɡraʊnd ˈsɜːrvɪs",
+            "meaning": "后台服务"
+          },
+          {
+            "word": "foregroundservice",
+            "pronunciation": "ˈfɔːrɡraʊnd ˈsɜːrvɪs",
+            "meaning": "前台服务"
+          },
+          {
+            "word": "datashareability",
+            "pronunciation": "ˈdeɪtə ʃer əˈbɪləti",
+            "meaning": "数据共享Ability"
+          },
+          {
+            "word": "dataability",
+            "pronunciation": "ˈdeɪtə əˈbɪləti",
+            "meaning": "DataAbility"
+          }
+        ]
+      },
+      {
+        "name": "第二十八组 - 路由基础",
+        "description": "路由基础",
+        "vocabs": [
+          {
+            "word": "router",
+            "pronunciation": "ˈruːtər",
+            "meaning": "路由器"
+          },
+          {
+            "word": "route",
+            "pronunciation": "ruːt",
+            "meaning": "路由"
+          },
+          {
+            "word": "navigation",
+            "pronunciation": "ˌnævɪˈɡeɪʃn",
+            "meaning": "导航"
+          },
+          {
+            "word": "navigator",
+            "pronunciation": "ˈnævɪɡeɪtər",
+            "meaning": "导航器"
+          },
+          {
+            "word": "path",
+            "pronunciation": "pæθ",
+            "meaning": "路径"
+          }
+        ]
+      },
+      {
+        "name": "第二十九组 - 路由操作",
+        "description": "路由操作",
+        "vocabs": [
+          {
+            "word": "push",
+            "pronunciation": "pʊʃ",
+            "meaning": "推入页面"
+          },
+          {
+            "word": "pop",
+            "pronunciation": "pɑːp",
+            "meaning": "弹出页面"
+          },
+          {
+            "word": "replace",
+            "pronunciation": "rɪˈplaɪs",
+            "meaning": "替换页面"
+          },
+          {
+            "word": "back",
+            "pronunciation": "bæk",
+            "meaning": "返回"
+          },
+          {
+            "word": "clear",
+            "pronunciation": "klɪr",
+            "meaning": "清除栈"
+          }
+        ]
+      },
+      {
+        "name": "第三十组 - 路由参数",
+        "description": "路由参数",
+        "vocabs": [
+          {
+            "word": "param",
+            "pronunciation": "pəˈræm",
+            "meaning": "参数"
+          },
+          {
+            "word": "params",
+            "pronunciation": "pəˈræmz",
+            "meaning": "参数列表"
+          },
+          {
+            "word": "query",
+            "pronunciation": "ˈkweri",
+            "meaning": "查询参数"
+          },
+          {
+            "word": "bundle",
+            "pronunciation": "ˈbʌndl",
+            "meaning": "包"
+          },
+          {
+            "word": "module",
+            "pronunciation": "ˈmɑːdʒuːl",
+            "meaning": "模块"
+          }
+        ]
+      },
+      {
+        "name": "第三十一组 - Navigation组件",
+        "description": "Navigation组件",
+        "vocabs": [
+          {
+            "word": "navigation",
+            "pronunciation": "ˌnævɪˈɡeɪʃn",
+            "meaning": "Navigation导航组件"
+          },
+          {
+            "word": "navdestination",
+            "pronunciation": "næv ˌdestɪˈneɪʃn",
+            "meaning": "导航目标页面"
+          },
+          {
+            "word": "navrouter",
+            "pronunciation": "næv ˈruːtər",
+            "meaning": "导航路由"
+          },
+          {
+            "word": "navbar",
+            "pronunciation": "næv bɑːr",
+            "meaning": "导航栏"
+          },
+          {
+            "word": "titlemode",
+            "pronunciation": "ˈtaɪtl moʊd",
+            "meaning": "标题模式"
+          }
+        ]
+      },
+      {
+        "name": "第三十二组 - Flex布局",
+        "description": "Flex布局",
+        "vocabs": [
+          {
+            "word": "flex",
+            "pronunciation": "fleks",
+            "meaning": "弹性盒布局"
+          },
+          {
+            "word": "direction",
+            "pronunciation": "dɪˈrekʃn",
+            "meaning": "方向"
+          },
+          {
+            "word": "justify",
+            "pronunciation": "ˈdʒʌstɪfaɪ",
+            "meaning": "主轴对齐"
+          },
+          {
+            "word": "align",
+            "pronunciation": "əˈlaɪn",
+            "meaning": "交叉轴对齐"
+          },
+          {
+            "word": "wrap",
+            "pronunciation": "ræp",
+            "meaning": "换行"
+          }
+        ]
+      },
+      {
+        "name": "第三十三组 - 布局属性",
+        "description": "布局属性",
+        "vocabs": [
+          {
+            "word": "width",
+            "pronunciation": "wɪdθ",
+            "meaning": "宽度"
+          },
+          {
+            "word": "height",
+            "pronunciation": "haɪt",
+            "meaning": "高度"
+          },
+          {
+            "word": "padding",
+            "pronunciation": "ˈpædɪŋ",
+            "meaning": "内边距"
+          },
+          {
+            "word": "margin",
+            "pronunciation": "ˈmærɪn",
+            "meaning": "外边距"
+          },
+          {
+            "word": "gap",
+            "pronunciation": "ɡæp",
+            "meaning": "间距"
+          }
+        ]
+      },
+      {
+        "name": "第三十四组 - 定位属性",
+        "description": "定位属性",
+        "vocabs": [
+          {
+            "word": "position",
+            "pronunciation": "pəˈzɪʃn",
+            "meaning": "定位方式"
+          },
+          {
+            "word": "absolute",
+            "pronunciation": "ˈæbsəluːt",
+            "meaning": "绝对定位"
+          },
+          {
+            "word": "relative",
+            "pronunciation": "ˈrelətɪv",
+            "meaning": "相对定位"
+          },
+          {
+            "word": "fixed",
+            "pronunciation": "fɪkst",
+            "meaning": "固定定位"
+          },
+          {
+            "word": "z index",
+            "pronunciation": "ziː ˈɪndeks",
+            "meaning": "层叠顺序"
+          }
+        ]
+      },
+      {
+        "name": "第三十五组 - 尺寸约束",
+        "description": "尺寸约束",
+        "vocabs": [
+          {
+            "word": "constraint",
+            "pronunciation": "kənˈstreɪnt",
+            "meaning": "约束"
+          },
+          {
+            "word": "layoutweight",
+            "pronunciation": "ˈleɪaʊt welt",
+            "meaning": "布局权重"
+          },
+          {
+            "word": "aspect ratio",
+            "pronunciation": "ˈæspekt ˈreɪʃioʊ",
+            "meaning": "宽高比"
+          },
+          {
+            "word": "percent",
+            "pronunciation": "pərˈsent",
+            "meaning": "百分比"
+          },
+          {
+            "word": "auto",
+            "pronunciation": "ˈɔːtoʊ",
+            "meaning": "自动"
+          }
+        ]
+      },
+      {
+        "name": "第三十六组 - 高级布局容器",
+        "description": "高级布局容器",
+        "vocabs": [
+          {
+            "word": "waterflow",
+            "pronunciation": "ˈwɔːtər floʊ",
+            "meaning": "瀑布流容器"
+          },
+          {
+            "word": "relativecontainer",
+            "pronunciation": "ˈrelətɪv kənˈteɪnər",
+            "meaning": "相对布局容器"
+          },
+          {
+            "word": "sidebarcontainer",
+            "pronunciation": "ˈsaɪd bɑːr kənˈteɪnər",
+            "meaning": "侧边栏容器"
+          },
+          {
+            "word": "blank",
+            "pronunciation": "blæŋk",
+            "meaning": "空白占位组件"
+          },
+          {
+            "word": "divider",
+            "pronunciation": "dɪˈvaɪdər",
+            "meaning": "分隔器"
+          }
+        ]
+      },
+      {
+        "name": "第三十七组 - 基础样式",
+        "description": "基础样式",
+        "vocabs": [
+          {
+            "word": "style",
+            "pronunciation": "staɪl",
+            "meaning": "样式"
+          },
+          {
+            "word": "color",
+            "pronunciation": "ˈkʌlər",
+            "meaning": "颜色"
+          },
+          {
+            "word": "background",
+            "pronunciation": "ˈbækɡraʊnd",
+            "meaning": "背景"
+          },
+          {
+            "word": "opacity",
+            "pronunciation": "oʊˈpæsəti",
+            "meaning": "透明度"
+          },
+          {
+            "word": "visibility",
+            "pronunciation": "ˌvɪzəˈbɪləti",
+            "meaning": "可见性"
+          }
+        ]
+      },
+      {
+        "name": "第三十八组 - 文本样式",
+        "description": "文本样式",
+        "vocabs": [
+          {
+            "word": "font",
+            "pronunciation": "fʌnt",
+            "meaning": "字体"
+          },
+          {
+            "word": "fontsize",
+            "pronunciation": "fɒnt saɪz",
+            "meaning": "字号"
+          },
+          {
+            "word": "fontweight",
+            "pronunciation": "fɒnt weɪt",
+            "meaning": "字重"
+          },
+          {
+            "word": "fontstyle",
+            "pronunciation": "fɒnt ˈstaɪl",
+            "meaning": "字体样式"
+          },
+          {
+            "word": "textalign",
+            "pronunciation": "tekst əˈlaɪn",
+            "meaning": "文本对齐"
+          }
+        ]
+      },
+      {
+        "name": "第三十九组 - 边框与阴影",
+        "description": "边框与阴影",
+        "vocabs": [
+          {
+            "word": "border",
+            "pronunciation": "ˈbɔːrdər",
+            "meaning": "边框"
+          },
+          {
+            "word": "borderwidth",
+            "pronunciation": "ˈbɔːrdər wɪdθ",
+            "meaning": "边框宽度"
+          },
+          {
+            "word": "bordercolor",
+            "pronunciation": "ˈbɔːrdər ˈkʌlər",
+            "meaning": "边框颜色"
+          },
+          {
+            "word": "borderradius",
+            "pronunciation": "ˈbɔːrdər ˈreɪdiəs",
+            "meaning": "圆角"
+          },
+          {
+            "word": "shadow",
+            "pronunciation": "ˈʃædoʊ",
+            "meaning": "阴影"
+          }
+        ]
+      },
+      {
+        "name": "第四十组 - 渐变与变换",
+        "description": "渐变与变换",
+        "vocabs": [
+          {
+            "word": "gradient",
+            "pronunciation": "ˈɡreɪdiənt",
+            "meaning": "渐变"
+          },
+          {
+            "word": "linear gradient",
+            "pronunciation": "ˈlɪniər ˈɡreɪdiənt",
+            "meaning": "线性渐变"
+          },
+          {
+            "word": "radial gradient",
+            "pronunciation": "ˈreɪdiəl ˈɡreɪdiənt",
+            "meaning": "径向渐变"
+          },
+          {
+            "word": "transform",
+            "pronunciation": "trænsˈfɔːrm",
+            "meaning": "变换"
+          },
+          {
+            "word": "rotate",
+            "pronunciation": "roʊˈteɪt",
+            "meaning": "旋转"
+          }
+        ]
+      },
+      {
+        "name": "第四十一组 - 手势识别器",
+        "description": "手势识别器",
+        "vocabs": [
+          {
+            "word": "gesture",
+            "pronunciation": "ˈdʒestʃər",
+            "meaning": "手势"
+          },
+          {
+            "word": "tap",
+            "pronunciation": "tæp",
+            "meaning": "点击手势"
+          },
+          {
+            "word": "long press",
+            "pronunciation": "lɔːŋ pres",
+            "meaning": "长按手势"
+          },
+          {
+            "word": "pan",
+            "pronunciation": "pæn",
+            "meaning": "拖动手势"
+          },
+          {
+            "word": "pinch",
+            "pronunciation": "pɪntʃ",
+            "meaning": "捏合手势"
+          }
+        ]
+      },
+      {
+        "name": "第四十二组 - 高级手势",
+        "description": "高级手势",
+        "vocabs": [
+          {
+            "word": "swipe",
+            "pronunciation": "swaɪp",
+            "meaning": "滑动手势"
+          },
+          {
+            "word": "rotation",
+            "pronunciation": "roʊˈteɪʃn",
+            "meaning": "旋转手势"
+          },
+          {
+            "word": "drag",
+            "pronunciation": "dræɡ",
+            "meaning": "拖拽"
+          },
+          {
+            "word": "pinch",
+            "pronunciation": "pɪntʃ",
+            "meaning": "缩放手势"
+          },
+          {
+            "word": "multi touch",
+            "pronunciation": "ˈmʌlti tʌtʃ",
+            "meaning": "多点触控"
+          }
+        ]
+      },
+      {
+        "name": "第四十三组 - 手势状态",
+        "description": "手势状态",
+        "vocabs": [
+          {
+            "word": "gesturegroup",
+            "pronunciation": "ˈdʒestʃər ɡruːp",
+            "meaning": "手势组"
+          },
+          {
+            "word": "parallel",
+            "pronunciation": "ˈpærəlel",
+            "meaning": "并行手势"
+          },
+          {
+            "word": "exclusive",
+            "pronunciation": "ɪkˈskluːsɪv",
+            "meaning": "互斥手势"
+          },
+          {
+            "word": "began",
+            "pronunciation": "bɪˈɡæn",
+            "meaning": "手势开始"
+          },
+          {
+            "word": "change",
+            "pronunciation": "tʃeɪndʒ",
+            "meaning": "手势变化"
+          },
+          {
+            "word": "end",
+            "pronunciation": "end",
+            "meaning": "手势结束"
+          },
+          {
+            "word": "cancel",
+            "pronunciation": "ˈkænsəl",
+            "meaning": "手势取消"
+          }
+        ]
+      },
+      {
+        "name": "第四十四组 - 动画基础",
+        "description": "动画基础",
+        "vocabs": [
+          {
+            "word": "animation",
+            "pronunciation": "ˌænɪˈmeɪʃn",
+            "meaning": "动画"
+          },
+          {
+            "word": "transition",
+            "pronunciation": "trænˈzɪʃn",
+            "meaning": "转场动画"
+          },
+          {
+            "word": "duration",
+            "pronunciation": "djuːˈreɪʃn",
+            "meaning": "动画时长"
+          },
+          {
+            "word": "curve",
+            "pronunciation": "kɜːrv",
+            "meaning": "动画曲线"
+          },
+          {
+            "word": "delay",
+            "pronunciation": "dɪˈleɪ",
+            "meaning": "延迟"
+          }
+        ]
+      },
+      {
+        "name": "第四十五组 - 动画效果",
+        "description": "动画效果",
+        "vocabs": [
+          {
+            "word": "ease",
+            "pronunciation": "iːz",
+            "meaning": "缓动"
+          },
+          {
+            "word": "ease in",
+            "pronunciation": "iːz ɪn",
+            "meaning": "渐入"
+          },
+          {
+            "word": "ease out",
+            "pronunciation": "iːz aʊt",
+            "meaning": "渐出"
+          },
+          {
+            "word": "linear",
+            "pronunciation": "ˈlɪniər",
+            "meaning": "线性"
+          },
+          {
+            "word": "spring",
+            "pronunciation": "sprɪŋ",
+            "meaning": "弹性动画"
+          }
+        ]
+      },
+      {
+        "name": "第四十六组 - 显式动画",
+        "description": "显式动画",
+        "vocabs": [
+          {
+            "word": "animate",
+            "pronunciation": "ˈænɪmeɪt",
+            "meaning": "执行动画"
+          },
+          {
+            "word": "keyframe",
+            "pronunciation": "ˈkiːfreɪm",
+            "meaning": "关键帧"
+          },
+          {
+            "word": "motionpath",
+            "pronunciation": "ˈmoʊʃn pæθ",
+            "meaning": "运动路径"
+          },
+          {
+            "word": "shake",
+            "pronunciation": "ʃeɪk",
+            "meaning": "抖动动画"
+          },
+          {
+            "word": "fade",
+            "pronunciation": "feɪd",
+            "meaning": "淡入淡出"
+          }
+        ]
+      },
+      {
+        "name": "第四十七组 - 路由转场动画",
+        "description": "路由转场动画",
+        "vocabs": [
+          {
+            "word": "page transition",
+            "pronunciation": "peɪdʒ trænˈzɪʃn",
+            "meaning": "页面转场动画"
+          },
+          {
+            "word": "custom transition",
+            "pronunciation": "ˈkʌstəm trænˈzɪʃn",
+            "meaning": "自定义转场"
+          },
+          {
+            "word": "slide",
+            "pronunciation": "slaɪd",
+            "meaning": "滑动效果"
+          },
+          {
+            "word": "fade transition",
+            "pronunciation": "feɪd trænˈzɪʃn",
+            "meaning": "淡入淡出效果"
+          },
+          {
+            "word": "zoom",
+            "pronunciation": "zuːm",
+            "meaning": "缩放效果"
+          }
+        ]
+      },
+      {
+        "name": "第四十八组 - 选择器组件",
+        "description": "选择器组件",
+        "vocabs": [
+          {
+            "word": "datepicker",
+            "pronunciation": "deɪt ˈpɪkər",
+            "meaning": "日期选择器"
+          },
+          {
+            "word": "timepicker",
+            "pronunciation": "taɪm ˈpɪkər",
+            "meaning": "时间选择器"
+          },
+          {
+            "word": "picker",
+            "pronunciation": "ˈpɪkər",
+            "meaning": "选择器"
+          },
+          {
+            "word": "textpicker",
+            "pronunciation": "tekst ˈpɪkər",
+            "meaning": "文本选择器"
+          },
+          {
+            "word": "areapicker",
+            "pronunciation": "ˈeriə ˈpɪkər",
+            "meaning": "地区选择器"
+          }
+        ]
+      },
+      {
+        "name": "第四十九组 - 进度与滑动组件",
+        "description": "进度与滑动组件",
+        "vocabs": [
+          {
+            "word": "progress",
+            "pronunciation": "ˈprɑːɡres",
+            "meaning": "进度条"
+          },
+          {
+            "word": "slider",
+            "pronunciation": "ˈslaɪdər",
+            "meaning": "滑动条"
+          },
+          {
+            "word": "rating",
+            "pronunciation": "ˈreɪtɪŋ",
+            "meaning": "星级评分"
+          },
+          {
+            "word": "loading",
+            "pronunciation": "ˈloʊdɪŋ",
+            "meaning": "加载指示器"
+          },
+          {
+            "word": "indeterminate",
+            "pronunciation": "ˌɪndɪˈtɜːrmɪnət",
+            "meaning": "不确定进度"
+          }
+        ]
+      },
+      {
+        "name": "第五十组 - 开关与切换",
+        "description": "开关与切换",
+        "vocabs": [
+          {
+            "word": "toggle",
+            "pronunciation": "ˈtɒɡl",
+            "meaning": "开关"
+          },
+          {
+            "word": "switch",
+            "pronunciation": "swɪtʃ",
+            "meaning": "切换组件"
+          },
+          {
+            "word": "radio",
+            "pronunciation": "ˈreɪdioʊ",
+            "meaning": "单选按钮"
+          },
+          {
+            "word": "radiogroup",
+            "pronunciation": "ˈreɪdioʊ ɡruːp",
+            "meaning": "单选按钮组"
+          },
+          {
+            "word": "select",
+            "pronunciation": "sɪˈlekt",
+            "meaning": "下拉选择"
+          }
+        ]
+      },
+      {
+        "name": "第五十一组 - 文本输入组件",
+        "description": "文本输入组件",
+        "vocabs": [
+          {
+            "word": "textarea",
+            "pronunciation": "tekst ˈeriə",
+            "meaning": "多行文本输入"
+          },
+          {
+            "word": "search",
+            "pronunciation": "sɜːrtʃ",
+            "meaning": "搜索框"
+          },
+          {
+            "word": "richtext",
+            "pronunciation": "rɪtʃ tekst",
+            "meaning": "富文本"
+          },
+          {
+            "word": "span",
+            "pronunciation": "spæn",
+            "meaning": "文本片段"
+          },
+          {
+            "word": "imagespan",
+            "pronunciation": "ˈɪmɪdʒ spæn",
+            "meaning": "图片片段"
+          }
+        ]
+      },
+      {
+        "name": "第五十二组 - 导航与菜单组件",
+        "description": "导航与菜单组件",
+        "vocabs": [
+          {
+            "word": "menu",
+            "pronunciation": "ˈmenjuː",
+            "meaning": "菜单"
+          },
+          {
+            "word": "action sheet",
+            "pronunciation": "ˈækʃn ʃiːt",
+            "meaning": "操作菜单"
+          },
+          {
+            "word": "toolbar",
+            "pronunciation": "ˈtuːlbɑːr",
+            "meaning": "工具栏"
+          },
+          {
+            "word": "bottom toolbar",
+            "pronunciation": "ˈbɒtəm ˈtuːlbɑːr",
+            "meaning": "底部工具栏"
+          },
+          {
+            "word": "navigationbar",
+            "pronunciation": "ˌnævɪˈɡeɪʃn bɑːr",
+            "meaning": "导航栏"
+          }
+        ]
+      },
+      {
+        "name": "第五十三组 - 弹窗与对话框",
+        "description": "弹窗与对话框",
+        "vocabs": [
+          {
+            "word": "dialog",
+            "pronunciation": "ˈdaɪəlɔːɡ",
+            "meaning": "对话框"
+          },
+          {
+            "word": "alert dialog",
+            "pronunciation": "əˈlɜːrt ˈdaɪəlɔːɡ",
+            "meaning": "警告对话框"
+          },
+          {
+            "word": "confirm dialog",
+            "pronunciation": "kənˈfɜːrm ˈdaɪəlɔːɡ",
+            "meaning": "确认对话框"
+          },
+          {
+            "word": "customdialog",
+            "pronunciation": "ˈkʌstəm ˈdaɪəlɔːɡ",
+            "meaning": "自定义弹窗"
+          },
+          {
+            "word": "prompt",
+            "pronunciation": "prɒmpt",
+            "meaning": "提示对话框"
+          }
+        ]
+      },
+      {
+        "name": "第五十四组 - 半模态弹窗",
+        "description": "半模态弹窗",
+        "vocabs": [
+          {
+            "word": "sheet",
+            "pronunciation": "ʃiːt",
+            "meaning": "半模态弹窗"
+          },
+          {
+            "word": "bottomsheet",
+            "pronunciation": "ˈbɒtəm ʃiːt",
+            "meaning": "底部半模态弹窗"
+          },
+          {
+            "word": "modal",
+            "pronunciation": "ˈmoʊdl",
+            "meaning": "模态"
+          },
+          {
+            "word": "non-modal",
+            "pronunciation": "nɒn ˈmoʊdl",
+            "meaning": "非模态"
+          },
+          {
+            "word": "dismiss",
+            "pronunciation": "dɪsˈmɪs",
+            "meaning": "关闭弹窗"
+          }
+        ]
+      },
+      {
+        "name": "第五十五组 - 列表相关组件",
+        "description": "列表相关组件",
+        "vocabs": [
+          {
+            "word": "alphabetindexer",
+            "pronunciation": "ˈælfəbet ˈɪndek sər",
+            "meaning": "字母索引条"
+          },
+          {
+            "word": "badge",
+            "pronunciation": "bædʒ",
+            "meaning": "徽标"
+          },
+          {
+            "word": "listitem",
+            "pronunciation": "lɪst ˈaɪtəm",
+            "meaning": "列表项"
+          },
+          {
+            "word": "listitemgroup",
+            "pronunciation": "lɪst ˈaɪtəm ɡruːp",
+            "meaning": "列表项组"
+          },
+          {
+            "word": "swipeaction",
+            "pronunciation": "swaɪp ˈækʃn",
+            "meaning": "滑动操作"
+          }
+        ]
+      },
+      {
+        "name": "第五十六组 - Canvas绘图",
+        "description": "Canvas绘图",
+        "vocabs": [
+          {
+            "word": "canvas",
+            "pronunciation": "ˈkænvəs",
+            "meaning": "画布组件"
+          },
+          {
+            "word": "canvasrenderer",
+            "pronunciation": "ˈkænvəs ˈrendərər",
+            "meaning": "画布渲染器"
+          },
+          {
+            "word": "path2d",
+            "pronunciation": "pæθ tuː diː",
+            "meaning": "二维路径"
+          },
+          {
+            "word": "graphics",
+            "pronunciation": "ˈɡræfɪks",
+            "meaning": "图形绑定"
+          },
+          {
+            "word": "draw",
+            "pronunciation": "drɔː",
+            "meaning": "绘制"
+          },
+          {
+            "word": "fill",
+            "pronunciation": "fɪl",
+            "meaning": "填充"
+          },
+          {
+            "word": "stroke",
+            "pronunciation": "stroʊk",
+            "meaning": "描边"
+          }
+        ]
+      },
+      {
+        "name": "第五十七组 - 网络请求",
+        "description": "网络请求",
+        "vocabs": [
+          {
+            "word": "http",
+            "pronunciation": "eɪtʃ tiː piː",
+            "meaning": "HTTP协议"
+          },
+          {
+            "word": "https",
+            "pronunciation": "eɪtʃ tiː tiː es piː",
+            "meaning": "HTTPS协议"
+          },
+          {
+            "word": "request",
+            "pronunciation": "rɪˈkwest",
+            "meaning": "请求"
+          },
+          {
+            "word": "response",
+            "pronunciation": "rɪˈspɑːns",
+            "meaning": "响应"
+          },
+          {
+            "word": "fetch",
+            "pronunciation": "fetʃ",
+            "meaning": "获取数据"
+          }
+        ]
+      },
+      {
+        "name": "第五十八组 - 网络配置",
+        "description": "网络配置",
+        "vocabs": [
+          {
+            "word": "header",
+            "pronunciation": "ˈhedər",
+            "meaning": "请求头"
+          },
+          {
+            "word": "body",
+            "pronunciation": "ˈbɑːdi",
+            "meaning": "请求体"
+          },
+          {
+            "word": "method",
+            "pronunciation": "ˈmeθəd",
+            "meaning": "请求方法"
+          },
+          {
+            "word": "timeout",
+            "pronunciation": "ˈtaɪmaʊt",
+            "meaning": "超时"
+          },
+          {
+            "word": "interceptor",
+            "pronunciation": "ˌɪntərˈseptər",
+            "meaning": "拦截器"
+          }
+        ]
+      },
+      {
+        "name": "第五十九组 - JSON处理",
+        "description": "JSON处理",
+        "vocabs": [
+          {
+            "word": "json",
+            "pronunciation": "ˈdʒeɪsɑːn",
+            "meaning": "JSON数据格式"
+          },
+          {
+            "word": "parse",
+            "pronunciation": "pɑːrs",
+            "meaning": "解析"
+          },
+          {
+            "word": "stringify",
+            "pronunciation": "ˈstrɪŋɡɪfaɪ",
+            "meaning": "序列化"
+          },
+          {
+            "word": "serialization",
+            "pronunciation": "ˌsɪriəlaɪˈzeɪʃn",
+            "meaning": "序列化"
+          },
+          {
+            "word": "model",
+            "pronunciation": "ˈmɑːdl",
+            "meaning": "数据模型"
+          }
+        ]
+      },
+      {
+        "name": "第六十组 - 本地存储",
+        "description": "本地存储",
+        "vocabs": [
+          {
+            "word": "preference",
+            "pronunciation": "ˈprefərəns",
+            "meaning": "首选项存储"
+          },
+          {
+            "word": "rdb",
+            "pronunciation": "ɑːr diː biː",
+            "meaning": "关系型数据库"
+          },
+          {
+            "word": "kvstore",
+            "pronunciation": "keɪ viː stɔːr",
+            "meaning": "键值存储"
+          },
+          {
+            "word": "file",
+            "pronunciation": "faɪl",
+            "meaning": "文件存储"
+          },
+          {
+            "word": "cache",
+            "pronunciation": "kæʃ",
+            "meaning": "缓存"
+          }
+        ]
+      },
+      {
+        "name": "第六十一组 - 网络进阶",
+        "description": "网络进阶",
+        "vocabs": [
+          {
+            "word": "websocket",
+            "pronunciation": "web ˈsɒkɪt",
+            "meaning": "WebSocket通信"
+          },
+          {
+            "word": "socket",
+            "pronunciation": "ˈsɒkɪt",
+            "meaning": "套接字"
+          },
+          {
+            "word": "tcp",
+            "pronunciation": "tiː siː piː",
+            "meaning": "TCP协议"
+          },
+          {
+            "word": "udp",
+            "pronunciation": "juː diː piː",
+            "meaning": "UDP协议"
+          },
+          {
+            "word": "dns",
+            "pronunciation": "diː en es",
+            "meaning": "域名解析"
+          },
+          {
+            "word": "upload",
+            "pronunciation": "ˌʌpˈloʊd",
+            "meaning": "上传"
+          },
+          {
+            "word": "download",
+            "pronunciation": "ˈdaʊnloʊd",
+            "meaning": "下载"
+          }
+        ]
+      },
+      {
+        "name": "第六十二组 - 分布式架构",
+        "description": "分布式架构",
+        "vocabs": [
+          {
+            "word": "distributed",
+            "pronunciation": "dɪˈstrɪbjuːtɪd",
+            "meaning": "分布式"
+          },
+          {
+            "word": "device",
+            "pronunciation": "dɪˈvaɪs",
+            "meaning": "设备"
+          },
+          {
+            "word": "collaboration",
+            "pronunciation": "kəˌlæbəˈreɪʃn",
+            "meaning": "协同"
+          },
+          {
+            "word": "synchronization",
+            "pronunciation": "ˌsɪŋkrənaɪˈzeɪʃn",
+            "meaning": "同步"
+          },
+          {
+            "word": "remote",
+            "pronunciation": "rɪˈməʊt",
+            "meaning": "远程"
+          }
+        ]
+      },
+      {
+        "name": "第六十三组 - 跨设备调用",
+        "description": "跨设备调用",
+        "vocabs": [
+          {
+            "word": "distributed scheduler",
+            "pronunciation": "dɪˈstrɪbjuːtɪd ˈʃedjuːlər",
+            "meaning": "分布式调度器"
+          },
+          {
+            "word": "remotecapability",
+            "pronunciation": "rɪˈməʊt kəˈpæləti",
+            "meaning": "远程能力"
+          },
+          {
+            "word": "distributed object",
+            "pronunciation": "dɪˈstrɪbjuːtɪd ˈɑːbdʒekt",
+            "meaning": "分布式对象"
+          },
+          {
+            "word": "remotechannel",
+            "pronunciation": "rɪˈməʊt ˈtʃænl",
+            "meaning": "远程通道"
+          },
+          {
+            "word": "softbus",
+            "pronunciation": "sɒft bʌs",
+            "meaning": "软总线"
+          }
+        ]
+      },
+      {
+        "name": "第六十四组 - 分布式数据",
+        "description": "分布式数据",
+        "vocabs": [
+          {
+            "word": "distributed data",
+            "pronunciation": "dɪˈstrɪbjuːtɪd ˈdeɪtə",
+            "meaning": "分布式数据"
+          },
+          {
+            "word": "data observer",
+            "pronunciation": "ˈdeɪtə əbˈzɜːrvər",
+            "meaning": "数据观察者"
+          },
+          {
+            "word": "datachange",
+            "pronunciation": "ˈdeɪtə tʃeɪndʒ",
+            "meaning": "数据变更"
+          },
+          {
+            "word": "syncmanager",
+            "pronunciation": "sɪŋk ˈmænɪdʒər",
+            "meaning": "同步管理器"
+          },
+          {
+            "word": "dataversion",
+            "pronunciation": "ˈdeɪtə ˈvɜːrʒn",
+            "meaning": "数据版本"
+          }
+        ]
+      },
+      {
+        "name": "第六十五组 - 原子化服务基础",
+        "description": "原子化服务基础",
+        "vocabs": [
+          {
+            "word": "atomic service",
+            "pronunciation": "əˈtɒmɪk ˈsɜːrvɪs",
+            "meaning": "原子化服务"
+          },
+          {
+            "word": "hap",
+            "pronunciation": "hæp",
+            "meaning": "HAP应用包"
+          },
+          {
+            "word": "bundle",
+            "pronunciation": "ˈbʌndl",
+            "meaning": "应用包"
+          },
+          {
+            "word": "widget",
+            "pronunciation": "ˈwɪdʒɪt",
+            "meaning": "卡片服务"
+          },
+          {
+            "word": "form",
+            "pronunciation": "fɔːrm",
+            "meaning": "卡片"
+          }
+        ]
+      },
+      {
+        "name": "第六十六组 - 流转与分享",
+        "description": "流转与分享",
+        "vocabs": [
+          {
+            "word": "流转",
+            "pronunciation": "liú zhuǎn",
+            "meaning": "流转（跨设备迁移）"
+          },
+          {
+            "word": "migration",
+            "pronunciation": "maɪˈɡreɪʃn",
+            "meaning": "迁移"
+          },
+          {
+            "word": "share",
+            "pronunciation": "ʃer",
+            "meaning": "分享"
+          },
+          {
+            "word": "remote launch",
+            "pronunciation": "rɪˈməʊt lɔːntʃ",
+            "meaning": "远程启动"
+          },
+          {
+            "word": "drag",
+            "pronunciation": "dræɡ",
+            "meaning": "拖拽"
+          }
+        ]
+      },
+      {
+        "name": "第六十七组 - 权限基础",
+        "description": "权限基础",
+        "vocabs": [
+          {
+            "word": "permission",
+            "pronunciation": "pərˈmɪʃn",
+            "meaning": "权限"
+          },
+          {
+            "word": "grant",
+            "pronunciation": "ɡrænt",
+            "meaning": "授予"
+          },
+          {
+            "word": "deny",
+            "pronunciation": "dɪˈnaɪ",
+            "meaning": "拒绝"
+          },
+          {
+            "word": "request",
+            "pronunciation": "rɪˈkwest",
+            "meaning": "请求"
+          },
+          {
+            "word": "check",
+            "pronunciation": "tʃek",
+            "meaning": "检查"
+          }
+        ]
+      },
+      {
+        "name": "第六十八组 - 常见权限",
+        "description": "常见权限",
+        "vocabs": [
+          {
+            "word": "camera",
+            "pronunciation": "ˈkæmərə",
+            "meaning": "相机权限"
+          },
+          {
+            "word": "microphone",
+            "pronunciation": "ˈmaɪkrəfoʊn",
+            "meaning": "麦克风权限"
+          },
+          {
+            "word": "location",
+            "pronunciation": "loʊˈkeɪʃn",
+            "meaning": "位置权限"
+          },
+          {
+            "word": "storage",
+            "pronunciation": "ˈstɔːrɪdʒ",
+            "meaning": "存储权限"
+          },
+          {
+            "word": "network",
+            "pronunciation": "ˈnetwɜːrk",
+            "meaning": "网络权限"
+          }
+        ]
+      },
+      {
+        "name": "第六十九组 - 权限配置",
+        "description": "权限配置",
+        "vocabs": [
+          {
+            "word": "acl",
+            "pronunciation": "eɪ siː el",
+            "meaning": "访问控制列表"
+          },
+          {
+            "word": "sensitive",
+            "pronunciation": "ˈsensətɪv",
+            "meaning": "敏感权限"
+          },
+          {
+            "word": "restricted",
+            "pronunciation": "rɪˈstrɪktɪd",
+            "meaning": "受限权限"
+          },
+          {
+            "word": "normal",
+            "pronunciation": "ˈnɔːrml",
+            "meaning": "普通权限"
+          },
+          {
+            "word": "system",
+            "pronunciation": "ˈsɪstəm",
+            "meaning": "系统权限"
+          }
+        ]
+      },
+      {
+        "name": "第七十组 - IDE基础",
+        "description": "IDE基础",
+        "vocabs": [
+          {
+            "word": "deveco studio",
+            "pronunciation": "ˈdevə koʊ ˈstjuːdioʊ",
+            "meaning": "DevEco Studio IDE"
+          },
+          {
+            "word": "sdk",
+            "pronunciation": "es diː keɪ",
+            "meaning": "软件开发工具包"
+          },
+          {
+            "word": "emulator",
+            "pronunciation": "ˈemjʊleɪtər",
+            "meaning": "模拟器"
+          },
+          {
+            "word": "simulator",
+            "pronunciation": "ˈsɪmjʊleɪtər",
+            "meaning": "模拟器"
+          },
+          {
+            "word": "device manager",
+            "pronunciation": "dɪˈvaɪs ˈmænɪdʒər",
+            "meaning": "设备管理器"
+          }
+        ]
+      },
+      {
+        "name": "第七十一组 - 项目结构",
+        "description": "项目结构",
+        "vocabs": [
+          {
+            "word": "project",
+            "pronunciation": "ˈprɑːdʒekt",
+            "meaning": "项目"
+          },
+          {
+            "word": "module",
+            "pronunciation": "ˈmɑːdʒuːl",
+            "meaning": "模块"
+          },
+          {
+            "word": "entry",
+            "pronunciation": "ˈentri",
+            "meaning": "入口模块"
+          },
+          {
+            "word": "feature",
+            "pronunciation": "ˈfiːtʃər",
+            "meaning": "功能模块"
+          },
+          {
+            "word": "library",
+            "pronunciation": "ˈlaɪbreri",
+            "meaning": "库模块"
+          }
+        ]
+      },
+      {
+        "name": "第七十二组 - 构建与调试",
+        "description": "构建与调试",
+        "vocabs": [
+          {
+            "word": "build",
+            "pronunciation": "bɪld",
+            "meaning": "构建"
+          },
+          {
+            "word": "run",
+            "pronunciation": "rʌn",
+            "meaning": "运行"
+          },
+          {
+            "word": "debug",
+            "pronunciation": "diːˈbʌɡ",
+            "meaning": "调试"
+          },
+          {
+            "word": "profile",
+            "pronunciation": "ˈproʊfaɪl",
+            "meaning": "性能分析"
+          },
+          {
+            "word": "test",
+            "pronunciation": "test",
+            "meaning": "测试"
+          }
+        ]
+      },
+      {
+        "name": "第七十三组 - 签名与发布",
+        "description": "签名与发布",
+        "vocabs": [
+          {
+            "word": "signature",
+            "pronunciation": "sɪɡnətʃər",
+            "meaning": "签名"
+          },
+          {
+            "word": "certificate",
+            "pronunciation": "sərˈtɪfɪkət",
+            "meaning": "证书"
+          },
+          {
+            "word": "appid",
+            "pronunciation": "æp aɪ diː",
+            "meaning": "应用标识"
+          },
+          {
+            "word": "bundle name",
+            "pronunciation": "ˈbʌndl neɪm",
+            "meaning": "包名"
+          },
+          {
+            "word": "version",
+            "pronunciation": "ˈvɜːrʒn",
+            "meaning": "版本号"
+          }
+        ]
+      },
+      {
+        "name": "第七十四组 - DevEco进阶功能",
+        "description": "DevEco进阶功能",
+        "vocabs": [
+          {
+            "word": "previewer",
+            "pronunciation": "prɪˈvjuːər",
+            "meaning": "预览器"
+          },
+          {
+            "word": "hilog",
+            "pronunciation": "haɪ lɒɡ",
+            "meaning": "日志工具"
+          },
+          {
+            "word": "inspector",
+            "pronunciation": "ɪnˈspektər",
+            "meaning": "检查器"
+          },
+          {
+            "word": "profiler",
+            "pronunciation": "ˈproʊfaɪlər",
+            "meaning": "性能分析器"
+          },
+          {
+            "word": "hvigor",
+            "pronunciation": "heɪ ˈvaɪɡɔːr",
+            "meaning": "HVigor构建系统"
+          }
+        ]
+      },
+      {
+        "name": "第七十五组 - 核心概念",
+        "description": "核心概念",
+        "vocabs": [
+          {
+            "word": "harmonyos",
+            "pronunciation": "hɑːrˈmoʊni ɑːs",
+            "meaning": "鸿蒙操作系统"
+          },
+          {
+            "word": "openharmony",
+            "pronunciation": "ˈoʊpən hɑːrˈmoʊni",
+            "meaning": "OpenHarmony开源项目"
+          },
+          {
+            "word": "ecosystem",
+            "pronunciation": "ˈiːkoʊˌsɪstəm",
+            "meaning": "生态系统"
+          },
+          {
+            "word": "full ecosystem",
+            "pronunciation": "fʊl ˈiːkoʊˌsɪstəm",
+            "meaning": "全场景生态"
+          },
+          {
+            "word": "super device",
+            "pronunciation": "ˈsuːpər dɪˈvaɪs",
+            "meaning": "超级设备"
+          }
+        ]
+      },
+      {
+        "name": "第七十六组 - 应用模型",
+        "description": "应用模型",
+        "vocabs": [
+          {
+            "word": "fa model",
+            "pronunciation": "ef eɪ ˈmɑːdl",
+            "meaning": "FA模型"
+          },
+          {
+            "word": "stage model",
+            "pronunciation": "steɪdʒ ˈmɑːdl",
+            "meaning": "Stage模型"
+          },
+          {
+            "word": "ability component",
+            "pronunciation": "əˈbɪləti kəmˈpoʊnənt",
+            "meaning": "Ability组件"
+          },
+          {
+            "word": "window manager",
+            "pronunciation": "ˈwɪndoʊ ˈmænɪdʒər",
+            "meaning": "窗口管理器"
+          },
+          {
+            "word": "application context",
+            "pronunciation": "ˌæplɪˈkeɪʃn ˈkɑːntekst",
+            "meaning": "应用上下文"
+          }
+        ]
+      },
+      {
+        "name": "第七十七组 - 进程与线程",
+        "description": "进程与线程",
+        "vocabs": [
+          {
+            "word": "process",
+            "pronunciation": "ˈprɑːses",
+            "meaning": "进程"
+          },
+          {
+            "word": "thread",
+            "pronunciation": "θred",
+            "meaning": "线程"
+          },
+          {
+            "word": "main thread",
+            "pronunciation": "meɪn θred",
+            "meaning": "主线程"
+          },
+          {
+            "word": "worker thread",
+            "pronunciation": "ˈwɜːrkər θred",
+            "meaning": "工作线程"
+          },
+          {
+            "word": "taskpool",
+            "pronunciation": "tæsk puːl",
+            "meaning": "任务池"
+          }
+        ]
+      },
+      {
+        "name": "第七十八组 - 自定义组件",
+        "description": "自定义组件",
+        "vocabs": [
+          {
+            "word": "custom component",
+            "pronunciation": "ˈkʌstəm kəmˈpoʊnənt",
+            "meaning": "自定义组件"
+          },
+          {
+            "word": "builder",
+            "pronunciation": "ˈbɪldər",
+            "meaning": "构建器"
+          },
+          {
+            "word": "@builder",
+            "pronunciation": "æt ˈbɪldər",
+            "meaning": "@Builder装饰器"
+          },
+          {
+            "word": "@builderparam",
+            "pronunciation": "æt ˈbɪldər pəˈræm",
+            "meaning": "@BuilderParam"
+          },
+          {
+            "word": "@stylerequire",
+            "pronunciation": "æt ˈstaɪl rɪˈkwaɪər",
+            "meaning": "@StyleRequire"
+          }
+        ]
+      },
+      {
+        "name": "第七十九组 - 组件通信",
+        "description": "组件通信",
+        "vocabs": [
+          {
+            "word": "callback",
+            "pronunciation": "ˈkʌlbæk",
+            "meaning": "回调函数"
+          },
+          {
+            "word": "event",
+            "pronunciation": "ɪˈvent",
+            "meaning": "事件"
+          },
+          {
+            "word": "emit",
+            "pronunciation": "ɪˈmɪt",
+            "meaning": "发送事件"
+          },
+          {
+            "word": "subscribe",
+            "pronunciation": "səbˈskraɪb",
+            "meaning": "订阅"
+          },
+          {
+            "word": "onclick",
+            "pronunciation": "ɑːn ˈklɪk",
+            "meaning": "点击事件"
+          }
+        ]
+      },
+      {
+        "name": "第八十组 - 渲染控制",
+        "description": "渲染控制",
+        "vocabs": [
+          {
+            "word": "conditional",
+            "pronunciation": "kənˈdɪʃənl",
+            "meaning": "条件渲染"
+          },
+          {
+            "word": "lazy loading",
+            "pronunciation": "ˈleɪzi ˈloʊdɪŋ",
+            "meaning": "懒加载"
+          },
+          {
+            "word": "reusable",
+            "pronunciation": "riːˈjuːzəbl",
+            "meaning": "可复用"
+          },
+          {
+            "word": "memo",
+            "pronunciation": "ˈmiːmoʊ",
+            "meaning": "记忆化"
+          },
+          {
+            "word": "priority",
+            "pronunciation": "praɪˈɔːrəti",
+            "meaning": "优先级"
+          }
+        ]
+      },
+      {
+        "name": "第八十一组 - @Extend扩展",
+        "description": "@Extend扩展",
+        "vocabs": [
+          {
+            "word": "@extend",
+            "pronunciation": "æt ɪkˈstend",
+            "meaning": "@Extend扩展"
+          },
+          {
+            "word": "extending styles",
+            "pronunciation": "ɪkˈstendɪŋ staɪlz",
+            "meaning": "扩展样式"
+          },
+          {
+            "word": "custom style",
+            "pronunciation": "ˈkʌstəm staɪl",
+            "meaning": "自定义样式"
+          },
+          {
+            "word": "attribute modifier",
+            "pronunciation": "əˈtrɪbjuːt ˈmɒdɪfaɪər",
+            "meaning": "属性修改器"
+          },
+          {
+            "word": "component modifier",
+            "pronunciation": "kəmˈpoʊnənt ˈmɒdɪfaɪər",
+            "meaning": "组件修改器"
+          }
+        ]
+      },
+      {
+        "name": "第八十二组 - 渲染控制进阶",
+        "description": "渲染控制进阶",
+        "vocabs": [
+          {
+            "word": "@rendergroup",
+            "pronunciation": "æt ˈrendər ɡruːp",
+            "meaning": "@RenderGroup"
+          },
+          {
+            "word": "@monitor",
+            "pronunciation": "æt ˈmɒnɪtər",
+            "meaning": "@Monitor监听"
+          },
+          {
+            "word": "reactive",
+            "pronunciation": "riːˈæktɪv",
+            "meaning": "响应式的"
+          },
+          {
+            "word": "imperative update",
+            "pronunciation": "ɪmˈperətɪv ʌpˈdeɪt",
+            "meaning": "命令式更新"
+          },
+          {
+            "word": "declarative update",
+            "pronunciation": "dɪˈklærətɪv ʌpˈdeɪt",
+            "meaning": "声明式更新"
+          }
+        ]
+      },
+      {
+        "name": "第八十三组 - 音视频",
+        "description": "音视频",
+        "vocabs": [
+          {
+            "word": "avplayer",
+            "pronunciation": "eɪ viː ˈpleɪər",
+            "meaning": "音视频播放"
+          },
+          {
+            "word": "avrecorder",
+            "pronunciation": "eɪ viː rɪˈkɔːrdər",
+            "meaning": "音视频录制"
+          },
+          {
+            "word": "audio",
+            "pronunciation": "ˈɔːdioʊ",
+            "meaning": "音频"
+          },
+          {
+            "word": "video",
+            "pronunciation": "ˈvɪdioʊ",
+            "meaning": "视频"
+          },
+          {
+            "word": "media",
+            "pronunciation": "ˈmiːdiə",
+            "meaning": "媒体"
+          }
+        ]
+      },
+      {
+        "name": "第八十四组 - 图片处理",
+        "description": "图片处理",
+        "vocabs": [
+          {
+            "word": "image",
+            "pronunciation": "ˈɪmɪdʒ",
+            "meaning": "图片"
+          },
+          {
+            "word": "picture",
+            "pronunciation": "ˈpɪktʃər",
+            "meaning": "图片资源"
+          },
+          {
+            "word": "pixel",
+            "pronunciation": "ˈpɪksəl",
+            "meaning": "像素"
+          },
+          {
+            "word": "resolution",
+            "pronunciation": "ˌrezəˈluːʃn",
+            "meaning": "分辨率"
+          },
+          {
+            "word": "compress",
+            "pronunciation": "kəmˈpres",
+            "meaning": "压缩"
+          }
+        ]
+      },
+      {
+        "name": "第八十五组 - 传感器",
+        "description": "传感器",
+        "vocabs": [
+          {
+            "word": "sensor",
+            "pronunciation": "ˈsensər",
+            "meaning": "传感器"
+          },
+          {
+            "word": "accelerometer",
+            "pronunciation": "əkˌseləˈrɑːmɪtər",
+            "meaning": "加速度传感器"
+          },
+          {
+            "word": "gyroscope",
+            "pronunciation": "ˈdʒaɪrəskoʊp",
+            "meaning": "陀螺仪"
+          },
+          {
+            "word": "magnetometer",
+            "pronunciation": "ˌmæɡnɪˈtɑːmɪtər",
+            "meaning": "磁力计"
+          },
+          {
+            "word": "gps",
+            "pronunciation": "dʒiː piː es",
+            "meaning": "定位"
+          }
+        ]
+      },
+      {
+        "name": "第八十六组 - 设备能力",
+        "description": "设备能力",
+        "vocabs": [
+          {
+            "word": "device capability",
+            "pronunciation": "dɪˈvaɪs kəˈpæləti",
+            "meaning": "设备能力"
+          },
+          {
+            "word": "screen",
+            "pronunciation": "skriːn",
+            "meaning": "屏幕"
+          },
+          {
+            "word": "display",
+            "pronunciation": "dɪˈspleɪ",
+            "meaning": "显示"
+          },
+          {
+            "word": "battery",
+            "pronunciation": "ˈbætəri",
+            "meaning": "电池"
+          },
+          {
+            "word": "bluetooth",
+            "pronunciation": "ˈbluːtuːθ",
+            "meaning": "蓝牙"
+          }
+        ]
+      },
+      {
+        "name": "第八十七组 - 设备信息",
+        "description": "设备信息",
+        "vocabs": [
+          {
+            "word": "devicetype",
+            "pronunciation": "dɪˈvaɪs taɪp",
+            "meaning": "设备类型"
+          },
+          {
+            "word": "screendensity",
+            "pronunciation": "skriːn ˈdensəti",
+            "meaning": "屏幕密度"
+          },
+          {
+            "word": "screensize",
+            "pronunciation": "skriːn saɪz",
+            "meaning": "屏幕尺寸"
+          },
+          {
+            "word": "devicename",
+            "pronunciation": "dɪˈvaɪs neɪm",
+            "meaning": "设备名称"
+          },
+          {
+            "word": "devicemanagement",
+            "pronunciation": "dɪˈvaɪs ˈmænɪdʒmənt",
+            "meaning": "设备管理"
+          }
+        ]
+      },
+      {
+        "name": "第八十八组 - 安全基础",
+        "description": "安全基础",
+        "vocabs": [
+          {
+            "word": "security",
+            "pronunciation": "sɪˈkjʊrəti",
+            "meaning": "安全"
+          },
+          {
+            "word": "encryption",
+            "pronunciation": "ɪnˈkrɪpʃn",
+            "meaning": "加密"
+          },
+          {
+            "word": "decryption",
+            "pronunciation": "diːkrɪpʃn",
+            "meaning": "解密"
+          },
+          {
+            "word": "token",
+            "pronunciation": "ˈtoʊkən",
+            "meaning": "令牌"
+          },
+          {
+            "word": "certificate",
+            "pronunciation": "sərˈtɪfɪkət",
+            "meaning": "证书"
+          }
+        ]
+      },
+      {
+        "name": "第八十九组 - 生物识别",
+        "description": "生物识别",
+        "vocabs": [
+          {
+            "word": "face recognition",
+            "pronunciation": "feɪs ˌrekəɡˈnɪʃn",
+            "meaning": "人脸识别"
+          },
+          {
+            "word": "fingerprint",
+            "pronunciation": "ˈfɪŋɡərprɪnt",
+            "meaning": "指纹识别"
+          },
+          {
+            "word": "biometric",
+            "pronunciation": "ˌbaɪoʊˈmetrɪk",
+            "meaning": "生物识别"
+          },
+          {
+            "word": "authenticate",
+            "pronunciation": "ɔːˈθentɪkeɪt",
+            "meaning": "认证"
+          },
+          {
+            "word": "verify",
+            "pronunciation": "ˈverɪfaɪ",
+            "meaning": "验证"
+          }
+        ]
+      },
+      {
+        "name": "第九十组 - 测试相关",
+        "description": "测试相关",
+        "vocabs": [
+          {
+            "word": "unit test",
+            "pronunciation": "ˈjuːnɪt test",
+            "meaning": "单元测试"
+          },
+          {
+            "word": "integration test",
+            "pronunciation": "ˌɪntɪˈɡreɪʃn test",
+            "meaning": "集成测试"
+          },
+          {
+            "word": "uitest",
+            "pronunciation": "juː aɪ test",
+            "meaning": "UI测试"
+          },
+          {
+            "word": "mock",
+            "pronunciation": "mɑːk",
+            "meaning": "模拟"
+          },
+          {
+            "word": "assertion",
+            "pronunciation": "əˈserʃn",
+            "meaning": "断言"
+          }
+        ]
+      },
+      {
+        "name": "第九十一组 - 测试工具",
+        "description": "测试工具",
+        "vocabs": [
+          {
+            "word": "hispark",
+            "pronunciation": "hɪ spɑːrk",
+            "meaning": "HiSpark开发板"
+          },
+          {
+            "word": "devkitharness",
+            "pronunciation": "dev kɪt ˈhɑːrnɪs",
+            "meaning": "开发套件"
+          },
+          {
+            "word": "test runner",
+            "pronunciation": "test ˈrʌnər",
+            "meaning": "测试运行器"
+          },
+          {
+            "word": "coverage",
+            "pronunciation": "ˈkʌvərɪdʒ",
+            "meaning": "覆盖率"
+          },
+          {
+            "word": "benchmark",
+            "pronunciation": "ˈbentʃmɑːrk",
+            "meaning": "基准测试"
+          }
+        ]
+      },
+      {
+        "name": "第九十二组 - SDK模块",
+        "description": "SDK模块",
+        "vocabs": [
+          {
+            "word": "@ohos",
+            "pronunciation": "æt oʊ eɪtʃ oʊ es",
+            "meaning": "@ohos命名空间"
+          },
+          {
+            "word": "foundation",
+            "pronunciation": "faʊnˈdeɪʃn",
+            "meaning": "基础能力"
+          },
+          {
+            "word": "appexecfwk",
+            "pronunciation": "æp eks eksek fɜːrk",
+            "meaning": "应用框架"
+          },
+          {
+            "word": "multimedia",
+            "pronunciation": "ˈmʌltiˈmiːdiə",
+            "meaning": "多媒体能力"
+          },
+          {
+            "word": "communication",
+            "pronunciation": "kəˌmjuːnɪˈkeɪʃn",
+            "meaning": "通信能力"
+          }
+        ]
+      },
+      {
+        "name": "第九十三组 - 常用API",
+        "description": "常用API",
+        "vocabs": [
+          {
+            "word": "ability Want",
+            "pronunciation": "əˈbɪləti wɑːnt",
+            "meaning": "Ability意图"
+          },
+          {
+            "word": "bundle manager",
+            "pronunciation": "ˈbʌndl ˈmænɪdʒər",
+            "meaning": "包管理器"
+          },
+          {
+            "word": "window manager",
+            "pronunciation": "ˈwɪndoʊ ˈmænɪdʒər",
+            "meaning": "窗口管理器"
+          },
+          {
+            "word": "display manager",
+            "pronunciation": "dɪˈspleɪ ˈmænɪdʒər",
+            "meaning": "显示管理器"
+          },
+          {
+            "word": "resource manager",
+            "pronunciation": "ˈriːsɔːrs ˈmænɪdʒər",
+            "meaning": "资源管理器"
+          }
+        ]
+      },
+      {
+        "name": "第九十四组 - 常用@ohos API",
+        "description": "常用@ohos API",
+        "vocabs": [
+          {
+            "word": "@ohos.prompt",
+            "pronunciation": "æt oʊ eɪtʃ oʊ es prɒmpt",
+            "meaning": "提示对话框API"
+          },
+          {
+            "word": "@ohos.rpc",
+            "pronunciation": "æt oʊ eɪtʃ oʊ es ɑːr siː piː",
+            "meaning": "远程调用API"
+          },
+          {
+            "word": "@ohos.distributedbundle",
+            "pronunciation": "æt oʊ eɪtʃ oʊ es dɪˈstrɪbjuːtɪd ˈbʌndl",
+            "meaning": "分布式包管理"
+          },
+          {
+            "word": "@ohos.work_scheduler",
+            "pronunciation": "æt oʊ eɪtʃ oʊ es wɜːrk ˈʃedjuːlər",
+            "meaning": "工作调度器"
+          },
+          {
+            "word": "@ohos.backgroundTaskManager",
+            "pronunciation": "æt oʊ eɪtʃ oʊ es ˈbækɡraʊnd tæsk ˈmænɪdʒər",
+            "meaning": "后台任务管理"
+          }
+        ]
+      },
+      {
+        "name": "第九十五组 - 应用市场",
+        "description": "应用市场",
+        "vocabs": [
+          {
+            "word": "app gallery",
+            "pronunciation": "æp ˈɡæləri",
+            "meaning": "应用市场"
+          },
+          {
+            "word": "submit",
+            "pronunciation": "səbˈmɪt",
+            "meaning": "提交"
+          },
+          {
+            "word": "review",
+            "pronunciation": "rɪˈvjuː",
+            "meaning": "审核"
+          },
+          {
+            "word": "release",
+            "pronunciation": "rɪˈliːs",
+            "meaning": "发布"
+          },
+          {
+            "word": "update",
+            "pronunciation": "ʌpˈdeɪt",
+            "meaning": "更新"
+          }
+        ]
+      },
+      {
+        "name": "第九十六组 - 构建配置",
+        "description": "构建配置",
+        "vocabs": [
+          {
+            "word": "build profile",
+            "pronunciation": "bɪld ˈproʊfaɪl",
+            "meaning": "构建配置"
+          },
+          {
+            "word": "debug",
+            "pronunciation": "diːˈbʌɡ",
+            "meaning": "调试版本"
+          },
+          {
+            "word": "release",
+            "pronunciation": "rɪˈliːs",
+            "meaning": "发布版本"
+          },
+          {
+            "word": "profile",
+            "pronunciation": "ˈproʊfaɪl",
+            "meaning": "配置版本"
+          },
+          {
+            "word": "product",
+            "pronunciation": "ˈprɑːdʌkt",
+            "meaning": "产品"
+          }
+        ]
+      },
+      {
+        "name": "第九十七组 - 元服务",
+        "description": "元服务",
+        "vocabs": [
+          {
+            "word": "元服务",
+            "pronunciation": "yuán fú wù",
+            "meaning": "原生应用（元服务）"
+          },
+          {
+            "word": "native app",
+            "pronunciation": "ˈneɪtɪv æp",
+            "meaning": "原生应用"
+          },
+          {
+            "word": "web app",
+            "pronunciation": "web æp",
+            "meaning": "Web应用"
+          },
+          {
+            "word": "mini program",
+            "pronunciation": "ˈmɪni ˈproʊɡræm",
+            "meaning": "小程序"
+          },
+          {
+            "word": "quick app",
+            "pronunciation": "kwɪk æp",
+            "meaning": "快应用"
+          }
+        ]
+      },
+      {
+        "name": "第九十八组 - NEXT特性",
+        "description": "NEXT特性",
+        "vocabs": [
+          {
+            "word": "harmonyos next",
+            "pronunciation": "hɑːrˈmoʊni ɑːs nekst",
+            "meaning": "鸿蒙NEXT"
+          },
+          {
+            "word": "ark runtime",
+            "pronunciation": "ɑːrk ˈrʌntaɪm",
+            "meaning": "Ark运行时"
+          },
+          {
+            "word": "ark compiler",
+            "pronunciation": "ɑːrk kəmˈpaɪlər",
+            "meaning": "Ark编译器"
+          },
+          {
+            "word": "deveco next",
+            "pronunciation": "ˈdevə koʊ nekst",
+            "meaning": "DevEco NEXT"
+          },
+          {
+            "word": "星河版",
+            "pronunciation": "xīng hé bǎn",
+            "meaning": "星河版本"
+          }
+        ]
+      },
+      {
+        "name": "第九十九组 - 仓颉语言",
+        "description": "仓颉语言",
+        "vocabs": [
+          {
+            "word": "cangjie",
+            "pronunciation": "cāng jiē",
+            "meaning": "仓颉编程语言"
+          },
+          {
+            "word": "仓颉",
+            "pronunciation": "cāng jiē",
+            "meaning": "仓颉语言"
+          },
+          {
+            "word": "CJK",
+            "pronunciation": "siː dʒeɪ keɪ",
+            "meaning": "仓颉语言简写"
+          },
+          {
+            "word": "declarative cangjie",
+            "pronunciation": "dɪˈklærətɪv cāng jiē",
+            "meaning": "声明式仓颉"
+          },
+          {
+            "word": "imperative cangjie",
+            "pronunciation": "ɪmˈperətɪv cāng jiē",
+            "meaning": "命令式仓颉"
+          }
+        ]
+      },
+      {
+        "name": "第一〇〇组 - Web组件",
+        "description": "Web组件",
+        "vocabs": [
+          {
+            "word": "arkweb",
+            "pronunciation": "ɑːrk web",
+            "meaning": "ArkWeb组件"
+          },
+          {
+            "word": "webview",
+            "pronunciation": "web viːw",
+            "meaning": "WebView组件"
+          },
+          {
+            "word": "javascript",
+            "pronunciation": "ˈdʒɑːvəˌskrɪpt",
+            "meaning": "JavaScript"
+          },
+          {
+            "word": "dom",
+            "pronunciation": "diː oʊ em",
+            "meaning": "文档对象模型"
+          },
+          {
+            "word": "web",
+            "pronunciation": "web",
+            "meaning": "网页"
+          }
+        ]
+      },
+      {
+        "name": "第一〇一组 - Web能力",
+        "description": "Web能力",
+        "vocabs": [
+          {
+            "word": "js runtime",
+            "pronunciation": "dʒeɪ es ˈrʌntaɪm",
+            "meaning": "JS运行时"
+          },
+          {
+            "word": "web component",
+            "pronunciation": "web kəmˈpoʊnənt",
+            "meaning": "Web组件"
+          },
+          {
+            "word": "native api",
+            "pronunciation": "ˈneɪtɪv eɪ piː aɪ",
+            "meaning": "原生API"
+          },
+          {
+            "word": "hybrid",
+            "pronunciation": "ˈhaɪbrɪd",
+            "meaning": "混合开发"
+          },
+          {
+            "word": "bridge",
+            "pronunciation": "brɪdʒ",
+            "meaning": "桥接"
+          }
+        ]
+      },
+      {
+        "name": "第一〇二组 - ArkUI-X",
+        "description": "ArkUI-X",
+        "vocabs": [
+          {
+            "word": "arkui-x",
+            "pronunciation": "ɑːrk juː aɪ eks",
+            "meaning": "ArkUI跨平台框架"
+          },
+          {
+            "word": "cross platform",
+            "pronunciation": "krɒs ˈplætfɔːrm",
+            "meaning": "跨平台"
+          },
+          {
+            "word": "ios",
+            "pronunciation": "aɪ oʊ es",
+            "meaning": "iOS平台"
+          },
+          {
+            "word": "android",
+            "pronunciation": "ˈændrɔɪd",
+            "meaning": "Android平台"
+          },
+          {
+            "word": "web",
+            "pronunciation": "web",
+            "meaning": "Web平台"
+          },
+          {
+            "word": "shared code",
+            "pronunciation": "ʃerd koʊd",
+            "meaning": "共享代码"
+          },
+          {
+            "word": "platform specific",
+            "pronunciation": "ˈplætfɔːrm spəˈsɪfɪk",
+            "meaning": "平台特定代码"
+          }
+        ]
+      },
+      {
+        "name": "第一〇三组 - 关系型数据库",
+        "description": "关系型数据库",
+        "vocabs": [
+          {
+            "word": "rdb",
+            "pronunciation": "ɑːr diː biː",
+            "meaning": "关系型数据库"
+          },
+          {
+            "word": "relational",
+            "pronunciation": "rɪˈleɪʃənl",
+            "meaning": "关系型"
+          },
+          {
+            "word": "table",
+            "pronunciation": "ˈteɪbl",
+            "meaning": "表"
+          },
+          {
+            "word": "column",
+            "pronunciation": "ˈkɑːləm",
+            "meaning": "列"
+          },
+          {
+            "word": "row",
+            "pronunciation": "roʊ",
+            "meaning": "行"
+          }
+        ]
+      },
+      {
+        "name": "第一〇四组 - ORM与数据操作",
+        "description": "ORM与数据操作",
+        "vocabs": [
+          {
+            "word": "orm",
+            "pronunciation": "oʊ ɑːr em",
+            "meaning": "对象关系映射"
+          },
+          {
+            "word": "relational store",
+            "pronunciation": "rɪˈleɪʃənl stɔːr",
+            "meaning": "关系型存储"
+          },
+          {
+            "word": "kv store",
+            "pronunciation": "keɪ viː stɔːr",
+            "meaning": "键值存储"
+          },
+          {
+            "word": "insert",
+            "pronunciation": "ɪnˈsɜːrt",
+            "meaning": "插入"
+          },
+          {
+            "word": "delete",
+            "pronunciation": "dɪˈliːt",
+            "meaning": "删除"
+          }
+        ]
+      },
+      {
+        "name": "第一〇五组 - 文件管理",
+        "description": "文件管理",
+        "vocabs": [
+          {
+            "word": "file manager",
+            "pronunciation": "faɪl ˈmænɪdʒər",
+            "meaning": "文件管理器"
+          },
+          {
+            "word": "document",
+            "pronunciation": "ˈdɑːkjəmənt",
+            "meaning": "文档目录"
+          },
+          {
+            "word": "cache",
+            "pronunciation": "kæʃ",
+            "meaning": "缓存目录"
+          },
+          {
+            "word": "temp",
+            "pronunciation": "temp",
+            "meaning": "临时目录"
+          },
+          {
+            "word": "read",
+            "pronunciation": "riːd",
+            "meaning": "读取"
+          },
+          {
+            "word": "write",
+            "pronunciation": "raɪt",
+            "meaning": "写入"
+          },
+          {
+            "word": "copy",
+            "pronunciation": "ˈkɒpi",
+            "meaning": "复制"
+          },
+          {
+            "word": "move",
+            "pronunciation": "muːv",
+            "meaning": "移动"
+          },
+          {
+            "word": "rename",
+            "pronunciation": "riːˈnaɪm",
+            "meaning": "重命名"
+          }
+        ]
+      },
+      {
+        "name": "第一〇六组 - 任务调度",
+        "description": "任务调度",
+        "vocabs": [
+          {
+            "word": "task",
+            "pronunciation": "tæsk",
+            "meaning": "任务"
+          },
+          {
+            "word": "taskpool",
+            "pronunciation": "tæsk puːl",
+            "meaning": "任务池"
+          },
+          {
+            "word": "worker",
+            "pronunciation": "ˈwɜːrkər",
+            "meaning": "Worker线程"
+          },
+          {
+            "word": "asynclock",
+            "pronunciation": "eɪˈsɪŋk lɒk",
+            "meaning": "异步锁"
+          },
+          {
+            "word": "semaphore",
+            "pronunciation": "ˈseməfɔːr",
+            "meaning": "信号量"
+          }
+        ]
+      },
+      {
+        "name": "第一〇七组 - 并发编程",
+        "description": "并发编程",
+        "vocabs": [
+          {
+            "word": "concurrent",
+            "pronunciation": "kənˈkʌrənt",
+            "meaning": "并发的"
+          },
+          {
+            "word": "parallel",
+            "pronunciation": "ˈpærəlel",
+            "meaning": "并行的"
+          },
+          {
+            "word": "dispatch",
+            "pronunciation": "dɪˈspætʃ",
+            "meaning": "分发"
+          },
+          {
+            "word": "synchronize",
+            "pronunciation": "ˈsɪŋkrənaɪz",
+            "meaning": "同步"
+          },
+          {
+            "word": "lock",
+            "pronunciation": "lɒk",
+            "meaning": "锁"
+          }
+        ]
+      },
+      {
+        "name": "第一〇八组 - 通知服务",
+        "description": "通知服务",
+        "vocabs": [
+          {
+            "word": "notification",
+            "pronunciation": "ˌnoʊtɪfɪˈkeɪʃn",
+            "meaning": "通知"
+          },
+          {
+            "word": "local notification",
+            "pronunciation": "ˈloʊkl ˌnoʊtɪfɪˈkeɪʃn",
+            "meaning": "本地通知"
+          },
+          {
+            "word": "push notification",
+            "pronunciation": "pʊʃ ˌnoʊtɪfɪˈkeɪʃn",
+            "meaning": "推送通知"
+          },
+          {
+            "word": "notification manager",
+            "pronunciation": "ˌnoʊtɪfɪˈkeɪʃn ˈmænɪdʒər",
+            "meaning": "通知管理器"
+          },
+          {
+            "word": "notification request",
+            "pronunciation": "ˌnoʊtɪfɪˈkeɪʃn rɪˈkwest",
+            "meaning": "通知请求"
+          }
+        ]
+      },
+      {
+        "name": "第一〇九组 - 通知内容",
+        "description": "通知内容",
+        "vocabs": [
+          {
+            "word": "title",
+            "pronunciation": "ˈtaɪtl",
+            "meaning": "标题"
+          },
+          {
+            "word": "content",
+            "pronunciation": "ˈkɑːntent",
+            "meaning": "内容"
+          },
+          {
+            "word": "badge",
+            "pronunciation": "bædʒ",
+            "meaning": "角标"
+          },
+          {
+            "word": "sound",
+            "pronunciation": "saʊnd",
+            "meaning": "声音"
+          },
+          {
+            "word": "vibration",
+            "pronunciation": "vaɪˈbreɪʃn",
+            "meaning": "振动"
+          }
+        ]
+      },
+      {
+        "name": "第一一〇组 - Native开发",
+        "description": "Native开发",
+        "vocabs": [
+          {
+            "word": "native",
+            "pronunciation": "ˈneɪtɪv",
+            "meaning": "原生开发"
+          },
+          {
+            "word": "ndk",
+            "pronunciation": "en diː keɪ",
+            "meaning": "Native开发套件"
+          },
+          {
+            "word": "ffi",
+            "pronunciation": "ef ef aɪ",
+            "meaning": "外部函数接口"
+          },
+          {
+            "word": "c++",
+            "pronunciation": "siː plʌs plʌs",
+            "meaning": "C++语言"
+          },
+          {
+            "word": "rust",
+            "pronunciation": "rʌst",
+            "meaning": "Rust语言"
+          }
+        ]
+      },
+      {
+        "name": "第一一一组 - Native API",
+        "description": "Native API",
+        "vocabs": [
+          {
+            "word": "native api",
+            "pronunciation": "ˈneɪtɪv eɪ piː aɪ",
+            "meaning": "Native API"
+          },
+          {
+            "word": "native module",
+            "pronunciation": "ˈneɪtɪv ˈmɑːdʒuːl",
+            "meaning": "Native模块"
+          },
+          {
+            "word": "jni",
+            "pronunciation": "dʒeɪ en aɪ",
+            "meaning": "Java本地接口"
+          },
+          {
+            "word": "ffi bridge",
+            "pronunciation": "ef ef aɪ brɪdʒ",
+            "meaning": "FFI桥接"
+          },
+          {
+            "word": "load library",
+            "pronunciation": "loʊd ˈlaɪbreri",
+            "meaning": "加载库"
+          }
+        ]
+      },
+      {
+        "name": "第一一二组 - 开发概念",
+        "description": "开发概念",
+        "vocabs": [
+          {
+            "word": "ide",
+            "pronunciation": "aɪ diː iː",
+            "meaning": "集成开发环境"
+          },
+          {
+            "word": "api",
+            "pronunciation": "eɪ piː aɪ",
+            "meaning": "应用程序接口"
+          },
+          {
+            "word": "sdk",
+            "pronunciation": "es diː keɪ",
+            "meaning": "软件开发工具包"
+          },
+          {
+            "word": "cli",
+            "pronunciation": "siː el aɪ",
+            "meaning": "命令行工具"
+          },
+          {
+            "word": "debugging",
+            "pronunciation": "diːˈbʌɡɪŋ",
+            "meaning": "调试"
+          }
+        ]
+      },
+      {
+        "name": "第一一三组 - 版本与更新",
+        "description": "版本与更新",
+        "vocabs": [
+          {
+            "word": "version",
+            "pronunciation": "ˈvɜːrʒn",
+            "meaning": "版本"
+          },
+          {
+            "word": "compatible",
+            "pronunciation": "kəmˈpætəbl",
+            "meaning": "兼容的"
+          },
+          {
+            "word": "deprecated",
+            "pronunciation": "ˈdeprəkeɪtɪd",
+            "meaning": "已弃用的"
+          },
+          {
+            "word": "migration",
+            "pronunciation": "maɪˈɡreɪʃn",
+            "meaning": "迁移"
+          },
+          {
+            "word": "upgrade",
+            "pronunciation": "ʌpˈɡreɪd",
+            "meaning": "升级"
+          }
+        ]
+      },
+      {
+        "name": "第一一四组 - 通用编程词汇",
+        "description": "通用编程词汇",
+        "vocabs": [
+          {
+            "word": "algorithm",
+            "pronunciation": "ˈælɡərɪðəm",
+            "meaning": "算法"
+          },
+          {
+            "word": "optimize",
+            "pronunciation": "ˈɑːptɪmaɪz",
+            "meaning": "优化"
+          },
+          {
+            "word": "refactor",
+            "pronunciation": "riːˈfæktər",
+            "meaning": "重构"
+          },
+          {
+            "word": "lint",
+            "pronunciation": "lɪnt",
+            "meaning": "代码检查"
+          },
+          {
+            "word": "documentation",
+            "pronunciation": "ˌdɑːkjʊmenˈteɪʃn",
+            "meaning": "文档"
+          }
+        ]
+      },
+      {
+        "name": "第一一五组 - 华为生态",
+        "description": "华为生态",
+        "vocabs": [
+          {
+            "word": "huawei",
+            "pronunciation": "ˈhwɑːweɪ",
+            "meaning": "华为"
+          },
+          {
+            "word": "appgallery connect",
+            "pronunciation": "æp ˈɡæləri kəˈnekt",
+            "meaning": "AppGallery Connect"
+          },
+          {
+            "word": "push kit",
+            "pronunciation": "pʊʃ kɪt",
+            "meaning": "推送服务"
+          },
+          {
+            "word": "analytics",
+            "pronunciation": "ˌænəˈlɪtɪks",
+            "meaning": "分析服务"
+          },
+          {
+            "word": "cloud dev",
+            "pronunciation": "klaʊd dev",
+            "meaning": "云端开发"
+          }
+        ]
+      },
+      {
+        "name": "第一一六组 - 性能与优化",
+        "description": "性能与优化",
+        "vocabs": [
+          {
+            "word": "performance",
+            "pronunciation": "pərˈfɔːrməns",
+            "meaning": "性能"
+          },
+          {
+            "word": "optimization",
+            "pronunciation": "ˌɑːptɪmɪˈzeɪʃn",
+            "meaning": "优化"
+          },
+          {
+            "word": "memory",
+            "pronunciation": "ˈmeməri",
+            "meaning": "内存"
+          },
+          {
+            "word": "storage",
+            "pronunciation": "ˈstɔːrɪdʒ",
+            "meaning": "存储"
+          },
+          {
+            "word": "rendering",
+            "pronunciation": "ˈrendərɪŋ",
+            "meaning": "渲染"
+          }
+        ]
+      },
+      {
+        "name": "第一一七组 - 辅助功能",
+        "description": "辅助功能",
+        "vocabs": [
+          {
+            "word": "accessibility",
+            "pronunciation": "əkˌsesəˈbɪləti",
+            "meaning": "辅助功能"
+          },
+          {
+            "word": "locale",
+            "pronunciation": "loʊˈkeɪl",
+            "meaning": "区域设置"
+          },
+          {
+            "word": "internationalization",
+            "pronunciation": "ˌɪntərˌnæʃənəlaɪˈzeɪʃn",
+            "meaning": "国际化"
+          },
+          {
+            "word": "localization",
+            "pronunciation": "ˌloʊkəlaɪˈzeɪʃn",
+            "meaning": "本地化"
+          },
+          {
+            "word": "rtl",
+            "pronunciation": "ɑːr tiː el",
+            "meaning": "从右到左布局"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "软件开发完整词汇",
+    "name": "软件开发完整词汇大全",
+    "description": "软件开发完整词汇大全相关词汇",
+    "sections": [
+      {
+        "name": "第一组 - 变量与数据类型",
+        "description": "变量与数据类型",
+        "vocabs": [
+          {
+            "word": "variable",
+            "pronunciation": "ˈveəriəbl",
+            "meaning": "变量"
+          },
+          {
+            "word": "constant",
+            "pronunciation": "ˈkɒnstənt",
+            "meaning": "常量"
+          },
+          {
+            "word": "integer",
+            "pronunciation": "ˈɪntɪdʒə(r)",
+            "meaning": "整数类型"
+          },
+          {
+            "word": "floating",
+            "pronunciation": "ˈfləʊtɪŋ",
+            "meaning": "浮点数"
+          },
+          {
+            "word": "double",
+            "pronunciation": "ˈdʌbl",
+            "meaning": "双精度浮点数"
+          },
+          {
+            "word": "boolean",
+            "pronunciation": "ˈbuːliən",
+            "meaning": "布尔类型"
+          },
+          {
+            "word": "character",
+            "pronunciation": "ˈkærəktə(r)",
+            "meaning": "字符类型"
+          },
+          {
+            "word": "string",
+            "pronunciation": "strɪŋ",
+            "meaning": "字符串"
+          },
+          {
+            "word": "array",
+            "pronunciation": "əˈreɪ",
+            "meaning": "数组"
+          },
+          {
+            "word": "object",
+            "pronunciation": "ˈɒbdʒɪkt",
+            "meaning": "对象"
+          }
+        ]
+      },
+      {
+        "name": "第二组 - 运算符与表达式",
+        "description": "运算符与表达式",
+        "vocabs": [
+          {
+            "word": "operator",
+            "pronunciation": "ˈɒpəreɪtə(r)",
+            "meaning": "运算符"
+          },
+          {
+            "word": "operand",
+            "pronunciation": "ˈɒpərænd",
+            "meaning": "操作数"
+          },
+          {
+            "word": "assignment",
+            "pronunciation": "əˈsaɪnmənt",
+            "meaning": "赋值"
+          },
+          {
+            "word": "arithmetic",
+            "pronunciation": "ˌærɪθˈmetɪk",
+            "meaning": "算术运算"
+          },
+          {
+            "word": "comparison",
+            "pronunciation": "kəmˈpærɪsn",
+            "meaning": "比较运算"
+          },
+          {
+            "word": "logical",
+            "pronunciation": "ˈlɒdʒɪkl",
+            "meaning": "逻辑运算"
+          },
+          {
+            "word": "bitwise",
+            "pronunciation": "ˈbɪtwaɪz",
+            "meaning": "位运算"
+          },
+          {
+            "word": "increment",
+            "pronunciation": "ˈɪŋkrɪmənt",
+            "meaning": "递增"
+          },
+          {
+            "word": "decrement",
+            "pronunciation": "dɪˈskriːmənt",
+            "meaning": "递减"
+          },
+          {
+            "word": "ternary",
+            "pronunciation": "ˈtɜːnəri",
+            "meaning": "三元运算"
+          }
+        ]
+      },
+      {
+        "name": "第三组 - 控制流程",
+        "description": "控制流程",
+        "vocabs": [
+          {
+            "word": "conditional",
+            "pronunciation": "kənˈdɪʃənl",
+            "meaning": "条件语句"
+          },
+          {
+            "word": "if",
+            "pronunciation": "ɪf",
+            "meaning": "如果"
+          },
+          {
+            "word": "else",
+            "pronunciation": "els",
+            "meaning": "否则"
+          },
+          {
+            "word": "switch",
+            "pronunciation": "swɪtʃ",
+            "meaning": "开关语句"
+          },
+          {
+            "word": "case",
+            "pronunciation": "keɪs",
+            "meaning": "分支"
+          },
+          {
+            "word": "default",
+            "pronunciation": "dɪˈfɔːlt",
+            "meaning": "默认分支"
+          },
+          {
+            "word": "break",
+            "pronunciation": "breɪk",
+            "meaning": "中断"
+          },
+          {
+            "word": "continue",
+            "pronunciation": "kənˈtɪnjuː",
+            "meaning": "继续"
+          },
+          {
+            "word": "loop",
+            "pronunciation": "luːp",
+            "meaning": "循环"
+          },
+          {
+            "word": "iteration",
+            "pronunciation": "ˌɪtəˈreɪʃn",
+            "meaning": "迭代"
+          }
+        ]
+      },
+      {
+        "name": "第四组 - 循环结构",
+        "description": "循环结构",
+        "vocabs": [
+          {
+            "word": "while",
+            "pronunciation": "waɪl",
+            "meaning": "当...时循环"
+          },
+          {
+            "word": "for",
+            "pronunciation": "fɔː(r)",
+            "meaning": "For循环"
+          },
+          {
+            "word": "foreach",
+            "pronunciation": "fɔːrɪtʃ",
+            "meaning": "增强for循环"
+          },
+          {
+            "word": "do",
+            "pronunciation": "duː",
+            "meaning": "执行"
+          },
+          {
+            "word": "cycle",
+            "pronunciation": "ˈsaɪkl",
+            "meaning": "周期"
+          }
+        ]
+      },
+      {
+        "name": "第五组 - 函数基础",
+        "description": "函数基础",
+        "vocabs": [
+          {
+            "word": "function",
+            "pronunciation": "ˈfʌŋkʃn",
+            "meaning": "函数"
+          },
+          {
+            "word": "method",
+            "pronunciation": "ˈmeθəd",
+            "meaning": "方法"
+          },
+          {
+            "word": "procedure",
+            "pronunciation": "prəˈsiːdʒə(r)",
+            "meaning": "过程"
+          },
+          {
+            "word": "callback",
+            "pronunciation": "ˈkɔːlbæk",
+            "meaning": "回调函数"
+          },
+          {
+            "word": "closure",
+            "pronunciation": "ˈkləʊʒə(r)",
+            "meaning": "闭包"
+          }
+        ]
+      },
+      {
+        "name": "第六组 - 函数进阶",
+        "description": "函数进阶",
+        "vocabs": [
+          {
+            "word": "anonymous",
+            "pronunciation": "əˈnɒnɪməs",
+            "meaning": "匿名函数"
+          },
+          {
+            "word": "lambda",
+            "pronunciation": "ˈlæmdə",
+            "meaning": "Lambda表达式"
+          },
+          {
+            "word": "higher-order",
+            "pronunciation": "ˈhaɪə ˈɔːdə",
+            "meaning": "高阶函数"
+          },
+          {
+            "word": "recursion",
+            "pronunciation": "rɪˈkɜːʃn",
+            "meaning": "递归"
+          },
+          {
+            "word": "scope",
+            "pronunciation": "skəʊp",
+            "meaning": "作用域"
+          }
+        ]
+      },
+      {
+        "name": "第七组 - 参数与返回值",
+        "description": "参数与返回值",
+        "vocabs": [
+          {
+            "word": "parameter",
+            "pronunciation": "pəˈræmɪtə(r)",
+            "meaning": "参数"
+          },
+          {
+            "word": "argument",
+            "pronunciation": "ˈɑːɡjumənt",
+            "meaning": "实参"
+          },
+          {
+            "word": "return",
+            "pronunciation": "rɪˈtɜːn",
+            "meaning": "返回"
+          },
+          {
+            "word": "invoke",
+            "pronunciation": "ɪnˈvəʊk",
+            "meaning": "调用"
+          },
+          {
+            "word": "call",
+            "pronunciation": "kɔːl",
+            "meaning": "调用"
+          }
+        ]
+      },
+      {
+        "name": "第八组 - 核心概念",
+        "description": "核心概念",
+        "vocabs": [
+          {
+            "word": "object",
+            "pronunciation": "ˈɒbdʒɪkt",
+            "meaning": "对象"
+          },
+          {
+            "word": "class",
+            "pronunciation": "klɑːs",
+            "meaning": "类"
+          },
+          {
+            "word": "instance",
+            "pronunciation": "ˈɪnstəns",
+            "meaning": "实例"
+          },
+          {
+            "word": "attribute",
+            "pronunciation": "əˈtrɪbjuːt",
+            "meaning": "属性"
+          },
+          {
+            "word": "behavior",
+            "pronunciation": "bɪˈheɪvjər",
+            "meaning": "行为"
+          },
+          {
+            "word": "encapsulation",
+            "pronunciation": "ɪnˌkæpsjuˈleɪʃn",
+            "meaning": "封装"
+          },
+          {
+            "word": "inheritance",
+            "pronunciation": "ɪnˈherɪtəns",
+            "meaning": "继承"
+          },
+          {
+            "word": "polymorphism",
+            "pronunciation": "ˌpɒlɪˈmɔːfɪzəm",
+            "meaning": "多态"
+          },
+          {
+            "word": "abstraction",
+            "pronunciation": "æbˈstrækʃn",
+            "meaning": "抽象"
+          },
+          {
+            "word": "interface",
+            "pronunciation": "ˈɪntəfeɪs",
+            "meaning": "接口"
+          }
+        ]
+      },
+      {
+        "name": "第九组 - 访问控制",
+        "description": "访问控制",
+        "vocabs": [
+          {
+            "word": "public",
+            "pronunciation": "ˈpʌblɪk",
+            "meaning": "公共的"
+          },
+          {
+            "word": "private",
+            "pronunciation": "ˈpraɪvət",
+            "meaning": "私有的"
+          },
+          {
+            "word": "protected",
+            "pronunciation": "prəˈtektɪd",
+            "meaning": "受保护的"
+          },
+          {
+            "word": "internal",
+            "pronunciation": "ɪnˈtɜːnl",
+            "meaning": "内部的"
+          },
+          {
+            "word": "static",
+            "pronunciation": "ˈstætɪk",
+            "meaning": "静态的"
+          },
+          {
+            "word": "final",
+            "pronunciation": "ˈfaɪnl",
+            "meaning": "最终的"
+          },
+          {
+            "word": "readonly",
+            "pronunciation": "ˈriːdˌɒnli",
+            "meaning": "只读的"
+          },
+          {
+            "word": "abstract",
+            "pronunciation": "ˈæbstrækt",
+            "meaning": "抽象的"
+          },
+          {
+            "word": "override",
+            "pronunciation": "ˌəʊvəˈraɪd",
+            "meaning": "重写"
+          },
+          {
+            "word": "overload",
+            "pronunciation": "ˌəʊvəˈləʊd",
+            "meaning": "重载"
+          }
+        ]
+      },
+      {
+        "name": "第十组 - 设计模式",
+        "description": "设计模式",
+        "vocabs": [
+          {
+            "word": "singleton",
+            "pronunciation": "ˈsɪŋɡltən",
+            "meaning": "单例模式"
+          },
+          {
+            "word": "factory",
+            "pronunciation": "ˈfæktri",
+            "meaning": "工厂模式"
+          },
+          {
+            "word": "observer",
+            "pronunciation": "əbˈzɜːvə(r)",
+            "meaning": "观察者模式"
+          },
+          {
+            "word": "decorator",
+            "pronunciation": "ˈdekəreɪtə(r)",
+            "meaning": "装饰器模式"
+          },
+          {
+            "word": "adapter",
+            "pronunciation": "əˈdæptə(r)",
+            "meaning": "适配器模式"
+          },
+          {
+            "word": "strategy",
+            "pronunciation": "ˈstrætədʒi",
+            "meaning": "策略模式"
+          },
+          {
+            "word": "command",
+            "pronunciation": "kəˈmɑːnd",
+            "meaning": "命令模式"
+          },
+          {
+            "word": "builder",
+            "pronunciation": "ˈbɪldə(r)",
+            "meaning": "建造者模式"
+          },
+          {
+            "word": "prototype",
+            "pronunciation": "ˈprəʊtətaɪp",
+            "meaning": "原型模式"
+          },
+          {
+            "word": "facade",
+            "pronunciation": "fəˈsɑːd",
+            "meaning": "门面模式"
+          }
+        ]
+      },
+      {
+        "name": "第十一组 - 线性结构",
+        "description": "线性结构",
+        "vocabs": [
+          {
+            "word": "array",
+            "pronunciation": "əˈreɪ",
+            "meaning": "数组"
+          },
+          {
+            "word": "linked list",
+            "pronunciation": "lɪŋkt lɪst",
+            "meaning": "链表"
+          },
+          {
+            "word": "stack",
+            "pronunciation": "stæk",
+            "meaning": "栈"
+          },
+          {
+            "word": "queue",
+            "pronunciation": "kjuː",
+            "meaning": "队列"
+          },
+          {
+            "word": "deque",
+            "pronunciation": "dek",
+            "meaning": "双端队列"
+          },
+          {
+            "word": "vector",
+            "pronunciation": "ˈvektə(r)",
+            "meaning": "向量"
+          },
+          {
+            "word": "list",
+            "pronunciation": "lɪst",
+            "meaning": "列表"
+          },
+          {
+            "word": "heap",
+            "pronunciation": "hiːp",
+            "meaning": "堆"
+          },
+          {
+            "word": "priority queue",
+            "pronunciation": "praɪˈɒrəti kjuː",
+            "meaning": "优先队列"
+          },
+          {
+            "word": "circular buffer",
+            "pronunciation": "ˈsɜːkjələ ˈbʌfə(r)",
+            "meaning": "环形缓冲区"
+          }
+        ]
+      },
+      {
+        "name": "第十二组 - 非线性结构",
+        "description": "非线性结构",
+        "vocabs": [
+          {
+            "word": "tree",
+            "pronunciation": "triː",
+            "meaning": "树"
+          },
+          {
+            "word": "binary tree",
+            "pronunciation": "ˈbaɪnəri triː",
+            "meaning": "二叉树"
+          },
+          {
+            "word": "binary search tree",
+            "pronunciation": "baɪnəri sɜːtʃ triː",
+            "meaning": "二叉搜索树"
+          },
+          {
+            "word": "balanced tree",
+            "pronunciation": "ˈbælənst triː",
+            "meaning": "平衡树"
+          },
+          {
+            "word": "graph",
+            "pronunciation": "ɡrɑːf",
+            "meaning": "图"
+          },
+          {
+            "word": "directed graph",
+            "pronunciation": "dəˈrektɪd ɡrɑːf",
+            "meaning": "有向图"
+          },
+          {
+            "word": "undirected graph",
+            "pronunciation": "ʌndəˈrektɪd ɡrɑːf",
+            "meaning": "无向图"
+          },
+          {
+            "word": "DAG",
+            "pronunciation": "dæɡ",
+            "meaning": "有向无环图"
+          },
+          {
+            "word": "hash table",
+            "pronunciation": "hæʃ ˈteɪbl",
+            "meaning": "哈希表"
+          },
+          {
+            "word": "heap",
+            "pronunciation": "hiːp",
+            "meaning": "堆"
+          }
+        ]
+      },
+      {
+        "name": "第十三组 - 树结构进阶",
+        "description": "树结构进阶",
+        "vocabs": [
+          {
+            "word": "AVL tree",
+            "pronunciation": "eɪ viː el triː",
+            "meaning": "AVL树"
+          },
+          {
+            "word": "red-black tree",
+            "pronunciation": "red blæk triː",
+            "meaning": "红黑树"
+          },
+          {
+            "word": "B-tree",
+            "pronunciation": "biː triː",
+            "meaning": "B树"
+          },
+          {
+            "word": "B+ tree",
+            "pronunciation": "biː plʌs triː",
+            "meaning": "B+树"
+          },
+          {
+            "word": "trie",
+            "pronunciation": "traɪ",
+            "meaning": "前缀树"
+          },
+          {
+            "word": "segment tree",
+            "pronunciation": "ˈseɡmənt triː",
+            "meaning": "线段树"
+          },
+          {
+            "word": "interval tree",
+            "pronunciation": "ˈɪntəvəl triː",
+            "meaning": "区间树"
+          },
+          {
+            "word": "skip list",
+            "pronunciation": "skɪp lɪst",
+            "meaning": "跳表"
+          },
+          {
+            "word": "Fibonacci heap",
+            "pronunciation": "fɪbəˈnɑːtʃi hiːp",
+            "meaning": "斐波那契堆"
+          },
+          {
+            "word": "R-tree",
+            "pronunciation": "ɑː triː",
+            "meaning": "R树"
+          }
+        ]
+      },
+      {
+        "name": "第十四组 - 排序算法",
+        "description": "排序算法",
+        "vocabs": [
+          {
+            "word": "bubble sort",
+            "pronunciation": "ˈbʌbl sɔːt",
+            "meaning": "冒泡排序"
+          },
+          {
+            "word": "selection sort",
+            "pronunciation": "sɪˈlekʃn sɔːt",
+            "meaning": "选择排序"
+          },
+          {
+            "word": "insertion sort",
+            "pronunciation": "ɪnˈsekʃn sɔːt",
+            "meaning": "插入排序"
+          },
+          {
+            "word": "merge sort",
+            "pronunciation": "mɜːdʒ sɔːt",
+            "meaning": "归并排序"
+          },
+          {
+            "word": "quick sort",
+            "pronunciation": "kwɪk sɔːt",
+            "meaning": "快速排序"
+          },
+          {
+            "word": "heap sort",
+            "pronunciation": "hiːp sɔːt",
+            "meaning": "堆排序"
+          },
+          {
+            "word": "shell sort",
+            "pronunciation": "ʃel sɔːt",
+            "meaning": "希尔排序"
+          },
+          {
+            "word": "counting sort",
+            "pronunciation": "ˈkaʊntɪŋ sɔːt",
+            "meaning": "计数排序"
+          },
+          {
+            "word": "radix sort",
+            "pronunciation": "ˈrædɪks sɔːt",
+            "meaning": "基数排序"
+          },
+          {
+            "word": "bucket sort",
+            "pronunciation": "ˈbʌkɪt sɔːt",
+            "meaning": "桶排序"
+          }
+        ]
+      },
+      {
+        "name": "第十五组 - 搜索算法",
+        "description": "搜索算法",
+        "vocabs": [
+          {
+            "word": "linear search",
+            "pronunciation": "ˈlɪniə(r) sɜːtʃ",
+            "meaning": "线性搜索"
+          },
+          {
+            "word": "binary search",
+            "pronunciation": "ˈbaɪnəri sɜːtʃ",
+            "meaning": "二分搜索"
+          },
+          {
+            "word": "depth-first search",
+            "pronunciation": "depθ fɜːst sɜːtʃ",
+            "meaning": "深度优先搜索"
+          },
+          {
+            "word": "breadth-first search",
+            "pronunciation": "bredθ fɜːst sɜːtʃ",
+            "meaning": "广度优先搜索"
+          },
+          {
+            "word": "interpolation search",
+            "pronunciation": "ˌɪntəpəˈleɪʃn sɜːtʃ",
+            "meaning": "插值搜索"
+          },
+          {
+            "word": "exponential search",
+            "pronunciation": "ˌekspəˈnenʃl sɜːtʃ",
+            "meaning": "指数搜索"
+          },
+          {
+            "word": "jump search",
+            "pronunciation": "dʒʌmp sɜːtʃ",
+            "meaning": "跳跃搜索"
+          },
+          {
+            "word": "ternary search",
+            "pronunciation": "ˈtɜːnəri sɜːtʃ",
+            "meaning": "三分搜索"
+          },
+          {
+            "word": "hash search",
+            "pronunciation": "hæʃ sɜːtʃ",
+            "meaning": "哈希查找"
+          },
+          {
+            "word": "tree search",
+            "pronunciation": "triː sɜːtʃ",
+            "meaning": "树搜索"
+          }
+        ]
+      },
+      {
+        "name": "第十六组 - 图算法",
+        "description": "图算法",
+        "vocabs": [
+          {
+            "word": "Dijkstra",
+            "pronunciation": "ˈdaɪkstrə",
+            "meaning": "Dijkstra算法"
+          },
+          {
+            "word": "Bellman-Ford",
+            "pronunciation": "ˈbelmən fɔːd",
+            "meaning": "Bellman-Ford算法"
+          },
+          {
+            "word": "Floyd-Warshall",
+            "pronunciation": "flɔɪd ˈwɔːʃɔːl",
+            "meaning": "Floyd算法"
+          },
+          {
+            "word": "Kruskal",
+            "pronunciation": "krʌskl",
+            "meaning": "Kruskal算法"
+          },
+          {
+            "word": "Prim",
+            "pronunciation": "prɪm",
+            "meaning": "Prim算法"
+          },
+          {
+            "word": "topological sort",
+            "pronunciation": "ˌtɒpəˈlɒdʒɪkl sɔːt",
+            "meaning": "拓扑排序"
+          },
+          {
+            "word": "strongly connected components",
+            "pronunciation": "strɒŋli kəˈnektɪd kəmˈpəʊnənts",
+            "meaning": "强连通分量"
+          },
+          {
+            "word": "bipartite",
+            "pronunciation": "baɪˈpɑːtaɪt",
+            "meaning": "二分图"
+          },
+          {
+            "word": "Eulerian path",
+            "pronunciation": "ˈɔɪləriən pɑːθ",
+            "meaning": "欧拉路径"
+          }
+        ]
+      },
+      {
+        "name": "第十七组 - 动态规划",
+        "description": "动态规划",
+        "vocabs": [
+          {
+            "word": "dynamic programming",
+            "pronunciation": "daɪˈnæmɪk ˈprəʊɡræmɪŋ",
+            "meaning": "动态规划"
+          },
+          {
+            "word": "memoization",
+            "pronunciation": "ˌmeməʊaɪˈzeɪʃn",
+            "meaning": "记忆化"
+          },
+          {
+            "word": "optimal substructure",
+            "pronunciation": "ˈɒptɪməl sʌbˈstrʌktʃə(r)",
+            "meaning": "最优子结构"
+          },
+          {
+            "word": "overlapping subproblems",
+            "pronunciation": "ˌəʊvəˈlæpɪŋ sʌbˈprɒbləmz",
+            "meaning": "重叠子问题"
+          },
+          {
+            "word": "state",
+            "pronunciation": "steɪt",
+            "meaning": "状态"
+          },
+          {
+            "word": "transition",
+            "pronunciation": "trænˈzɪʃn",
+            "meaning": "状态转移"
+          },
+          {
+            "word": "base case",
+            "pronunciation": "beɪs keɪs",
+            "meaning": "基准情况"
+          },
+          {
+            "word": "tabulation",
+            "pronunciation": "ˌtæbjuˈleɪʃn",
+            "meaning": "制表法"
+          },
+          {
+            "word": "LCS",
+            "pronunciation": "el siː es",
+            "meaning": "最长公共子序列"
+          },
+          {
+            "word": "LIS",
+            "pronunciation": "el aɪ es",
+            "meaning": "最长递增子序列"
+          }
+        ]
+      },
+      {
+        "name": "第十八组 - 关系型数据库基础",
+        "description": "关系型数据库基础",
+        "vocabs": [
+          {
+            "word": "database",
+            "pronunciation": "ˈdeɪtəbeɪs",
+            "meaning": "数据库"
+          },
+          {
+            "word": "table",
+            "pronunciation": "ˈteɪbl",
+            "meaning": "表"
+          },
+          {
+            "word": "row",
+            "pronunciation": "rəʊ",
+            "meaning": "行"
+          },
+          {
+            "word": "column",
+            "pronunciation": "ˈkɒləm",
+            "meaning": "列"
+          },
+          {
+            "word": "field",
+            "pronunciation": "fiːld",
+            "meaning": "字段"
+          },
+          {
+            "word": "primary key",
+            "pronunciation": "ˈpraɪməri kiː",
+            "meaning": "主键"
+          },
+          {
+            "word": "foreign key",
+            "pronunciation": "ˈfɒrən kiː",
+            "meaning": "外键"
+          },
+          {
+            "word": "index",
+            "pronunciation": "ˈɪndeks",
+            "meaning": "索引"
+          },
+          {
+            "word": "view",
+            "pronunciation": "vjuː",
+            "meaning": "视图"
+          },
+          {
+            "word": "stored procedure",
+            "pronunciation": "stɔːd prəˈsiːdʒə(r)",
+            "meaning": "存储过程"
+          }
+        ]
+      },
+      {
+        "name": "第十九组 - SQL查询",
+        "description": "SQL查询",
+        "vocabs": [
+          {
+            "word": "select",
+            "pronunciation": "sɪˈlekt",
+            "meaning": "查询"
+          },
+          {
+            "word": "from",
+            "pronunciation": "frɒm",
+            "meaning": "从"
+          },
+          {
+            "word": "where",
+            "pronunciation": "weə(r)",
+            "meaning": "条件"
+          },
+          {
+            "word": "join",
+            "pronunciation": "dʒɔɪn",
+            "meaning": "连接"
+          },
+          {
+            "word": "inner join",
+            "pronunciation": "ˈɪnə(r) dʒɔɪn",
+            "meaning": "内连接"
+          },
+          {
+            "word": "left join",
+            "pronunciation": "left dʒɔɪn",
+            "meaning": "左连接"
+          },
+          {
+            "word": "right join",
+            "pronunciation": "raɪt dʒɔɪn",
+            "meaning": "右连接"
+          },
+          {
+            "word": "full outer join",
+            "pronunciation": "fʊl ˈaʊtə(r) dʒɔɪn",
+            "meaning": "全外连接"
+          },
+          {
+            "word": "group by",
+            "pronunciation": "ɡruːp baɪ",
+            "meaning": "分组"
+          },
+          {
+            "word": "having",
+            "pronunciation": "ˈhævɪŋ",
+            "meaning": "分组条件"
+          },
+          {
+            "word": "order by",
+            "pronunciation": "ˈɔːdə(r) baɪ",
+            "meaning": "排序"
+          },
+          {
+            "word": "limit",
+            "pronunciation": "ˈlɪmɪt",
+            "meaning": "限制"
+          },
+          {
+            "word": "distinct",
+            "pronunciation": "dɪˈstɪŋkt",
+            "meaning": "去重"
+          },
+          {
+            "word": "union",
+            "pronunciation": "ˈjuːniən",
+            "meaning": "合并"
+          },
+          {
+            "word": "intersect",
+            "pronunciation": "ˈɪntəsekt",
+            "meaning": "交集"
+          }
+        ]
+      },
+      {
+        "name": "第二十组 - 数据库进阶",
+        "description": "数据库进阶",
+        "vocabs": [
+          {
+            "word": "trigger",
+            "pronunciation": "ˈtrɪɡə(r)",
+            "meaning": "触发器"
+          },
+          {
+            "word": "transaction",
+            "pronunciation": "trænˈzækʃn",
+            "meaning": "事务"
+          },
+          {
+            "word": "commit",
+            "pronunciation": "kəˈmɪt",
+            "meaning": "提交"
+          },
+          {
+            "word": "rollback",
+            "pronunciation": "ˈrəʊlbæk",
+            "meaning": "回滚"
+          },
+          {
+            "word": "constraint",
+            "pronunciation": "kənˈstreɪnt",
+            "meaning": "约束"
+          },
+          {
+            "word": "normalization",
+            "pronunciation": "ˌnɔːməlaɪˈzeɪʃn",
+            "meaning": "规范化"
+          },
+          {
+            "word": "denormalization",
+            "pronunciation": "diːˌnɔːməlaɪˈzeɪʃn",
+            "meaning": "反规范化"
+          },
+          {
+            "word": "query optimization",
+            "pronunciation": "ˈkwɪəri ˌɒptɪmaɪˈzeɪʃn",
+            "meaning": "查询优化"
+          },
+          {
+            "word": "execution plan",
+            "pronunciation": "ˌeksekˈjuːʃn plæn",
+            "meaning": "执行计划"
+          },
+          {
+            "word": "deadlock",
+            "pronunciation": "ˈdedlɒk",
+            "meaning": "死锁"
+          }
+        ]
+      },
+      {
+        "name": "第二十一组 - NoSQL数据库",
+        "description": "NoSQL数据库",
+        "vocabs": [
+          {
+            "word": "document",
+            "pronunciation": "ˈdɒkjumənt",
+            "meaning": "文档"
+          },
+          {
+            "word": "collection",
+            "pronunciation": "kəˈlekʃn",
+            "meaning": "集合"
+          },
+          {
+            "word": "shard",
+            "pronunciation": "ʃɑːd",
+            "meaning": "分片"
+          },
+          {
+            "word": "replica set",
+            "pronunciation": "ˈreplɪkə set",
+            "meaning": "副本集"
+          },
+          {
+            "word": "eventually consistent",
+            "pronunciation": "ɪˈventʃuəli kənˈsɪstənt",
+            "meaning": "最终一致性"
+          },
+          {
+            "word": "CAP theorem",
+            "pronunciation": "kæp ˈθɪərəm",
+            "meaning": "CAP定理"
+          },
+          {
+            "word": "BASE",
+            "pronunciation": "beɪs",
+            "meaning": "BASE特性"
+          },
+          {
+            "word": "ACID",
+            "pronunciation": "ˈæsɪd",
+            "meaning": "ACID特性"
+          },
+          {
+            "word": "partition",
+            "pronunciation": "pɑːˈtɪʃn",
+            "meaning": "分区"
+          },
+          {
+            "word": "replication",
+            "pronunciation": "ˌreplɪˈkeɪʃn",
+            "meaning": "复制"
+          }
+        ]
+      },
+      {
+        "name": "第二十二组 - 网络协议",
+        "description": "网络协议",
+        "vocabs": [
+          {
+            "word": "protocol",
+            "pronunciation": "ˈprəʊtəkɒl",
+            "meaning": "协议"
+          },
+          {
+            "word": "TCP",
+            "pronunciation": "tiː siː piː",
+            "meaning": "传输控制协议"
+          },
+          {
+            "word": "UDP",
+            "pronunciation": "juː diː piː",
+            "meaning": "用户数据报协议"
+          },
+          {
+            "word": "IP",
+            "pronunciation": "aɪ piː",
+            "meaning": "互联网协议"
+          },
+          {
+            "word": "HTTP",
+            "pronunciation": "eɪtʃ tiː piː",
+            "meaning": "超文本传输协议"
+          },
+          {
+            "word": "HTTPS",
+            "pronunciation": "eɪtʃ tiː piː es",
+            "meaning": "安全超文本传输协议"
+          },
+          {
+            "word": "DNS",
+            "pronunciation": "diː en es",
+            "meaning": "域名系统"
+          },
+          {
+            "word": "FTP",
+            "pronunciation": "ef tiː piː",
+            "meaning": "文件传输协议"
+          },
+          {
+            "word": "SMTP",
+            "pronunciation": "es em tiː piː",
+            "meaning": "简单邮件传输协议"
+          },
+          {
+            "word": "SSH",
+            "pronunciation": "es es eɪtʃ",
+            "meaning": "安全外壳协议"
+          }
+        ]
+      },
+      {
+        "name": "第二十三组 - 网络分层",
+        "description": "网络分层",
+        "vocabs": [
+          {
+            "word": "application layer",
+            "pronunciation": "əˈplɪkeɪʃn ˈleɪə(r)",
+            "meaning": "应用层"
+          },
+          {
+            "word": "presentation layer",
+            "pronunciation": "ˌprezənˈteɪʃn ˈleɪə(r)",
+            "meaning": "表示层"
+          },
+          {
+            "word": "session layer",
+            "pronunciation": "ˈseʃn ˈleɪə(r)",
+            "meaning": "会话层"
+          },
+          {
+            "word": "transport layer",
+            "pronunciation": "trænsˈpɔːt ˈleɪə(r)",
+            "meaning": "传输层"
+          },
+          {
+            "word": "network layer",
+            "pronunciation": "ˈnetwɜːk ˈleɪə(r)",
+            "meaning": "网络层"
+          },
+          {
+            "word": "data link layer",
+            "pronunciation": "ˈdeɪtə lɪŋk ˈleɪə(r)",
+            "meaning": "数据链路层"
+          },
+          {
+            "word": "physical layer",
+            "pronunciation": "ˈfɪzɪkl ˈleɪə(r)",
+            "meaning": "物理层"
+          },
+          {
+            "word": "OSI model",
+            "pronunciation": "ˈəʊ es aɪ ˈmɒdl",
+            "meaning": "OSI模型"
+          },
+          {
+            "word": "TCP-IP model",
+            "pronunciation": "tiː siː piː aɪ piː ˈmɒdl",
+            "meaning": "TCP/IP模型"
+          },
+          {
+            "word": "encapsulation",
+            "pronunciation": "ɪnˌkæpsjuˈleɪʃn",
+            "meaning": "封装"
+          }
+        ]
+      },
+      {
+        "name": "第二十四组 - Web开发",
+        "description": "Web开发",
+        "vocabs": [
+          {
+            "word": "frontend",
+            "pronunciation": "ˈfrʌntend",
+            "meaning": "前端"
+          },
+          {
+            "word": "backend",
+            "pronunciation": "ˈbækend",
+            "meaning": "后端"
+          },
+          {
+            "word": "full stack",
+            "pronunciation": "fʊl stæk",
+            "meaning": "全栈"
+          },
+          {
+            "word": "REST",
+            "pronunciation": "rest",
+            "meaning": "REST风格"
+          },
+          {
+            "word": "RESTful",
+            "pronunciation": "ˈrestfʊl",
+            "meaning": "RESTful API"
+          },
+          {
+            "word": "GraphQL",
+            "pronunciation": "ɡrɑːf kjuː el",
+            "meaning": "GraphQL查询语言"
+          },
+          {
+            "word": "JSON",
+            "pronunciation": "ˈdʒeɪsɒn",
+            "meaning": "JSON数据格式"
+          },
+          {
+            "word": "XML",
+            "pronunciation": "eks em el",
+            "meaning": "XML标记语言"
+          },
+          {
+            "word": "request",
+            "pronunciation": "rɪˈkwest",
+            "meaning": "请求"
+          },
+          {
+            "word": "response",
+            "pronunciation": "rɪˈspɒns",
+            "meaning": "响应"
+          }
+        ]
+      },
+      {
+        "name": "第二十五组 - API设计",
+        "description": "API设计",
+        "vocabs": [
+          {
+            "word": "endpoint",
+            "pronunciation": "ˈendpoint",
+            "meaning": "端点"
+          },
+          {
+            "word": "resource",
+            "pronunciation": "ˈriːsɔːs",
+            "meaning": "资源"
+          },
+          {
+            "word": "CRUD",
+            "pronunciation": "krʌd",
+            "meaning": "增删改查"
+          },
+          {
+            "word": "create",
+            "pronunciation": "kriːˈeɪt",
+            "meaning": "创建"
+          },
+          {
+            "word": "read",
+            "pronunciation": "riːd",
+            "meaning": "读取"
+          },
+          {
+            "word": "update",
+            "pronunciation": "ʌpˈdeɪt",
+            "meaning": "更新"
+          },
+          {
+            "word": "delete",
+            "pronunciation": "dɪˈliːt",
+            "meaning": "删除"
+          },
+          {
+            "word": "pagination",
+            "pronunciation": "ˌpædʒɪˈneɪʃn",
+            "meaning": "分页"
+          },
+          {
+            "word": "rate limiting",
+            "pronunciation": "reɪt ˈlɪmɪtɪŋ",
+            "meaning": "限流"
+          },
+          {
+            "word": "authentication",
+            "pronunciation": "ɔːˌθentɪˈkeɪʃn",
+            "meaning": "认证"
+          },
+          {
+            "word": "authorization",
+            "pronunciation": "ˌɔːθəraɪˈzeɪʃn",
+            "meaning": "授权"
+          },
+          {
+            "word": "OAuth",
+            "pronunciation": "ˈəʊɔːθ",
+            "meaning": "OAuth协议"
+          },
+          {
+            "word": "JWT",
+            "pronunciation": "dʒeɪ ˈdʌbəljuː tiː",
+            "meaning": "JSON Web令牌"
+          },
+          {
+            "word": "API key",
+            "pronunciation": "eɪ piː aɪ kiː",
+            "meaning": "API密钥"
+          },
+          {
+            "word": "webhook",
+            "pronunciation": "ˈwebhʊk",
+            "meaning": "Webhook回调"
+          }
+        ]
+      },
+      {
+        "name": "第二十六组 - 加密与安全",
+        "description": "加密与安全",
+        "vocabs": [
+          {
+            "word": "encryption",
+            "pronunciation": "ɪnˈkrɪpʃn",
+            "meaning": "加密"
+          },
+          {
+            "word": "decryption",
+            "pronunciation": "diːkrɪpʃn",
+            "meaning": "解密"
+          },
+          {
+            "word": "symmetric",
+            "pronunciation": "sɪˈmetrɪk",
+            "meaning": "对称加密"
+          },
+          {
+            "word": "asymmetric",
+            "pronunciation": "ˌeɪsɪˈmetrɪk",
+            "meaning": "非对称加密"
+          },
+          {
+            "word": "hashing",
+            "pronunciation": "ˈhæʃɪŋ",
+            "meaning": "哈希"
+          },
+          {
+            "word": "SHA",
+            "pronunciation": "ʃɑː",
+            "meaning": "安全哈希算法"
+          },
+          {
+            "word": "MD5",
+            "pronunciation": "em diː faɪv",
+            "meaning": "MD5消息摘要"
+          },
+          {
+            "word": "RSA",
+            "pronunciation": "ɑː es eɪ",
+            "meaning": "RSA加密算法"
+          },
+          {
+            "word": "AES",
+            "pronunciation": "eɪ iː es",
+            "meaning": "高级加密标准"
+          },
+          {
+            "word": "DES",
+            "pronunciation": "diː iː es",
+            "meaning": "数据加密标准"
+          },
+          {
+            "word": "SSL",
+            "pronunciation": "es es el",
+            "meaning": "安全套接层"
+          },
+          {
+            "word": "TLS",
+            "pronunciation": "tiː el es",
+            "meaning": "传输层安全"
+          },
+          {
+            "word": "certificate",
+            "pronunciation": "səˈtɪfɪkət",
+            "meaning": "证书"
+          },
+          {
+            "word": "public key",
+            "pronunciation": "ˈpʌblɪk kiː",
+            "meaning": "公钥"
+          },
+          {
+            "word": "private key",
+            "pronunciation": "ˈpraɪvət kiː",
+            "meaning": "私钥"
+          }
+        ]
+      },
+      {
+        "name": "第二十七组 - Web安全",
+        "description": "Web安全",
+        "vocabs": [
+          {
+            "word": "XSS",
+            "pronunciation": "eks es es",
+            "meaning": "跨站脚本攻击"
+          },
+          {
+            "word": "CSRF",
+            "pronunciation": "siː es ɑː ef",
+            "meaning": "跨站请求伪造"
+          },
+          {
+            "word": "SQL injection",
+            "pronunciation": "es kjuː el ɪnˈdʒekʃn",
+            "meaning": "SQL注入"
+          },
+          {
+            "word": "CSRF token",
+            "pronunciation": "siː es ɑː ef ˈtəʊkən",
+            "meaning": "CSRF令牌"
+          },
+          {
+            "word": "sanitization",
+            "pronunciation": "ˌsænɪtaɪˈzeɪʃn",
+            "meaning": "消毒处理"
+          },
+          {
+            "word": "input validation",
+            "pronunciation": "ˈɪnpʌt ˌvælɪˈdeɪʃn",
+            "meaning": "输入验证"
+          },
+          {
+            "word": "CORS",
+            "pronunciation": "kɔːs",
+            "meaning": "跨域资源共享"
+          },
+          {
+            "word": "CSP",
+            "pronunciation": "siː es piː",
+            "meaning": "内容安全策略"
+          },
+          {
+            "word": "secure coding",
+            "pronunciation": "sɪˈkjʊə(r) ˈkəʊdɪŋ",
+            "meaning": "安全编码"
+          }
+        ]
+      },
+      {
+        "name": "第二十八组 - 身份与访问",
+        "description": "身份与访问",
+        "vocabs": [
+          {
+            "word": "authentication",
+            "pronunciation": "ɔːˌθentɪˈkeɪʃn",
+            "meaning": "身份认证"
+          },
+          {
+            "word": "authorization",
+            "pronunciation": "ˌɔːθəraɪˈzeɪʃn",
+            "meaning": "授权"
+          },
+          {
+            "word": "SSO",
+            "pronunciation": "es es əʊ",
+            "meaning": "单点登录"
+          },
+          {
+            "word": "MFA",
+            "pronunciation": "em ef eɪ",
+            "meaning": "多因素认证"
+          },
+          {
+            "word": "2FA",
+            "pronunciation": "tuː ef eɪ",
+            "meaning": "双因素认证"
+          },
+          {
+            "word": "password",
+            "pronunciation": "ˈpɑːswɜːd",
+            "meaning": "密码"
+          },
+          {
+            "word": "salt",
+            "pronunciation": "sɔːlt",
+            "meaning": "盐值"
+          },
+          {
+            "word": "pepper",
+            "pronunciation": "ˈpepə(r)",
+            "meaning": "胡椒值"
+          },
+          {
+            "word": "bcrypt",
+            "pronunciation": "biː krɪpt",
+            "meaning": "bcrypt加密"
+          },
+          {
+            "word": "PBKDF2",
+            "pronunciation": "piː biː keɪ diː ef tuː",
+            "meaning": "PBKDF2算法"
+          }
+        ]
+      },
+      {
+        "name": "第二十九组 - Git基础",
+        "description": "Git基础",
+        "vocabs": [
+          {
+            "word": "repository",
+            "pronunciation": "rɪˈpɒzətəri",
+            "meaning": "仓库"
+          },
+          {
+            "word": "commit",
+            "pronunciation": "kəˈmɪt",
+            "meaning": "提交"
+          },
+          {
+            "word": "branch",
+            "pronunciation": "brɑːntʃ",
+            "meaning": "分支"
+          },
+          {
+            "word": "merge",
+            "pronunciation": "mɜːdʒ",
+            "meaning": "合并"
+          },
+          {
+            "word": "checkout",
+            "pronunciation": "ˈtʃekaʊt",
+            "meaning": "检出"
+          },
+          {
+            "word": "clone",
+            "pronunciation": "kləʊn",
+            "meaning": "克隆"
+          },
+          {
+            "word": "pull",
+            "pronunciation": "pʊl",
+            "meaning": "拉取"
+          },
+          {
+            "word": "push",
+            "pronunciation": "pʊʃ",
+            "meaning": "推送"
+          },
+          {
+            "word": "fetch",
+            "pronunciation": "fetʃ",
+            "meaning": "获取"
+          },
+          {
+            "word": "reset",
+            "pronunciation": "rɪˈset",
+            "meaning": "重置"
+          }
+        ]
+      },
+      {
+        "name": "第三十组 - Git进阶",
+        "description": "Git进阶",
+        "vocabs": [
+          {
+            "word": "rebase",
+            "pronunciation": "riːˈbeɪs",
+            "meaning": "变基"
+          },
+          {
+            "word": "cherry-pick",
+            "pronunciation": "ˈtʃeripɪk",
+            "meaning": "摘取提交"
+          },
+          {
+            "word": "stash",
+            "pronunciation": "stæʃ",
+            "meaning": "暂存"
+          },
+          {
+            "word": "tag",
+            "pronunciation": "tæɡ",
+            "meaning": "标签"
+          },
+          {
+            "word": "bisect",
+            "pronunciation": "baɪˈsekt",
+            "meaning": "二分查找"
+          },
+          {
+            "word": "log",
+            "pronunciation": "lɒɡ",
+            "meaning": "日志"
+          },
+          {
+            "word": "diff",
+            "pronunciation": "dɪf",
+            "meaning": "差异"
+          },
+          {
+            "word": "blame",
+            "pronunciation": "bleɪm",
+            "meaning": "追溯"
+          },
+          {
+            "word": "rerere",
+            "pronunciation": "ˈrerere",
+            "meaning": "重用记录"
+          },
+          {
+            "word": "hooks",
+            "pronunciation": "hʊks",
+            "meaning": "钩子"
+          }
+        ]
+      },
+      {
+        "name": "第三十一组 - 工作流",
+        "description": "工作流",
+        "vocabs": [
+          {
+            "word": "main",
+            "pronunciation": "meɪn",
+            "meaning": "主分支"
+          },
+          {
+            "word": "master",
+            "pronunciation": "ˈmɑːstə(r)",
+            "meaning": "主分支"
+          },
+          {
+            "word": "develop",
+            "pronunciation": "dɪˈveləp",
+            "meaning": "开发分支"
+          },
+          {
+            "word": "feature",
+            "pronunciation": "ˈfiːtʃə(r)",
+            "meaning": "功能分支"
+          },
+          {
+            "word": "hotfix",
+            "pronunciation": "hɒtfɪks",
+            "meaning": "热修复分支"
+          },
+          {
+            "word": "release",
+            "pronunciation": "rɪˈliːs",
+            "meaning": "发布分支"
+          },
+          {
+            "word": "pull request",
+            "pronunciation": "pʊl rɪˈkwest",
+            "meaning": "拉取请求"
+          },
+          {
+            "word": "code review",
+            "pronunciation": "kəʊd rɪˈvjuː",
+            "meaning": "代码审查"
+          },
+          {
+            "word": "merge conflict",
+            "pronunciation": "mɜːdʒ ˈkɒnflɪkt",
+            "meaning": "合并冲突"
+          },
+          {
+            "word": "code owner",
+            "pronunciation": "kəʊd ˈəʊnə(r)",
+            "meaning": "代码所有者"
+          }
+        ]
+      },
+      {
+        "name": "第三十二组 - 测试类型",
+        "description": "测试类型",
+        "vocabs": [
+          {
+            "word": "unit testing",
+            "pronunciation": "ˈjuːnɪt ˈtestɪŋ",
+            "meaning": "单元测试"
+          },
+          {
+            "word": "integration testing",
+            "pronunciation": "ɪnˈteɡreɪʃn ˈtestɪŋ",
+            "meaning": "集成测试"
+          },
+          {
+            "word": "system testing",
+            "pronunciation": "ˈsɪstəm ˈtestɪŋ",
+            "meaning": "系统测试"
+          },
+          {
+            "word": "acceptance testing",
+            "pronunciation": "əkˈseptəns ˈtestɪŋ",
+            "meaning": "验收测试"
+          },
+          {
+            "word": "functional testing",
+            "pronunciation": "ˈfʌŋkʃənl ˈtestɪŋ",
+            "meaning": "功能测试"
+          },
+          {
+            "word": "non-functional testing",
+            "pronunciation": "nɒn ˈfʌŋkʃənl ˈtestɪŋ",
+            "meaning": "非功能测试"
+          },
+          {
+            "word": "performance testing",
+            "pronunciation": "pəˈfɔːməns ˈtestɪŋ",
+            "meaning": "性能测试"
+          },
+          {
+            "word": "load testing",
+            "pronunciation": "ləʊd ˈtestɪŋ",
+            "meaning": "负载测试"
+          },
+          {
+            "word": "stress testing",
+            "pronunciation": "stres ˈtestɪŋ",
+            "meaning": "压力测试"
+          },
+          {
+            "word": "security testing",
+            "pronunciation": "sɪˈkjʊə(r)ti ˈtestɪŋ",
+            "meaning": "安全测试"
+          }
+        ]
+      },
+      {
+        "name": "第三十三组 - 测试框架",
+        "description": "测试框架",
+        "vocabs": [
+          {
+            "word": "test case",
+            "pronunciation": "test keɪs",
+            "meaning": "测试用例"
+          },
+          {
+            "word": "test suite",
+            "pronunciation": "test swiːt",
+            "meaning": "测试套件"
+          },
+          {
+            "word": "assertion",
+            "pronunciation": "əˈsɜːʃn",
+            "meaning": "断言"
+          },
+          {
+            "word": "expectation",
+            "pronunciation": "ˌekspekˈteɪʃn",
+            "meaning": "期望"
+          },
+          {
+            "word": "matcher",
+            "pronunciation": "ˈmætʃə(r)",
+            "meaning": "匹配器"
+          },
+          {
+            "word": "mock",
+            "pronunciation": "mɒk",
+            "meaning": "模拟对象"
+          },
+          {
+            "word": "stub",
+            "pronunciation": "stʌb",
+            "meaning": "桩"
+          },
+          {
+            "word": "spy",
+            "pronunciation": "spaɪ",
+            "meaning": "监视器"
+          },
+          {
+            "word": "fake",
+            "pronunciation": "feɪk",
+            "meaning": "假对象"
+          },
+          {
+            "word": "double",
+            "pronunciation": "ˈdʌbl",
+            "meaning": "测试替身"
+          }
+        ]
+      },
+      {
+        "name": "第三十四组 - 测试进阶",
+        "description": "测试进阶",
+        "vocabs": [
+          {
+            "word": "test-driven development",
+            "pronunciation": "test drɪvn dɪˈveləpmənt",
+            "meaning": "测试驱动开发"
+          },
+          {
+            "word": "behavior-driven development",
+            "pronunciation": "bɪˈheɪvjə drɪvn dɪˈveləpmənt",
+            "meaning": "行为驱动开发"
+          },
+          {
+            "word": "test automation",
+            "pronunciation": "test ˌɔːtəˈmeɪʃn",
+            "meaning": "自动化测试"
+          },
+          {
+            "word": "CI",
+            "pronunciation": "siː aɪ",
+            "meaning": "持续集成"
+          },
+          {
+            "word": "CD",
+            "pronunciation": "siː diː",
+            "meaning": "持续交付"
+          },
+          {
+            "word": "coverage",
+            "pronunciation": "ˈkʌvərɪdʒ",
+            "meaning": "覆盖率"
+          },
+          {
+            "word": "regression",
+            "pronunciation": "rɪˈɡreʃn",
+            "meaning": "回归"
+          },
+          {
+            "word": "smoke test",
+            "pronunciation": "sməʊk test",
+            "meaning": "冒烟测试"
+          },
+          {
+            "word": "sanity check",
+            "pronunciation": "ˈsænəti tʃek",
+            "meaning": "健全性检查"
+          },
+          {
+            "word": "boundary test",
+            "pronunciation": "ˈbaʊndəri test",
+            "meaning": "边界测试"
+          }
+        ]
+      },
+      {
+        "name": "第三十五组 - 容器与虚拟化",
+        "description": "容器与虚拟化",
+        "vocabs": [
+          {
+            "word": "container",
+            "pronunciation": "kənˈteɪnə(r)",
+            "meaning": "容器"
+          },
+          {
+            "word": "image",
+            "pronunciation": "ˈɪmɪdʒ",
+            "meaning": "镜像"
+          },
+          {
+            "word": "Dockerfile",
+            "pronunciation": "ˈdɒkəfaɪl",
+            "meaning": "容器构建文件"
+          },
+          {
+            "word": "volume",
+            "pronunciation": "ˈvɒljuː",
+            "meaning": "卷"
+          },
+          {
+            "word": "network",
+            "pronunciation": "ˈnetwɜːk",
+            "meaning": "网络"
+          },
+          {
+            "word": "Kubernetes",
+            "pronunciation": "kjuːbərˈnetiːz",
+            "meaning": "容器编排系统"
+          },
+          {
+            "word": "pod",
+            "pronunciation": "pɒd",
+            "meaning": "Pod容器组"
+          },
+          {
+            "word": "deployment",
+            "pronunciation": "dɪˈplɔɪmənt",
+            "meaning": "部署"
+          },
+          {
+            "word": "service",
+            "pronunciation": "ˈsɜːvɪs",
+            "meaning": "服务"
+          },
+          {
+            "word": "ingress",
+            "pronunciation": "ˈɪnɡres",
+            "meaning": "入口"
+          },
+          {
+            "word": "namespace",
+            "pronunciation": "ˈneɪmspeɪs",
+            "meaning": "命名空间"
+          },
+          {
+            "word": "label",
+            "pronunciation": "ˈleɪbl",
+            "meaning": "标签"
+          },
+          {
+            "word": "selector",
+            "pronunciation": "sɪˈlektə(r)",
+            "meaning": "选择器"
+          },
+          {
+            "word": "replica set",
+            "pronunciation": "ˈreplɪkə set",
+            "meaning": "副本集"
+          },
+          {
+            "word": "configmap",
+            "pronunciation": "kənˈfɪɡmæp",
+            "meaning": "配置映射"
+          }
+        ]
+      },
+      {
+        "name": "第三十六组 - CI/CD",
+        "description": "CI/CD",
+        "vocabs": [
+          {
+            "word": "pipeline",
+            "pronunciation": "ˈpaɪplaɪn",
+            "meaning": "流水线"
+          },
+          {
+            "word": "stage",
+            "pronunciation": "steɪdʒ",
+            "meaning": "阶段"
+          },
+          {
+            "word": "job",
+            "pronunciation": "dʒɒb",
+            "meaning": "作业"
+          },
+          {
+            "word": "artifact",
+            "pronunciation": "ˈɑːtɪfækt",
+            "meaning": "构建产物"
+          },
+          {
+            "word": "runner",
+            "pronunciation": "ˈrʌnə(r)",
+            "meaning": "运行器"
+          },
+          {
+            "word": "build",
+            "pronunciation": "bɪld",
+            "meaning": "构建"
+          },
+          {
+            "word": "test",
+            "pronunciation": "test",
+            "meaning": "测试"
+          },
+          {
+            "word": "deploy",
+            "pronunciation": "dɪˈplɔɪ",
+            "meaning": "部署"
+          },
+          {
+            "word": "rollback",
+            "pronunciation": "ˈrəʊlbæk",
+            "meaning": "回滚"
+          },
+          {
+            "word": "canary",
+            "pronunciation": "kəˈneəri",
+            "meaning": "金丝雀发布"
+          }
+        ]
+      },
+      {
+        "name": "第三十七组 - 云计算",
+        "description": "云计算",
+        "vocabs": [
+          {
+            "word": "IaaS",
+            "pronunciation": "aɪæs",
+            "meaning": "基础设施即服务"
+          },
+          {
+            "word": "PaaS",
+            "pronunciation": "pæs",
+            "meaning": "平台即服务"
+          },
+          {
+            "word": "SaaS",
+            "pronunciation": "sæs",
+            "meaning": "软件即服务"
+          },
+          {
+            "word": "serverless",
+            "pronunciation": "ˈsɜːvələs",
+            "meaning": "无服务器"
+          },
+          {
+            "word": "edge computing",
+            "pronunciation": "edʒ kəmˈpjuːtɪŋ",
+            "meaning": "边缘计算"
+          },
+          {
+            "word": "region",
+            "pronunciation": "ˈriːdʒən",
+            "meaning": "区域"
+          },
+          {
+            "word": "availability zone",
+            "pronunciation": "əˌveɪləˈbɪləti zəʊn",
+            "meaning": "可用区"
+          },
+          {
+            "word": "CDN",
+            "pronunciation": "siː diː en",
+            "meaning": "内容分发网络"
+          },
+          {
+            "word": "load balancer",
+            "pronunciation": "ləʊd ˈbælənsə(r)",
+            "meaning": "负载均衡器"
+          },
+          {
+            "word": "auto scaling",
+            "pronunciation": "ˈɔːtəʊ ˈskeɪlɪŋ",
+            "meaning": "自动伸缩"
+          }
+        ]
+      },
+      {
+        "name": "第三十八组 - 监控与日志",
+        "description": "监控与日志",
+        "vocabs": [
+          {
+            "word": "monitoring",
+            "pronunciation": "ˈmɒnɪtərɪŋ",
+            "meaning": "监控"
+          },
+          {
+            "word": "alerting",
+            "pronunciation": "əˈlɜːtɪŋ",
+            "meaning": "告警"
+          },
+          {
+            "word": "logging",
+            "pronunciation": "ˈlɒɡɪŋ",
+            "meaning": "日志记录"
+          },
+          {
+            "word": "metrics",
+            "pronunciation": "ˈmeɪtrɪks",
+            "meaning": "指标"
+          },
+          {
+            "word": "tracing",
+            "pronunciation": "ˈtreɪsɪŋ",
+            "meaning": "追踪"
+          },
+          {
+            "word": "dashboard",
+            "pronunciation": "ˈdæʃbɔːd",
+            "meaning": "仪表盘"
+          },
+          {
+            "word": "uptime",
+            "pronunciation": "ˈʌptaɪm",
+            "meaning": "运行时间"
+          },
+          {
+            "word": "latency",
+            "pronunciation": "ˈleɪtənsi",
+            "meaning": "延迟"
+          },
+          {
+            "word": "throughput",
+            "pronunciation": "ˈθruːpjʊt",
+            "meaning": "吞吐量"
+          },
+          {
+            "word": "availability",
+            "pronunciation": "əˌveɪləˈbɪləti",
+            "meaning": "可用性"
+          }
+        ]
+      },
+      {
+        "name": "第三十九组 - 架构模式",
+        "description": "架构模式",
+        "vocabs": [
+          {
+            "word": "monolith",
+            "pronunciation": "ˈmɒnəlɪθ",
+            "meaning": "单体应用"
+          },
+          {
+            "word": "microservices",
+            "pronunciation": "ˌmaɪkrəʊˈsɜːvɪsɪz",
+            "meaning": "微服务"
+          },
+          {
+            "word": "serverless",
+            "pronunciation": "ˈsɜːvələs",
+            "meaning": "无服务器架构"
+          },
+          {
+            "word": "event-driven",
+            "pronunciation": "ɪˈvent drɪvn",
+            "meaning": "事件驱动"
+          },
+          {
+            "word": "CQRS",
+            "pronunciation": "siː kjuː ɑː es",
+            "meaning": "命令查询职责分离"
+          },
+          {
+            "word": "event sourcing",
+            "pronunciation": "ɪˈvent ˈsɔːsɪŋ",
+            "meaning": "事件溯源"
+          },
+          {
+            "word": "saga pattern",
+            "pronunciation": "ˈsɑːɡə ˈpætən",
+            "meaning": "Saga模式"
+          },
+          {
+            "word": "circuit breaker",
+            "pronunciation": "ˈsɜːkɪt ˈbreɪkə(r)",
+            "meaning": "断路器"
+          },
+          {
+            "word": "bulkhead",
+            "pronunciation": "ˈbʌlkhed",
+            "meaning": "隔板模式"
+          },
+          {
+            "word": "sidecar",
+            "pronunciation": "ˈsaɪdɑː(r)",
+            "meaning": "边车模式"
+          }
+        ]
+      },
+      {
+        "name": "第四十组 - 系统设计",
+        "description": "系统设计",
+        "vocabs": [
+          {
+            "word": "scalability",
+            "pronunciation": "ˌskeɪləˈbɪləti",
+            "meaning": "可扩展性"
+          },
+          {
+            "word": "availability",
+            "pronunciation": "əˌveɪləˈbɪləti",
+            "meaning": "可用性"
+          },
+          {
+            "word": "reliability",
+            "pronunciation": "rɪˌlaɪəˈbɪləti",
+            "meaning": "可靠性"
+          },
+          {
+            "word": "consistency",
+            "pronunciation": "kənˈsɪstənsi",
+            "meaning": "一致性"
+          },
+          {
+            "word": "partition tolerance",
+            "pronunciation": "pɑːˈtɪʃn ˈtɒlərəns",
+            "meaning": "分区容错性"
+          },
+          {
+            "word": "horizontal scaling",
+            "pronunciation": "ˌhɒrɪˈzɒntl ˈskeɪlɪŋ",
+            "meaning": "水平扩展"
+          },
+          {
+            "word": "vertical scaling",
+            "pronunciation": "ˈvɜːtɪkl ˈskeɪlɪŋ",
+            "meaning": "垂直扩展"
+          },
+          {
+            "word": "sharding",
+            "pronunciation": "ˈʃɑːdɪŋ",
+            "meaning": "分片"
+          },
+          {
+            "word": "replication",
+            "pronunciation": "ˌreplɪˈkeɪʃn",
+            "meaning": "复制"
+          },
+          {
+            "word": "caching",
+            "pronunciation": "ˈkæʃɪŋ",
+            "meaning": "缓存"
+          }
+        ]
+      },
+      {
+        "name": "第四十一组 - API设计进阶",
+        "description": "API设计进阶",
+        "vocabs": [
+          {
+            "word": "versioning",
+            "pronunciation": "ˈvɜːʃənɪŋ",
+            "meaning": "版本控制"
+          },
+          {
+            "word": "rate limit",
+            "pronunciation": "reɪt lɪmɪt",
+            "meaning": "速率限制"
+          },
+          {
+            "word": "throttle",
+            "pronunciation": "ˈθrɒdl",
+            "meaning": "节流"
+          },
+          {
+            "word": "retry",
+            "pronunciation": "rɪˈtraɪ",
+            "meaning": "重试"
+          },
+          {
+            "word": "circuit break",
+            "pronunciation": "ˈsɜːkɪt breɪk",
+            "meaning": "熔断"
+          },
+          {
+            "word": "timeout",
+            "pronunciation": "ˈtaɪmaʊt",
+            "meaning": "超时"
+          },
+          {
+            "word": "graceful degradation",
+            "pronunciation": "ˈɡreɪsfəl ˌdeɡrəˈdeɪʃn",
+            "meaning": "优雅降级"
+          },
+          {
+            "word": "backward compatible",
+            "pronunciation": "ˌbækwəd kəmˈpætəbl",
+            "meaning": "向后兼容"
+          },
+          {
+            "word": "API gateway",
+            "pronunciation": "eɪ piː aɪ ˈɡeɪtweɪ",
+            "meaning": "API网关"
+          },
+          {
+            "word": "facade",
+            "pronunciation": "fəˈsɑːd",
+            "meaning": "门面模式"
+          }
+        ]
+      },
+      {
+        "name": "第四十二组 - 开发流程",
+        "description": "开发流程",
+        "vocabs": [
+          {
+            "word": "requirements",
+            "pronunciation": "rɪˈkwaɪəmənts",
+            "meaning": "需求"
+          },
+          {
+            "word": "analysis",
+            "pronunciation": "əˈnæləsɪs",
+            "meaning": "分析"
+          },
+          {
+            "word": "design",
+            "pronunciation": "dɪˈzaɪn",
+            "meaning": "设计"
+          },
+          {
+            "word": "implementation",
+            "pronunciation": "ˌɪmplɪmenˈteɪʃn",
+            "meaning": "实现"
+          },
+          {
+            "word": "testing",
+            "pronunciation": "ˈtestɪŋ",
+            "meaning": "测试"
+          },
+          {
+            "word": "deployment",
+            "pronunciation": "dɪˈplɔɪmənt",
+            "meaning": "部署"
+          },
+          {
+            "word": "maintenance",
+            "pronunciation": "ˈmeɪntənəns",
+            "meaning": "维护"
+          },
+          {
+            "word": "iteration",
+            "pronunciation": "ˌɪtəˈreɪʃn",
+            "meaning": "迭代"
+          },
+          {
+            "word": "sprint",
+            "pronunciation": "sprɪnt",
+            "meaning": "冲刺"
+          },
+          {
+            "word": "milestone",
+            "pronunciation": "ˈmaɪlstəʊn",
+            "meaning": "里程碑"
+          }
+        ]
+      },
+      {
+        "name": "第四十三组 - 项目管理",
+        "description": "项目管理",
+        "vocabs": [
+          {
+            "word": "agile",
+            "pronunciation": "ˈædʒaɪl",
+            "meaning": "敏捷"
+          },
+          {
+            "word": "scrum",
+            "pronunciation": "skrʌm",
+            "meaning": "Scrum框架"
+          },
+          {
+            "word": "kanban",
+            "pronunciation": "kɑːnˈbɑːn",
+            "meaning": "看板"
+          },
+          {
+            "word": "backlog",
+            "pronunciation": "ˈbæklɒɡ",
+            "meaning": "待办列表"
+          },
+          {
+            "word": "user story",
+            "pronunciation": "ˈjuːzə(r) ˈstɔːri",
+            "meaning": "用户故事"
+          },
+          {
+            "word": "epic",
+            "pronunciation": "ˈepɪk",
+            "meaning": "史诗"
+          },
+          {
+            "word": "story point",
+            "pronunciation": "ˈstɔːri pɔɪnt",
+            "meaning": "故事点"
+          },
+          {
+            "word": "velocity",
+            "pronunciation": "vəˈlɒsəti",
+            "meaning": "速度"
+          },
+          {
+            "word": "burndown chart",
+            "pronunciation": "ˈbɜːndaʊn tʃɑːt",
+            "meaning": "燃尽图"
+          },
+          {
+            "word": "retrospective",
+            "pronunciation": "ˌretrəˈspektɪv",
+            "meaning": "回顾会议"
+          }
+        ]
+      },
+      {
+        "name": "第四十四组 - 代码质量",
+        "description": "代码质量",
+        "vocabs": [
+          {
+            "word": "lint",
+            "pronunciation": "lɪnt",
+            "meaning": "代码检查"
+          },
+          {
+            "word": "static analysis",
+            "pronunciation": "ˈstætɪk əˈnæləsɪs",
+            "meaning": "静态分析"
+          },
+          {
+            "word": "code review",
+            "pronunciation": "kəʊd rɪˈvjuː",
+            "meaning": "代码审查"
+          },
+          {
+            "word": "refactoring",
+            "pronunciation": "riːˈfæktərɪŋ",
+            "meaning": "重构"
+          },
+          {
+            "word": "technical debt",
+            "pronunciation": "ˈteknɪkl det",
+            "meaning": "技术债务"
+          },
+          {
+            "word": "code smell",
+            "pronunciation": "kəʊd smel",
+            "meaning": "代码异味"
+          },
+          {
+            "word": "naming convention",
+            "pronunciation": "ˈneɪmɪŋ kənˈvenʃn",
+            "meaning": "命名规范"
+          },
+          {
+            "word": "style guide",
+            "pronunciation": "staɪl ɡaɪd",
+            "meaning": "样式指南"
+          },
+          {
+            "word": "best practice",
+            "pronunciation": "best ˈpræktɪs",
+            "meaning": "最佳实践"
+          },
+          {
+            "word": "SOLID principles",
+            "pronunciation": "ˈsɒlɪd ˈprɪnsɪpəlz",
+            "meaning": "SOLID原则"
+          }
+        ]
+      },
+      {
+        "name": "第四十五组 - 编译与解释",
+        "description": "编译与解释",
+        "vocabs": [
+          {
+            "word": "compiler",
+            "pronunciation": "kəmˈpaɪlə(r)",
+            "meaning": "编译器"
+          },
+          {
+            "word": "interpreter",
+            "pronunciation": "ɪnˈtɜːprətə(r)",
+            "meaning": "解释器"
+          },
+          {
+            "word": "linker",
+            "pronunciation": "ˈlɪŋkə(r)",
+            "meaning": "链接器"
+          },
+          {
+            "word": "loader",
+            "pronunciation": "ˈləʊdə(r)",
+            "meaning": "加载器"
+          },
+          {
+            "word": "assembler",
+            "pronunciation": "əˈsemblə(r)",
+            "meaning": "汇编器"
+          },
+          {
+            "word": "bytecode",
+            "pronunciation": "ˈbaɪtkəʊd",
+            "meaning": "字节码"
+          },
+          {
+            "word": "machine code",
+            "pronunciation": "məˈʃiːn kəʊd",
+            "meaning": "机器码"
+          },
+          {
+            "word": "source code",
+            "pronunciation": "sɔːs kəʊd",
+            "meaning": "源代码"
+          },
+          {
+            "word": "binary",
+            "pronunciation": "ˈbaɪnəri",
+            "meaning": "二进制"
+          },
+          {
+            "word": "intermediate representation",
+            "pronunciation": "ˌɪntəˈmiːdiət ˌreprɪzenˈteɪʃn",
+            "meaning": "中间表示"
+          }
+        ]
+      },
+      {
+        "name": "第四十六组 - 内存管理",
+        "description": "内存管理",
+        "vocabs": [
+          {
+            "word": "heap",
+            "pronunciation": "hiːp",
+            "meaning": "堆内存"
+          },
+          {
+            "word": "stack",
+            "pronunciation": "stæk",
+            "meaning": "栈内存"
+          },
+          {
+            "word": "garbage collection",
+            "pronunciation": "ˈɡɑːbɪdʒ kəˈlekʃn",
+            "meaning": "垃圾回收"
+          },
+          {
+            "word": "memory leak",
+            "pronunciation": "ˈmeməri liːk",
+            "meaning": "内存泄漏"
+          },
+          {
+            "word": "allocation",
+            "pronunciation": "ˌæləˈkeɪʃn",
+            "meaning": "分配"
+          },
+          {
+            "word": "deallocation",
+            "pronunciation": "diːˌæləˈkeɪʃn",
+            "meaning": "释放"
+          },
+          {
+            "word": "pointer",
+            "pronunciation": "ˈpɔɪntə(r)",
+            "meaning": "指针"
+          },
+          {
+            "word": "reference count",
+            "pronunciation": "ˈrefrəns kaʊnt",
+            "meaning": "引用计数"
+          },
+          {
+            "word": "mark and sweep",
+            "pronunciation": "mɑːk ænd swiːp",
+            "meaning": "标记清除"
+          },
+          {
+            "word": "generational collection",
+            "pronunciation": "ˌdʒenəˈreɪʃənl kəˈlekʃn",
+            "meaning": "分代回收"
+          }
+        ]
+      },
+      {
+        "name": "第四十七组 - 并发与并行",
+        "description": "并发与并行",
+        "vocabs": [
+          {
+            "word": "thread",
+            "pronunciation": "θred",
+            "meaning": "线程"
+          },
+          {
+            "word": "process",
+            "pronunciation": "ˈprəʊses",
+            "meaning": "进程"
+          },
+          {
+            "word": "coroutine",
+            "pronunciation": "kəʊrəʊtiːn",
+            "meaning": "协程"
+          },
+          {
+            "word": "goroutine",
+            "pronunciation": "ɡəˈrəʊtiːn",
+            "meaning": "Go程"
+          },
+          {
+            "word": "fiber",
+            "pronunciation": "ˈfaɪbə(r)",
+            "meaning": "纤程"
+          },
+          {
+            "word": "mutex",
+            "pronunciation": "ˈmjuːteks",
+            "meaning": "互斥锁"
+          },
+          {
+            "word": "semaphore",
+            "pronunciation": "ˈseməfɔː",
+            "meaning": "信号量"
+          },
+          {
+            "word": "deadlock",
+            "pronunciation": "ˈdedlɒk",
+            "meaning": "死锁"
+          },
+          {
+            "word": "race condition",
+            "pronunciation": "reɪs kənˈdɪʃn",
+            "meaning": "竞态条件"
+          },
+          {
+            "word": "synchronization",
+            "pronunciation": "ˌsɪŋkrənaɪˈzeɪʃn",
+            "meaning": "同步"
+          },
+          {
+            "word": "lock",
+            "pronunciation": "lɒk",
+            "meaning": "锁"
+          },
+          {
+            "word": "unlock",
+            "pronunciation": "ʌnˈlɒk",
+            "meaning": "解锁"
+          },
+          {
+            "word": "await",
+            "pronunciation": "əˈweɪt",
+            "meaning": "等待"
+          },
+          {
+            "word": "async",
+            "pronunciation": "ˈeɪsɪŋk",
+            "meaning": "异步"
+          },
+          {
+            "word": "parallel",
+            "pronunciation": "ˈpærəlel",
+            "meaning": "并行"
+          }
+        ]
+      },
+      {
+        "name": "第四十八组 - 开发工具",
+        "description": "开发工具",
+        "vocabs": [
+          {
+            "word": "IDE",
+            "pronunciation": "aɪ diː iː",
+            "meaning": "集成开发环境"
+          },
+          {
+            "word": "debugger",
+            "pronunciation": "diːˈbʌɡə(r)",
+            "meaning": "调试器"
+          },
+          {
+            "word": "profiler",
+            "pronunciation": "ˈprəʊfaɪlə(r)",
+            "meaning": "性能分析器"
+          },
+          {
+            "word": "terminal",
+            "pronunciation": "ˈtɜːmɪnl",
+            "meaning": "终端"
+          },
+          {
+            "word": "shell",
+            "pronunciation": "ʃel",
+            "meaning": "Shell"
+          },
+          {
+            "word": "package manager",
+            "pronunciation": "ˈpækɪdʒ ˈmænɪdʒə(r)",
+            "meaning": "包管理器"
+          },
+          {
+            "word": "dependency",
+            "pronunciation": "dɪˈpendənsi",
+            "meaning": "依赖"
+          },
+          {
+            "word": "build tool",
+            "pronunciation": "bɪld tuːl",
+            "meaning": "构建工具"
+          },
+          {
+            "word": "task runner",
+            "pronunciation": "tɑːsk ˈrʌnə(r)",
+            "meaning": "任务运行器"
+          },
+          {
+            "word": "linter",
+            "pronunciation": "ˈlɪntə(r)",
+            "meaning": "代码检查工具"
+          },
+          {
+            "word": "formatter",
+            "pronunciation": "ˈfɔːmætə(r)",
+            "meaning": "格式化工具"
+          },
+          {
+            "word": "version",
+            "pronunciation": "ˈvɜːʃn",
+            "meaning": "版本"
+          },
+          {
+            "word": "release",
+            "pronunciation": "rɪˈliːs",
+            "meaning": "发布"
+          },
+          {
+            "word": "environment",
+            "pronunciation": "ɪnˈvaɪərənmənt",
+            "meaning": "环境"
+          },
+          {
+            "word": "configuration",
+            "pronunciation": "kənˌfɪɡjʊˈreɪʃn",
+            "meaning": "配置"
+          }
+        ]
+      },
+      {
+        "name": "第四十九组 - UI/UX",
+        "description": "UI/UX",
+        "vocabs": [
+          {
+            "word": "UI",
+            "pronunciation": "juː aɪ",
+            "meaning": "用户界面"
+          },
+          {
+            "word": "UX",
+            "pronunciation": "juː eks",
+            "meaning": "用户体验"
+          },
+          {
+            "word": "wireframe",
+            "pronunciation": "ˈwaɪəfreɪm",
+            "meaning": "线框图"
+          },
+          {
+            "word": "prototype",
+            "pronunciation": "ˈprəʊtətaɪp",
+            "meaning": "原型"
+          },
+          {
+            "word": "mockup",
+            "pronunciation": "ˈmɒkʌp",
+            "meaning": "模拟图"
+          },
+          {
+            "word": "responsive",
+            "pronunciation": "rɪˈspɒnsɪv",
+            "meaning": "响应式"
+          },
+          {
+            "word": "adaptive",
+            "pronunciation": "əˈdæptɪv",
+            "meaning": "自适应"
+          },
+          {
+            "word": "accessibility",
+            "pronunciation": "əkˌsesəˈbɪləti",
+            "meaning": "可访问性"
+          },
+          {
+            "word": "internationalization",
+            "pronunciation": "ˌɪntənæʃənəlaɪˈzeɪʃn",
+            "meaning": "国际化"
+          },
+          {
+            "word": "localization",
+            "pronunciation": "ˌləʊkəlaɪˈzeɪʃn",
+            "meaning": "本地化"
+          }
+        ]
+      },
+      {
+        "name": "第五十组 - 数据格式与序列化",
+        "description": "数据格式与序列化",
+        "vocabs": [
+          {
+            "word": "JSON",
+            "pronunciation": "ˈdʒeɪsɒn",
+            "meaning": "JSON格式"
+          },
+          {
+            "word": "XML",
+            "pronunciation": "eks em el",
+            "meaning": "XML格式"
+          },
+          {
+            "word": "YAML",
+            "pronunciation": "ˈjæməl",
+            "meaning": "YAML格式"
+          },
+          {
+            "word": "TOML",
+            "pronunciation": "ˈtɒməl",
+            "meaning": "TOML格式"
+          },
+          {
+            "word": "CSV",
+            "pronunciation": "siː es viː",
+            "meaning": "CSV格式"
+          },
+          {
+            "word": "binary format",
+            "pronunciation": "ˈbaɪnəri ˈfɔːmæt",
+            "meaning": "二进制格式"
+          },
+          {
+            "word": "protocol buffer",
+            "pronunciation": "ˈprəʊtəkɒl ˈbʌfər",
+            "meaning": "Protocol Buffers"
+          },
+          {
+            "word": "serialization",
+            "pronunciation": "ˌsɪəriəlaɪˈzeɪʃn",
+            "meaning": "序列化"
+          },
+          {
+            "word": "deserialization",
+            "pronunciation": "diːˌsɪəriəlaɪˈzeɪʃn",
+            "meaning": "反序列化"
+          },
+          {
+            "word": "marshalling",
+            "pronunciation": "ˈmɑːʃəlɪŋ",
+            "meaning": "编组"
+          }
+        ]
+      },
+      {
+        "name": "第五十一组 - 日志与调试",
+        "description": "日志与调试",
+        "vocabs": [
+          {
+            "word": "log",
+            "pronunciation": "lɒɡ",
+            "meaning": "日志"
+          },
+          {
+            "word": "debug",
+            "pronunciation": "diːbʌɡ",
+            "meaning": "调试"
+          },
+          {
+            "word": "trace",
+            "pronunciation": "treɪs",
+            "meaning": "追踪"
+          },
+          {
+            "word": "error",
+            "pronunciation": "ˈerə",
+            "meaning": "错误"
+          },
+          {
+            "word": "exception",
+            "pronunciation": "ɪkˈsepʃn",
+            "meaning": "异常"
+          },
+          {
+            "word": "warning",
+            "pronunciation": "ˈwɔːnɪŋ",
+            "meaning": "警告"
+          },
+          {
+            "word": "info",
+            "pronunciation": "ˈɪnfə",
+            "meaning": "信息"
+          },
+          {
+            "word": "verbose",
+            "pronunciation": "vɜːˈbəʊs",
+            "meaning": "详细输出"
+          },
+          {
+            "word": "stack trace",
+            "pronunciation": "stæk treɪs",
+            "meaning": "堆栈跟踪"
+          },
+          {
+            "word": "breakpoint",
+            "pronunciation": "ˈbreɪkpɔɪnt",
+            "meaning": "断点"
+          }
+        ]
+      },
+      {
+        "name": "第五十二组 - 缓存与性能",
+        "description": "缓存与性能",
+        "vocabs": [
+          {
+            "word": "cache",
+            "pronunciation": "kæʃ",
+            "meaning": "缓存"
+          },
+          {
+            "word": "cache hit",
+            "pronunciation": "kæʃ hɪt",
+            "meaning": "缓存命中"
+          },
+          {
+            "word": "cache miss",
+            "pronunciation": "kæʃ mɪs",
+            "meaning": "缓存未命中"
+          },
+          {
+            "word": "invalidation",
+            "pronunciation": "ɪnˌvælɪˈdeɪʃn",
+            "meaning": "失效"
+          },
+          {
+            "word": "eviction",
+            "pronunciation": "ɪˈvɪkʃn",
+            "meaning": "驱逐"
+          },
+          {
+            "word": "optimization",
+            "pronunciation": "ˌɒptɪmaɪˈzeɪʃn",
+            "meaning": "优化"
+          },
+          {
+            "word": "performance",
+            "pronunciation": "pəˈfɔːməns",
+            "meaning": "性能"
+          },
+          {
+            "word": "benchmark",
+            "pronunciation": "ˈbentʃmɑːk",
+            "meaning": "基准测试"
+          },
+          {
+            "word": "profiling",
+            "pronunciation": "ˈprəʊfaɪlɪŋ",
+            "meaning": "性能分析"
+          },
+          {
+            "word": "bottleneck",
+            "pronunciation": "ˈbɒtlsneɪk",
+            "meaning": "瓶颈"
+          }
+        ]
+      },
+      {
+        "name": "第五十三组 - 数据处理",
+        "description": "数据处理",
+        "vocabs": [
+          {
+            "word": "ETL",
+            "pronunciation": "iː tiː el",
+            "meaning": "数据抽取转换加载"
+          },
+          {
+            "word": "batch processing",
+            "pronunciation": "bætʃ ˈprəʊsesɪŋ",
+            "meaning": "批处理"
+          },
+          {
+            "word": "stream processing",
+            "pronunciation": "striːm ˈprəʊsesɪŋ",
+            "meaning": "流处理"
+          },
+          {
+            "word": "real-time",
+            "pronunciation": "ˈriːəl taɪm",
+            "meaning": "实时"
+          },
+          {
+            "word": "near real-time",
+            "pronunciation": "nɪə ˈriːəl taɪm",
+            "meaning": "近实时"
+          },
+          {
+            "word": "data pipeline",
+            "pronunciation": "ˈdeɪtə ˈpaɪplaɪn",
+            "meaning": "数据管道"
+          },
+          {
+            "word": "data warehouse",
+            "pronunciation": "ˈdeɪtə ˈweəhaʊs",
+            "meaning": "数据仓库"
+          },
+          {
+            "word": "data lake",
+            "pronunciation": "ˈdeɪtə leɪk",
+            "meaning": "数据湖"
+          },
+          {
+            "word": "data mart",
+            "pronunciation": "ˈdeɪtə mɑːt",
+            "meaning": "数据集市"
+          }
+        ]
+      },
+      {
+        "name": "第五十四组 - AI基础概念",
+        "description": "AI基础概念",
+        "vocabs": [
+          {
+            "word": "artificial intelligence",
+            "pronunciation": "ˌɑːtɪfɪʃl ɪnˈtelɪdʒəns",
+            "meaning": "人工智能"
+          },
+          {
+            "word": "machine learning",
+            "pronunciation": "məˈʃiːn ˈlɜːnɪŋ",
+            "meaning": "机器学习"
+          },
+          {
+            "word": "deep learning",
+            "pronunciation": "diːp ˈlɜːnɪŋ",
+            "meaning": "深度学习"
+          },
+          {
+            "word": "neural network",
+            "pronunciation": "ˈnjʊərəl ˈnetwɜːk",
+            "meaning": "神经网络"
+          }
+        ]
+      },
+      {
+        "name": "第五十五组 - 机器学习流程",
+        "description": "机器学习流程",
+        "vocabs": [
+          {
+            "word": "training",
+            "pronunciation": "ˈtreɪnɪŋ",
+            "meaning": "训练"
+          },
+          {
+            "word": "inference",
+            "pronunciation": "ˈɪnfərəns",
+            "meaning": "推理"
+          },
+          {
+            "word": "model",
+            "pronunciation": "ˈmɒdl",
+            "meaning": "模型"
+          },
+          {
+            "word": "dataset",
+            "pronunciation": "ˈdeɪtəset",
+            "meaning": "数据集"
+          },
+          {
+            "word": "feature",
+            "pronunciation": "ˈfiːtʃə(r)",
+            "meaning": "特征"
+          },
+          {
+            "word": "label",
+            "pronunciation": "ˈleɪbl",
+            "meaning": "标签"
+          }
+        ]
+      },
+      {
+        "name": "第五十六组 - 机器学习问题",
+        "description": "机器学习问题",
+        "vocabs": [
+          {
+            "word": "overfitting",
+            "pronunciation": "ˌəʊvəˈfɪtɪŋ",
+            "meaning": "过拟合"
+          },
+          {
+            "word": "underfitting",
+            "pronunciation": "ˌʌndəˈfɪtɪŋ",
+            "meaning": "欠拟合"
+          },
+          {
+            "word": "classification",
+            "pronunciation": "ˌklæsɪfɪˈkeɪʃn",
+            "meaning": "分类"
+          },
+          {
+            "word": "regression",
+            "pronunciation": "rɪˈɡreʃn",
+            "meaning": "回归"
+          },
+          {
+            "word": "clustering",
+            "pronunciation": "ˈklʌstərɪŋ",
+            "meaning": "聚类"
+          }
+        ]
+      },
+      {
+        "name": "第五十七组 - 学习范式",
+        "description": "学习范式",
+        "vocabs": [
+          {
+            "word": "reinforcement learning",
+            "pronunciation": "ˌriːɪnˈfɔːsmənt ˈlɜːnɪŋ",
+            "meaning": "强化学习"
+          },
+          {
+            "word": "supervised learning",
+            "pronunciation": "ˈsuːpəvaɪzd ˈlɜːnɪŋ",
+            "meaning": "监督学习"
+          },
+          {
+            "word": "unsupervised learning",
+            "pronunciation": "ʌnˈsuːpəvaɪzd ˈlɜːnɪŋ",
+            "meaning": "无监督学习"
+          }
+        ]
+      },
+      {
+        "name": "第五十八组 - AI应用领域",
+        "description": "AI应用领域",
+        "vocabs": [
+          {
+            "word": "NLP",
+            "pronunciation": "en el piː",
+            "meaning": "自然语言处理"
+          },
+          {
+            "word": "CV",
+            "pronunciation": "siː viː",
+            "meaning": "计算机视觉"
+          }
+        ]
+      },
+      {
+        "name": "第五十九组 - 区块链与加密货币",
+        "description": "区块链与加密货币",
+        "vocabs": [
+          {
+            "word": "blockchain",
+            "pronunciation": "ˈblɒktʃeɪn",
+            "meaning": "区块链"
+          },
+          {
+            "word": "distributed ledger",
+            "pronunciation": "dɪˈstrɪbjʊtɪd ˈledʒə(r)",
+            "meaning": "分布式账本"
+          },
+          {
+            "word": "smart contract",
+            "pronunciation": "smɑːt ˈkɒntrækt",
+            "meaning": "智能合约"
+          },
+          {
+            "word": "consensus",
+            "pronunciation": "kənˈsensəs",
+            "meaning": "共识机制"
+          },
+          {
+            "word": "proof of work",
+            "pronunciation": "pruːf əv wɜːk",
+            "meaning": "工作量证明"
+          },
+          {
+            "word": "proof of stake",
+            "pronunciation": "pruːf əv steɪk",
+            "meaning": "权益证明"
+          },
+          {
+            "word": "token",
+            "pronunciation": "ˈtəʊkən",
+            "meaning": "代币"
+          },
+          {
+            "word": "wallet",
+            "pronunciation": "ˈwɒlɪt",
+            "meaning": "钱包"
+          },
+          {
+            "word": "mining",
+            "pronunciation": "ˈmaɪnɪŋ",
+            "meaning": "挖矿"
+          },
+          {
+            "word": "hash",
+            "pronunciation": "hæʃ",
+            "meaning": "哈希值"
+          }
+        ]
+      },
+      {
+        "name": "第五十六组 - 网络安全基础设施",
+        "description": "网络安全基础设施",
+        "vocabs": [
+          {
+            "word": "firewall",
+            "pronunciation": "ˈfaɪəwɔːl",
+            "meaning": "防火墙"
+          },
+          {
+            "word": "VPN",
+            "pronunciation": "viː piː en",
+            "meaning": "虚拟专用网络"
+          },
+          {
+            "word": "proxy",
+            "pronunciation": "ˈprɒksi",
+            "meaning": "代理"
+          },
+          {
+            "word": "reverse proxy",
+            "pronunciation": "rɪˈvɜːs ˈprɒksi",
+            "meaning": "反向代理"
+          },
+          {
+            "word": "WAF",
+            "pronunciation": "wæf",
+            "meaning": "Web应用防火墙"
+          },
+          {
+            "word": "IDS",
+            "pronunciation": "aɪ diː es",
+            "meaning": "入侵检测系统"
+          },
+          {
+            "word": "IPS",
+            "pronunciation": "aɪ piː es",
+            "meaning": "入侵防御系统"
+          },
+          {
+            "word": "SIEM",
+            "pronunciation": "siːm",
+            "meaning": "安全信息事件管理"
+          },
+          {
+            "word": "penetration testing",
+            "pronunciation": "ˌpenɪˈtreɪʃn ˈtestɪŋ",
+            "meaning": "渗透测试"
+          },
+          {
+            "word": "vulnerability",
+            "pronunciation": "ˌvʌlnərəˈbɪləti",
+            "meaning": "漏洞"
+          }
+        ]
+      },
+      {
+        "name": "第五十七组 - 软件许可",
+        "description": "软件许可",
+        "vocabs": [
+          {
+            "word": "open source",
+            "pronunciation": "ˈəʊpən sɔːs",
+            "meaning": "开源"
+          },
+          {
+            "word": "proprietary",
+            "pronunciation": "prəˈpraɪətəri",
+            "meaning": "专有"
+          },
+          {
+            "word": "license",
+            "pronunciation": "ˈlaɪsns",
+            "meaning": "许可证"
+          },
+          {
+            "word": "GPL",
+            "pronunciation": "dʒiː piː el",
+            "meaning": "通用公共许可证"
+          },
+          {
+            "word": "MIT license",
+            "pronunciation": "em aɪ tiː ˈlaɪsns",
+            "meaning": "MIT许可证"
+          },
+          {
+            "word": "Apache license",
+            "pronunciation": "əˈpætʃi ˈlaɪsns",
+            "meaning": "Apache许可证"
+          },
+          {
+            "word": "BSD license",
+            "pronunciation": "biː es diː ˈlaɪsns",
+            "meaning": "BSD许可证"
+          },
+          {
+            "word": "copyright",
+            "pronunciation": "ˈkɒpirɑːt",
+            "meaning": "版权"
+          },
+          {
+            "word": "trademark",
+            "pronunciation": "ˈtreɪdmɑːk",
+            "meaning": "商标"
+          },
+          {
+            "word": "patent",
+            "pronunciation": "ˈpætnt",
+            "meaning": "专利"
+          }
+        ]
+      },
+      {
+        "name": "第五十八组 - 行业术语",
+        "description": "行业术语",
+        "vocabs": [
+          {
+            "word": "MVP",
+            "pronunciation": "em viː piː",
+            "meaning": "最小可行产品"
+          },
+          {
+            "word": "POC",
+            "pronunciation": "piː əʊ siː",
+            "meaning": "概念验证"
+          },
+          {
+            "word": "tech stack",
+            "pronunciation": "tek stæk",
+            "meaning": "技术栈"
+          },
+          {
+            "word": "legacy system",
+            "pronunciation": "ˈleɡəsi ˈsɪstəm",
+            "meaning": "遗留系统"
+          },
+          {
+            "word": "technical specification",
+            "pronunciation": "ˈteknɪkl ˌspesɪfɪˈkeɪʃn",
+            "meaning": "技术规格"
+          },
+          {
+            "word": "specification",
+            "pronunciation": "ˌspesɪfɪˈkeɪʃn",
+            "meaning": "规格说明"
+          },
+          {
+            "word": "requirements analysis",
+            "pronunciation": "rɪˈkwaɪəmənts əˈnæləsɪs",
+            "meaning": "需求分析"
+          },
+          {
+            "word": "proof of concept",
+            "pronunciation": "pruːf əv ˈkɒnsept",
+            "meaning": "概念验证"
+          },
+          {
+            "word": "end of life",
+            "pronunciation": "end əv laɪf",
+            "meaning": "生命周期终止"
+          },
+          {
+            "word": "deprecation",
+            "pronunciation": "ˌdeprɪˈkeɪʃn",
+            "meaning": "弃用"
+          }
+        ]
+      },
+      {
+        "name": "第五十九组 - 核心缩写",
+        "description": "核心缩写",
+        "vocabs": []
+      },
+      {
+        "name": "第六十组 - 设计原则缩写",
+        "description": "设计原则缩写",
+        "vocabs": []
+      }
+    ]
+  },
+  {
+    "id": "前端开发完整词汇",
+    "name": "前端开发完整技术词汇大全",
+    "description": "前端开发完整技术词汇大全相关词汇",
+    "sections": [
+      {
+        "name": "第一组 - HTML核心概念",
+        "description": "HTML核心概念",
+        "vocabs": [
+          {
+            "word": "html",
+            "pronunciation": "eɪtʃ tiː em el",
+            "meaning": "超文本标记语言"
+          },
+          {
+            "word": "tag",
+            "pronunciation": "tæɡ",
+            "meaning": "标签"
+          },
+          {
+            "word": "element",
+            "pronunciation": "ˈelɪmənt",
+            "meaning": "元素"
+          },
+          {
+            "word": "attribute",
+            "pronunciation": "əˈtrɪbjuːt",
+            "meaning": "属性"
+          },
+          {
+            "word": "value",
+            "pronunciation": "ˈvæljuː",
+            "meaning": "值"
+          }
+        ]
+      },
+      {
+        "name": "第二组 - 文档结构",
+        "description": "文档结构",
+        "vocabs": [
+          {
+            "word": "doctype",
+            "pronunciation": "ˈdɒkjuːment taɪp",
+            "meaning": "文档类型声明"
+          },
+          {
+            "word": "html",
+            "pronunciation": "eɪtʃ tiː em el",
+            "meaning": "HTML根元素"
+          },
+          {
+            "word": "head",
+            "pronunciation": "hed",
+            "meaning": "文档头部"
+          },
+          {
+            "word": "body",
+            "pronunciation": "ˈbɑːdi",
+            "meaning": "文档主体"
+          },
+          {
+            "word": "meta",
+            "pronunciation": "ˈmetə",
+            "meaning": "元数据"
+          }
+        ]
+      },
+      {
+        "name": "第三组 - 文本元素",
+        "description": "文本元素",
+        "vocabs": [
+          {
+            "word": "heading",
+            "pronunciation": "ˈhedɪŋ",
+            "meaning": "标题"
+          },
+          {
+            "word": "paragraph",
+            "pronunciation": "ˈpærəɡræf",
+            "meaning": "段落"
+          },
+          {
+            "word": "span",
+            "pronunciation": "spæn",
+            "meaning": "行内容器"
+          },
+          {
+            "word": "div",
+            "pronunciation": "dɪv",
+            "meaning": "区块容器"
+          },
+          {
+            "word": "line break",
+            "pronunciation": "laɪn breɪk",
+            "meaning": "换行"
+          }
+        ]
+      },
+      {
+        "name": "第四组 - 链接与图像",
+        "description": "链接与图像",
+        "vocabs": [
+          {
+            "word": "anchor",
+            "pronunciation": "ˈæŋkər",
+            "meaning": "锚点/链接"
+          },
+          {
+            "word": "hyperlink",
+            "pronunciation": "ˈhaɪpərlɪŋk",
+            "meaning": "超链接"
+          },
+          {
+            "word": "image",
+            "pronunciation": "ˈɪmɪdʒ",
+            "meaning": "图像"
+          },
+          {
+            "word": "source",
+            "pronunciation": "sɔːrs",
+            "meaning": "资源地址"
+          },
+          {
+            "word": "alt text",
+            "pronunciation": "ɔːlt tekst",
+            "meaning": "替代文本"
+          }
+        ]
+      },
+      {
+        "name": "第五组 - 列表与表格",
+        "description": "列表与表格",
+        "vocabs": [
+          {
+            "word": "unordered list",
+            "pronunciation": "ʌnˈɔːrdərd lɪst",
+            "meaning": "无序列表"
+          },
+          {
+            "word": "ordered list",
+            "pronunciation": "ˈɔːrdərd lɪst",
+            "meaning": "有序列表"
+          },
+          {
+            "word": "list item",
+            "pronunciation": "lɪst ˈaɪtəm",
+            "meaning": "列表项"
+          },
+          {
+            "word": "table",
+            "pronunciation": "ˈteɪbl",
+            "meaning": "表格"
+          },
+          {
+            "word": "row",
+            "pronunciation": "roʊ",
+            "meaning": "行"
+          },
+          {
+            "word": "cell",
+            "pronunciation": "sel",
+            "meaning": "单元格"
+          },
+          {
+            "word": "header cell",
+            "pronunciation": "ˈhedər sel",
+            "meaning": "表头单元格"
+          }
+        ]
+      },
+      {
+        "name": "第六组 - CSS核心概念",
+        "description": "CSS核心概念",
+        "vocabs": [
+          {
+            "word": "css",
+            "pronunciation": "siː es es",
+            "meaning": "层叠样式表"
+          },
+          {
+            "word": "selector",
+            "pronunciation": "sɪˈlektər",
+            "meaning": "选择器"
+          },
+          {
+            "word": "property",
+            "pronunciation": "ˈprɑːpərti",
+            "meaning": "属性"
+          },
+          {
+            "word": "declaration",
+            "pronunciation": "dɪˌklærəˈreɪʃn",
+            "meaning": "声明"
+          },
+          {
+            "word": "rule",
+            "pronunciation": "ruːl",
+            "meaning": "规则"
+          },
+          {
+            "word": "cascade",
+            "pronunciation": "kæˈskeɪd",
+            "meaning": "层叠"
+          }
+        ]
+      },
+      {
+        "name": "第七组 - 选择器类型",
+        "description": "选择器类型",
+        "vocabs": [
+          {
+            "word": "class selector",
+            "pronunciation": "klæs sɪˈlektər",
+            "meaning": "类选择器"
+          },
+          {
+            "word": "id selector",
+            "pronunciation": "aɪ diː sɪˈlektər",
+            "meaning": "ID选择器"
+          },
+          {
+            "word": "tag selector",
+            "pronunciation": "tæɡ sɪˈlektər",
+            "meaning": "标签选择器"
+          },
+          {
+            "word": "universal selector",
+            "pronunciation": "ˌjuːnɪˈvɜːrsl sɪˈlektər",
+            "meaning": "通配选择器"
+          },
+          {
+            "word": "attribute selector",
+            "pronunciation": "əˈtrɪbjuːt sɪˈlektər",
+            "meaning": "属性选择器"
+          }
+        ]
+      },
+      {
+        "name": "第八组 - 颜色与背景",
+        "description": "颜色与背景",
+        "vocabs": [
+          {
+            "word": "color",
+            "pronunciation": "ˈkʌlər",
+            "meaning": "颜色"
+          },
+          {
+            "word": "background",
+            "pronunciation": "ˈbækɡraʊnd",
+            "meaning": "背景"
+          },
+          {
+            "word": "background color",
+            "pronunciation": "ˈbækɡraʊnd ˈkʌlər",
+            "meaning": "背景色"
+          },
+          {
+            "word": "background image",
+            "pronunciation": "ˈbækɡraʊnd ˈɪmɪdʒ",
+            "meaning": "背景图"
+          },
+          {
+            "word": "opacity",
+            "pronunciation": "oʊˈpæsəti",
+            "meaning": "不透明度"
+          },
+          {
+            "word": "rgba",
+            "pronunciation": "ɑːr dʒiː eɪ",
+            "meaning": "红色绿蓝色加透明度"
+          }
+        ]
+      },
+      {
+        "name": "第九组 - 文本样式",
+        "description": "文本样式",
+        "vocabs": [
+          {
+            "word": "font family",
+            "pronunciation": "fʌnt ˈfæməli",
+            "meaning": "字体族"
+          },
+          {
+            "word": "font size",
+            "pronunciation": "fʌnt saɪz",
+            "meaning": "字体大小"
+          },
+          {
+            "word": "font weight",
+            "pronunciation": "fʌnt weɪt",
+            "meaning": "字体粗细"
+          },
+          {
+            "word": "font style",
+            "pronunciation": "fʌnt ˈstaɪl",
+            "meaning": "字体样式"
+          },
+          {
+            "word": "text align",
+            "pronunciation": "tekst əˈlaɪn",
+            "meaning": "文本对齐"
+          },
+          {
+            "word": "text decoration",
+            "pronunciation": "tekst ˌdekəˈreɪʃn",
+            "meaning": "文本装饰"
+          }
+        ]
+      },
+      {
+        "name": "第十组 - 盒模型",
+        "description": "盒模型",
+        "vocabs": [
+          {
+            "word": "box model",
+            "pronunciation": "bɒks ˈmɒdl",
+            "meaning": "盒模型"
+          },
+          {
+            "word": "margin",
+            "pronunciation": "ˈmɑːrdʒɪn",
+            "meaning": "外边距"
+          },
+          {
+            "word": "border",
+            "pronunciation": "ˈbɔːrdər",
+            "meaning": "边框"
+          },
+          {
+            "word": "padding",
+            "pronunciation": "ˈpædɪŋ",
+            "meaning": "内边距"
+          },
+          {
+            "word": "content",
+            "pronunciation": "ˈkɑːntent",
+            "meaning": "内容"
+          },
+          {
+            "word": "width",
+            "pronunciation": "wɪdθ",
+            "meaning": "宽度"
+          },
+          {
+            "word": "height",
+            "pronunciation": "haɪt",
+            "meaning": "高度"
+          }
+        ]
+      },
+      {
+        "name": "第十一组 - 边框与圆角",
+        "description": "边框与圆角",
+        "vocabs": [
+          {
+            "word": "border width",
+            "pronunciation": "ˈbɔːrdər wɪdθ",
+            "meaning": "边框宽度"
+          },
+          {
+            "word": "border style",
+            "pronunciation": "ˈbɔːrdər ˈstaɪl",
+            "meaning": "边框样式"
+          },
+          {
+            "word": "border color",
+            "pronunciation": "ˈbɔːrdər ˈkʌlər",
+            "meaning": "边框颜色"
+          },
+          {
+            "word": "border radius",
+            "pronunciation": "ˈbɔːrdər ˈreɪdiəs",
+            "meaning": "圆角"
+          },
+          {
+            "word": "box shadow",
+            "pronunciation": "bɒks ˈʃædoʊ",
+            "meaning": "阴影"
+          }
+        ]
+      },
+      {
+        "name": "第十二组 - Display属性",
+        "description": "Display属性",
+        "vocabs": [
+          {
+            "word": "display",
+            "pronunciation": "dɪˈspleɪ",
+            "meaning": "显示属性"
+          },
+          {
+            "word": "block",
+            "pronunciation": "blɑːk",
+            "meaning": "块级元素"
+          },
+          {
+            "word": "inline",
+            "pronunciation": "ˈɪnlaɪn",
+            "meaning": "行内元素"
+          },
+          {
+            "word": "inline block",
+            "pronunciation": "ˈɪnlaɪn blɑːk",
+            "meaning": "行内块"
+          },
+          {
+            "word": "none",
+            "pronunciation": "nʌn",
+            "meaning": "无/隐藏"
+          }
+        ]
+      },
+      {
+        "name": "第十三组 - Flexbox布局",
+        "description": "Flexbox布局",
+        "vocabs": [
+          {
+            "word": "flexbox",
+            "pronunciation": "ˈfleksbɒks",
+            "meaning": "弹性盒布局"
+          },
+          {
+            "word": "flex container",
+            "pronunciation": "fleks kənˈteɪnər",
+            "meaning": "弹性容器"
+          },
+          {
+            "word": "flex item",
+            "pronunciation": "fleks ˈaɪtəm",
+            "meaning": "弹性项目"
+          },
+          {
+            "word": "flex direction",
+            "pronunciation": "fleks dəˈrekʃn",
+            "meaning": "弹性方向"
+          },
+          {
+            "word": "flex wrap",
+            "pronunciation": "fleks ræp",
+            "meaning": "弹性换行"
+          },
+          {
+            "word": "justify content",
+            "pronunciation": "ˈdʒʌstɪfaɪ ˈkɑːntent",
+            "meaning": "主轴对齐"
+          },
+          {
+            "word": "align items",
+            "pronunciation": "əˈlaɪn ˈaɪtəmz",
+            "meaning": "交叉轴对齐"
+          },
+          {
+            "word": "gap",
+            "pronunciation": "ɡæp",
+            "meaning": "间距"
+          }
+        ]
+      },
+      {
+        "name": "第十四组 - Grid布局",
+        "description": "Grid布局",
+        "vocabs": [
+          {
+            "word": "grid",
+            "pronunciation": "ɡrɪd",
+            "meaning": "网格布局"
+          },
+          {
+            "word": "grid container",
+            "pronunciation": "ɡrɪd kənˈteɪnər",
+            "meaning": "网格容器"
+          },
+          {
+            "word": "grid item",
+            "pronunciation": "ɡrɪd ˈaɪtəm",
+            "meaning": "网格项目"
+          },
+          {
+            "word": "grid template",
+            "pronunciation": "ɡrɪd ˈtemplət",
+            "meaning": "网格模板"
+          },
+          {
+            "word": "grid column",
+            "pronunciation": "ɡrɪd ˈkɒləm",
+            "meaning": "网格列"
+          },
+          {
+            "word": "grid row",
+            "pronunciation": "ɡrɪd roʊ",
+            "meaning": "网格行"
+          },
+          {
+            "word": "grid gap",
+            "pronunciation": "ɡrɪd ɡæp",
+            "meaning": "网格间距"
+          },
+          {
+            "word": "fr unit",
+            "pronunciation": "ef ɑːr ˈjuːnɪt",
+            "meaning": "分数单位"
+          }
+        ]
+      },
+      {
+        "name": "第十五组 - 定位",
+        "description": "定位",
+        "vocabs": [
+          {
+            "word": "position",
+            "pronunciation": "pəˈzɪʃn",
+            "meaning": "定位"
+          },
+          {
+            "word": "static",
+            "pronunciation": "ˈstætɪk",
+            "meaning": "静态定位"
+          },
+          {
+            "word": "relative",
+            "pronunciation": "ˈrelətɪv",
+            "meaning": "相对定位"
+          },
+          {
+            "word": "absolute",
+            "pronunciation": "ˈæbsəluːt",
+            "meaning": "绝对定位"
+          },
+          {
+            "word": "fixed",
+            "pronunciation": "fɪkst",
+            "meaning": "固定定位"
+          },
+          {
+            "word": "sticky",
+            "pronunciation": "ˈstɪki",
+            "meaning": "粘性定位"
+          },
+          {
+            "word": "z index",
+            "pronunciation": "ziː ˈɪndeks",
+            "meaning": "层级"
+          }
+        ]
+      },
+      {
+        "name": "第十六组 - 变量与数据类型",
+        "description": "变量与数据类型",
+        "vocabs": [
+          {
+            "word": "variable",
+            "pronunciation": "ˈveriəbl",
+            "meaning": "变量"
+          },
+          {
+            "word": "let",
+            "pronunciation": "let",
+            "meaning": "声明变量"
+          },
+          {
+            "word": "const",
+            "pronunciation": "kənst",
+            "meaning": "声明常量"
+          },
+          {
+            "word": "string",
+            "pronunciation": "strɪŋ",
+            "meaning": "字符串"
+          },
+          {
+            "word": "number",
+            "pronunciation": "ˈnʌmbər",
+            "meaning": "数字"
+          },
+          {
+            "word": "boolean",
+            "pronunciation": "ˈbuːliən",
+            "meaning": "布尔值"
+          },
+          {
+            "word": "null",
+            "pronunciation": "nʌl",
+            "meaning": "空值"
+          },
+          {
+            "word": "undefined",
+            "pronunciation": "ˌʌndɪˈfaɪnd",
+            "meaning": "未定义"
+          },
+          {
+            "word": "symbol",
+            "pronunciation": "ˈsɪmbəl",
+            "meaning": "符号"
+          },
+          {
+            "word": "bigint",
+            "pronunciation": "ˈbɪɡ ɪnt",
+            "meaning": "大整数"
+          }
+        ]
+      },
+      {
+        "name": "第十七组 - 运算符",
+        "description": "运算符",
+        "vocabs": [
+          {
+            "word": "operator",
+            "pronunciation": "ˈɑːpəreɪtər",
+            "meaning": "运算符"
+          },
+          {
+            "word": "arithmetic operator",
+            "pronunciation": "əˈrɪθmətɪk ˈɑːpəreɪtər",
+            "meaning": "算术运算符"
+          },
+          {
+            "word": "comparison operator",
+            "pronunciation": "kəmˈpærɪsn ˈɑːpəreɪtər",
+            "meaning": "比较运算符"
+          },
+          {
+            "word": "logical operator",
+            "pronunciation": "ˈlɒdʒɪkl ˈɑːpəreɪtər",
+            "meaning": "逻辑运算符"
+          },
+          {
+            "word": "assignment operator",
+            "pronunciation": "əˈsaɪnmənt ˈɑːpəreɪtər",
+            "meaning": "赋值运算符"
+          },
+          {
+            "word": "ternary operator",
+            "pronunciation": "ˈtɜːrnəri ˈɑːpəreɪtər",
+            "meaning": "三元运算符"
+          }
+        ]
+      },
+      {
+        "name": "第十八组 - 控制流",
+        "description": "控制流",
+        "vocabs": [
+          {
+            "word": "if statement",
+            "pronunciation": "ɪf ˈsteɪtmənt",
+            "meaning": "if语句"
+          },
+          {
+            "word": "else",
+            "pronunciation": "els",
+            "meaning": "否则"
+          },
+          {
+            "word": "else if",
+            "pronunciation": "els ɪf",
+            "meaning": "否则如果"
+          },
+          {
+            "word": "switch",
+            "pronunciation": "swɪtʃ",
+            "meaning": "switch语句"
+          },
+          {
+            "word": "case",
+            "pronunciation": "keɪs",
+            "meaning": "分支"
+          },
+          {
+            "word": "break",
+            "pronunciation": "breɪk",
+            "meaning": "跳出"
+          },
+          {
+            "word": "default",
+            "pronunciation": "dɪˈfɔːlt",
+            "meaning": "默认"
+          }
+        ]
+      },
+      {
+        "name": "第十九组 - 循环",
+        "description": "循环",
+        "vocabs": [
+          {
+            "word": "for loop",
+            "pronunciation": "fɔːr luːp",
+            "meaning": "for循环"
+          },
+          {
+            "word": "while loop",
+            "pronunciation": "waɪl luːp",
+            "meaning": "while循环"
+          },
+          {
+            "word": "do while",
+            "pronunciation": "duː waɪl",
+            "meaning": "do...while循环"
+          },
+          {
+            "word": "for in",
+            "pronunciation": "fɔːr ɪn",
+            "meaning": "for...in循环"
+          },
+          {
+            "word": "for of",
+            "pronunciation": "fɔːr əv",
+            "meaning": "for...of循环"
+          },
+          {
+            "word": "continue",
+            "pronunciation": "kənˈtɪnjuː",
+            "meaning": "继续下一次循环"
+          },
+          {
+            "word": "iterate",
+            "pronunciation": "ˈɪtəreɪt",
+            "meaning": "迭代"
+          }
+        ]
+      },
+      {
+        "name": "第二十组 - 函数基础",
+        "description": "函数基础",
+        "vocabs": [
+          {
+            "word": "function",
+            "pronunciation": "ˈfʌŋkʃn",
+            "meaning": "函数"
+          },
+          {
+            "word": "parameter",
+            "pronunciation": "pəˈræmɪtər",
+            "meaning": "参数"
+          },
+          {
+            "word": "argument",
+            "pronunciation": "ˈɑːrɡjumənt",
+            "meaning": "实参"
+          },
+          {
+            "word": "return",
+            "pronunciation": "rɪˈtɜːrn",
+            "meaning": "返回"
+          },
+          {
+            "word": "anonymous function",
+            "pronunciation": "əˈnɒnɪməs ˈfʌŋkʃn",
+            "meaning": "匿名函数"
+          },
+          {
+            "word": "arrow function",
+            "pronunciation": "ˈæroʊ ˈfʌŋkʃn",
+            "meaning": "箭头函数"
+          },
+          {
+            "word": "callback",
+            "pronunciation": "ˈkɔːlbæk",
+            "meaning": "回调函数"
+          }
+        ]
+      },
+      {
+        "name": "第二十一组 - 数组",
+        "description": "数组",
+        "vocabs": [
+          {
+            "word": "array",
+            "pronunciation": "əˈreɪ",
+            "meaning": "数组"
+          },
+          {
+            "word": "index",
+            "pronunciation": "ˈɪndeks",
+            "meaning": "索引"
+          },
+          {
+            "word": "length",
+            "pronunciation": "leŋθ",
+            "meaning": "长度"
+          },
+          {
+            "word": "push",
+            "pronunciation": "pʊʃ",
+            "meaning": "添加到末尾"
+          },
+          {
+            "word": "pop",
+            "pronunciation": "pɑːp",
+            "meaning": "移除末尾"
+          },
+          {
+            "word": "shift",
+            "pronunciation": "ʃɪft",
+            "meaning": "移除开头"
+          },
+          {
+            "word": "unshift",
+            "pronunciation": "ˌʌnˈʃɪft",
+            "meaning": "添加到开头"
+          },
+          {
+            "word": "slice",
+            "pronunciation": "slaɪs",
+            "meaning": "切片"
+          },
+          {
+            "word": "splice",
+            "pronunciation": "splaɪs",
+            "meaning": "拼接/删除"
+          }
+        ]
+      },
+      {
+        "name": "第二十二组 - 数组方法",
+        "description": "数组方法",
+        "vocabs": [
+          {
+            "word": "map",
+            "pronunciation": "mæp",
+            "meaning": "映射"
+          },
+          {
+            "word": "filter",
+            "pronunciation": "ˈfɪltər",
+            "meaning": "过滤"
+          },
+          {
+            "word": "reduce",
+            "pronunciation": "rɪˈdjuːs",
+            "meaning": "归约"
+          },
+          {
+            "word": "forEach",
+            "pronunciation": "fɔːr iːtʃ",
+            "meaning": "遍历"
+          },
+          {
+            "word": "find",
+            "pronunciation": "faɪnd",
+            "meaning": "查找"
+          },
+          {
+            "word": "findIndex",
+            "pronunciation": "faɪnd ˈɪndeks",
+            "meaning": "查找索引"
+          },
+          {
+            "word": "some",
+            "pronunciation": "sʌm",
+            "meaning": "是否存在"
+          },
+          {
+            "word": "every",
+            "pronunciation": "ˈevri",
+            "meaning": "是否全部"
+          },
+          {
+            "word": "sort",
+            "pronunciation": "sɔːrt",
+            "meaning": "排序"
+          },
+          {
+            "word": "reverse",
+            "pronunciation": "rɪˈvɜːrs",
+            "meaning": "反转"
+          }
+        ]
+      },
+      {
+        "name": "第二十三组 - 对象",
+        "description": "对象",
+        "vocabs": [
+          {
+            "word": "object",
+            "pronunciation": "ˈɑːbdʒekt",
+            "meaning": "对象"
+          },
+          {
+            "word": "property",
+            "pronunciation": "ˈprɑːpərti",
+            "meaning": "属性"
+          },
+          {
+            "word": "method",
+            "pronunciation": "ˈmeθəd",
+            "meaning": "方法"
+          },
+          {
+            "word": "key",
+            "pronunciation": "kiː",
+            "meaning": "键"
+          },
+          {
+            "word": "value",
+            "pronunciation": "ˈvæljuː",
+            "meaning": "值"
+          },
+          {
+            "word": "bracket notation",
+            "pronunciation": "ˈbrækɪt noʊˈteɪʃn",
+            "meaning": "方括号表示法"
+          },
+          {
+            "word": "dot notation",
+            "pronunciation": "dɒt noʊˈteɪʃn",
+            "meaning": "点表示法"
+          },
+          {
+            "word": "destructuring",
+            "pronunciation": "diːˈstrʌktʃərɪŋ",
+            "meaning": "解构赋值"
+          }
+        ]
+      },
+      {
+        "name": "第二十四组 - 字符串方法",
+        "description": "字符串方法",
+        "vocabs": [
+          {
+            "word": "charAt",
+            "pronunciation": "tʃɑːr æt",
+            "meaning": "获取字符"
+          },
+          {
+            "word": "substring",
+            "pronunciation": "ˈsʌbstrɪŋ",
+            "meaning": "子字符串"
+          },
+          {
+            "word": "split",
+            "pronunciation": "splɪt",
+            "meaning": "分割"
+          },
+          {
+            "word": "join",
+            "pronunciation": "dʒɔɪn",
+            "meaning": "连接"
+          },
+          {
+            "word": "toUpperCase",
+            "pronunciation": "tuː ˈʌpər keɪs",
+            "meaning": "转大写"
+          },
+          {
+            "word": "toLowerCase",
+            "pronunciation": "tuː ˈloʊər keɪs",
+            "meaning": "转小写"
+          },
+          {
+            "word": "trim",
+            "pronunciation": "trɪm",
+            "meaning": "去除空格"
+          },
+          {
+            "word": "replace",
+            "pronunciation": "rɪˈpleɪs",
+            "meaning": "替换"
+          },
+          {
+            "word": "includes",
+            "pronunciation": "ɪnˈkluːdz",
+            "meaning": "包含"
+          },
+          {
+            "word": "startsWith",
+            "pronunciation": "stɑːrts wɪð",
+            "meaning": "以...开头"
+          },
+          {
+            "word": "endsWith",
+            "pronunciation": "endz wɪð",
+            "meaning": "以...结尾"
+          }
+        ]
+      },
+      {
+        "name": "第二十五组 - 异步编程",
+        "description": "异步编程",
+        "vocabs": [
+          {
+            "word": "asynchronous",
+            "pronunciation": "eɪˈsɪŋkrənəs",
+            "meaning": "异步的"
+          },
+          {
+            "word": "promise",
+            "pronunciation": "ˈprɑːmɪs",
+            "meaning": "Promise对象"
+          },
+          {
+            "word": "async",
+            "pronunciation": "ˈeɪsɪŋk",
+            "meaning": "异步函数"
+          },
+          {
+            "word": "await",
+            "pronunciation": "əˈweɪt",
+            "meaning": "等待"
+          },
+          {
+            "word": "then",
+            "pronunciation": "ðen",
+            "meaning": "然后"
+          },
+          {
+            "word": "catch",
+            "pronunciation": "kætʃ",
+            "meaning": "捕获错误"
+          },
+          {
+            "word": "finally",
+            "pronunciation": "ˈfaɪnəli",
+            "meaning": "最终"
+          },
+          {
+            "word": "resolve",
+            "pronunciation": "rɪˈzɒlv",
+            "meaning": "解决"
+          },
+          {
+            "word": "reject",
+            "pronunciation": "rɪˈdʒekt",
+            "meaning": "拒绝"
+          }
+        ]
+      },
+      {
+        "name": "第二十六组 - 类与原型",
+        "description": "类与原型",
+        "vocabs": [
+          {
+            "word": "class",
+            "pronunciation": "klæs",
+            "meaning": "类"
+          },
+          {
+            "word": "constructor",
+            "pronunciation": "kənˈstrʌktər",
+            "meaning": "构造函数"
+          },
+          {
+            "word": "instance",
+            "pronunciation": "ˈɪnstəns",
+            "meaning": "实例"
+          },
+          {
+            "word": "this",
+            "pronunciation": "ðɪs",
+            "meaning": "当前对象"
+          },
+          {
+            "word": "new",
+            "pronunciation": "nuː",
+            "meaning": "新建"
+          },
+          {
+            "word": "prototype",
+            "pronunciation": "ˈproʊtətaɪp",
+            "meaning": "原型"
+          },
+          {
+            "word": "extends",
+            "pronunciation": "ɪkˈstendz",
+            "meaning": "继承"
+          },
+          {
+            "word": "super",
+            "pronunciation": "ˈsuːpər",
+            "meaning": "父类引用"
+          }
+        ]
+      },
+      {
+        "name": "第二十七组 - ES6+新特性",
+        "description": "ES6+新特性",
+        "vocabs": [
+          {
+            "word": "spread operator",
+            "pronunciation": "spred ˈɑːpəreɪtər",
+            "meaning": "展开运算符"
+          },
+          {
+            "word": "rest parameter",
+            "pronunciation": "rest pəˈræmɪtər",
+            "meaning": "剩余参数"
+          },
+          {
+            "word": "template literal",
+            "pronunciation": "ˈtemplət ˈlɪtərəl",
+            "meaning": "模板字符串"
+          },
+          {
+            "word": "optional chaining",
+            "pronunciation": "ˈɑːpʃənl ˈtʃeɪnɪŋ",
+            "meaning": "可选链"
+          },
+          {
+            "word": "nullish coalescing",
+            "pronunciation": "ˈnʌlɪʃ koʊəˈlesɪŋ",
+            "meaning": "空值合并"
+          },
+          {
+            "word": "import",
+            "pronunciation": "ɪmˈpɔːrt",
+            "meaning": "导入"
+          },
+          {
+            "word": "export",
+            "pronunciation": "ɪkˈspɔːrt",
+            "meaning": "导出"
+          },
+          {
+            "word": "module",
+            "pronunciation": "ˈmɒdjuːl",
+            "meaning": "模块"
+          }
+        ]
+      },
+      {
+        "name": "第二十八组 - DOM基础",
+        "description": "DOM基础",
+        "vocabs": [
+          {
+            "word": "dom",
+            "pronunciation": "diː oʊ em",
+            "meaning": "文档对象模型"
+          },
+          {
+            "word": "document",
+            "pronunciation": "ˈdɒkjumənt",
+            "meaning": "文档对象"
+          },
+          {
+            "word": "element",
+            "pronunciation": "ˈelɪmənt",
+            "meaning": "元素节点"
+          },
+          {
+            "word": "node",
+            "pronunciation": "noʊd",
+            "meaning": "节点"
+          },
+          {
+            "word": "text node",
+            "pronunciation": "tekst noʊd",
+            "meaning": "文本节点"
+          },
+          {
+            "word": "comment",
+            "pronunciation": "ˈkɒment",
+            "meaning": "注释节点"
+          }
+        ]
+      },
+      {
+        "name": "第二十九组 - 选择元素",
+        "description": "选择元素",
+        "vocabs": [
+          {
+            "word": "querySelector",
+            "pronunciation": "ˈkwɪri sɪˈlektər",
+            "meaning": "查询选择器"
+          },
+          {
+            "word": "querySelectorAll",
+            "pronunciation": "ˈkwɪri sɪˈlektər ɔːl",
+            "meaning": "查询所有选择器"
+          },
+          {
+            "word": "getElementById",
+            "pronunciation": "ɡet ˈelɪmənt baɪ aɪ diː",
+            "meaning": "通过ID获取元素"
+          },
+          {
+            "word": "getElementsByClassName",
+            "pronunciation": "ɡet ˈelɪmənts baɪ klæs neɪm",
+            "meaning": "通过类名获取元素"
+          },
+          {
+            "word": "getElementsByTagName",
+            "pronunciation": "ɡet ˈelɪmənts baɪ tæɡ neɪm",
+            "meaning": "通过标签名获取元素"
+          }
+        ]
+      },
+      {
+        "name": "第三十组 - 操作元素",
+        "description": "操作元素",
+        "vocabs": [
+          {
+            "word": "createElement",
+            "pronunciation": "kreɪt ˈelɪmənt",
+            "meaning": "创建元素"
+          },
+          {
+            "word": "appendChild",
+            "pronunciation": "əˈpend tʃaɪld",
+            "meaning": "追加子元素"
+          },
+          {
+            "word": "removeChild",
+            "pronunciation": "rɪˈmuːv tʃaɪld",
+            "meaning": "移除子元素"
+          },
+          {
+            "word": "replaceChild",
+            "pronunciation": "rɪˈpleɪs tʃaɪld",
+            "meaning": "替换子元素"
+          },
+          {
+            "word": "insertBefore",
+            "pronunciation": "ɪnˈsɜːrt bɪˈfɔːr",
+            "meaning": "插入到之前"
+          },
+          {
+            "word": "innerHTML",
+            "pronunciation": "ˈɪnər eɪtʃ em el",
+            "meaning": "内部HTML"
+          },
+          {
+            "word": "textContent",
+            "pronunciation": "tekst ˈkɑːntent",
+            "meaning": "文本内容"
+          },
+          {
+            "word": "innerText",
+            "pronunciation": "ˈɪnər tekst",
+            "meaning": "内部文本"
+          }
+        ]
+      },
+      {
+        "name": "第三十一组 - 属性操作",
+        "description": "属性操作",
+        "vocabs": [
+          {
+            "word": "getAttribute",
+            "pronunciation": "ɡet əˈtrɪbjuːt",
+            "meaning": "获取属性"
+          },
+          {
+            "word": "setAttribute",
+            "pronunciation": "set əˈtrɪbjuːt",
+            "meaning": "设置属性"
+          },
+          {
+            "word": "removeAttribute",
+            "pronunciation": "rɪˈmuːv əˈtrɪbjuːt",
+            "meaning": "移除属性"
+          },
+          {
+            "word": "classList",
+            "pronunciation": "klæs lɪst",
+            "meaning": "类名列表"
+          },
+          {
+            "word": "add",
+            "pronunciation": "æd",
+            "meaning": "添加"
+          },
+          {
+            "word": "remove",
+            "pronunciation": "rɪˈmuːv",
+            "meaning": "移除"
+          },
+          {
+            "word": "toggle",
+            "pronunciation": "ˈtɒɡl",
+            "meaning": "切换"
+          },
+          {
+            "word": "contains",
+            "pronunciation": "kənˈteɪnz",
+            "meaning": "包含"
+          }
+        ]
+      },
+      {
+        "name": "第三十二组 - 样式操作",
+        "description": "样式操作",
+        "vocabs": [
+          {
+            "word": "style",
+            "pronunciation": "staɪl",
+            "meaning": "样式对象"
+          },
+          {
+            "word": "getComputedStyle",
+            "pronunciation": "ɡet kəmˈpjuːtɪd staɪl",
+            "meaning": "获取计算后样式"
+          },
+          {
+            "word": "className",
+            "pronunciation": "klæs neɪm",
+            "meaning": "类名"
+          },
+          {
+            "word": "cssText",
+            "pronunciation": "siː es es tekst",
+            "meaning": "CSS文本"
+          }
+        ]
+      },
+      {
+        "name": "第三十三组 - 事件处理",
+        "description": "事件处理",
+        "vocabs": [
+          {
+            "word": "event",
+            "pronunciation": "ɪˈvent",
+            "meaning": "事件"
+          },
+          {
+            "word": "addEventListener",
+            "pronunciation": "æd ɪˈvent ˈlɪsənər",
+            "meaning": "添加事件监听器"
+          },
+          {
+            "word": "removeEventListener",
+            "pronunciation": "rɪˈmuːv ɪˈvent ˈlɪsənər",
+            "meaning": "移除事件监听器"
+          },
+          {
+            "word": "target",
+            "pronunciation": "ˈtɑːrɡɪt",
+            "meaning": "目标"
+          },
+          {
+            "word": "currentTarget",
+            "pronunciation": "ˈkʌrənt ˈtɑːrɡɪt",
+            "meaning": "当前目标"
+          },
+          {
+            "word": "preventDefault",
+            "pronunciation": "prɪˈvent dɪˈfɔːlt",
+            "meaning": "阻止默认行为"
+          },
+          {
+            "word": "stopPropagation",
+            "pronunciation": "stɒp ˌprɒpəˈɡeɪʃn",
+            "meaning": "阻止冒泡"
+          }
+        ]
+      },
+      {
+        "name": "第三十四组 - 常见事件",
+        "description": "常见事件",
+        "vocabs": [
+          {
+            "word": "click",
+            "pronunciation": "klɪk",
+            "meaning": "点击"
+          },
+          {
+            "word": "dblclick",
+            "pronunciation": "dʌbəl klɪk",
+            "meaning": "双击"
+          },
+          {
+            "word": "mouseover",
+            "pronunciation": "maʊs ˈoʊvər",
+            "meaning": "鼠标移入"
+          },
+          {
+            "word": "mouseout",
+            "pronunciation": "maʊs aʊt",
+            "meaning": "鼠标移出"
+          },
+          {
+            "word": "keydown",
+            "pronunciation": "kiː daʊn",
+            "meaning": "键盘按下"
+          },
+          {
+            "word": "keyup",
+            "pronunciation": "kiː ʌp",
+            "meaning": "键盘释放"
+          },
+          {
+            "word": "submit",
+            "pronunciation": "səbˈmɪt",
+            "meaning": "表单提交"
+          },
+          {
+            "word": "change",
+            "pronunciation": "tʃeɪndʒ",
+            "meaning": "值改变"
+          },
+          {
+            "word": "input",
+            "pronunciation": "ˈɪnpʊt",
+            "meaning": "输入"
+          },
+          {
+            "word": "load",
+            "pronunciation": "loʊd",
+            "meaning": "加载完成"
+          },
+          {
+            "word": "scroll",
+            "pronunciation": "skroʊl",
+            "meaning": "滚动"
+          },
+          {
+            "word": "resize",
+            "pronunciation": "rɪˈsaɪz",
+            "meaning": "调整大小"
+          }
+        ]
+      },
+      {
+        "name": "第三十五组 - BOM对象",
+        "description": "BOM对象",
+        "vocabs": [
+          {
+            "word": "window",
+            "pronunciation": "ˈwɪndoʊ",
+            "meaning": "窗口对象"
+          },
+          {
+            "word": "navigator",
+            "pronunciation": "ˈnævɪɡeɪtər",
+            "meaning": "导航对象"
+          },
+          {
+            "word": "location",
+            "pronunciation": "loʊˈkeɪʃn",
+            "meaning": "位置对象"
+          },
+          {
+            "word": "history",
+            "pronunciation": "ˈhɪstəri",
+            "meaning": "历史记录"
+          },
+          {
+            "word": "screen",
+            "pronunciation": "skriːn",
+            "meaning": "屏幕对象"
+          }
+        ]
+      },
+      {
+        "name": "第三十六组 - 存储API",
+        "description": "存储API",
+        "vocabs": [
+          {
+            "word": "localStorage",
+            "pronunciation": "ˈloʊkl ˈstɔːrɪdʒ",
+            "meaning": "本地存储"
+          },
+          {
+            "word": "sessionStorage",
+            "pronunciation": "ˈseʃn ˈstɔːrɪdʒ",
+            "meaning": "会话存储"
+          },
+          {
+            "word": "setItem",
+            "pronunciation": "set ˈaɪtəm",
+            "meaning": "设置项"
+          },
+          {
+            "word": "getItem",
+            "pronunciation": "ɡet ˈaɪtəm",
+            "meaning": "获取项"
+          },
+          {
+            "word": "removeItem",
+            "pronunciation": "rɪˈmuːv ˈaɪtəm",
+            "meaning": "移除项"
+          },
+          {
+            "word": "clear",
+            "pronunciation": "klɪr",
+            "meaning": "清除"
+          },
+          {
+            "word": "cookie",
+            "pronunciation": "ˈkʊki",
+            "meaning": "Cookie"
+          },
+          {
+            "word": "indexedDB",
+            "pronunciation": "ˈɪndekst diː biː",
+            "meaning": "索引数据库"
+          }
+        ]
+      },
+      {
+        "name": "第三十七组 - 网络请求",
+        "description": "网络请求",
+        "vocabs": [
+          {
+            "word": "fetch",
+            "pronunciation": "festʃ",
+            "meaning": "获取数据"
+          },
+          {
+            "word": "xmlHttpRequest",
+            "pronunciation": "eks em el eɪtʃ tiː əˈkwest",
+            "meaning": "XMLHttpRequest"
+          },
+          {
+            "word": "request",
+            "pronunciation": "rɪˈkwest",
+            "meaning": "请求"
+          },
+          {
+            "word": "response",
+            "pronunciation": "rɪˈspɒns",
+            "meaning": "响应"
+          },
+          {
+            "word": "json",
+            "pronunciation": "ˈdʒeɪsɒn",
+            "meaning": "JSON数据格式"
+          },
+          {
+            "word": "parse",
+            "pronunciation": "pɑːrs",
+            "meaning": "解析"
+          },
+          {
+            "word": "stringify",
+            "pronunciation": "ˈstrɪŋɡɪfaɪ",
+            "meaning": "序列化"
+          }
+        ]
+      },
+      {
+        "name": "第三十八组 - 定时器",
+        "description": "定时器",
+        "vocabs": [
+          {
+            "word": "setTimeout",
+            "pronunciation": "set taɪm ʌt",
+            "meaning": "设置超时"
+          },
+          {
+            "word": "clearTimeout",
+            "pronunciation": "klɪr taɪm ʌt",
+            "meaning": "清除超时"
+          },
+          {
+            "word": "setInterval",
+            "pronunciation": "set ˈɪntərvəl",
+            "meaning": "设置间隔"
+          },
+          {
+            "word": "clearInterval",
+            "pronunciation": "klɪr ˈɪntərvəl",
+            "meaning": "清除间隔"
+          },
+          {
+            "word": "requestAnimationFrame",
+            "pronunciation": "rɪˈkwest əˈnɪmeɪʃn freɪm",
+            "meaning": "请求动画帧"
+          }
+        ]
+      },
+      {
+        "name": "第三十九组 - 地理位置与媒体",
+        "description": "地理位置与媒体",
+        "vocabs": [
+          {
+            "word": "geolocation",
+            "pronunciation": "ˌdʒiːoʊloʊˈkeɪʃn",
+            "meaning": "地理位置"
+          },
+          {
+            "word": "getCurrentPosition",
+            "pronunciation": "ɡet ˈkʌrənt pəˈzɪʃn",
+            "meaning": "获取当前位置"
+          },
+          {
+            "word": "watchPosition",
+            "pronunciation": "wɒtʃ pəˈzɪʃn",
+            "meaning": "监听位置变化"
+          },
+          {
+            "word": "mediaDevices",
+            "pronunciation": "ˈmiːdiə dɪˈvaɪsɪz",
+            "meaning": "媒体设备"
+          },
+          {
+            "word": "getUserMedia",
+            "pronunciation": "ɡet ˈjuːzər ˈmiːdiə",
+            "meaning": "获取用户媒体"
+          },
+          {
+            "word": "audioContext",
+            "pronunciation": "ˈɔːdioʊ ˈkɒntekst",
+            "meaning": "音频上下文"
+          }
+        ]
+      },
+      {
+        "name": "第四十组 - Canvas与WebGL",
+        "description": "Canvas与WebGL",
+        "vocabs": [
+          {
+            "word": "canvas",
+            "pronunciation": "ˈkænvəs",
+            "meaning": "画布"
+          },
+          {
+            "word": "context",
+            "pronunciation": "ˈkɒntekst",
+            "meaning": "绘图上下文"
+          },
+          {
+            "word": "fill",
+            "pronunciation": "fɪl",
+            "meaning": "填充"
+          },
+          {
+            "word": "stroke",
+            "pronunciation": "stroʊk",
+            "meaning": "描边"
+          },
+          {
+            "word": "beginPath",
+            "pronunciation": "bɪˈɡɪn pæθ",
+            "meaning": "开始路径"
+          },
+          {
+            "word": "moveTo",
+            "pronunciation": "muːv tuː",
+            "meaning": "移动到"
+          },
+          {
+            "word": "lineTo",
+            "pronunciation": "laɪn tuː",
+            "meaning": "画线到"
+          },
+          {
+            "word": "arc",
+            "pronunciation": "ɑːrk",
+            "meaning": "圆弧"
+          },
+          {
+            "word": "bezierCurveTo",
+            "pronunciation": "ˈbenziər kɜːrv tuː",
+            "meaning": "贝塞尔曲线"
+          },
+          {
+            "word": "webgl",
+            "pronunciation": "web ɡiː el",
+            "meaning": "WebGL图形库"
+          }
+        ]
+      },
+      {
+        "name": "第四十一组 - React基础",
+        "description": "React基础",
+        "vocabs": [
+          {
+            "word": "react",
+            "pronunciation": "riːˈækt",
+            "meaning": "React框架"
+          },
+          {
+            "word": "jsx",
+            "pronunciation": "dʒeɪ eks es",
+            "meaning": "JSX语法"
+          },
+          {
+            "word": "component",
+            "pronunciation": "kəmˈpoʊnənt",
+            "meaning": "组件"
+          },
+          {
+            "word": "functional component",
+            "pronunciation": "ˈfʌŋkʃənl kəmˈpoʊnənt",
+            "meaning": "函数组件"
+          },
+          {
+            "word": "class component",
+            "pronunciation": "klæs kəmˈpoʊnənt",
+            "meaning": "类组件"
+          },
+          {
+            "word": "render",
+            "pronunciation": "ˈrendər",
+            "meaning": "渲染"
+          },
+          {
+            "word": "return",
+            "pronunciation": "rɪˈtɜːrn",
+            "meaning": "返回JSX"
+          }
+        ]
+      },
+      {
+        "name": "第四十二组 - Props与State",
+        "description": "Props与State",
+        "vocabs": [
+          {
+            "word": "props",
+            "pronunciation": "prɒps",
+            "meaning": "属性"
+          },
+          {
+            "word": "state",
+            "pronunciation": "steɪt",
+            "meaning": "状态"
+          },
+          {
+            "word": "setState",
+            "pronunciation": "set steɪt",
+            "meaning": "设置状态"
+          },
+          {
+            "word": "useState",
+            "pronunciation": "juːz steɪt",
+            "meaning": "useState Hook"
+          },
+          {
+            "word": "defaultProps",
+            "pronunciation": "dɪˈfɔːlt prɒps",
+            "meaning": "默认属性"
+          },
+          {
+            "word": "propTypes",
+            "pronunciation": "prɒp taɪps",
+            "meaning": "属性类型检查"
+          }
+        ]
+      },
+      {
+        "name": "第四十三组 - Hooks",
+        "description": "Hooks",
+        "vocabs": [
+          {
+            "word": "hook",
+            "pronunciation": "hʊk",
+            "meaning": "Hook"
+          },
+          {
+            "word": "useEffect",
+            "pronunciation": "juːz ɪˈfekt",
+            "meaning": "副作用Hook"
+          },
+          {
+            "word": "useContext",
+            "pronunciation": "juːz ˈkɒntekst",
+            "meaning": "上下文Hook"
+          },
+          {
+            "word": "useReducer",
+            "pronunciation": "juːz rɪˈdjuːsər",
+            "meaning": "Reducer Hook"
+          },
+          {
+            "word": "useCallback",
+            "pronunciation": "juːz ˈkɔːlbæk",
+            "meaning": "回调Hook"
+          },
+          {
+            "word": "useMemo",
+            "pronunciation": "juːz ˈmiːmoʊ",
+            "meaning": "记忆Hook"
+          },
+          {
+            "word": "useRef",
+            "pronunciation": "juːz ref",
+            "meaning": "Ref Hook"
+          },
+          {
+            "word": "useLayoutEffect",
+            "pronunciation": "juːz ˈleɪaʊt ɪˈfekt",
+            "meaning": "布局副作用Hook"
+          },
+          {
+            "word": "custom hook",
+            "pronunciation": "ˈkʌstəm hʊk",
+            "meaning": "自定义Hook"
+          }
+        ]
+      },
+      {
+        "name": "第四十四组 - 条件渲染与列表",
+        "description": "条件渲染与列表",
+        "vocabs": [
+          {
+            "word": "conditional rendering",
+            "pronunciation": "kənˈdɪʃənl ˈrendərɪŋ",
+            "meaning": "条件渲染"
+          },
+          {
+            "word": "ternary",
+            "pronunciation": "ˈtɜːrnəri",
+            "meaning": "三元表达式"
+          },
+          {
+            "word": "logical and",
+            "pronunciation": "ˈlɒdʒɪkl ænd",
+            "meaning": "逻辑与"
+          },
+          {
+            "word": "list rendering",
+            "pronunciation": "lɪst ˈrendərɪŋ",
+            "meaning": "列表渲染"
+          },
+          {
+            "word": "key prop",
+            "pronunciation": "kiː prɒp",
+            "meaning": "键属性"
+          },
+          {
+            "word": "map",
+            "pronunciation": "mæp",
+            "meaning": "映射方法"
+          },
+          {
+            "word": "fragment",
+            "pronunciation": "ˈfræɡmənt",
+            "meaning": "片段"
+          }
+        ]
+      },
+      {
+        "name": "第四十五组 - 事件处理",
+        "description": "事件处理",
+        "vocabs": [
+          {
+            "word": "event handler",
+            "pronunciation": "ɪˈvent ˈhændlər",
+            "meaning": "事件处理器"
+          },
+          {
+            "word": "onClick",
+            "pronunciation": "ɒn klɪk",
+            "meaning": "点击事件"
+          },
+          {
+            "word": "onChange",
+            "pronunciation": "ɒn tʃeɪndʒ",
+            "meaning": "变更事件"
+          },
+          {
+            "word": "onSubmit",
+            "pronunciation": "ɒn səbˈmɪt",
+            "meaning": "提交事件"
+          },
+          {
+            "word": "onKeyDown",
+            "pronunciation": "ɒn kiː daʊn",
+            "meaning": "键盘按下事件"
+          },
+          {
+            "word": "synthetic event",
+            "pronunciation": "sɪnˈθetɪk ɪˈvent",
+            "meaning": "合成事件"
+          },
+          {
+            "word": "bind",
+            "pronunciation": "baɪnd",
+            "meaning": "绑定"
+          }
+        ]
+      },
+      {
+        "name": "第四十六组 - 生命周期",
+        "description": "生命周期",
+        "vocabs": [
+          {
+            "word": "lifecycle",
+            "pronunciation": "ˈlaɪfsaɪkl",
+            "meaning": "生命周期"
+          },
+          {
+            "word": "componentDidMount",
+            "pronunciation": "kəmˈpoʊnənt daɪd mɒnt",
+            "meaning": "组件挂载后"
+          },
+          {
+            "word": "componentDidUpdate",
+            "pronunciation": "kəmˈpoʊnənt daɪd ʌpˈdeɪt",
+            "meaning": "组件更新后"
+          },
+          {
+            "word": "componentWillUnmount",
+            "pronunciation": "kəmˈpoʊnənt wɪl ʌnˈmaʊnt",
+            "meaning": "组件卸载前"
+          },
+          {
+            "word": "componentDidCatch",
+            "pronunciation": "kəmˈpoʊnənt daɪd kætʃ",
+            "meaning": "错误捕获"
+          },
+          {
+            "word": "getDerivedStateFromProps",
+            "pronunciation": "ɡet dɪˈraɪvd steɪt frɒm prɒps",
+            "meaning": "从Props派生状态"
+          },
+          {
+            "word": "shouldComponentUpdate",
+            "pronunciation": "ʃʊd kəmˈpoʊnənt ʌpˈdeɪt",
+            "meaning": "是否更新组件"
+          }
+        ]
+      },
+      {
+        "name": "第四十七组 - Context与状态管理",
+        "description": "Context与状态管理",
+        "vocabs": [
+          {
+            "word": "context",
+            "pronunciation": "ˈkɒntekst",
+            "meaning": "上下文"
+          },
+          {
+            "word": "createContext",
+            "pronunciation": "krɪˈeɪt ˈkɒntekst",
+            "meaning": "创建上下文"
+          },
+          {
+            "word": "provider",
+            "pronunciation": "prəˈvaɪər",
+            "meaning": "提供者"
+          },
+          {
+            "word": "consumer",
+            "pronunciation": "kənˈsjuːmər",
+            "meaning": "消费者"
+          },
+          {
+            "word": "useContext",
+            "pronunciation": "juːz ˈkɒntekst",
+            "meaning": "使用上下文"
+          },
+          {
+            "word": "redux",
+            "pronunciation": "ˈriːdʌks",
+            "meaning": "Redux状态管理库"
+          },
+          {
+            "word": "store",
+            "pronunciation": "stɔːr",
+            "meaning": "状态仓库"
+          },
+          {
+            "word": "dispatch",
+            "pronunciation": "dɪˈspætʃ",
+            "meaning": "派发"
+          },
+          {
+            "word": "selector",
+            "pronunciation": "sɪˈlektər",
+            "meaning": "选择器"
+          }
+        ]
+      },
+      {
+        "name": "第四十八组 - 路由",
+        "description": "路由",
+        "vocabs": [
+          {
+            "word": "react router",
+            "pronunciation": "riːˈækt ˈruːtər",
+            "meaning": "React路由"
+          },
+          {
+            "word": "route",
+            "pronunciation": "raʊt",
+            "meaning": "路由"
+          },
+          {
+            "word": "router",
+            "pronunciation": "ˈruːtər",
+            "meaning": "路由器"
+          },
+          {
+            "word": "link",
+            "pronunciation": "lɪŋk",
+            "meaning": "链接"
+          },
+          {
+            "word": "navLink",
+            "pronunciation": "næv lɪŋk",
+            "meaning": "导航链接"
+          },
+          {
+            "word": "navigate",
+            "pronunciation": "ˈnævɪɡeɪt",
+            "meaning": "导航"
+          },
+          {
+            "word": "outlet",
+            "pronunciation": "ˈaʊtlet",
+            "meaning": "路由出口"
+          },
+          {
+            "word": "params",
+            "pronunciation": "pærəmz",
+            "meaning": "参数"
+          },
+          {
+            "word": "useParams",
+            "pronunciation": "juːz pærəmz",
+            "meaning": "使用路由参数"
+          },
+          {
+            "word": "useNavigate",
+            "pronunciation": "juːz ˈnævɪɡeɪt",
+            "meaning": "使用导航"
+          }
+        ]
+      },
+      {
+        "name": "第四十九组 - 组件进阶",
+        "description": "组件进阶",
+        "vocabs": [
+          {
+            "word": "higher order component",
+            "pronunciation": "ˈhaɪər ˈɔːrdər kəmˈpoʊnənt",
+            "meaning": "高阶组件"
+          },
+          {
+            "word": "render prop",
+            "pronunciation": "ˈrendər prɒp",
+            "meaning": "渲染属性"
+          },
+          {
+            "word": "forwardRef",
+            "pronunciation": "ˈfɔːrwərd ref",
+            "meaning": "转发Ref"
+          },
+          {
+            "word": "memo",
+            "pronunciation": "ˈmiːmoʊ",
+            "meaning": "记忆组件"
+          },
+          {
+            "word": "lazy",
+            "pronunciation": "ˈleɪzi",
+            "meaning": "懒加载"
+          },
+          {
+            "word": "suspense",
+            "pronunciation": "səˈspens",
+            "meaning": "悬停/加载中组件"
+          },
+          {
+            "word": "error boundary",
+            "pronunciation": "ˈerər ˈbaʊndəri",
+            "meaning": "错误边界"
+          }
+        ]
+      },
+      {
+        "name": "第五十组 - 表单处理",
+        "description": "表单处理",
+        "vocabs": [
+          {
+            "word": "controlled component",
+            "pronunciation": "kənˈtroʊld kəmˈpoʊnənt",
+            "meaning": "受控组件"
+          },
+          {
+            "word": "uncontrolled component",
+            "pronunciation": "ʌnkənˈtroʊld kəmˈpoʊnənt",
+            "meaning": "非受控组件"
+          },
+          {
+            "word": "form",
+            "pronunciation": "fɔːrm",
+            "meaning": "表单"
+          },
+          {
+            "word": "input value",
+            "pronunciation": "ˈɪnpʊt ˈvæljuː",
+            "meaning": "输入值"
+          },
+          {
+            "word": "onChange handler",
+            "pronunciation": "ɒn tʃeɪndʒ ˈhændlər",
+            "meaning": "变更处理函数"
+          },
+          {
+            "word": "validation",
+            "pronunciation": "ˌvælɪˈdeɪʃn",
+            "meaning": "验证"
+          },
+          {
+            "word": "error message",
+            "pronunciation": "ˈerər ˈmesɪdʒ",
+            "meaning": "错误信息"
+          }
+        ]
+      },
+      {
+        "name": "第五十一组 - Vue基础",
+        "description": "Vue基础",
+        "vocabs": [
+          {
+            "word": "vue",
+            "pronunciation": "vjuː",
+            "meaning": "Vue框架"
+          },
+          {
+            "word": "instance",
+            "pronunciation": "ˈɪnstəns",
+            "meaning": "Vue实例"
+          },
+          {
+            "word": "template",
+            "pronunciation": "ˈtemplət",
+            "meaning": "模板"
+          },
+          {
+            "word": "script",
+            "pronunciation": "skrɪpt",
+            "meaning": "脚本"
+          },
+          {
+            "word": "style",
+            "pronunciation": "staɪl",
+            "meaning": "样式"
+          },
+          {
+            "word": "options",
+            "pronunciation": "ˈɑːpʃənz",
+            "meaning": "选项对象"
+          }
+        ]
+      },
+      {
+        "name": "第五十二组 - 响应式",
+        "description": "响应式",
+        "vocabs": [
+          {
+            "word": "reactive",
+            "pronunciation": "riːˈæktɪv",
+            "meaning": "响应式的"
+          },
+          {
+            "word": "ref",
+            "pronunciation": "ref",
+            "meaning": "响应式引用"
+          },
+          {
+            "word": "reactive",
+            "pronunciation": "riːˈæktɪv",
+            "meaning": "深度响应式对象"
+          },
+          {
+            "word": "computed",
+            "pronunciation": "kəmˈpjuːtɪd",
+            "meaning": "计算属性"
+          },
+          {
+            "word": "watch",
+            "pronunciation": "wɒtʃ",
+            "meaning": "侦听器"
+          },
+          {
+            "word": "watchEffect",
+            "pronunciation": "wɒtʃ ɪˈfekt",
+            "meaning": "立即执行的侦听器"
+          },
+          {
+            "word": "toRef",
+            "pronunciation": "tuː ref",
+            "meaning": "转为Ref"
+          },
+          {
+            "word": "toRefs",
+            "pronunciation": "tuː refs",
+            "meaning": "批量转为Ref"
+          }
+        ]
+      },
+      {
+        "name": "第五十三组 - 指令",
+        "description": "指令",
+        "vocabs": [
+          {
+            "word": "directive",
+            "pronunciation": "dəˈrektɪv",
+            "meaning": "指令"
+          },
+          {
+            "word": "v-bind",
+            "pronunciation": "viː baɪnd",
+            "meaning": "属性绑定"
+          },
+          {
+            "word": "v-model",
+            "pronunciation": "viː ˈmɒdl",
+            "meaning": "双向绑定"
+          },
+          {
+            "word": "v-if",
+            "pronunciation": "viː ɪf",
+            "meaning": "条件渲染"
+          },
+          {
+            "word": "v-show",
+            "pronunciation": "viː ʃoʊ",
+            "meaning": "显示隐藏"
+          },
+          {
+            "word": "v-for",
+            "pronunciation": "viː fɔːr",
+            "meaning": "列表渲染"
+          },
+          {
+            "word": "v-on",
+            "pronunciation": "viː ɒn",
+            "meaning": "事件监听"
+          },
+          {
+            "word": "v-once",
+            "pronunciation": "viː wʌns",
+            "meaning": "只渲染一次"
+          },
+          {
+            "word": "v-text",
+            "pronunciation": "viː tekst",
+            "meaning": "文本渲染"
+          },
+          {
+            "word": "v-html",
+            "pronunciation": "viː eɪtʃ em el",
+            "meaning": "HTML渲染"
+          },
+          {
+            "word": "v-slot",
+            "pronunciation": "viː slɒt",
+            "meaning": "插槽"
+          }
+        ]
+      },
+      {
+        "name": "第五十四组 - 组件",
+        "description": "组件",
+        "vocabs": [
+          {
+            "word": "component",
+            "pronunciation": "kəmˈpoʊnənt",
+            "meaning": "组件"
+          },
+          {
+            "word": "props",
+            "pronunciation": "prɒps",
+            "meaning": "属性"
+          },
+          {
+            "word": "emit",
+            "pronunciation": "ˈiːmɪt",
+            "meaning": "触发事件"
+          },
+          {
+            "word": "slot",
+            "pronunciation": "slɒt",
+            "meaning": "插槽"
+          },
+          {
+            "word": "provide",
+            "pronunciation": "prəˈvaɪd",
+            "meaning": "提供"
+          },
+          {
+            "word": "inject",
+            "pronunciation": "ɪnˈdʒekt",
+            "meaning": "注入"
+          },
+          {
+            "word": "setup",
+            "pronunciation": "ˈsetʌp",
+            "meaning": "设置函数"
+          },
+          {
+            "word": "composable",
+            "pronunciation": "kəmˈpəʊzəbl",
+            "meaning": "组合式函数"
+          }
+        ]
+      },
+      {
+        "name": "第五十五组 - 生命周期",
+        "description": "生命周期",
+        "vocabs": [
+          {
+            "word": "lifecycle hook",
+            "pronunciation": "ˈlaɪfsaɪkl hʊk",
+            "meaning": "生命周期钩子"
+          },
+          {
+            "word": "beforeCreate",
+            "pronunciation": "bɪˈfɔːr krɪˈeɪt",
+            "meaning": "创建前"
+          },
+          {
+            "word": "created",
+            "pronunciation": "krɪˈeɪtɪd",
+            "meaning": "创建后"
+          },
+          {
+            "word": "beforeMount",
+            "pronunciation": "bɪˈfɔːr maʊnt",
+            "meaning": "挂载前"
+          },
+          {
+            "word": "mounted",
+            "pronunciation": "ˈmaʊntɪd",
+            "meaning": "挂载后"
+          },
+          {
+            "word": "beforeUpdate",
+            "pronunciation": "bɪˈfɔːr ʌpˈdeɪt",
+            "meaning": "更新前"
+          },
+          {
+            "word": "updated",
+            "pronunciation": "ʌpˈdeɪtɪd",
+            "meaning": "更新后"
+          },
+          {
+            "word": "beforeUnmount",
+            "pronunciation": "bɪˈfɔːr ʌnˈmaʊnt",
+            "meaning": "卸载前"
+          },
+          {
+            "word": "unmounted",
+            "pronunciation": "ʌnˈmaʊntɪd",
+            "meaning": "卸载后"
+          }
+        ]
+      },
+      {
+        "name": "第五十六组 - Vue Router",
+        "description": "Vue Router",
+        "vocabs": [
+          {
+            "word": "vue router",
+            "pronunciation": "vjuː ˈruːtər",
+            "meaning": "Vue路由"
+          },
+          {
+            "word": "router view",
+            "pronunciation": "ˈruːtər vjuː",
+            "meaning": "路由视图"
+          },
+          {
+            "word": "router link",
+            "pronunciation": "ˈruːtər lɪŋk",
+            "meaning": "路由链接"
+          },
+          {
+            "word": "route",
+            "pronunciation": "raʊt",
+            "meaning": "路由对象"
+          },
+          {
+            "word": "params",
+            "pronunciation": "pærəmz",
+            "meaning": "参数"
+          },
+          {
+            "word": "query",
+            "pronunciation": "ˈkweri",
+            "meaning": "查询参数"
+          },
+          {
+            "word": "history mode",
+            "pronunciation": "ˈhɪstəri moʊd",
+            "meaning": "历史模式"
+          },
+          {
+            "word": "navigation guard",
+            "pronunciation": "ˌnævɪˈɡeɪʃn ɡɑːrd",
+            "meaning": "导航守卫"
+          }
+        ]
+      },
+      {
+        "name": "第五十七组 - Pinia状态管理",
+        "description": "Pinia状态管理",
+        "vocabs": [
+          {
+            "word": "pinia",
+            "pronunciation": "pɪˈniːə",
+            "meaning": "Pinia状态管理库"
+          },
+          {
+            "word": "store",
+            "pronunciation": "stɔːr",
+            "meaning": "状态仓库"
+          },
+          {
+            "word": "state",
+            "pronunciation": "steɪt",
+            "meaning": "状态"
+          },
+          {
+            "word": "getters",
+            "pronunciation": "ˈɡetərz",
+            "meaning": "计算属性"
+          },
+          {
+            "word": "actions",
+            "pronunciation": "ˈækʃənz",
+            "meaning": "操作方法"
+          },
+          {
+            "word": "setup store",
+            "pronunciation": "ˈsetʌp stɔːr",
+            "meaning": "组合式Store"
+          }
+        ]
+      },
+      {
+        "name": "第五十八组 - TypeScript基础",
+        "description": "TypeScript基础",
+        "vocabs": [
+          {
+            "word": "typescript",
+            "pronunciation": "ˈtaɪp skrɪpt",
+            "meaning": "TypeScript语言"
+          },
+          {
+            "word": "type annotation",
+            "pronunciation": "taɪp ˌænəˈteɪʃn",
+            "meaning": "类型注解"
+          },
+          {
+            "word": "type inference",
+            "pronunciation": "taɪp ˈɪnfərəns",
+            "meaning": "类型推断"
+          },
+          {
+            "word": "type assertion",
+            "pronunciation": "taɪp əˈsɜːrʃn",
+            "meaning": "类型断言"
+          },
+          {
+            "word": "type guard",
+            "pronunciation": "taɪp ɡɑːrd",
+            "meaning": "类型守卫"
+          },
+          {
+            "word": "type alias",
+            "pronunciation": "taɪp ˈeɪliəs",
+            "meaning": "类型别名"
+          }
+        ]
+      },
+      {
+        "name": "第五十九组 - 基础类型",
+        "description": "基础类型",
+        "vocabs": [
+          {
+            "word": "string",
+            "pronunciation": "strɪŋ",
+            "meaning": "字符串类型"
+          },
+          {
+            "word": "number",
+            "pronunciation": "ˈnʌmbər",
+            "meaning": "数字类型"
+          },
+          {
+            "word": "boolean",
+            "pronunciation": "ˈbuːliən",
+            "meaning": "布尔类型"
+          },
+          {
+            "word": "null",
+            "pronunciation": "nʌl",
+            "meaning": "空类型"
+          },
+          {
+            "word": "undefined",
+            "pronunciation": "ˌʌndɪˈfaɪnd",
+            "meaning": "未定义类型"
+          },
+          {
+            "word": "void",
+            "pronunciation": "vɔɪd",
+            "meaning": "空类型"
+          },
+          {
+            "word": "never",
+            "pronunciation": "ˈnevər",
+            "meaning": "从不返回类型"
+          },
+          {
+            "word": "any",
+            "pronunciation": "ˈeni",
+            "meaning": "任意类型"
+          },
+          {
+            "word": "unknown",
+            "pronunciation": "ʌnˈnoʊn",
+            "meaning": "未知类型"
+          }
+        ]
+      },
+      {
+        "name": "第六十组 - 接口与类型",
+        "description": "接口与类型",
+        "vocabs": [
+          {
+            "word": "interface",
+            "pronunciation": "ˈɪntərfeɪs",
+            "meaning": "接口"
+          },
+          {
+            "word": "type",
+            "pronunciation": "taɪp",
+            "meaning": "类型别名"
+          },
+          {
+            "word": "extends",
+            "pronunciation": "ɪkˈstendz",
+            "meaning": "继承/扩展"
+          },
+          {
+            "word": "optional property",
+            "pronunciation": "ˈɑːpʃənl ˈprɒpərti",
+            "meaning": "可选属性"
+          },
+          {
+            "word": "readonly property",
+            "pronunciation": "ˈriːdˈɒnli ˈprɒpərti",
+            "meaning": "只读属性"
+          },
+          {
+            "word": "index signature",
+            "pronunciation": "ˈɪndeks ˈsɪɡnətʃər",
+            "meaning": "索引签名"
+          },
+          {
+            "word": "function type",
+            "pronunciation": "ˈfʌŋkʃn taɪp",
+            "meaning": "函数类型"
+          }
+        ]
+      },
+      {
+        "name": "第六十一组 - 泛型",
+        "description": "泛型",
+        "vocabs": [
+          {
+            "word": "generic",
+            "pronunciation": "dʒəˈnerɪk",
+            "meaning": "泛型"
+          },
+          {
+            "word": "type parameter",
+            "pronunciation": "taɪp pəˈræmɪtər",
+            "meaning": "类型参数"
+          },
+          {
+            "word": "generic constraint",
+            "pronunciation": "dʒəˈnerɪk kənˈstreɪnt",
+            "meaning": "泛型约束"
+          },
+          {
+            "word": "keyof",
+            "pronunciation": "kiː ɒv",
+            "meaning": "键of运算符"
+          },
+          {
+            "word": "T extends",
+            "pronunciation": "tiː ɪkˈstendz",
+            "meaning": "T继承"
+          },
+          {
+            "word": "infer",
+            "pronunciation": "ɪnˈfɜːr",
+            "meaning": "推断"
+          }
+        ]
+      },
+      {
+        "name": "第六十二组 - 高级类型",
+        "description": "高级类型",
+        "vocabs": [
+          {
+            "word": "union type",
+            "pronunciation": "ˈjuːniən taɪp",
+            "meaning": "联合类型"
+          },
+          {
+            "word": "intersection type",
+            "pronunciation": "ˌɪntərˈsekʃn taɪp",
+            "meaning": "交叉类型"
+          },
+          {
+            "word": "literal type",
+            "pronunciation": "ˈlɪtərəl taɪp",
+            "meaning": "字面量类型"
+          },
+          {
+            "word": "enum",
+            "pronunciation": "ˈiːnʌm",
+            "meaning": "枚举"
+          },
+          {
+            "word": "tuple",
+            "pronunciation": "ˈtuːpl",
+            "meaning": "元组"
+          },
+          {
+            "word": "array type",
+            "pronunciation": "əˈreɪ taɪp",
+            "meaning": "数组类型"
+          },
+          {
+            "word": "mapped type",
+            "pronunciation": "ˈmæpt taɪp",
+            "meaning": "映射类型"
+          },
+          {
+            "word": "conditional type",
+            "pronunciation": "kənˈdɪʃənl taɪp",
+            "meaning": "条件类型"
+          }
+        ]
+      },
+      {
+        "name": "第六十三组 - 装饰器",
+        "description": "装饰器",
+        "vocabs": [
+          {
+            "word": "decorator",
+            "pronunciation": "ˈdekəreɪtər",
+            "meaning": "装饰器"
+          },
+          {
+            "word": "class decorator",
+            "pronunciation": "klæs ˈdekəreɪtər",
+            "meaning": "类装饰器"
+          },
+          {
+            "word": "method decorator",
+            "pronunciation": "ˈmeθəd ˈdekəreɪtər",
+            "meaning": "方法装饰器"
+          },
+          {
+            "word": "parameter decorator",
+            "pronunciation": "pəˈræmɪtər ˈdekəreɪtər",
+            "meaning": "参数装饰器"
+          },
+          {
+            "word": "property decorator",
+            "pronunciation": "ˈprɒpərti ˈdekəreɪtər",
+            "meaning": "属性装饰器"
+          }
+        ]
+      },
+      {
+        "name": "第六十四组 - 包管理",
+        "description": "包管理",
+        "vocabs": [
+          {
+            "word": "npm",
+            "pronunciation": "en piː em",
+            "meaning": "Node包管理器"
+          },
+          {
+            "word": "yarn",
+            "pronunciation": "jɑːrn",
+            "meaning": "Yarn包管理器"
+          },
+          {
+            "word": "pnpm",
+            "pronunciation": "piː en piː em",
+            "meaning": "pnpm包管理器"
+          },
+          {
+            "word": "package.json",
+            "pronunciation": "ˈpækɪdʒ dʒeɪsɒn",
+            "meaning": "包配置文件"
+          },
+          {
+            "word": "node_modules",
+            "pronunciation": "noʊd ˈmɒdjuːlz",
+            "meaning": "依赖目录"
+          },
+          {
+            "word": "install",
+            "pronunciation": "ɪnˈstɔːl",
+            "meaning": "安装"
+          },
+          {
+            "word": "uninstall",
+            "pronunciation": "ˌʌnɪnˈstɔːl",
+            "meaning": "卸载"
+          },
+          {
+            "word": "update",
+            "pronunciation": "ʌpˈdeɪt",
+            "meaning": "更新"
+          }
+        ]
+      },
+      {
+        "name": "第六十五组 - Webpack",
+        "description": "Webpack",
+        "vocabs": [
+          {
+            "word": "webpack",
+            "pronunciation": "webpæk",
+            "meaning": "Webpack打包工具"
+          },
+          {
+            "word": "entry",
+            "pronunciation": "ˈentri",
+            "meaning": "入口"
+          },
+          {
+            "word": "output",
+            "pronunciation": "ˈaʊtpʊt",
+            "meaning": "输出"
+          },
+          {
+            "word": "loader",
+            "pronunciation": "ˈloʊdər",
+            "meaning": "加载器"
+          },
+          {
+            "word": "plugin",
+            "pronunciation": "ˈplæɡɪn",
+            "meaning": "插件"
+          },
+          {
+            "word": "chunk",
+            "pronunciation": "tʃʌŋk",
+            "meaning": "代码块"
+          },
+          {
+            "word": "bundle",
+            "pronunciation": "ˈbʌndl",
+            "meaning": "打包文件"
+          },
+          {
+            "word": "hot module replacement",
+            "pronunciation": "hɒt ˈmɒdjuːl rɪˈpleɪsmənt",
+            "meaning": "热模块替换"
+          }
+        ]
+      },
+      {
+        "name": "第六十六组 - Vite",
+        "description": "Vite",
+        "vocabs": [
+          {
+            "word": "vite",
+            "pronunciation": "viːt",
+            "meaning": "Vite构建工具"
+          },
+          {
+            "word": "dev server",
+            "pronunciation": "dev ˈsɜːrvər",
+            "meaning": "开发服务器"
+          },
+          {
+            "word": "build",
+            "pronunciation": "bɪld",
+            "meaning": "构建"
+          },
+          {
+            "word": "preview",
+            "pronunciation": "ˈpriːvjuː",
+            "meaning": "预览"
+          },
+          {
+            "word": "fast refresh",
+            "pronunciation": "fɑːst ˈriːfrɛʃ",
+            "meaning": "快速刷新"
+          },
+          {
+            "word": "esbuild",
+            "pronunciation": "iː es bɪld",
+            "meaning": "ESBuild打包器"
+          }
+        ]
+      },
+      {
+        "name": "第六十七组 - Babel与转译",
+        "description": "Babel与转译",
+        "vocabs": [
+          {
+            "word": "babel",
+            "pronunciation": "ˈbeɪbl",
+            "meaning": "Babel转译器"
+          },
+          {
+            "word": "transpile",
+            "pronunciation": "trænzˈpaɪl",
+            "meaning": "转译"
+          },
+          {
+            "word": "preset",
+            "pronunciation": "ˈpriːset",
+            "meaning": "预设"
+          },
+          {
+            "word": "plugin",
+            "pronunciation": "ˈplæɡɪn",
+            "meaning": "插件"
+          },
+          {
+            "word": "polyfill",
+            "pronunciation": "ˈpɒlifɪl",
+            "meaning": "填充补丁"
+          },
+          {
+            "word": "core-js",
+            "pronunciation": "kɔːr dʒeɪs",
+            "meaning": "JavaScript标准库"
+          }
+        ]
+      },
+      {
+        "name": "第六十八组 - 代码规范",
+        "description": "代码规范",
+        "vocabs": [
+          {
+            "word": "eslint",
+            "pronunciation": "es lɪnt",
+            "meaning": "ESLint代码检查"
+          },
+          {
+            "word": "prettier",
+            "pronunciation": "ˈprittier",
+            "meaning": "Prettier代码格式化"
+          },
+          {
+            "word": "husky",
+            "pronunciation": "ˈhʌski",
+            "meaning": "Git钩子工具"
+          },
+          {
+            "word": "lint staged",
+            "pronunciation": "lɪnt steɪtʒd",
+            "meaning": "暂存区检查"
+          },
+          {
+            "word": "commitlint",
+            "pronunciation": "kəˈmɪtlɪnt",
+            "meaning": "提交信息检查"
+          }
+        ]
+      },
+      {
+        "name": "第六十九组 - Tailwind CSS",
+        "description": "Tailwind CSS",
+        "vocabs": [
+          {
+            "word": "tailwind css",
+            "pronunciation": "ˈteɪlwɪnd siː es es",
+            "meaning": "Tailwind CSS框架"
+          },
+          {
+            "word": "utility class",
+            "pronunciation": "juːˈtɪləti klæs",
+            "meaning": "工具类"
+          },
+          {
+            "word": "responsive design",
+            "pronunciation": "rɪˈspɒnsɪv dɪˈzaɪn",
+            "meaning": "响应式设计"
+          },
+          {
+            "word": "dark mode",
+            "pronunciation": "dɑːrk moʊd",
+            "meaning": "深色模式"
+          },
+          {
+            "word": "purge css",
+            "pronunciation": "pɜːrdʒ siː es es",
+            "meaning": "清除无用CSS"
+          },
+          {
+            "word": " JIT",
+            "pronunciation": "dʒɪt",
+            "meaning": "即时编译"
+          }
+        ]
+      },
+      {
+        "name": "第七十组 - Sass/SCSS",
+        "description": "Sass/SCSS",
+        "vocabs": [
+          {
+            "word": "sass",
+            "pronunciation": "sæs",
+            "meaning": "Sass预处理"
+          },
+          {
+            "word": "scss",
+            "pronunciation": "es siː es es",
+            "meaning": "SCSS语法"
+          },
+          {
+            "word": "variable",
+            "pronunciation": "ˈveriəbl",
+            "meaning": "变量"
+          },
+          {
+            "word": "nesting",
+            "pronunciation": "ˈnestɪŋ",
+            "meaning": "嵌套"
+          },
+          {
+            "word": "mixin",
+            "pronunciation": "ˈmɪksɪn",
+            "meaning": "混入"
+          },
+          {
+            "word": "function",
+            "pronunciation": "ˈfʌŋkʃn",
+            "meaning": "函数"
+          },
+          {
+            "word": "extend",
+            "pronunciation": "ɪkˈstend",
+            "meaning": "继承"
+          },
+          {
+            "word": "partial",
+            "pronunciation": "ˈpɑːrʃl",
+            "meaning": "部分文件"
+          },
+          {
+            "word": "import",
+            "pronunciation": "ɪmˈpɔːrt",
+            "meaning": "导入"
+          }
+        ]
+      },
+      {
+        "name": "第七十一组 - 其他CSS框架",
+        "description": "其他CSS框架",
+        "vocabs": [
+          {
+            "word": "bootstrap",
+            "pronunciation": "ˈbuːtstræp",
+            "meaning": "Bootstrap框架"
+          },
+          {
+            "word": "material ui",
+            "pronunciation": "məˈtɪriəl juː aɪ",
+            "meaning": "Material UI组件库"
+          },
+          {
+            "word": "ant design",
+            "pronunciation": "ænt dɪˈzaɪn",
+            "meaning": "Ant Design组件库"
+          },
+          {
+            "word": "chakra ui",
+            "pronunciation": "ˈtʃɑːkrə juː aɪ",
+            "meaning": "Chakra UI组件库"
+          }
+        ]
+      },
+      {
+        "name": "第七十二组 - Node.js核心",
+        "description": "Node.js核心",
+        "vocabs": [
+          {
+            "word": "node",
+            "pronunciation": "noʊd",
+            "meaning": "Node.js运行环境"
+          },
+          {
+            "word": "runtime",
+            "pronunciation": "ˈrʌntaɪm",
+            "meaning": "运行时"
+          },
+          {
+            "word": "module",
+            "pronunciation": "ˈmɒdjuːl",
+            "meaning": "模块"
+          },
+          {
+            "word": "require",
+            "pronunciation": "rɪˈkwaɪər",
+            "meaning": "导入模块"
+          },
+          {
+            "word": "export",
+            "pronunciation": "ɪkˈspɔːrt",
+            "meaning": "导出"
+          },
+          {
+            "word": "global",
+            "pronunciation": "ˈɡloʊbl",
+            "meaning": "全局对象"
+          },
+          {
+            "word": "process",
+            "pronunciation": "ˈprɑːses",
+            "meaning": "进程对象"
+          },
+          {
+            "word": "Buffer",
+            "pronunciation": "ˈbʌfər",
+            "meaning": "缓冲区"
+          }
+        ]
+      },
+      {
+        "name": "第七十三组 - 文件系统",
+        "description": "文件系统",
+        "vocabs": [
+          {
+            "word": "fs",
+            "pronunciation": "ef es",
+            "meaning": "文件系统模块"
+          },
+          {
+            "word": "readFile",
+            "pronunciation": "riːd faɪl",
+            "meaning": "读取文件"
+          },
+          {
+            "word": "writeFile",
+            "pronunciation": "raɪt faɪl",
+            "meaning": "写入文件"
+          },
+          {
+            "word": "mkdir",
+            "pronunciation": "ˈmeɪk dɪˈrektəri",
+            "meaning": "创建目录"
+          },
+          {
+            "word": "readdir",
+            "pronunciation": "riːd dɪˈrektəri",
+            "meaning": "读取目录"
+          },
+          {
+            "word": "exists",
+            "pronunciation": "ɪɡˈzɪsts",
+            "meaning": "检查存在"
+          },
+          {
+            "word": "unlink",
+            "pronunciation": "ʌnˈlɪŋk",
+            "meaning": "删除文件"
+          },
+          {
+            "word": "stat",
+            "pronunciation": "stæt",
+            "meaning": "文件状态"
+          }
+        ]
+      },
+      {
+        "name": "第七十四组 - HTTP服务器",
+        "description": "HTTP服务器",
+        "vocabs": [
+          {
+            "word": "http",
+            "pronunciation": "eɪtʃ tiː piː",
+            "meaning": "HTTP模块"
+          },
+          {
+            "word": "createServer",
+            "pronunciation": "krɪˈeɪt ˈsɜːrvər",
+            "meaning": "创建服务器"
+          },
+          {
+            "word": "request",
+            "pronunciation": "rɪˈkwest",
+            "meaning": "请求对象"
+          },
+          {
+            "word": "response",
+            "pronunciation": "rɪˈspɒns",
+            "meaning": "响应对象"
+          },
+          {
+            "word": "listen",
+            "pronunciation": "ˈlɪsn",
+            "meaning": "监听端口"
+          },
+          {
+            "word": "statusCode",
+            "pronunciation": "ˈsteɪtəs koʊd",
+            "meaning": "状态码"
+          },
+          {
+            "word": "setHeader",
+            "pronunciation": "set ˈhedər",
+            "meaning": "设置响应头"
+          },
+          {
+            "word": "end",
+            "pronunciation": "end",
+            "meaning": "结束响应"
+          }
+        ]
+      },
+      {
+        "name": "第七十五组 - Express框架",
+        "description": "Express框架",
+        "vocabs": [
+          {
+            "word": "express",
+            "pronunciation": "ɪkˈspres",
+            "meaning": "Express框架"
+          },
+          {
+            "word": "app",
+            "pronunciation": "æp",
+            "meaning": "Express应用"
+          },
+          {
+            "word": "middleware",
+            "pronunciation": "ˈmɪdlwer",
+            "meaning": "中间件"
+          },
+          {
+            "word": "route",
+            "pronunciation": "raʊt",
+            "meaning": "路由"
+          },
+          {
+            "word": "request handler",
+            "pronunciation": "rɪˈkwest ˈhændlər",
+            "meaning": "请求处理器"
+          },
+          {
+            "word": "static files",
+            "pronunciation": "ˈstætɪk faɪlz",
+            "meaning": "静态文件"
+          },
+          {
+            "word": "json parser",
+            "pronunciation": "dʒeɪsɒn ˈpɑːrsər",
+            "meaning": "JSON解析器"
+          },
+          {
+            "word": "next",
+            "pronunciation": "nekst",
+            "meaning": "下一个处理器"
+          }
+        ]
+      },
+      {
+        "name": "第七十六组 - RESTful API",
+        "description": "RESTful API",
+        "vocabs": [
+          {
+            "word": "restful",
+            "pronunciation": "ˈrestfʊl",
+            "meaning": "REST风格"
+          },
+          {
+            "word": "endpoint",
+            "pronunciation": "ˈendpoint",
+            "meaning": "端点"
+          },
+          {
+            "word": "resource",
+            "pronunciation": "ˈriːsɔːrs",
+            "meaning": "资源"
+          },
+          {
+            "word": "path parameter",
+            "pronunciation": "pæθ pəˈræmɪtər",
+            "meaning": "路径参数"
+          },
+          {
+            "word": "query parameter",
+            "pronunciation": "ˈkweri pəˈræmɪtər",
+            "meaning": "查询参数"
+          },
+          {
+            "word": "request body",
+            "pronunciation": "rɪˈkwest ˈbɒdi",
+            "meaning": "请求体"
+          },
+          {
+            "word": "status code",
+            "pronunciation": "ˈsteɪtəs koʊd",
+            "meaning": "状态码"
+          }
+        ]
+      },
+      {
+        "name": "第七十七组 - Git基础",
+        "description": "Git基础",
+        "vocabs": [
+          {
+            "word": "git",
+            "pronunciation": "ɡɪt",
+            "meaning": "Git版本控制"
+          },
+          {
+            "word": "repository",
+            "pronunciation": "rɪˈpɑːzətɔːri",
+            "meaning": "仓库"
+          },
+          {
+            "word": "commit",
+            "pronunciation": "kəˈmɪt",
+            "meaning": "提交"
+          },
+          {
+            "word": "branch",
+            "pronunciation": "bræntʃ",
+            "meaning": "分支"
+          },
+          {
+            "word": "checkout",
+            "pronunciation": "ˈtʃekaʊt",
+            "meaning": "检出"
+          },
+          {
+            "word": "clone",
+            "pronunciation": "kloʊn",
+            "meaning": "克隆"
+          },
+          {
+            "word": "push",
+            "pronunciation": "pʊʃ",
+            "meaning": "推送"
+          },
+          {
+            "word": "pull",
+            "pronunciation": "pʊl",
+            "meaning": "拉取"
+          }
+        ]
+      },
+      {
+        "name": "第七十八组 - Git进阶",
+        "description": "Git进阶",
+        "vocabs": [
+          {
+            "word": "merge",
+            "pronunciation": "mɜːrdʒ",
+            "meaning": "合并"
+          },
+          {
+            "word": "rebase",
+            "pronunciation": "riːˈbeɪs",
+            "meaning": "变基"
+          },
+          {
+            "word": "stash",
+            "pronunciation": "stæʃ",
+            "meaning": "暂存"
+          },
+          {
+            "word": "reset",
+            "pronunciation": "rɪˈset",
+            "meaning": "重置"
+          },
+          {
+            "word": "revert",
+            "pronunciation": "rɪˈvɜːrt",
+            "meaning": "撤销"
+          },
+          {
+            "word": "cherry pick",
+            "pronunciation": "ˈtʃeri pɪk",
+            "meaning": "拣选提交"
+          },
+          {
+            "word": "conflict",
+            "pronunciation": "ˈkɒnflɪkt",
+            "meaning": "冲突"
+          },
+          {
+            "word": "diff",
+            "pronunciation": "dɪf",
+            "meaning": "差异"
+          }
+        ]
+      },
+      {
+        "name": "第七十九组 - GitHub",
+        "description": "GitHub",
+        "vocabs": [
+          {
+            "word": "github",
+            "pronunciation": "ɡɪt hʌb",
+            "meaning": "GitHub平台"
+          },
+          {
+            "word": "pull request",
+            "pronunciation": "pʊl rɪˈkwest",
+            "meaning": "拉取请求"
+          },
+          {
+            "word": "code review",
+            "pronunciation": "koʊd rɪˈvjuː",
+            "meaning": "代码审查"
+          },
+          {
+            "word": "fork",
+            "pronunciation": "fɔːrk",
+            "meaning": "分叉"
+          },
+          {
+            "word": "issue",
+            "pronunciation": "ˈɪʃuː",
+            "meaning": "问题"
+          },
+          {
+            "word": "milestone",
+            "pronunciation": "ˈmaɪlstoʊn",
+            "meaning": "里程碑"
+          },
+          {
+            "word": "readme",
+            "pronunciation": "ˈredmi",
+            "meaning": "说明文档"
+          },
+          {
+            "word": "license",
+            "pronunciation": "ˈlaɪsəns",
+            "meaning": "许可证"
+          }
+        ]
+      },
+      {
+        "name": "第八十组 - 测试基础",
+        "description": "测试基础",
+        "vocabs": [
+          {
+            "word": "unit test",
+            "pronunciation": "ˈjuːnɪt test",
+            "meaning": "单元测试"
+          },
+          {
+            "word": "integration test",
+            "pronunciation": "ˌɪntɪˈɡreɪʃn test",
+            "meaning": "集成测试"
+          },
+          {
+            "word": "end to end test",
+            "pronunciation": "end tuː end test",
+            "meaning": "端到端测试"
+          },
+          {
+            "word": "test suite",
+            "pronunciation": "test swiːt",
+            "meaning": "测试套件"
+          },
+          {
+            "word": "test case",
+            "pronunciation": "test keɪs",
+            "meaning": "测试用例"
+          },
+          {
+            "word": "assertion",
+            "pronunciation": "əˈserʃn",
+            "meaning": "断言"
+          },
+          {
+            "word": "mock",
+            "pronunciation": "mɑːk",
+            "meaning": "模拟对象"
+          }
+        ]
+      },
+      {
+        "name": "第八十一组 - Jest",
+        "description": "Jest",
+        "vocabs": [
+          {
+            "word": "jest",
+            "pronunciation": "dʒest",
+            "meaning": "Jest测试框架"
+          },
+          {
+            "word": "describe",
+            "pronunciation": "dɪˈskraɪb",
+            "meaning": "描述测试块"
+          },
+          {
+            "word": "it",
+            "pronunciation": "ɪt",
+            "meaning": "测试用例"
+          },
+          {
+            "word": "test",
+            "pronunciation": "test",
+            "meaning": "测试函数"
+          },
+          {
+            "word": "expect",
+            "pronunciation": "ɪkˈspekt",
+            "meaning": "期望"
+          },
+          {
+            "word": "toBe",
+            "pronunciation": "tuː biː",
+            "meaning": "断言相等"
+          },
+          {
+            "word": "toEqual",
+            "pronunciation": "tuː ˈiːkwəl",
+            "meaning": "断言深度相等"
+          },
+          {
+            "word": "toThrow",
+            "pronunciation": "tuː θroʊ",
+            "meaning": "断言抛出错误"
+          },
+          {
+            "word": "beforeEach",
+            "pronunciation": "bɪˈfɔːr iːtʃ",
+            "meaning": "每个测试前"
+          },
+          {
+            "word": "afterEach",
+            "pronunciation": "ˈɑːftər iːtʃ",
+            "meaning": "每个测试后"
+          }
+        ]
+      },
+      {
+        "name": "第八十二组 - React Testing",
+        "description": "React Testing",
+        "vocabs": [
+          {
+            "word": "react testing library",
+            "pronunciation": "riːˈækt ˈtestɪŋ ˈlaɪbreri",
+            "meaning": "React测试库"
+          },
+          {
+            "word": "render",
+            "pronunciation": "ˈrendər",
+            "meaning": "渲染"
+          },
+          {
+            "word": "screen",
+            "pronunciation": "skriːn",
+            "meaning": "屏幕对象"
+          },
+          {
+            "word": "getByText",
+            "pronunciation": "ɡet baɪ tekst",
+            "meaning": "按文本获取"
+          },
+          {
+            "word": "getByRole",
+            "pronunciation": "ɡet baɪ rɔːl",
+            "meaning": "按角色获取"
+          },
+          {
+            "word": "getByLabelText",
+            "pronunciation": "ɡet baɪ ˈleɪbl tekst",
+            "meaning": "按标签文本获取"
+          },
+          {
+            "word": "fireEvent",
+            "pronunciation": "ˈfaɪər ɪˈvent",
+            "meaning": "触发事件"
+          },
+          {
+            "word": "userEvent",
+            "pronunciation": "ˈjuːzər ɪˈvent",
+            "meaning": "用户事件"
+          },
+          {
+            "word": "waitFor",
+            "pronunciation": "weɪt fɔːr",
+            "meaning": "等待"
+          },
+          {
+            "word": "act",
+            "pronunciation": "ækt",
+            "meaning": "行为包装"
+          }
+        ]
+      },
+      {
+        "name": "第八十三组 - Cypress",
+        "description": "Cypress",
+        "vocabs": [
+          {
+            "word": "cypress",
+            "pronunciation": "ˈsaɪprəs",
+            "meaning": "Cypress测试框架"
+          },
+          {
+            "word": "describe",
+            "pronunciation": "dɪˈskraɪb",
+            "meaning": "描述块"
+          },
+          {
+            "word": "it",
+            "pronunciation": "ɪt",
+            "meaning": "测试用例"
+          },
+          {
+            "word": "cy",
+            "pronunciation": "siː waɪ",
+            "meaning": "Cypress命令"
+          },
+          {
+            "word": "visit",
+            "pronunciation": "ˈvɪzɪt",
+            "meaning": "访问页面"
+          },
+          {
+            "word": "get",
+            "pronunciation": "ɡet",
+            "meaning": "获取元素"
+          },
+          {
+            "word": "click",
+            "pronunciation": "klɪk",
+            "meaning": "点击"
+          },
+          {
+            "word": "type",
+            "pronunciation": "taɪp",
+            "meaning": "输入"
+          },
+          {
+            "word": "contains",
+            "pronunciation": "kənˈteɪnz",
+            "meaning": "包含文本"
+          },
+          {
+            "word": "should",
+            "pronunciation": "ʃʊd",
+            "meaning": "断言"
+          }
+        ]
+      },
+      {
+        "name": "第八十四组 - 前端性能",
+        "description": "前端性能",
+        "vocabs": [
+          {
+            "word": "performance",
+            "pronunciation": "pərˈfɔːrməns",
+            "meaning": "性能"
+          },
+          {
+            "word": "optimization",
+            "pronunciation": "ˌɑːptɪmɪˈzeɪʃn",
+            "meaning": "优化"
+          },
+          {
+            "word": "lazy loading",
+            "pronunciation": "ˈleɪzi ˈloʊdɪŋ",
+            "meaning": "懒加载"
+          },
+          {
+            "word": "code splitting",
+            "pronunciation": "koʊd ˈsplɪtɪŋ",
+            "meaning": "代码分割"
+          },
+          {
+            "word": "tree shaking",
+            "pronunciation": "triː ˈʃeɪkɪŋ",
+            "meaning": "摇树优化"
+          },
+          {
+            "word": "minification",
+            "pronunciation": "ˌmɪnɪfɪˈkeɪʃn",
+            "meaning": "压缩"
+          },
+          {
+            "word": "bundling",
+            "pronunciation": "ˈbʌndlɪŋ",
+            "meaning": "打包"
+          }
+        ]
+      },
+      {
+        "name": "第八十五组 - 网络优化",
+        "description": "网络优化",
+        "vocabs": [
+          {
+            "word": "cdn",
+            "pronunciation": "siː diː en",
+            "meaning": "内容分发网络"
+          },
+          {
+            "word": "caching",
+            "pronunciation": "ˈkæʃɪŋ",
+            "meaning": "缓存"
+          },
+          {
+            "word": "compression",
+            "pronunciation": "kəmˈpreʃn",
+            "meaning": "压缩"
+          },
+          {
+            "word": "gzip",
+            "pronunciation": "ˈdʒiːzɪp",
+            "meaning": "Gzip压缩"
+          },
+          {
+            "word": "http2",
+            "pronunciation": "eɪtʃ tiː piː tuː",
+            "meaning": "HTTP/2协议"
+          },
+          {
+            "word": "preload",
+            "pronunciation": "ˈpriːloʊd",
+            "meaning": "预加载"
+          },
+          {
+            "word": "prefetch",
+            "pronunciation": "ˈpriːfetʃ",
+            "meaning": "预取"
+          }
+        ]
+      },
+      {
+        "name": "第八十六组 - 渲染优化",
+        "description": "渲染优化",
+        "vocabs": [
+          {
+            "word": "critical rendering path",
+            "pronunciation": "ˈkrɪtɪkl ˈrendərɪŋ pæθ",
+            "meaning": "关键渲染路径"
+          },
+          {
+            "word": "first contentful paint",
+            "pronunciation": "fɜːrst ˈkɒntentfʊl peɪnt",
+            "meaning": "首次内容绘制"
+          },
+          {
+            "word": "largest contentful paint",
+            "pronunciation": "ˈlɑːrɡɪst ˈkɒntentfʊl peɪnt",
+            "meaning": "最大内容绘制"
+          },
+          {
+            "word": "time to interactive",
+            "pronunciation": "taɪm tuː ˌɪntərˈæktɪv",
+            "meaning": "可交互时间"
+          },
+          {
+            "word": "cumulative layout shift",
+            "pronunciation": "ˌkjuːmjʊˈleɪtɪv ˈleɪaʊt ʃɪft",
+            "meaning": "累积布局偏移"
+          }
+        ]
+      },
+      {
+        "name": "第八十七组 - 安全基础",
+        "description": "安全基础",
+        "vocabs": [
+          {
+            "word": "security",
+            "pronunciation": "sɪˈkjʊrəti",
+            "meaning": "安全性"
+          },
+          {
+            "word": "xss",
+            "pronunciation": "eks es es",
+            "meaning": "跨站脚本攻击"
+          },
+          {
+            "word": "csrf",
+            "pronunciation": "siː es ar ef",
+            "meaning": "跨站请求伪造"
+          },
+          {
+            "word": "sqli",
+            "pronunciation": "es kjuː el aɪ",
+            "meaning": "SQL注入"
+          },
+          {
+            "word": "https",
+            "pronunciation": "eɪtʃ tiː tiː es piː",
+            "meaning": "安全超文本传输协议"
+          },
+          {
+            "word": "cors",
+            "pronunciation": "siː oːr es",
+            "meaning": "跨域资源共享"
+          },
+          {
+            "word": "csrf token",
+            "pronunciation": "siː ar es ef ˈtoʊkən",
+            "meaning": "CSRF令牌"
+          }
+        ]
+      },
+      {
+        "name": "第八十八组 - 认证与授权",
+        "description": "认证与授权",
+        "vocabs": [
+          {
+            "word": "authentication",
+            "pronunciation": "ɔːˌθentɪˈkeɪʃn",
+            "meaning": "身份认证"
+          },
+          {
+            "word": "authorization",
+            "pronunciation": "ˌɔːθərəˈzeɪʃn",
+            "meaning": "授权"
+          },
+          {
+            "word": "jwt",
+            "pronunciation": "dʒeɪ weɪ tiː",
+            "meaning": "JSON Web令牌"
+          },
+          {
+            "word": "oauth",
+            "pronunciation": "oʊɔːθ",
+            "meaning": "开放授权"
+          },
+          {
+            "word": "session",
+            "pronunciation": "ˈseʃn",
+            "meaning": "会话"
+          },
+          {
+            "word": "cookie",
+            "pronunciation": "ˈkʊki",
+            "meaning": "Cookie"
+          },
+          {
+            "word": "token",
+            "pronunciation": "ˈtoʊkən",
+            "meaning": "令牌"
+          }
+        ]
+      },
+      {
+        "name": "第八十九组 - 响应式基础",
+        "description": "响应式基础",
+        "vocabs": [
+          {
+            "word": "responsive design",
+            "pronunciation": "rɪˈspɒnsɪv dɪˈzaɪn",
+            "meaning": "响应式设计"
+          },
+          {
+            "word": "mobile first",
+            "pronunciation": "ˈmoʊbəl fɜːrst",
+            "meaning": "移动优先"
+          },
+          {
+            "word": "breakpoint",
+            "pronunciation": "ˈbreɪkpɔɪnt",
+            "meaning": "断点"
+          },
+          {
+            "word": "viewport",
+            "pronunciation": "ˈvjuːpɔːrt",
+            "meaning": "视口"
+          },
+          {
+            "word": "media query",
+            "pronunciation": "ˈmiːdiə ˈkweri",
+            "meaning": "媒体查询"
+          },
+          {
+            "word": "fluid layout",
+            "pronunciation": "ˈfluːɪd ˈleɪaʊt",
+            "meaning": "流式布局"
+          }
+        ]
+      },
+      {
+        "name": "第九十组 - 视口与单位",
+        "description": "视口与单位",
+        "vocabs": [
+          {
+            "word": "viewport meta",
+            "pronunciation": "ˈvjuːpɔːrt ˈmetə",
+            "meaning": "视口元标签"
+          },
+          {
+            "word": "device width",
+            "pronunciation": "dɪˈvaɪs wɪdθ",
+            "meaning": "设备宽度"
+          },
+          {
+            "word": "pixel ratio",
+            "pronunciation": "ˈpɪksl ˈreɪʃioʊ",
+            "meaning": "像素比"
+          },
+          {
+            "word": "rem",
+            "pronunciation": "rem",
+            "meaning": "根元素字体大小单位"
+          },
+          {
+            "word": "em",
+            "pronunciation": "em",
+            "meaning": "相对字体大小单位"
+          },
+          {
+            "word": "vw",
+            "pronunciation": "viː dʌbəljuː",
+            "meaning": "视口宽度单位"
+          },
+          {
+            "word": "vh",
+            "pronunciation": "viː eɪtʃ",
+            "meaning": "视口高度单位"
+          }
+        ]
+      },
+      {
+        "name": "第九十一组 - CSS动画",
+        "description": "CSS动画",
+        "vocabs": [
+          {
+            "word": "transition",
+            "pronunciation": "trænˈzɪʃn",
+            "meaning": "过渡"
+          },
+          {
+            "word": "animation",
+            "pronunciation": "ˌænɪˈmeɪʃn",
+            "meaning": "动画"
+          },
+          {
+            "word": "keyframes",
+            "pronunciation": "ˈkiːfreɪmz",
+            "meaning": "关键帧"
+          },
+          {
+            "word": "duration",
+            "pronunciation": "djuːˈreɪʃn",
+            "meaning": "持续时间"
+          },
+          {
+            "word": "timing function",
+            "pronunciation": "ˈtaɪmɪŋ ˈfʌŋkʃn",
+            "meaning": "时间函数"
+          },
+          {
+            "word": "ease",
+            "pronunciation": "iːz",
+            "meaning": "缓动"
+          },
+          {
+            "word": "delay",
+            "pronunciation": "dɪˈleɪ",
+            "meaning": "延迟"
+          },
+          {
+            "word": "iteration count",
+            "pronunciation": "ˌɪtəˈreɪʃn kaʊnt",
+            "meaning": "重复次数"
+          }
+        ]
+      },
+      {
+        "name": "第九十二组 - JavaScript动画",
+        "description": "JavaScript动画",
+        "vocabs": [
+          {
+            "word": "requestAnimationFrame",
+            "pronunciation": "rɪˈkwest əˈnɪmeɪʃn freɪm",
+            "meaning": "请求动画帧"
+          },
+          {
+            "word": "cancelAnimationFrame",
+            "pronunciation": "kænˈsel əˈnɪmeɪʃn freɪm",
+            "meaning": "取消动画帧"
+          },
+          {
+            "word": "tween",
+            "pronunciation": "twiːn",
+            "meaning": "补间动画"
+          },
+          {
+            "word": "easing function",
+            "pronunciation": "ˈiːzɪŋ ˈfʌŋkʃn",
+            "meaning": "缓动函数"
+          },
+          {
+            "word": "interpolate",
+            "pronunciation": "ɪnˈtɜːrpəleɪt",
+            "meaning": "插值"
+          }
+        ]
+      },
+      {
+        "name": "第九十三组 - CSS动画属性",
+        "description": "CSS动画属性",
+        "vocabs": [
+          {
+            "word": "transform",
+            "pronunciation": "trænsˈfɔːrm",
+            "meaning": "变换"
+          },
+          {
+            "word": "translate",
+            "pronunciation": "trænsˈleɪt",
+            "meaning": "平移"
+          },
+          {
+            "word": "rotate",
+            "pronunciation": "roʊˈteɪt",
+            "meaning": "旋转"
+          },
+          {
+            "word": "scale",
+            "pronunciation": "skeɪl",
+            "meaning": "缩放"
+          },
+          {
+            "word": "skew",
+            "pronunciation": "skjuː",
+            "meaning": "倾斜"
+          },
+          {
+            "word": "opacity",
+            "pronunciation": "oʊˈpæsəti",
+            "meaning": "透明度"
+          },
+          {
+            "word": "filter",
+            "pronunciation": "ˈfɪltər",
+            "meaning": "滤镜"
+          }
+        ]
+      },
+      {
+        "name": "第九十四组 - Web Workers",
+        "description": "Web Workers",
+        "vocabs": [
+          {
+            "word": "web worker",
+            "pronunciation": "web ˈwɜːrkər",
+            "meaning": "Web Worker"
+          },
+          {
+            "word": "postMessage",
+            "pronunciation": "poʊst ˈmesɪdʒ",
+            "meaning": "发送消息"
+          },
+          {
+            "word": "onmessage",
+            "pronunciation": "ɒn ˈmesɪdʒ",
+            "meaning": "接收消息"
+          },
+          {
+            "word": "terminate",
+            "pronunciation": "ˈtɜːrmɪneɪt",
+            "meaning": "终止"
+          },
+          {
+            "word": "dedicated worker",
+            "pronunciation": "dɪˈdɪkeɪtɪd ˈwɜːrkər",
+            "meaning": "专用Worker"
+          },
+          {
+            "word": "shared worker",
+            "pronunciation": "ʃerd ˈwɜːrkər",
+            "meaning": "共享Worker"
+          }
+        ]
+      },
+      {
+        "name": "第九十五组 - Service Worker",
+        "description": "Service Worker",
+        "vocabs": [
+          {
+            "word": "service worker",
+            "pronunciation": "ˈsɜːrvɪs ˈwɜːrkər",
+            "meaning": "Service Worker"
+          },
+          {
+            "word": "register",
+            "pronunciation": "ˈredʒɪstər",
+            "meaning": "注册"
+          },
+          {
+            "word": "install",
+            "pronunciation": "ɪnˈstɔːl",
+            "meaning": "安装"
+          },
+          {
+            "word": "activate",
+            "pronunciation": "ˈæktɪveɪt",
+            "meaning": "激活"
+          },
+          {
+            "word": "fetch event",
+            "pronunciation": "festʃ ɪˈvent",
+            "meaning": "请求事件"
+          },
+          {
+            "word": "cache",
+            "pronunciation": "kæʃ",
+            "meaning": "缓存"
+          },
+          {
+            "word": "skip waiting",
+            "pronunciation": "skɪp ˈweɪtɪŋ",
+            "meaning": "跳过等待"
+          },
+          {
+            "word": "clients claim",
+            "pronunciation": "ˈklaɪənts kleɪm",
+            "meaning": "客户端声明"
+          }
+        ]
+      },
+      {
+        "name": "第九十六组 - WebSocket",
+        "description": "WebSocket",
+        "vocabs": [
+          {
+            "word": "websocket",
+            "pronunciation": "web ˈsɒket",
+            "meaning": "WebSocket"
+          },
+          {
+            "word": "connect",
+            "pronunciation": "kəˈnekt",
+            "meaning": "连接"
+          },
+          {
+            "word": "send",
+            "pronunciation": "send",
+            "meaning": "发送"
+          },
+          {
+            "word": "receive",
+            "pronunciation": "rɪˈsiːv",
+            "meaning": "接收"
+          },
+          {
+            "word": "close",
+            "pronunciation": "kloʊz",
+            "meaning": "关闭"
+          },
+          {
+            "word": "onopen",
+            "pronunciation": "ɒn ˈoʊpən",
+            "meaning": "连接打开"
+          },
+          {
+            "word": "onmessage",
+            "pronunciation": "ɒn ˈmesɪdʒ",
+            "meaning": "收到消息"
+          },
+          {
+            "word": "onclose",
+            "pronunciation": "ɒn kloʊz",
+            "meaning": "连接关闭"
+          },
+          {
+            "word": "onerror",
+            "pronunciation": "ɒn ˈerər",
+            "meaning": "错误处理"
+          }
+        ]
+      },
+      {
+        "name": "第九十七组 - Intersection Observer",
+        "description": "Intersection Observer",
+        "vocabs": [
+          {
+            "word": "intersection observer",
+            "pronunciation": "ˌɪntərˈsekʃn əbˈzɜːrvər",
+            "meaning": "交叉观察器"
+          },
+          {
+            "word": "observe",
+            "pronunciation": "əbˈzɜːrv",
+            "meaning": "观察"
+          },
+          {
+            "word": "unobserve",
+            "pronunciation": "ˌʌnəbˈzɜːrv",
+            "meaning": "停止观察"
+          },
+          {
+            "word": "threshold",
+            "pronunciation": "ˈθreʃhoʊld",
+            "meaning": "阈值"
+          },
+          {
+            "word": "root margin",
+            "pronunciation": "ruːt ˈmɑːrdʒɪn",
+            "meaning": "根边距"
+          },
+          {
+            "word": "isIntersecting",
+            "pronunciation": "ɪz ˌɪntərˈsektɪŋ",
+            "meaning": "是否交叉"
+          }
+        ]
+      },
+      {
+        "name": "第九十八组 - 其他API",
+        "description": "其他API",
+        "vocabs": [
+          {
+            "word": "mutation observer",
+            "pronunciation": "mjuːˈteɪʃn əbˈzɜːrvər",
+            "meaning": "变动观察器"
+          },
+          {
+            "word": "resize observer",
+            "pronunciation": "rɪˈsaɪz əbˈzɜːrvər",
+            "meaning": "调整大小观察器"
+          },
+          {
+            "word": "fullscreen",
+            "pronunciation": "fʊlˈskriːn",
+            "meaning": "全屏"
+          },
+          {
+            "word": "notification",
+            "pronunciation": "ˌnoʊtɪfɪˈkeɪʃn",
+            "meaning": "通知"
+          },
+          {
+            "word": "payment request",
+            "pronunciation": "ˈpeɪmənt rɪˈkwest",
+            "meaning": "支付请求"
+          }
+        ]
+      },
+      {
+        "name": "第九十九组 - PWA基础",
+        "description": "PWA基础",
+        "vocabs": [
+          {
+            "word": "pwa",
+            "pronunciation": "piː dʌbəljuː eɪ",
+            "meaning": "渐进式Web应用"
+          },
+          {
+            "word": "manifest",
+            "pronunciation": "ˈmænɪfest",
+            "meaning": "Web应用清单"
+          },
+          {
+            "word": "installable",
+            "pronunciation": "ɪnˈstɔːləbl",
+            "meaning": "可安装"
+          },
+          {
+            "word": "add to homescreen",
+            "pronunciation": "æd tuː hoʊm skriːn",
+            "meaning": "添加到主屏幕"
+          },
+          {
+            "word": "splash screen",
+            "pronunciation": "splæʃ skriːn",
+            "meaning": "启动画面"
+          }
+        ]
+      },
+      {
+        "name": "第一〇〇组 - 离线功能",
+        "description": "离线功能",
+        "vocabs": [
+          {
+            "word": "offline",
+            "pronunciation": "ˈɔːflaɪn",
+            "meaning": "离线"
+          },
+          {
+            "word": "online",
+            "pronunciation": "ˈɒnlaɪn",
+            "meaning": "在线"
+          },
+          {
+            "word": "app shell",
+            "pronunciation": "æp ʃel",
+            "meaning": "应用外壳"
+          },
+          {
+            "word": "cache first",
+            "pronunciation": "kæʃ fɜːrst",
+            "meaning": "缓存优先"
+          },
+          {
+            "word": "network first",
+            "pronunciation": "ˈnetwɜːrk fɜːrst",
+            "meaning": "网络优先"
+          },
+          {
+            "word": "stale while revalidate",
+            "pronunciation": "steɪl waɪl ˌrevəlˈdeɪt",
+            "meaning": "过期重新验证"
+          }
+        ]
+      },
+      {
+        "name": "第一〇一组 - 开发工具",
+        "description": "开发工具",
+        "vocabs": [
+          {
+            "word": "ide",
+            "pronunciation": "aɪ diː iː",
+            "meaning": "集成开发环境"
+          },
+          {
+            "word": "vscode",
+            "pronunciation": "viː es koʊd",
+            "meaning": "VS Code编辑器"
+          },
+          {
+            "word": "chrome devtools",
+            "pronunciation": "kroʊm dev taʊlz",
+            "meaning": "Chrome开发者工具"
+          },
+          {
+            "word": "inspect",
+            "pronunciation": "ɪnˈspekt",
+            "meaning": "检查"
+          },
+          {
+            "word": "console",
+            "pronunciation": "ˈkɒnsoʊl",
+            "meaning": "控制台"
+          },
+          {
+            "word": "network tab",
+            "pronunciation": "ˈnetwɜːrk tæb",
+            "meaning": "网络标签页"
+          },
+          {
+            "word": "sources tab",
+            "pronunciation": "ˈsɔːrsɪz tæb",
+            "meaning": "源码标签页"
+          }
+        ]
+      },
+      {
+        "name": "第一〇二组 - 调试技巧",
+        "description": "调试技巧",
+        "vocabs": [
+          {
+            "word": "debug",
+            "pronunciation": "diːˈbʌɡ",
+            "meaning": "调试"
+          },
+          {
+            "word": "breakpoint",
+            "pronunciation": "ˈbreɪkpɔɪnt",
+            "meaning": "断点"
+          },
+          {
+            "word": "watch",
+            "pronunciation": "wɒtʃ",
+            "meaning": "监视"
+          },
+          {
+            "word": "step over",
+            "pronunciation": "step ˈoʊvər",
+            "meaning": "跳过"
+          },
+          {
+            "word": "step into",
+            "pronunciation": "step ˈɪntuː",
+            "meaning": "步入"
+          },
+          {
+            "word": "step out",
+            "pronunciation": "step aʊt",
+            "meaning": "步出"
+          },
+          {
+            "word": "console log",
+            "pronunciation": "ˈkɒnsoʊl lɔːɡ",
+            "meaning": "控制台日志"
+          }
+        ]
+      },
+      {
+        "name": "第一〇三组 - 通用术语",
+        "description": "通用术语",
+        "vocabs": [
+          {
+            "word": "framework",
+            "pronunciation": "ˈfreɪmwɜːrk",
+            "meaning": "框架"
+          },
+          {
+            "word": "library",
+            "pronunciation": "ˈlaɪbrəri",
+            "meaning": "库"
+          },
+          {
+            "word": "api",
+            "pronunciation": "eɪ piː aɪ",
+            "meaning": "应用程序接口"
+          },
+          {
+            "word": "sdk",
+            "pronunciation": "es diː keɪ",
+            "meaning": "软件开发工具包"
+          },
+          {
+            "word": "ide",
+            "pronunciation": "aɪ diː iː",
+            "meaning": "集成开发环境"
+          },
+          {
+            "word": "cli",
+            "pronunciation": "siː el aɪ",
+            "meaning": "命令行界面"
+          },
+          {
+            "word": "ui",
+            "pronunciation": "juː aɪ",
+            "meaning": "用户界面"
+          },
+          {
+            "word": "ux",
+            "pronunciation": "juː eks",
+            "meaning": "用户体验"
+          }
+        ]
+      },
+      {
+        "name": "第一〇四组 - 代码质量",
+        "description": "代码质量",
+        "vocabs": [
+          {
+            "word": "refactor",
+            "pronunciation": "riːˈfæktər",
+            "meaning": "重构"
+          },
+          {
+            "word": "lint",
+            "pronunciation": "lɪnt",
+            "meaning": "代码检查"
+          },
+          {
+            "word": "format",
+            "pronunciation": "ˈfɔːrmæt",
+            "meaning": "格式化"
+          },
+          {
+            "word": "dry",
+            "pronunciation": "diː waɪ ɑːr",
+            "meaning": "不要重复自己"
+          },
+          {
+            "word": "kiss",
+            "pronunciation": "kɪs",
+            "meaning": "保持简单"
+          },
+          {
+            "word": "solid",
+            "pronunciation": "ˈsɒlɪd",
+            "meaning": "面向对象设计原则"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "android开发完整词汇",
+    "name": "Android 开发完整技术词汇大全",
+    "description": "Android 开发完整技术词汇大全相关词汇",
+    "sections": [
+      {
+        "name": "第一组 - Kotlin核心概念",
+        "description": "Kotlin核心概念",
+        "vocabs": [
+          {
+            "word": "kotlin",
+            "pronunciation": "ˈkɒtlɪn",
+            "meaning": "Kotlin语言"
+          },
+          {
+            "word": "nullable",
+            "pronunciation": "ˈnʌləbl",
+            "meaning": "可空类型"
+          },
+          {
+            "word": "safe call",
+            "pronunciation": "seɪf kɔːl",
+            "meaning": "安全调用"
+          },
+          {
+            "word": "elvis operator",
+            "pronunciation": "ˈelvɪs ˈɒpəreɪtər",
+            "meaning": "Elvis操作符"
+          },
+          {
+            "word": "non-null assertion",
+            "pronunciation": "nɒn nʌl əˈsɜːrʃn",
+            "meaning": "非空断言"
+          },
+          {
+            "word": "smart cast",
+            "pronunciation": "smɑːrt kɑːst",
+            "meaning": "智能转换"
+          },
+          {
+            "word": "data class",
+            "pronunciation": "ˈdeɪtə klæs",
+            "meaning": "数据类"
+          },
+          {
+            "word": "sealed class",
+            "pronunciation": "ˈsiːld klæs",
+            "meaning": "密封类"
+          },
+          {
+            "word": "object",
+            "pronunciation": "ˈɒbdʒɪkt",
+            "meaning": "单例对象"
+          },
+          {
+            "word": "companion object",
+            "pronunciation": "kəmˈpæniən ˈɒbdʒɪkt",
+            "meaning": "伴生对象"
+          },
+          {
+            "word": "extension function",
+            "pronunciation": "ɪkˈstenʃn ˈfʌŋkʃn",
+            "meaning": "扩展函数"
+          },
+          {
+            "word": "infix function",
+            "pronunciation": "ˈɪnfɪks ˈfʌŋkʃn",
+            "meaning": "中缀函数"
+          }
+        ]
+      },
+      {
+        "name": "第二组 - 数据类型",
+        "description": "数据类型",
+        "vocabs": [
+          {
+            "word": "var",
+            "pronunciation": "vɑːr",
+            "meaning": "可变变量"
+          },
+          {
+            "word": "val",
+            "pronunciation": "væl",
+            "meaning": "不可变变量"
+          },
+          {
+            "word": "primitive type",
+            "pronunciation": "ˈprɪmɪtɪv taɪp",
+            "meaning": "原始类型"
+          },
+          {
+            "word": "reference type",
+            "pronunciation": "ˈrefrəns taɪp",
+            "meaning": "引用类型"
+          },
+          {
+            "word": "array",
+            "pronunciation": "əˈreɪ",
+            "meaning": "数组"
+          },
+          {
+            "word": "list",
+            "pronunciation": "lɪst",
+            "meaning": "列表"
+          },
+          {
+            "word": "map",
+            "pronunciation": "mæp",
+            "meaning": "映射"
+          },
+          {
+            "word": "set",
+            "pronunciation": "set",
+            "meaning": "集合"
+          },
+          {
+            "word": "pair",
+            "pronunciation": "peər",
+            "meaning": "键值对"
+          },
+          {
+            "word": "triple",
+            "pronunciation": "ˈtrɪpl",
+            "meaning": "三元组"
+          }
+        ]
+      },
+      {
+        "name": "第三组 - 函数",
+        "description": "函数",
+        "vocabs": [
+          {
+            "word": "function",
+            "pronunciation": "ˈfʌŋkʃn",
+            "meaning": "函数"
+          },
+          {
+            "word": "parameter",
+            "pronunciation": "pəˈræmɪtər",
+            "meaning": "参数"
+          },
+          {
+            "word": "argument",
+            "pronunciation": "ˈɑːrɡjumənt",
+            "meaning": "实参"
+          },
+          {
+            "word": "return type",
+            "pronunciation": "rɪˈtɜːrn taɪp",
+            "meaning": "返回类型"
+          },
+          {
+            "word": "unit",
+            "pronunciation": "ˈjuːnɪt",
+            "meaning": "无返回类型"
+          },
+          {
+            "word": "lambda",
+            "pronunciation": "ˈlæmdə",
+            "meaning": "Lambda表达式"
+          },
+          {
+            "word": "higher order function",
+            "pronunciation": "ˈhaɪər ˈɔːrdər ˈfʌŋkʃn",
+            "meaning": "高阶函数"
+          },
+          {
+            "word": "inline function",
+            "pronunciation": "ˈɪnlaɪn ˈfʌŋkʃn",
+            "meaning": "内联函数"
+          },
+          {
+            "word": "suspend function",
+            "pronunciation": "səsˈpend ˈfʌŋkʃn",
+            "meaning": "挂起函数"
+          },
+          {
+            "word": "reified",
+            "pronunciation": "riːɪˈfaɪd",
+            "meaning": "实化类型"
+          }
+        ]
+      },
+      {
+        "name": "第四组 - 面向对象",
+        "description": "面向对象",
+        "vocabs": [
+          {
+            "word": "class",
+            "pronunciation": "klæs",
+            "meaning": "类"
+          },
+          {
+            "word": "interface",
+            "pronunciation": "ˈɪntərfeɪs",
+            "meaning": "接口"
+          },
+          {
+            "word": "abstract class",
+            "pronunciation": "ˈæbstrækt klæs",
+            "meaning": "抽象类"
+          },
+          {
+            "word": "open class",
+            "pronunciation": "ˈoʊpən klæs",
+            "meaning": "可继承类"
+          },
+          {
+            "word": "final",
+            "pronunciation": "ˈfaɪnl",
+            "meaning": "不可继承"
+          },
+          {
+            "word": "inheritance",
+            "pronunciation": "ɪnˈherɪtəns",
+            "meaning": "继承"
+          },
+          {
+            "word": "override",
+            "pronunciation": "ˌoʊvərˈraɪd",
+            "meaning": "重写"
+          },
+          {
+            "word": "polymorphism",
+            "pronunciation": "ˌpɒliˈmɔːrfɪzəm",
+            "meaning": "多态"
+          },
+          {
+            "word": "encapsulation",
+            "pronunciation": "ɪnˌkæpsjuˈleɪʃn",
+            "meaning": "封装"
+          }
+        ]
+      },
+      {
+        "name": "第五组 - 泛型",
+        "description": "泛型",
+        "vocabs": [
+          {
+            "word": "generic",
+            "pronunciation": "dʒəˈnerɪk",
+            "meaning": "泛型"
+          },
+          {
+            "word": "type parameter",
+            "pronunciation": "taɪp pəˈræmɪtər",
+            "meaning": "类型参数"
+          },
+          {
+            "word": "type argument",
+            "pronunciation": "taɪp ˈɑːrɡjumənt",
+            "meaning": "类型实参"
+          },
+          {
+            "word": "variance",
+            "pronunciation": "ˈveriəns",
+            "meaning": "变型"
+          },
+          {
+            "word": "covariant",
+            "pronunciation": "koʊˈveriənt",
+            "meaning": "协变"
+          },
+          {
+            "word": "contravariant",
+            "pronunciation": "ˌkɒntrəˈveriənt",
+            "meaning": "逆变"
+          },
+          {
+            "word": "invariant",
+            "pronunciation": "ɪnˈveriənt",
+            "meaning": "不变"
+          },
+          {
+            "word": "where clause",
+            "pronunciation": "wer klɔːz",
+            "meaning": "where子句"
+          },
+          {
+            "word": "star projection",
+            "pronunciation": "stɑːr prəˈdʒekʃn",
+            "meaning": "星号投影"
+          }
+        ]
+      },
+      {
+        "name": "第六组 - 控制流",
+        "description": "控制流",
+        "vocabs": [
+          {
+            "word": "if expression",
+            "pronunciation": "ɪf ɪkˈspreʃn",
+            "meaning": "if表达式"
+          },
+          {
+            "word": "when",
+            "pronunciation": "wen",
+            "meaning": "when表达式"
+          },
+          {
+            "word": "for loop",
+            "pronunciation": "fɔːr luːp",
+            "meaning": "for循环"
+          },
+          {
+            "word": "while loop",
+            "pronunciation": "waɪl luːp",
+            "meaning": "while循环"
+          },
+          {
+            "word": "do while",
+            "pronunciation": "duː waɪl",
+            "meaning": "do...while循环"
+          },
+          {
+            "word": "break",
+            "pronunciation": "breɪk",
+            "meaning": "跳出循环"
+          },
+          {
+            "word": "continue",
+            "pronunciation": "kənˈtɪnjuː",
+            "meaning": "继续下一次循环"
+          },
+          {
+            "word": "return",
+            "pronunciation": "rɪˈtɜːrn",
+            "meaning": "返回"
+          },
+          {
+            "word": "label",
+            "pronunciation": "ˈleɪbl",
+            "meaning": "标签"
+          }
+        ]
+      },
+      {
+        "name": "第七组 - 空安全",
+        "description": "空安全",
+        "vocabs": [
+          {
+            "word": "null safety",
+            "pronunciation": "nʌl ˈseɪfti",
+            "meaning": "空安全"
+          },
+          {
+            "word": "nullable type",
+            "pronunciation": "ˈnʌləbl taɪp",
+            "meaning": "可空类型"
+          },
+          {
+            "word": "non-null type",
+            "pronunciation": "nɒn nʌl taɪp",
+            "meaning": "非空类型"
+          },
+          {
+            "word": "safe call operator",
+            "pronunciation": "seɪf kɔːl ˈɒpəreɪtər",
+            "meaning": "安全调用操作符"
+          },
+          {
+            "word": "not null assertion",
+            "pronunciation": "nɒt nʌl əˈsɜːrʃn",
+            "meaning": "非空断言操作符"
+          },
+          {
+            "word": "elvis operator",
+            "pronunciation": "ˈelvɪs ˈɒpəreɪtər",
+            "meaning": "Elvis操作符"
+          },
+          {
+            "word": "let",
+            "pronunciation": "let",
+            "meaning": "let函数"
+          },
+          {
+            "word": "also",
+            "pronunciation": "ˈɔːlsoʊ",
+            "meaning": "also函数"
+          },
+          {
+            "word": "run",
+            "pronunciation": "rʌn",
+            "meaning": "run函数"
+          },
+          {
+            "word": "with",
+            "pronunciation": "wɪð",
+            "meaning": "with函数"
+          },
+          {
+            "word": "takeIf",
+            "pronunciation": "teɪk ɪf",
+            "meaning": "条件执行"
+          },
+          {
+            "word": "takeUnless",
+            "pronunciation": "teɪk ʌnˈles",
+            "meaning": "条件不执行"
+          }
+        ]
+      },
+      {
+        "name": "第八组 - 集合操作",
+        "description": "集合操作",
+        "vocabs": [
+          {
+            "word": "immutable collection",
+            "pronunciation": "ɪˈmjuːtəbl kəˈlekʃn",
+            "meaning": "不可变集合"
+          },
+          {
+            "word": "mutable collection",
+            "pronunciation": "ˈmjuːtəbl kəˈlekʃn",
+            "meaning": "可变集合"
+          },
+          {
+            "word": "filter",
+            "pronunciation": "ˈfɪltər",
+            "meaning": "过滤"
+          },
+          {
+            "word": "map",
+            "pronunciation": "mæp",
+            "meaning": "映射转换"
+          },
+          {
+            "word": "reduce",
+            "pronunciation": "rɪˈdjuːs",
+            "meaning": "归约"
+          },
+          {
+            "word": "fold",
+            "pronunciation": "foʊld",
+            "meaning": "折叠"
+          },
+          {
+            "word": "flatMap",
+            "pronunciation": "flæt mæp",
+            "meaning": "扁平映射"
+          },
+          {
+            "word": "groupBy",
+            "pronunciation": "ɡruːp baɪ",
+            "meaning": "分组"
+          },
+          {
+            "word": "distinct",
+            "pronunciation": "dɪˈstɪŋkt",
+            "meaning": "去重"
+          },
+          {
+            "word": "sorted",
+            "pronunciation": "ˈsɔːrtɪd",
+            "meaning": "排序"
+          },
+          {
+            "word": "chunked",
+            "pronunciation": "tʃʌŋkt",
+            "meaning": "分块"
+          },
+          {
+            "word": "windowed",
+            "pronunciation": "ˈwɪndoʊd",
+            "meaning": "窗口化"
+          }
+        ]
+      },
+      {
+        "name": "第九组 - Activity",
+        "description": "Activity",
+        "vocabs": [
+          {
+            "word": "activity",
+            "pronunciation": "ækˈtɪvəti",
+            "meaning": "活动"
+          },
+          {
+            "word": "lifecycle",
+            "pronunciation": "ˈlaɪfsaɪkl",
+            "meaning": "生命周期"
+          },
+          {
+            "word": "onCreate",
+            "pronunciation": "ɒn kriːˈeɪt",
+            "meaning": "创建时"
+          },
+          {
+            "word": "onStart",
+            "pronunciation": "ɒn stɑːrt",
+            "meaning": "启动时"
+          },
+          {
+            "word": "onResume",
+            "pronunciation": "ɒn rɪˈzjuːm",
+            "meaning": "恢复时"
+          },
+          {
+            "word": "onPause",
+            "pronunciation": "ɒn pɔːz",
+            "meaning": "暂停时"
+          },
+          {
+            "word": "onStop",
+            "pronunciation": "ɒn stɒp",
+            "meaning": "停止时"
+          },
+          {
+            "word": "onDestroy",
+            "pronunciation": "ɒn dɪˈstrɔɪ",
+            "meaning": "销毁时"
+          },
+          {
+            "word": "onRestart",
+            "pronunciation": "ɒn riːˈstɑːrt",
+            "meaning": "重新启动时"
+          },
+          {
+            "word": "savedInstanceState",
+            "pronunciation": "ˈseɪvd ˈɪnstəns steɪt",
+            "meaning": "保存的实例状态"
+          },
+          {
+            "word": "bundle",
+            "pronunciation": "ˈbʌndl",
+            "meaning": "数据包"
+          }
+        ]
+      },
+      {
+        "name": "第十组 - Activity进阶",
+        "description": "Activity进阶",
+        "vocabs": [
+          {
+            "word": "fragment",
+            "pronunciation": "ˈfræɡmənt",
+            "meaning": "片段"
+          },
+          {
+            "word": "fragment lifecycle",
+            "pronunciation": "ˈfræɡmənt ˈlaɪfsaɪkl",
+            "meaning": "片段生命周期"
+          },
+          {
+            "word": "fragmentManager",
+            "pronunciation": "ˈfræɡmənt ˈmænɪdʒər",
+            "meaning": "片段管理器"
+          },
+          {
+            "word": "back stack",
+            "pronunciation": "bæk stæk",
+            "meaning": "返回栈"
+          },
+          {
+            "word": "task",
+            "pronunciation": "tɑːsk",
+            "meaning": "任务"
+          },
+          {
+            "word": "back stack entry",
+            "pronunciation": "bæk stæk ˈentri",
+            "meaning": "返回栈条目"
+          },
+          {
+            "word": "launch mode",
+            "pronunciation": "lɔːntʃ moʊd",
+            "meaning": "启动模式"
+          },
+          {
+            "word": "single top",
+            "pronunciation": "ˈsɪŋɡl tɒp",
+            "meaning": "单顶模式"
+          },
+          {
+            "word": "single task",
+            "pronunciation": "ˈsɪŋɡl tɑːsk",
+            "meaning": "单任务模式"
+          },
+          {
+            "word": "single instance",
+            "pronunciation": "ˈsɪŋɡl ˈɪnstəns",
+            "meaning": "单实例模式"
+          },
+          {
+            "word": "intent flag",
+            "pronunciation": "ɪnˈtent flæɡ",
+            "meaning": "意图标志"
+          },
+          {
+            "word": "affinity",
+            "pronunciation": "əˈfɪnəti",
+            "meaning": "亲和性"
+          }
+        ]
+      },
+      {
+        "name": "第十一组 - Service",
+        "description": "Service",
+        "vocabs": [
+          {
+            "word": "service",
+            "pronunciation": "ˈsɜːrvɪs",
+            "meaning": "服务"
+          },
+          {
+            "word": "started service",
+            "pronunciation": "ˈstɑːrtɪd ˈsɜːrvɪs",
+            "meaning": "启动型服务"
+          },
+          {
+            "word": "bound service",
+            "pronunciation": "baʊnd ˈsɜːrvɪs",
+            "meaning": "绑定型服务"
+          },
+          {
+            "word": "intentService",
+            "pronunciation": "ɪnˈtent ˈsɜːrvɪs",
+            "meaning": "意图服务"
+          },
+          {
+            "word": "foreground service",
+            "pronunciation": "ˈfɔːrɡraʊnd ˈsɜːrvɪs",
+            "meaning": "前台服务"
+          },
+          {
+            "word": "background service",
+            "pronunciation": "ˈbækɡraʊnd ˈsɜːrvɪs",
+            "meaning": "后台服务"
+          },
+          {
+            "word": "onStartCommand",
+            "pronunciation": "ɒn stɑːrt kəˈmɑːnd",
+            "meaning": "启动命令回调"
+          },
+          {
+            "word": "onBind",
+            "pronunciation": "ɒn baɪnd",
+            "meaning": "绑定回调"
+          },
+          {
+            "word": "onUnbind",
+            "pronunciation": "ɒn ʌnˈbaɪnd",
+            "meaning": "解除绑定回调"
+          },
+          {
+            "word": "onDestroy",
+            "pronunciation": "ɒn dɪˈstrɔɪ",
+            "meaning": "销毁回调"
+          }
+        ]
+      },
+      {
+        "name": "第十二组 - BroadcastReceiver",
+        "description": "BroadcastReceiver",
+        "vocabs": [
+          {
+            "word": "broadcast receiver",
+            "pronunciation": "ˈbrɔːdkɑːst rɪˈsiːvər",
+            "meaning": "广播接收器"
+          },
+          {
+            "word": "static receiver",
+            "pronunciation": "ˈstætɪk rɪˈsiːvər",
+            "meaning": "静态广播接收器"
+          },
+          {
+            "word": "dynamic receiver",
+            "pronunciation": "daɪˈnæmɪk rɪˈsiːvər",
+            "meaning": "动态广播接收器"
+          },
+          {
+            "word": "ordered broadcast",
+            "pronunciation": "ˈɔːrdərd ˈbrɔːdkɑːst",
+            "meaning": "有序广播"
+          },
+          {
+            "word": "sticky broadcast",
+            "pronunciation": "ˈstɪki ˈbrɔːdkɑːst",
+            "meaning": "粘性广播"
+          },
+          {
+            "word": "local broadcast",
+            "pronunciation": "ˈloʊkl ˈbrɔːdkɑːst",
+            "meaning": "本地广播"
+          },
+          {
+            "word": "broadcast intent",
+            "pronunciation": "ˈbrɔːdkɑːst ɪnˈtent",
+            "meaning": "广播意图"
+          },
+          {
+            "word": "pending intent",
+            "pronunciation": "ˈpendɪŋ ɪnˈtent",
+            "meaning": "待定意图"
+          }
+        ]
+      },
+      {
+        "name": "第十三组 - Context",
+        "description": "Context",
+        "vocabs": [
+          {
+            "word": "context",
+            "pronunciation": "ˈkɒntekst",
+            "meaning": "上下文"
+          },
+          {
+            "word": "application context",
+            "pronunciation": "ˌæplɪˈkeɪʃn ˈkɒntekst",
+            "meaning": "应用上下文"
+          },
+          {
+            "word": "activity context",
+            "pronunciation": "ækˈtɪvəti ˈkɒntekst",
+            "meaning": "Activity上下文"
+          },
+          {
+            "word": "context wrapper",
+            "pronunciation": "ˈkɒntekst ˈræpər",
+            "meaning": "上下文包装器"
+          },
+          {
+            "word": "getApplicationContext",
+            "pronunciation": "ɡet ˌæplɪˈkeɪʃn ˈkɒntekst",
+            "meaning": "获取应用上下文"
+          },
+          {
+            "word": "getContext",
+            "pronunciation": "ɡet ˈkɒntekst",
+            "meaning": "获取上下文"
+          },
+          {
+            "word": "application",
+            "pronunciation": "ˌæplɪˈkeɪʃn",
+            "meaning": "Application类"
+          }
+        ]
+      },
+      {
+        "name": "第十四组 - View基础",
+        "description": "View基础",
+        "vocabs": [
+          {
+            "word": "view",
+            "pronunciation": "vjuː",
+            "meaning": "视图"
+          },
+          {
+            "word": "viewgroup",
+            "pronunciation": "ˈvjuːɡruːp",
+            "meaning": "视图组"
+          },
+          {
+            "word": "widget",
+            "pronunciation": "ˈwɪdʒɪt",
+            "meaning": "组件"
+          },
+          {
+            "word": "drawable",
+            "pronunciation": "drɔːˈeɪbl",
+            "meaning": "可绘制对象"
+          },
+          {
+            "word": "layout",
+            "pronunciation": "ˈleɪaʊt",
+            "meaning": "布局"
+          },
+          {
+            "word": "inflate",
+            "pronunciation": "ɪnˈfleɪt",
+            "meaning": "布局填充"
+          },
+          {
+            "word": "findViewById",
+            "pronunciation": "faɪnd vjuː baɪ aɪ diː",
+            "meaning": "通过ID查找视图"
+          },
+          {
+            "word": "view binding",
+            "pronunciation": "vjuː ˈbaɪndɪŋ",
+            "meaning": "视图绑定"
+          },
+          {
+            "word": "data binding",
+            "pronunciation": "ˈdeɪtə ˈbaɪndɪŋ",
+            "meaning": "数据绑定"
+          }
+        ]
+      },
+      {
+        "name": "第十五组 - 布局容器",
+        "description": "布局容器",
+        "vocabs": [
+          {
+            "word": "linearlayout",
+            "pronunciation": "ˈlɪniər ˈleɪaʊt",
+            "meaning": "线性布局"
+          },
+          {
+            "word": "relativelayout",
+            "pronunciation": "ˈrelətɪv ˈleɪaʊt",
+            "meaning": "相对布局"
+          },
+          {
+            "word": "constraintlayout",
+            "pronunciation": "kənˈstreɪnt ˈleɪaʊt",
+            "meaning": "约束布局"
+          },
+          {
+            "word": "framelayout",
+            "pronunciation": "freɪm ˈleɪaʊt",
+            "meaning": "帧布局"
+          },
+          {
+            "word": "tablelayout",
+            "pronunciation": "ˈteɪbl ˈleɪaʊt",
+            "meaning": "表格布局"
+          },
+          {
+            "word": "gridlayout",
+            "pronunciation": "ɡrɪd ˈleɪaʊt",
+            "meaning": "网格布局"
+          },
+          {
+            "word": "coordinatorlayout",
+            "pronunciation": "koʊˈɔːrdɪneɪtər ˈleɪaʊt",
+            "meaning": "协调布局"
+          },
+          {
+            "word": "swiperefreshlayout",
+            "pronunciation": "swaɪp rɪˈfreʃ ˈleɪaʊt",
+            "meaning": "滑动刷新布局"
+          },
+          {
+            "word": "recyclerview",
+            "pronunciation": "rɪˈsaɪklər vjuː",
+            "meaning": "列表视图"
+          }
+        ]
+      },
+      {
+        "name": "第十六组 - 基础控件",
+        "description": "基础控件",
+        "vocabs": [
+          {
+            "word": "textview",
+            "pronunciation": "tekst vjuː",
+            "meaning": "文本视图"
+          },
+          {
+            "word": "edittext",
+            "pronunciation": "ˈedɪt tekst",
+            "meaning": "编辑文本"
+          },
+          {
+            "word": "button",
+            "pronunciation": "ˈbʌtn",
+            "meaning": "按钮"
+          },
+          {
+            "word": "imageview",
+            "pronunciation": "ˈɪmɪdʒ vjuː",
+            "meaning": "图片视图"
+          },
+          {
+            "word": "imagebutton",
+            "pronunciation": "ˈɪmɪdʒ ˈbʌtn",
+            "meaning": "图片按钮"
+          },
+          {
+            "word": "checkbox",
+            "pronunciation": "ˈtʃekbɒks",
+            "meaning": "复选框"
+          },
+          {
+            "word": "radiobutton",
+            "pronunciation": "ˈreɪdioʊ ˈbʌtn",
+            "meaning": "单选按钮"
+          },
+          {
+            "word": "togglebutton",
+            "pronunciation": "ˈtɒɡl ˈbʌtn",
+            "meaning": "开关按钮"
+          },
+          {
+            "word": "switch",
+            "pronunciation": "swɪtʃ",
+            "meaning": "开关"
+          },
+          {
+            "word": "progressbar",
+            "pronunciation": "ˈprəʊɡres bɑːr",
+            "meaning": "进度条"
+          },
+          {
+            "word": "seekbar",
+            "pronunciation": "siːk bɑːr",
+            "meaning": "拖动条"
+          }
+        ]
+      },
+      {
+        "name": "第十七组 - 高级控件",
+        "description": "高级控件",
+        "vocabs": [
+          {
+            "word": "listview",
+            "pronunciation": "lɪst vjuː",
+            "meaning": "列表视图"
+          },
+          {
+            "word": "gridview",
+            "pronunciation": "ɡrɪd vjuː",
+            "meaning": "网格视图"
+          },
+          {
+            "word": "spinner",
+            "pronunciation": "ˈspɪnər",
+            "meaning": "下拉选择器"
+          },
+          {
+            "word": "autocompletetextview",
+            "pronunciation": "ˌɔːtoʊ kəmˈpliːt tekst vjuː",
+            "meaning": "自动完成文本"
+          },
+          {
+            "word": "webview",
+            "pronunciation": "web vjuː",
+            "meaning": "网页视图"
+          },
+          {
+            "word": "videoview",
+            "pronunciation": "ˈvɪdioʊ vjuː",
+            "meaning": "视频视图"
+          },
+          {
+            "word": "surfaceview",
+            "pronunciation": "ˈsɜːrfɪs vjuː",
+            "meaning": "表面视图"
+          },
+          {
+            "word": "textureview",
+            "pronunciation": "ˈtekstʃər vjuː",
+            "meaning": "纹理视图"
+          }
+        ]
+      },
+      {
+        "name": "第十八组 - 布局属性",
+        "description": "布局属性",
+        "vocabs": [
+          {
+            "word": "layout_width",
+            "pronunciation": "ˈleɪaʊt wɪdθ",
+            "meaning": "宽度"
+          },
+          {
+            "word": "layout_height",
+            "pronunciation": "ˈleɪaʊt haɪt",
+            "meaning": "高度"
+          },
+          {
+            "word": "match_parent",
+            "pronunciation": "mætʃ ˈpɑːrənt",
+            "meaning": "匹配父布局"
+          },
+          {
+            "word": "wrap_content",
+            "pronunciation": "ræp ˈkɒntent",
+            "meaning": "自适应内容"
+          },
+          {
+            "word": "gravity",
+            "pronunciation": "ˈɡrævəti",
+            "meaning": "重力"
+          },
+          {
+            "word": "layout_gravity",
+            "pronunciation": "ˈleɪaʊt ˈɡrævəti",
+            "meaning": "布局重力"
+          },
+          {
+            "word": "padding",
+            "pronunciation": "ˈpædɪŋ",
+            "meaning": "内边距"
+          },
+          {
+            "word": "margin",
+            "pronunciation": "ˈmɑːrdʒɪn",
+            "meaning": "外边距"
+          },
+          {
+            "word": "visibility",
+            "pronunciation": "ˌvɪzəˈbɪləti",
+            "meaning": "可见性"
+          },
+          {
+            "word": "enabled",
+            "pronunciation": "ɪˈneɪbld",
+            "meaning": "可用状态"
+          }
+        ]
+      },
+      {
+        "name": "第十九组 - ConstraintLayout",
+        "description": "ConstraintLayout",
+        "vocabs": [
+          {
+            "word": "constraint",
+            "pronunciation": "kənˈstreɪnt",
+            "meaning": "约束"
+          },
+          {
+            "word": "constraintlayout",
+            "pronunciation": "kənˈstreɪnt ˈleɪaʊt",
+            "meaning": "约束布局"
+          },
+          {
+            "word": "constraintset",
+            "pronunciation": "kənˈstreɪnt set",
+            "meaning": "约束集"
+          },
+          {
+            "word": "constraint_referenced_ids",
+            "pronunciation": "kənˈstreɪnt ˈrefrənst ˈaɪdiːz",
+            "meaning": "引用的约束ID"
+          },
+          {
+            "word": "bias",
+            "pronunciation": "ˈbaɪəs",
+            "meaning": "偏移量"
+          },
+          {
+            "word": "chain",
+            "pronunciation": "tʃeɪn",
+            "meaning": "链"
+          },
+          {
+            "word": "chainStyle",
+            "pronunciation": "tʃeɪn staɪl",
+            "meaning": "链样式"
+          },
+          {
+            "word": "guideline",
+            "pronunciation": "ˈɡaɪdlaɪn",
+            "meaning": "辅助线"
+          },
+          {
+            "word": "barrier",
+            "pronunciation": "ˈbæriər",
+            "meaning": "屏障"
+          },
+          {
+            "word": "group",
+            "pronunciation": "ɡruːp",
+            "meaning": "组"
+          },
+          {
+            "word": "placeholder",
+            "pronunciation": "ˈpleɪshoʊldər",
+            "meaning": "占位符"
+          }
+        ]
+      },
+      {
+        "name": "第二十组 - RecyclerView",
+        "description": "RecyclerView",
+        "vocabs": [
+          {
+            "word": "recyclerview",
+            "pronunciation": "rɪˈsaɪklər vjuː",
+            "meaning": "RecyclerView"
+          },
+          {
+            "word": "adapter",
+            "pronunciation": "əˈdæptər",
+            "meaning": "适配器"
+          },
+          {
+            "word": "viewholder",
+            "pronunciation": "vjuː ˈhoʊldər",
+            "meaning": "视图持有者"
+          },
+          {
+            "word": "layoutmanager",
+            "pronunciation": "ˈleɪaʊt ˈmænɪdʒər",
+            "meaning": "布局管理器"
+          },
+          {
+            "word": "linearlayoutmanager",
+            "pronunciation": "ˈlɪniər ˈleɪaʊt ˈmænɪdʒər",
+            "meaning": "线性布局管理器"
+          },
+          {
+            "word": "gridlayoutmanager",
+            "pronunciation": "ɡrɪd ˈleɪaʊt ˈmænɪdʒər",
+            "meaning": "网格布局管理器"
+          },
+          {
+            "word": "staggeredgridlayoutmanager",
+            "pronunciation": "ˈstæɡərd ɡrɪd ˈleɪaʊt ˈmænɪdʒər",
+            "meaning": "交错网格布局管理器"
+          },
+          {
+            "word": "itemdecoration",
+            "pronunciation": "ˈaɪtəm ˌdekəˈreɪʃn",
+            "meaning": "列表项装饰"
+          },
+          {
+            "word": "itemanimator",
+            "pronunciation": "ˈaɪtəm ˈænɪmeɪtər",
+            "meaning": "列表项动画"
+          },
+          {
+            "word": "snap helper",
+            "pronunciation": "snæp ˈhelpər",
+            "meaning": "吸附辅助器"
+          }
+        ]
+      },
+      {
+        "name": "第二十一组 - Compose基础",
+        "description": "Compose基础",
+        "vocabs": [
+          {
+            "word": "compose",
+            "pronunciation": "kəmˈpoʊz",
+            "meaning": "Compose框架"
+          },
+          {
+            "word": "composable",
+            "pronunciation": "kəmˈpoʊzəbl",
+            "meaning": "可组合函数"
+          },
+          {
+            "word": "@Composable",
+            "pronunciation": "kəmˈpoʊzəbl",
+            "meaning": "Compose注解"
+          },
+          {
+            "word": "remember",
+            "pronunciation": "rɪˈmembər",
+            "meaning": "记住"
+          },
+          {
+            "word": "mutableStateOf",
+            "pronunciation": "ˈmjuːtəbl steɪt əv",
+            "meaning": "可变状态"
+          },
+          {
+            "word": "state",
+            "pronunciation": "steɪt",
+            "meaning": "状态"
+          },
+          {
+            "word": "derivedStateOf",
+            "pronunciation": "dɪˈraɪvd steɪt əv",
+            "meaning": "派生状态"
+          },
+          {
+            "word": "recompose",
+            "pronunciation": "riːkəmˈpoʊz",
+            "meaning": "重组"
+          }
+        ]
+      },
+      {
+        "name": "第二十二组 - Compose UI",
+        "description": "Compose UI",
+        "vocabs": [
+          {
+            "word": "text",
+            "pronunciation": "tekst",
+            "meaning": "文本"
+          },
+          {
+            "word": "button",
+            "pronunciation": "ˈbʌtn",
+            "meaning": "按钮"
+          },
+          {
+            "word": "image",
+            "pronunciation": "ˈɪmɪdʒ",
+            "meaning": "图片"
+          },
+          {
+            "word": "icon",
+            "pronunciation": "ˈaɪkɒn",
+            "meaning": "图标"
+          },
+          {
+            "word": "surface",
+            "pronunciation": "ˈsɜːrfɪs",
+            "meaning": "表面"
+          },
+          {
+            "word": "card",
+            "pronunciation": "kɑːrd",
+            "meaning": "卡片"
+          },
+          {
+            "word": "column",
+            "pronunciation": "ˈkɒləm",
+            "meaning": "列"
+          },
+          {
+            "word": "row",
+            "pronunciation": "roʊ",
+            "meaning": "行"
+          },
+          {
+            "word": "box",
+            "pronunciation": "bɒks",
+            "meaning": "盒子"
+          },
+          {
+            "word": "lazycolumn",
+            "pronunciation": "ˈleɪzi ˈkɒləm",
+            "meaning": "懒加载列"
+          },
+          {
+            "word": "lazyrow",
+            "pronunciation": "ˈleɪzi roʊ",
+            "meaning": "懒加载行"
+          },
+          {
+            "word": "lazystaggeredgrid",
+            "pronunciation": "ˈleɪzi ˈstæɡərd ɡrɪd",
+            "meaning": "懒加载交错网格"
+          }
+        ]
+      },
+      {
+        "name": "第二十三组 - Compose布局",
+        "description": "Compose布局",
+        "vocabs": [
+          {
+            "word": "modifier",
+            "pronunciation": "ˈmɒdɪfaɪər",
+            "meaning": "修饰符"
+          },
+          {
+            "word": "padding",
+            "pronunciation": "ˈpædɪŋ",
+            "meaning": "内边距"
+          },
+          {
+            "word": "margin",
+            "pronunciation": "ˈmɑːrdʒɪn",
+            "meaning": "外边距"
+          },
+          {
+            "word": "fillMaxSize",
+            "pronunciation": "fɪl mæks saɪz",
+            "meaning": "填充最大尺寸"
+          },
+          {
+            "word": "fillMaxWidth",
+            "pronunciation": "fɪl mæks wɪdθ",
+            "meaning": "填充最大宽度"
+          },
+          {
+            "word": "fillMaxHeight",
+            "pronunciation": "fɪl mæks haɪt",
+            "meaning": "填充最大高度"
+          },
+          {
+            "word": "wrapContentSize",
+            "pronunciation": "ræp ˈkɒntent saɪz",
+            "meaning": "自适应尺寸"
+          },
+          {
+            "word": "align",
+            "pronunciation": "əˈlaɪn",
+            "meaning": "对齐"
+          },
+          {
+            "word": "weight",
+            "pronunciation": "weɪt",
+            "meaning": "权重"
+          },
+          {
+            "word": "arrangement",
+            "pronunciation": "əˈreɪndʒmənt",
+            "meaning": "排列方式"
+          },
+          {
+            "word": "alignment",
+            "pronunciation": "əˈlaɪnmənt",
+            "meaning": "对齐方式"
+          }
+        ]
+      },
+      {
+        "name": "第二十四组 - Compose状态",
+        "description": "Compose状态",
+        "vocabs": [
+          {
+            "word": "rememberSaveable",
+            "pronunciation": "rɪˈmembər ˈseɪvəbl",
+            "meaning": "可保存的记忆"
+          },
+          {
+            "word": "savedinstancestate",
+            "pronunciation": "ˈseɪvd ˈɪnstəns steɪt",
+            "meaning": "保存的实例状态"
+          },
+          {
+            "word": "produceState",
+            "pronunciation": "prəˈdjuːs steɪt",
+            "meaning": "生成状态"
+          },
+          {
+            "word": "collectAsState",
+            "pronunciation": "kəˈlekt æz steɪt",
+            "meaning": "收集为状态"
+          },
+          {
+            "word": "lifecycleOwner",
+            "pronunciation": "ˈlaɪfsaɪkl ˈoʊnər",
+            "meaning": "生命周期所有者"
+          },
+          {
+            "word": "launchInScope",
+            "pronunciation": "lɔːntʃ ɪn skoʊp",
+            "meaning": "在作用域内启动"
+          },
+          {
+            "word": "dispose",
+            "pronunciation": "dɪˈspoʊz",
+            "meaning": "释放"
+          },
+          {
+            "word": "DisposableEffect",
+            "pronunciation": "dɪˈspoʊzəbl ɪˈfekt",
+            "meaning": "可释放效果"
+          }
+        ]
+      },
+      {
+        "name": "第二十五组 - Compose主题",
+        "description": "Compose主题",
+        "vocabs": [
+          {
+            "word": "material theme",
+            "pronunciation": "məˈtɪriəl θiːm",
+            "meaning": "Material主题"
+          },
+          {
+            "word": "dark theme",
+            "pronunciation": "dɑːrk θiːm",
+            "meaning": "深色主题"
+          },
+          {
+            "word": "colorScheme",
+            "pronunciation": "ˈkʌlər skiːm",
+            "meaning": "颜色方案"
+          },
+          {
+            "word": "typography",
+            "pronunciation": "taɪˈpɒɡrəfi",
+            "meaning": "排版"
+          },
+          {
+            "word": "shapes",
+            "pronunciation": "ʃeɪps",
+            "meaning": "形状"
+          },
+          {
+            "word": "contentColor",
+            "pronunciation": "ˈkɒntent ˈkʌlər",
+            "meaning": "内容颜色"
+          },
+          {
+            "word": "surfaceColor",
+            "pronunciation": "ˈsɜːrfɪs ˈkʌlər",
+            "meaning": "表面颜色"
+          },
+          {
+            "word": "primaryColor",
+            "pronunciation": "ˈpraɪməri ˈkʌlər",
+            "meaning": "主色"
+          },
+          {
+            "word": "secondaryColor",
+            "pronunciation": "ˈsekənderi ˈkʌlər",
+            "meaning": "次色"
+          }
+        ]
+      },
+      {
+        "name": "第二十六组 - SharedPreferences",
+        "description": "SharedPreferences",
+        "vocabs": [
+          {
+            "word": "sharedpreferences",
+            "pronunciation": "ʃerd prɪˈferənsɪz",
+            "meaning": "共享偏好设置"
+          },
+          {
+            "word": "editor",
+            "pronunciation": "ˈedɪtər",
+            "meaning": "编辑器"
+          },
+          {
+            "word": "getString",
+            "pronunciation": "ɡet strɪŋ",
+            "meaning": "获取字符串"
+          },
+          {
+            "word": "getInt",
+            "pronunciation": "ɡet ɪnt",
+            "meaning": "获取整数"
+          },
+          {
+            "word": "getBoolean",
+            "pronunciation": "ɡet ˈbuːliən",
+            "meaning": "获取布尔值"
+          },
+          {
+            "word": "putString",
+            "pronunciation": "pʊt strɪŋ",
+            "meaning": "保存字符串"
+          },
+          {
+            "word": "putInt",
+            "pronunciation": "pʊt ɪnt",
+            "meaning": "保存整数"
+          },
+          {
+            "word": "putBoolean",
+            "pronunciation": "pʊt ˈbuːliən",
+            "meaning": "保存布尔值"
+          },
+          {
+            "word": "apply",
+            "pronunciation": "əˈplaɪ",
+            "meaning": "异步应用"
+          },
+          {
+            "word": "commit",
+            "pronunciation": "kəˈmɪt",
+            "meaning": "同步提交"
+          }
+        ]
+      },
+      {
+        "name": "第二十七组 - Room数据库",
+        "description": "Room数据库",
+        "vocabs": [
+          {
+            "word": "room",
+            "pronunciation": "ruːm",
+            "meaning": "Room数据库"
+          },
+          {
+            "word": "entity",
+            "pronunciation": "ˈentəti",
+            "meaning": "实体"
+          },
+          {
+            "word": "dao",
+            "pronunciation": "deɪ oʊ",
+            "meaning": "数据访问对象"
+          },
+          {
+            "word": "database",
+            "pronunciation": "ˈdeɪtəbeɪs",
+            "meaning": "数据库"
+          },
+          {
+            "word": "database class",
+            "pronunciation": "ˈdeɪtəbeɪs klæs",
+            "meaning": "数据库类"
+          },
+          {
+            "word": "query",
+            "pronunciation": "ˈkweri",
+            "meaning": "查询"
+          },
+          {
+            "word": "insert",
+            "pronunciation": "ɪnˈsɜːrt",
+            "meaning": "插入"
+          },
+          {
+            "word": "update",
+            "pronunciation": "ʌpˈdeɪt",
+            "meaning": "更新"
+          },
+          {
+            "word": "delete",
+            "pronunciation": "dɪˈliːt",
+            "meaning": "删除"
+          },
+          {
+            "word": "query method",
+            "pronunciation": "ˈkweri ˈmeθəd",
+            "meaning": "查询方法"
+          },
+          {
+            "word": "suspend function",
+            "pronunciation": "səsˈpend ˈfʌŋkʃn",
+            "meaning": "挂起函数"
+          },
+          {
+            "word": "flow",
+            "pronunciation": "floʊ",
+            "meaning": "Flow数据流"
+          },
+          {
+            "word": "livedata",
+            "pronunciation": "laɪv ˈdeɪtə",
+            "meaning": "LiveData"
+          },
+          {
+            "word": "migration",
+            "pronunciation": "maɪˈɡreɪʃn",
+            "meaning": "数据库迁移"
+          },
+          {
+            "word": "type converter",
+            "pronunciation": "taɪp kənˈvɜːrtər",
+            "meaning": "类型转换器"
+          }
+        ]
+      },
+      {
+        "name": "第二十八组 - DataStore",
+        "description": "DataStore",
+        "vocabs": [
+          {
+            "word": "datastore",
+            "pronunciation": "ˈdeɪtə stɔːr",
+            "meaning": "DataStore"
+          },
+          {
+            "word": "preferences datastore",
+            "pronunciation": "prɪˈferənsɪz ˈdeɪtə stɔːr",
+            "meaning": "偏好设置DataStore"
+          },
+          {
+            "word": "proto datastore",
+            "pronunciation": "ˈproʊtoʊ ˈdeɪtə stɔːr",
+            "meaning": "Protobuf DataStore"
+          },
+          {
+            "word": "datastore preferences",
+            "pronunciation": "ˈdeɪtə stɔːr prɪˈferənsɪz",
+            "meaning": "DataStore偏好设置"
+          },
+          {
+            "word": "data",
+            "pronunciation": "ˈdeɪtə",
+            "meaning": "数据"
+          },
+          {
+            "word": "edit",
+            "pronunciation": "ˈedɪt",
+            "meaning": "编辑"
+          },
+          {
+            "word": "asStateFlow",
+            "pronunciation": "æz steɪt floʊ",
+            "meaning": "转为StateFlow"
+          },
+          {
+            "word": "asFlow",
+            "pronunciation": "æz floʊ",
+            "meaning": "转为Flow"
+          }
+        ]
+      },
+      {
+        "name": "第二十九组 - 文件存储",
+        "description": "文件存储",
+        "vocabs": [
+          {
+            "word": "file",
+            "pronunciation": "faɪl",
+            "meaning": "文件"
+          },
+          {
+            "word": "internal storage",
+            "pronunciation": "ɪnˈtɜːrnl ˈstɔːrɪdʒ",
+            "meaning": "内部存储"
+          },
+          {
+            "word": "external storage",
+            "pronunciation": "ɪkˈstɜːrnl ˈstɔːrɪdʒ",
+            "meaning": "外部存储"
+          },
+          {
+            "word": "cache",
+            "pronunciation": "kæʃ",
+            "meaning": "缓存目录"
+          },
+          {
+            "word": "filesDir",
+            "pronunciation": "faɪlz dɜːr",
+            "meaning": "文件目录"
+          },
+          {
+            "word": "openFileInput",
+            "pronunciation": "ˈoʊpən faɪl ˈɪnpʊt",
+            "meaning": "打开文件输入流"
+          },
+          {
+            "word": "openFileOutput",
+            "pronunciation": "ˈoʊpən faɪl ˈaʊtpʊt",
+            "meaning": "打开文件输出流"
+          },
+          {
+            "word": "readText",
+            "pronunciation": "riːd tekst",
+            "meaning": "读取文本"
+          },
+          {
+            "word": "writeText",
+            "pronunciation": "raɪt tekst",
+            "meaning": "写入文本"
+          },
+          {
+            "word": "deleteFile",
+            "pronunciation": "dɪˈliːt faɪl",
+            "meaning": "删除文件"
+          },
+          {
+            "word": "exists",
+            "pronunciation": "ɪɡˈzɪsts",
+            "meaning": "检查存在"
+          }
+        ]
+      },
+      {
+        "name": "第三十组 - HTTP基础",
+        "description": "HTTP基础",
+        "vocabs": [
+          {
+            "word": "http",
+            "pronunciation": "eɪtʃ tiː piː",
+            "meaning": "HTTP协议"
+          },
+          {
+            "word": "https",
+            "pronunciation": "eɪtʃ tiː tiː es piː",
+            "meaning": "HTTPS协议"
+          },
+          {
+            "word": "url",
+            "pronunciation": "juː el el",
+            "meaning": "统一资源定位符"
+          },
+          {
+            "word": "request",
+            "pronunciation": "rɪˈkwest",
+            "meaning": "请求"
+          },
+          {
+            "word": "response",
+            "pronunciation": "rɪˈspɒns",
+            "meaning": "响应"
+          },
+          {
+            "word": "header",
+            "pronunciation": "ˈhedər",
+            "meaning": "请求头"
+          },
+          {
+            "word": "body",
+            "pronunciation": "ˈbɒdi",
+            "meaning": "请求体"
+          },
+          {
+            "word": "status code",
+            "pronunciation": "ˈsteɪtəs koʊd",
+            "meaning": "状态码"
+          },
+          {
+            "word": "timeout",
+            "pronunciation": "ˈtaɪmaʊt",
+            "meaning": "超时"
+          },
+          {
+            "word": "connection",
+            "pronunciation": "kəˈnekʃn",
+            "meaning": "连接"
+          }
+        ]
+      },
+      {
+        "name": "第三十一组 - HttpURLConnection",
+        "description": "HttpURLConnection",
+        "vocabs": [
+          {
+            "word": "httpurlconnection",
+            "pronunciation": "eɪtʃ tiː piː juː el kəˈnekʃn",
+            "meaning": "HTTP连接"
+          },
+          {
+            "word": "urlconnection",
+            "pronunciation": "juː el kəˈnekʃn",
+            "meaning": "URL连接"
+          },
+          {
+            "word": "setRequestMethod",
+            "pronunciation": "set rɪˈkwest ˈmeθəd",
+            "meaning": "设置请求方法"
+          },
+          {
+            "word": "setRequestProperty",
+            "pronunciation": "set rɪˈkwest ˈprɒpərti",
+            "meaning": "设置请求属性"
+          },
+          {
+            "word": "getResponseCode",
+            "pronunciation": "ɡet rɪˈspɒns koʊd",
+            "meaning": "获取响应码"
+          },
+          {
+            "word": "getInputStream",
+            "pronunciation": "ɡet ˈɪnpʊt striːm",
+            "meaning": "获取输入流"
+          },
+          {
+            "word": "getOutputStream",
+            "pronunciation": "ɡet ˈaʊtpʊt striːm",
+            "meaning": "获取输出流"
+          },
+          {
+            "word": "disconnect",
+            "pronunciation": "ˌdɪskəˈnekt",
+            "meaning": "断开连接"
+          },
+          {
+            "word": "connect",
+            "pronunciation": "kəˈnekt",
+            "meaning": "连接"
+          }
+        ]
+      },
+      {
+        "name": "第三十二组 - Retrofit",
+        "description": "Retrofit",
+        "vocabs": [
+          {
+            "word": "retrofit",
+            "pronunciation": "ˈretroʊfɪt",
+            "meaning": "Retrofit网络库"
+          },
+          {
+            "word": "service interface",
+            "pronunciation": "ˈsɜːrvɪs ˈɪntərfeɪs",
+            "meaning": "服务接口"
+          },
+          {
+            "word": "@GET",
+            "pronunciation": "æt ɡet",
+            "meaning": "GET注解"
+          },
+          {
+            "word": "@POST",
+            "pronunciation": "æt poʊst",
+            "meaning": "POST注解"
+          },
+          {
+            "word": "@PUT",
+            "pronunciation": "æt pʊt",
+            "meaning": "PUT注解"
+          },
+          {
+            "word": "@DELETE",
+            "pronunciation": "æt dɪˈliːt",
+            "meaning": "DELETE注解"
+          },
+          {
+            "word": "@PATCH",
+            "pronunciation": "æt pætʃ",
+            "meaning": "PATCH注解"
+          },
+          {
+            "word": "@Headers",
+            "pronunciation": "æt ˈhedərz",
+            "meaning": "请求头注解"
+          },
+          {
+            "word": "@Body",
+            "pronunciation": "æt ˈbɒdi",
+            "meaning": "请求体注解"
+          },
+          {
+            "word": "@Path",
+            "pronunciation": "æt pæθ",
+            "meaning": "路径参数注解"
+          },
+          {
+            "word": "@Query",
+            "pronunciation": "æt ˈkweri",
+            "meaning": "查询参数注解"
+          },
+          {
+            "word": "@FormUrlEncoded",
+            "pronunciation": "æt fɔːrm juː el ɪnˈkoʊdɪd",
+            "meaning": "表单编码注解"
+          },
+          {
+            "word": "@Multipart",
+            "pronunciation": "æt ˈmʌltipɑːrt",
+            "meaning": "多部分注解"
+          }
+        ]
+      },
+      {
+        "name": "第三十三组 - OkHttp",
+        "description": "OkHttp",
+        "vocabs": [
+          {
+            "word": "okhttp",
+            "pronunciation": "oʊ keɪ etʃ tiː piː",
+            "meaning": "OkHttp库"
+          },
+          {
+            "word": "okhttpclient",
+            "pronunciation": "oʊ keɪ etʃ tiː piː ˈklaɪənt",
+            "meaning": "OkHttp客户端"
+          },
+          {
+            "word": "request",
+            "pronunciation": "rɪˈkwest",
+            "meaning": "请求"
+          },
+          {
+            "word": "response",
+            "pronunciation": "rɪˈspɒns",
+            "meaning": "响应"
+          },
+          {
+            "word": "interceptor",
+            "pronunciation": "ˌɪntəˈseptər",
+            "meaning": "拦截器"
+          },
+          {
+            "word": "logging interceptor",
+            "pronunciation": "ˈlɒɡɪŋ ˌɪntəˈseptər",
+            "meaning": "日志拦截器"
+          },
+          {
+            "word": "authenticator",
+            "pronunciation": "ɔːˌθentɪˈkeɪtər",
+            "meaning": "认证器"
+          },
+          {
+            "word": "cache",
+            "pronunciation": "kæʃ",
+            "meaning": "缓存"
+          },
+          {
+            "word": "connection pool",
+            "pronunciation": "kəˈnekʃn puːl",
+            "meaning": "连接池"
+          },
+          {
+            "word": "dispatcher",
+            "pronunciation": "dɪˈspætʃər",
+            "meaning": "调度器"
+          },
+          {
+            "word": "event listener",
+            "pronunciation": "ɪˈvent ˈlɪsənər",
+            "meaning": "事件监听器"
+          }
+        ]
+      },
+      {
+        "name": "第三十四组 - JSON解析",
+        "description": "JSON解析",
+        "vocabs": [
+          {
+            "word": "json",
+            "pronunciation": "ˈdʒeɪsɒn",
+            "meaning": "JSON数据格式"
+          },
+          {
+            "word": "gson",
+            "pronunciation": "dʒiːsɒn",
+            "meaning": "Gson解析库"
+          },
+          {
+            "word": "moshi",
+            "pronunciation": "ˈmoʊʃi",
+            "meaning": "Moshi解析库"
+          },
+          {
+            "word": "kotlinx serialization",
+            "pronunciation": "kɒtlɪn ɪks ˌsɪriəlaɪˈzeɪʃn",
+            "meaning": "Kotlin序列化"
+          },
+          {
+            "word": "parse",
+            "pronunciation": "pɑːrs",
+            "meaning": "解析"
+          },
+          {
+            "word": "serialize",
+            "pronunciation": "ˈsɪriəlaɪz",
+            "meaning": "序列化"
+          },
+          {
+            "word": "deserialize",
+            "pronunciation": "diːˌsɪriəˈlaɪz",
+            "meaning": "反序列化"
+          },
+          {
+            "word": "jsonobject",
+            "pronunciation": "ˈdʒeɪsɒn ˈɒbdʒɪkt",
+            "meaning": "JSON对象"
+          },
+          {
+            "word": "jsonarray",
+            "pronunciation": "ˈdʒeɪsɒn əˈreɪ",
+            "meaning": "JSON数组"
+          },
+          {
+            "word": "fromJson",
+            "pronunciation": "frɒm ˈdʒeɪsɒn",
+            "meaning": "从JSON解析"
+          },
+          {
+            "word": "toJson",
+            "pronunciation": "tuː ˈdʒeɪsɒn",
+            "meaning": "转为JSON"
+          }
+        ]
+      },
+      {
+        "name": "第三十五组 - 协程基础",
+        "description": "协程基础",
+        "vocabs": [
+          {
+            "word": "coroutine",
+            "pronunciation": "kəˈroʊtuːn",
+            "meaning": "协程"
+          },
+          {
+            "word": "suspend",
+            "pronunciation": "səsˈpend",
+            "meaning": "挂起"
+          },
+          {
+            "word": "launch",
+            "pronunciation": "lɔːntʃ",
+            "meaning": "启动"
+          },
+          {
+            "word": "async",
+            "pronunciation": "ˈeɪsɪŋk",
+            "meaning": "异步"
+          },
+          {
+            "word": "await",
+            "pronunciation": "əˈweɪt",
+            "meaning": "等待"
+          },
+          {
+            "word": "coroutine scope",
+            "pronunciation": "kəˈroʊtuːn skoʊp",
+            "meaning": "协程作用域"
+          },
+          {
+            "word": "coroutine context",
+            "pronunciation": "kəˈroʊtuːn ˈkɒntekst",
+            "meaning": "协程上下文"
+          },
+          {
+            "word": "dispatcher",
+            "pronunciation": "dɪˈspætʃər",
+            "meaning": "调度器"
+          },
+          {
+            "word": "job",
+            "pronunciation": "dʒɒb",
+            "meaning": "作业"
+          },
+          {
+            "word": "deferred",
+            "pronunciation": "dɪˈfɜːrd",
+            "meaning": "延迟结果"
+          }
+        ]
+      },
+      {
+        "name": "第三十六组 - 协程构建器",
+        "description": "协程构建器",
+        "vocabs": [
+          {
+            "word": "runBlocking",
+            "pronunciation": "rʌn ˈblɒkɪŋ",
+            "meaning": "运行阻塞构建器"
+          },
+          {
+            "word": "launch",
+            "pronunciation": "lɔːntʃ",
+            "meaning": "启动构建器"
+          },
+          {
+            "word": "async",
+            "pronunciation": "ˈeɪsɪŋk",
+            "meaning": "异步构建器"
+          },
+          {
+            "word": "produce",
+            "pronunciation": "prəˈdjuːs",
+            "meaning": "生产者构建器"
+          },
+          {
+            "word": "flow",
+            "pronunciation": "floʊ",
+            "meaning": "Flow构建器"
+          },
+          {
+            "word": "channel",
+            "pronunciation": "ˈtʃænl",
+            "meaning": "通道"
+          },
+          {
+            "word": "sequence",
+            "pronunciation": "ˈsiːkwəns",
+            "meaning": "序列"
+          }
+        ]
+      },
+      {
+        "name": "第三十七组 - Flow",
+        "description": "Flow",
+        "vocabs": [
+          {
+            "word": "flow",
+            "pronunciation": "floʊ",
+            "meaning": "Flow数据流"
+          },
+          {
+            "word": "stateflow",
+            "pronunciation": "steɪt floʊ",
+            "meaning": "状态Flow"
+          },
+          {
+            "word": "sharedflow",
+            "pronunciation": "ʃerd floʊ",
+            "meaning": "共享Flow"
+          },
+          {
+            "word": "collect",
+            "pronunciation": "kəˈlekt",
+            "meaning": "收集"
+          },
+          {
+            "word": "emit",
+            "pronunciation": "ɪˈmɪt",
+            "meaning": "发射"
+          },
+          {
+            "word": "map",
+            "pronunciation": "mæp",
+            "meaning": "映射"
+          },
+          {
+            "word": "filter",
+            "pronunciation": "ˈfɪltər",
+            "meaning": "过滤"
+          },
+          {
+            "word": "catch",
+            "pronunciation": "kætʃ",
+            "meaning": "捕获"
+          },
+          {
+            "word": "onEach",
+            "pronunciation": "ɒn iːtʃ",
+            "meaning": "每个元素"
+          },
+          {
+            "word": "combine",
+            "pronunciation": "kəmˈbaɪn",
+            "meaning": "合并"
+          },
+          {
+            "word": "flattenMerge",
+            "pronunciation": "ˈflætn ˈmɜːrdʒ",
+            "meaning": "扁平合并"
+          }
+        ]
+      },
+      {
+        "name": "第三十八组 - 协程上下文",
+        "description": "协程上下文",
+        "vocabs": [
+          {
+            "word": "dispatchers.main",
+            "pronunciation": "dɪˈspætʃərz meɪn",
+            "meaning": "主线程调度器"
+          },
+          {
+            "word": "dispatchers.io",
+            "pronunciation": "dɪˈspætʃərz aɪ oʊ",
+            "meaning": "IO调度器"
+          },
+          {
+            "word": "dispatchers.default",
+            "pronunciation": "dɪˈspætʃərz dɪˈfɔːlt",
+            "meaning": "默认调度器"
+          },
+          {
+            "word": "dispatchers.unconfined",
+            "pronunciation": "dɪˈspætʃərz ˌʌnkənˈfaɪnd",
+            "meaning": "不限定调度器"
+          },
+          {
+            "word": "withContext",
+            "pronunciation": "wɪð ˈkɒntekst",
+            "meaning": "切换上下文"
+          },
+          {
+            "word": "withTimeout",
+            "pronunciation": "wɪð ˈtaɪmaʊt",
+            "meaning": "超时"
+          },
+          {
+            "word": "withTimeoutOrNull",
+            "pronunciation": "wɪð ˈtaɪmaʊt ɔːr nʌl",
+            "meaning": "超时返回空"
+          },
+          {
+            "word": "coroutineName",
+            "pronunciation": "kəˈroʊtuːn neɪm",
+            "meaning": "协程名称"
+          }
+        ]
+      },
+      {
+        "name": "第三十九组 - ViewModel",
+        "description": "ViewModel",
+        "vocabs": [
+          {
+            "word": "viewmodel",
+            "pronunciation": "vjuː ˈmɒdl",
+            "meaning": "ViewModel"
+          },
+          {
+            "word": "viewmodelprovider",
+            "pronunciation": "vjuː ˈmɒdl prəˈvaɪdər",
+            "meaning": "ViewModel提供者"
+          },
+          {
+            "word": "viewmodelfactory",
+            "pronunciation": "vjuː ˈmɒdl ˈfæktəri",
+            "meaning": "ViewModel工厂"
+          },
+          {
+            "word": "savedStateHandle",
+            "pronunciation": "ˈseɪvd steɪt hændl",
+            "meaning": "保存状态句柄"
+          },
+          {
+            "word": "by viewModels",
+            "pronunciation": "baɪ vjuː ˈmɒdlz",
+            "meaning": "viewModels委托"
+          },
+          {
+            "word": "by activityViewModels",
+            "pronunciation": "baɪækˈtɪvəti vjuː ˈmɒdlz",
+            "meaning": "ActivityViewModels委托"
+          },
+          {
+            "word": "by navGraphViewModels",
+            "pronunciation": "baɪ næv ɡræf vjuː ˈmɒdlz",
+            "meaning": "NavGraphViewModels委托"
+          }
+        ]
+      },
+      {
+        "name": "第四十组 - LiveData",
+        "description": "LiveData",
+        "vocabs": [
+          {
+            "word": "livedata",
+            "pronunciation": "laɪv ˈdeɪtə",
+            "meaning": "LiveData"
+          },
+          {
+            "word": "mutableLiveData",
+            "pronunciation": "ˈmjuːtəbl laɪv ˈdeɪtə",
+            "meaning": "可变LiveData"
+          },
+          {
+            "word": "observe",
+            "pronunciation": "əbˈzɜːrv",
+            "meaning": "观察"
+          },
+          {
+            "word": "observeForever",
+            "pronunciation": "əbˈzɜːrv fərˈevər",
+            "meaning": "永久观察"
+          },
+          {
+            "word": "removeObserver",
+            "pronunciation": "rɪˈmuːv əbˈzɜːrvər",
+            "meaning": "移除观察者"
+          },
+          {
+            "word": "setValue",
+            "pronunciation": "set ˈvæljuː",
+            "meaning": "设置值"
+          },
+          {
+            "word": "postValue",
+            "pronunciation": "poʊst ˈvæljuː",
+            "meaning": "发布值"
+          },
+          {
+            "word": "hasActiveObservers",
+            "pronunciation": "hæz ˈæktɪv əbˈzɜːrvərz",
+            "meaning": "有活跃观察者"
+          },
+          {
+            "word": "transformation map",
+            "pronunciation": "ˌtrænsfərˈmeɪʃn mæp",
+            "meaning": "转换映射"
+          },
+          {
+            "word": "transformation switchMap",
+            "pronunciation": "ˌtrænsfərˈmeɪʃn swɪtʃ mæp",
+            "meaning": "转换切换映射"
+          }
+        ]
+      },
+      {
+        "name": "第四十一组 - Navigation",
+        "description": "Navigation",
+        "vocabs": [
+          {
+            "word": "navigation",
+            "pronunciation": "ˌnævɪˈɡeɪʃn",
+            "meaning": "导航组件"
+          },
+          {
+            "word": "navController",
+            "pronunciation": "næv kənˈtroʊlər",
+            "meaning": "导航控制器"
+          },
+          {
+            "word": "navHostFragment",
+            "pronunciation": "næv hoʊst ˈfræɡmənt",
+            "meaning": "导航宿主片段"
+          },
+          {
+            "word": "navGraph",
+            "pronunciation": "næv ɡræf",
+            "meaning": "导航图"
+          },
+          {
+            "word": "navHost",
+            "pronunciation": "næv hoʊst",
+            "meaning": "导航宿主"
+          },
+          {
+            "word": "fragment",
+            "pronunciation": "ˈfræɡmənt",
+            "meaning": "片段"
+          },
+          {
+            "word": "action",
+            "pronunciation": "ˈækʃn",
+            "meaning": "导航动作"
+          },
+          {
+            "word": "argument",
+            "pronunciation": "ˈɑːrɡjumənt",
+            "meaning": "导航参数"
+          },
+          {
+            "word": "destination",
+            "pronunciation": "ˌdestɪˈneɪʃn",
+            "meaning": "目的地"
+          },
+          {
+            "word": "startDestination",
+            "pronunciation": "stɑːrt ˌdestɪˈneɪʃn",
+            "meaning": "起始目的地"
+          },
+          {
+            "word": "popUpTo",
+            "pronunciation": "pɒp ʌp tuː",
+            "meaning": "弹出到"
+          },
+          {
+            "word": "popUpToInclusive",
+            "pronunciation": "pɒp ʌp tuː ɪnˈkluːsɪv",
+            "meaning": "包含弹出目标"
+          }
+        ]
+      },
+      {
+        "name": "第四十二组 - WorkManager",
+        "description": "WorkManager",
+        "vocabs": [
+          {
+            "word": "workmanager",
+            "pronunciation": "wɜːrk ˈmænɪdʒər",
+            "meaning": "WorkManager"
+          },
+          {
+            "word": "workrequest",
+            "pronunciation": "wɜːrk rɪˈkwest",
+            "meaning": "工作请求"
+          },
+          {
+            "word": "work",
+            "pronunciation": "wɜːrk",
+            "meaning": "工作"
+          },
+          {
+            "word": "worker",
+            "pronunciation": "ˈwɜːrkər",
+            "meaning": "工作器"
+          },
+          {
+            "word": "workmanager",
+            "pronunciation": "wɜːrk ˈmænɪdʒər",
+            "meaning": "工作管理器"
+          },
+          {
+            "word": "oneTimeWorkRequest",
+            "pronunciation": "wʌn taɪm wɜːrk rɪˈkwest",
+            "meaning": "单次工作请求"
+          },
+          {
+            "word": "periodicWorkRequest",
+            "pronunciation": "ˌpɪriˈɒdɪk wɜːrk rɪˈkwest",
+            "meaning": "周期工作请求"
+          },
+          {
+            "word": "constraints",
+            "pronunciation": "kənˈstreɪnts",
+            "meaning": "约束条件"
+          },
+          {
+            "word": "workinfo",
+            "pronunciation": "wɜːrk ɪnˈfoʊ",
+            "meaning": "工作信息"
+          },
+          {
+            "word": "workstate",
+            "pronunciation": "wɜːrk steɪt",
+            "meaning": "工作状态"
+          },
+          {
+            "word": "enqueue",
+            "pronunciation": "ɪnˈkjuː",
+            "meaning": "入队"
+          },
+          {
+            "word": "cancelWork",
+            "pronunciation": "ˈkænsəl wɜːrk",
+            "meaning": "取消工作"
+          }
+        ]
+      },
+      {
+        "name": "第四十三组 - Hilt",
+        "description": "Hilt",
+        "vocabs": [
+          {
+            "word": "hilt",
+            "pronunciation": "hɪlt",
+            "meaning": "Hilt依赖注入框架"
+          },
+          {
+            "word": "@AndroidEntryPoint",
+            "pronunciation": "æt ˈændrɔɪd ˈentrɪ pɔɪnt",
+            "meaning": "Android入口点注解"
+          },
+          {
+            "word": "@HiltAndroidApp",
+            "pronunciation": "æt hɪlt ˈændrɔɪd æp",
+            "meaning": "Hilt应用注解"
+          },
+          {
+            "word": "@Inject",
+            "pronunciation": "æt ɪnˈdʒekt",
+            "meaning": "注入注解"
+          },
+          {
+            "word": "@Module",
+            "pronunciation": "æt mɒdjuːl",
+            "meaning": "模块注解"
+          },
+          {
+            "word": "@Provides",
+            "pronunciation": "æt prəˈvaɪdz",
+            "meaning": "提供方法注解"
+          },
+          {
+            "word": "@Binds",
+            "pronunciation": "æt baɪndz",
+            "meaning": "绑定方法注解"
+          },
+          {
+            "word": "@Singleton",
+            "pronunciation": "æt ˈsɪŋɡltən",
+            "meaning": "单例注解"
+          },
+          {
+            "word": "@ViewModelInject",
+            "pronunciation": "æt vjuː ˈmɒdl ɪnˈdʒekt",
+            "meaning": "ViewModel注入注解"
+          },
+          {
+            "word": "@EntryPoint",
+            "pronunciation": "æt ˈentrɪ pɔɪnt",
+            "meaning": "入口点注解"
+          }
+        ]
+      },
+      {
+        "name": "第四十四组 - Koin",
+        "description": "Koin",
+        "vocabs": [
+          {
+            "word": "koin",
+            "pronunciation": "kɔɪn",
+            "meaning": "Koin依赖注入框架"
+          },
+          {
+            "word": "koinComponent",
+            "pronunciation": "kɔɪn ˈkɒmpənənt",
+            "meaning": "Koin组件"
+          },
+          {
+            "word": "getKoin",
+            "pronunciation": "ɡet kɔɪn",
+            "meaning": "获取Koin实例"
+          },
+          {
+            "word": "modules",
+            "pronunciation": "ˈmɒdjuːlz",
+            "meaning": "模块列表"
+          },
+          {
+            "word": "module",
+            "pronunciation": "mɒdjuːl",
+            "meaning": "模块"
+          },
+          {
+            "word": "single",
+            "pronunciation": "ˈsɪŋɡl",
+            "meaning": "单例定义"
+          },
+          {
+            "word": "factory",
+            "pronunciation": "ˈfæktəri",
+            "meaning": "工厂定义"
+          },
+          {
+            "word": "androidContext",
+            "pronunciation": "ˈændrɔɪd ˈkɒntekst",
+            "meaning": "Android上下文"
+          },
+          {
+            "word": "parametersOf",
+            "pronunciation": "pəˈræmɪtərz əv",
+            "meaning": "参数传递"
+          }
+        ]
+      },
+      {
+        "name": "第四十五组 - Lifecycle基础",
+        "description": "Lifecycle基础",
+        "vocabs": [
+          {
+            "word": "lifecycle",
+            "pronunciation": "ˈlaɪfsaɪkl",
+            "meaning": "生命周期"
+          },
+          {
+            "word": "lifecycleowner",
+            "pronunciation": "ˈlaɪfsaɪkl ˈoʊnər",
+            "meaning": "生命周期所有者"
+          },
+          {
+            "word": "lifecycleobserver",
+            "pronunciation": "ˈlaɪfsaɪkl əbˈzɜːrvər",
+            "meaning": "生命周期观察者"
+          },
+          {
+            "word": "lifecycleeventobserver",
+            "pronunciation": "ˈlaɪfsaɪkl ɪˈvent əbˈzɜːrvər",
+            "meaning": "生命周期事件观察者"
+          },
+          {
+            "word": "onCreate",
+            "pronunciation": "ɒn kriːˈeɪt",
+            "meaning": "创建事件"
+          },
+          {
+            "word": "onStart",
+            "pronunciation": "ɒn stɑːrt",
+            "meaning": "启动事件"
+          },
+          {
+            "word": "onResume",
+            "pronunciation": "ɒn rɪˈzjuːm",
+            "meaning": "恢复事件"
+          },
+          {
+            "word": "onPause",
+            "pronunciation": "ɒn pɔːz",
+            "meaning": "暂停事件"
+          },
+          {
+            "word": "onStop",
+            "pronunciation": "ɒn stɒp",
+            "meaning": "停止事件"
+          },
+          {
+            "word": "onDestroy",
+            "pronunciation": "ɒn dɪˈstrɔɪ",
+            "meaning": "销毁事件"
+          },
+          {
+            "word": "ON_CREATE",
+            "pronunciation": "ɒn kriːˈeɪt",
+            "meaning": "创建状态"
+          },
+          {
+            "word": "STARTED",
+            "pronunciation": "ˈstɑːrtɪd",
+            "meaning": "启动状态"
+          },
+          {
+            "word": "RESUMED",
+            "pronunciation": "rɪˈzjuːmd",
+            "meaning": "恢复状态"
+          },
+          {
+            "word": "CREATED",
+            "pronunciation": "kriːˈeɪtɪd",
+            "meaning": "创建状态"
+          },
+          {
+            "word": "DESTROYED",
+            "pronunciation": "dɪˈstrɔɪd",
+            "meaning": "销毁状态"
+          }
+        ]
+      },
+      {
+        "name": "第四十六组 - ProcessLifecycleOwner",
+        "description": "ProcessLifecycleOwner",
+        "vocabs": [
+          {
+            "word": "processLifecycleOwner",
+            "pronunciation": "ˈprɑːses ˈlaɪfsaɪkl ˈoʊnər",
+            "meaning": "进程生命周期所有者"
+          },
+          {
+            "word": "lifecycleScope",
+            "pronunciation": "ˈlaɪfsaɪkl skoʊp",
+            "meaning": "生命周期作用域"
+          },
+          {
+            "word": "repeatOnLifecycle",
+            "pronunciation": "rɪˈpiːt ɒn ˈlaɪfsaɪkl",
+            "meaning": "重复跟随生命周期"
+          },
+          {
+            "word": "whenStarted",
+            "pronunciation": "wen ˈstɑːrtɪd",
+            "meaning": "当启动时"
+          },
+          {
+            "word": "whenResumed",
+            "pronunciation": "wen rɪˈzjuːmd",
+            "meaning": "当恢复时"
+          },
+          {
+            "word": "whenCreated",
+            "pronunciation": "wen kriːˈeɪtɪd",
+            "meaning": "当创建时"
+          }
+        ]
+      },
+      {
+        "name": "第四十七组 - Intent基础",
+        "description": "Intent基础",
+        "vocabs": [
+          {
+            "word": "intent",
+            "pronunciation": "ɪnˈtent",
+            "meaning": "意图"
+          },
+          {
+            "word": "explicit intent",
+            "pronunciation": "ɪkˈsplɪsɪt ɪnˈtent",
+            "meaning": "显式意图"
+          },
+          {
+            "word": "implicit intent",
+            "pronunciation": "ɪmˈplɪsɪt ɪnˈtent",
+            "meaning": "隐式意图"
+          },
+          {
+            "word": "intent filter",
+            "pronunciation": "ɪnˈtent ˈfɪltər",
+            "meaning": "意图过滤器"
+          },
+          {
+            "word": "action",
+            "pronunciation": "ˈækʃn",
+            "meaning": "动作"
+          },
+          {
+            "word": "category",
+            "pronunciation": "ˈkætəɡəri",
+            "meaning": "类别"
+          },
+          {
+            "word": "data",
+            "pronunciation": "ˈdeɪtə",
+            "meaning": "数据"
+          },
+          {
+            "word": "type",
+            "pronunciation": "taɪp",
+            "meaning": "类型"
+          },
+          {
+            "word": "putExtra",
+            "pronunciation": "pʊt ˈekstroʊ",
+            "meaning": "添加额外数据"
+          },
+          {
+            "word": "getStringExtra",
+            "pronunciation": "ɡet strɪŋ ˈekstroʊ",
+            "meaning": "获取字符串额外数据"
+          },
+          {
+            "word": "getIntExtra",
+            "pronunciation": "ɡet ɪnt ˈekstroʊ",
+            "meaning": "获取整数额外数据"
+          }
+        ]
+      },
+      {
+        "name": "第四十八组 - Activity跳转",
+        "description": "Activity跳转",
+        "vocabs": [
+          {
+            "word": "startActivity",
+            "pronunciation": "stɑːrtækˈtɪvəti",
+            "meaning": "启动Activity"
+          },
+          {
+            "word": "startActivityForResult",
+            "pronunciation": "stɑːrtækˈtɪvəti fɔːr rɪˈzʌlt",
+            "meaning": "启动Activity获取结果"
+          },
+          {
+            "word": "onActivityResult",
+            "pronunciation": "ɒnækˈtɪvəti rɪˈzʌlt",
+            "meaning": "Activity结果回调"
+          },
+          {
+            "word": "setResult",
+            "pronunciation": "set rɪˈzʌlt",
+            "meaning": "设置结果"
+          },
+          {
+            "word": "finish",
+            "pronunciation": "ˈfɪnɪʃ",
+            "meaning": "结束Activity"
+          },
+          {
+            "word": "intent flags",
+            "pronunciation": "ɪnˈtent flæɡz",
+            "meaning": "意图标志"
+          },
+          {
+            "word": "FLAG_ACTIVITY_NEW_TASK",
+            "pronunciation": "flæɡ ækˈtɪvəti njuː tɑːsk",
+            "meaning": "新任务标志"
+          },
+          {
+            "word": "FLAG_ACTIVITY_CLEAR_TOP",
+            "pronunciation": "flæɡ ækˈtɪvəti klɪr tɒp",
+            "meaning": "清除顶部标志"
+          }
+        ]
+      },
+      {
+        "name": "第四十九组 - Service通信",
+        "description": "Service通信",
+        "vocabs": [
+          {
+            "word": "startService",
+            "pronunciation": "stɑːrt ˈsɜːrvɪs",
+            "meaning": "启动服务"
+          },
+          {
+            "word": "stopService",
+            "pronunciation": "stɒp ˈsɜːrvɪs",
+            "meaning": "停止服务"
+          },
+          {
+            "word": "bindService",
+            "pronunciation": "baɪnd ˈsɜːrvɪs",
+            "meaning": "绑定服务"
+          },
+          {
+            "word": "unbindService",
+            "pronunciation": "ʌnˈbaɪnd ˈsɜːrvɪs",
+            "meaning": "解绑服务"
+          },
+          {
+            "word": "serviceConnection",
+            "pronunciation": "ˈsɜːrvɪs kəˈnekʃn",
+            "meaning": "服务连接"
+          },
+          {
+            "word": "onServiceConnected",
+            "pronunciation": "ɒn ˈsɜːrvɪs kəˈnektɪd",
+            "meaning": "服务连接回调"
+          },
+          {
+            "word": "onServiceDisconnected",
+            "pronunciation": "ɒn ˈsɜːrvɪs ˌdɪskəˈnektɪd",
+            "meaning": "服务断开回调"
+          }
+        ]
+      },
+      {
+        "name": "第五十组 - Gradle基础",
+        "description": "Gradle基础",
+        "vocabs": [
+          {
+            "word": "gradle",
+            "pronunciation": "ˈɡreɪdl",
+            "meaning": "Gradle构建工具"
+          },
+          {
+            "word": "gradlew",
+            "pronunciation": "ˈɡreɪdl wrep",
+            "meaning": "Gradle包装器"
+          },
+          {
+            "word": "build.gradle",
+            "pronunciation": "bɪld ˈɡreɪdl",
+            "meaning": "构建脚本"
+          },
+          {
+            "word": "settings.gradle",
+            "pronunciation": "ˈsetɪŋz ˈɡreɪdl",
+            "meaning": "设置脚本"
+          },
+          {
+            "word": "gradle.properties",
+            "pronunciation": "ˈɡreɪdl ˈprɒpərtiz",
+            "meaning": "Gradle属性"
+          },
+          {
+            "word": "task",
+            "pronunciation": "tɑːsk",
+            "meaning": "任务"
+          },
+          {
+            "word": "plugin",
+            "pronunciation": "ˈplʌɡɪn",
+            "meaning": "插件"
+          },
+          {
+            "word": "dependency",
+            "pronunciation": "dɪˈpendənsi",
+            "meaning": "依赖"
+          },
+          {
+            "word": "configuration",
+            "pronunciation": "kənˌfɪɡjʊˈreɪʃn",
+            "meaning": "配置"
+          },
+          {
+            "word": "repositories",
+            "pronunciation": "rɪˈpɒsətɔːriz",
+            "meaning": "仓库"
+          },
+          {
+            "word": "maven",
+            "pronunciation": "ˈmeɪvn",
+            "meaning": "Maven仓库"
+          },
+          {
+            "word": "google",
+            "pronunciation": "ˈɡuːɡl",
+            "meaning": "Google仓库"
+          },
+          {
+            "word": "jcenter",
+            "pronunciation": "dʒeɪ ˈsentər",
+            "meaning": "JCenter仓库"
+          }
+        ]
+      },
+      {
+        "name": "第五十一组 - Android Gradle插件",
+        "description": "Android Gradle插件",
+        "vocabs": [
+          {
+            "word": "android gradle plugin",
+            "pronunciation": "ˈændrɔɪd ˈɡreɪdl ˈplʌɡɪn",
+            "meaning": "Android Gradle插件"
+          },
+          {
+            "word": "applicationplugin",
+            "pronunciation": "ˌæplɪˈkeɪʃn ˈplʌɡɪn",
+            "meaning": "应用插件"
+          },
+          {
+            "word": "libraryplugin",
+            "pronunciation": "ˈlaɪbrəri ˈplʌɡɪn",
+            "meaning": "库插件"
+          },
+          {
+            "word": "androidExtensions",
+            "pronunciation": "ˈændrɔɪd ɪkˈstɛnʃnz",
+            "meaning": "Android扩展"
+          },
+          {
+            "word": "buildTypes",
+            "pronunciation": "bɪld taɪps",
+            "meaning": "构建类型"
+          },
+          {
+            "word": "productFlavors",
+            "pronunciation": "ˈprɒdʌkt ˈfleɪvərz",
+            "meaning": "产品风味"
+          },
+          {
+            "word": "applicationId",
+            "pronunciation": "ˌæplɪˈkeɪʃn aɪ diː",
+            "meaning": "应用ID"
+          },
+          {
+            "word": "minSdkVersion",
+            "pronunciation": "mɪn es dei keɪ ˈvɜːrʒn",
+            "meaning": "最小SDK版本"
+          },
+          {
+            "word": "targetSdkVersion",
+            "pronunciation": "ˈtɑːrɡɪt es dei keɪ ˈvɜːrʒn",
+            "meaning": "目标SDK版本"
+          },
+          {
+            "word": "compileSdkVersion",
+            "pronunciation": "kəmˈpaɪl es dei keɪ ˈvɜːrʒn",
+            "meaning": "编译SDK版本"
+          }
+        ]
+      },
+      {
+        "name": "第五十二组 - 构建配置",
+        "description": "构建配置",
+        "vocabs": [
+          {
+            "word": "debug",
+            "pronunciation": "diːˈbʌɡ",
+            "meaning": "调试构建"
+          },
+          {
+            "word": "release",
+            "pronunciation": "rɪˈliːs",
+            "meaning": "发布构建"
+          },
+          {
+            "word": "proguard",
+            "pronunciation": "proʊˈɡɑːrd",
+            "meaning": "代码混淆"
+          },
+          {
+            "word": "shrinkResources",
+            "pronunciation": "ʃrɪŋk ˈriːsɔːrsɪz",
+            "meaning": "压缩资源"
+          },
+          {
+            "word": "minifyEnabled",
+            "pronunciation": "ˈmɪnɪfaɪ ɪˈneɪbld",
+            "meaning": "启用混淆"
+          },
+          {
+            "word": "sourceCompatibility",
+            "pronunciation": "sɔːrs kəmˌpætəˈbɪləti",
+            "meaning": "源码兼容性"
+          },
+          {
+            "word": "targetCompatibility",
+            "pronunciation": "ˈtɑːrɡɪt kəmˌpætəˈbɪləti",
+            "meaning": "目标兼容性"
+          },
+          {
+            "word": "kotlinOptions",
+            "pronunciation": "kɒtlɪn ˈɒpʃnz",
+            "meaning": "Kotlin选项"
+          }
+        ]
+      },
+      {
+        "name": "第五十三组 - Android Studio",
+        "description": "Android Studio",
+        "vocabs": [
+          {
+            "word": "android studio",
+            "pronunciation": "ˈændrɔɪd ˈstjuːdioʊ",
+            "meaning": "Android Studio IDE"
+          },
+          {
+            "word": "project structure",
+            "pronunciation": "ˈprɒdʒekt ˈstrʌktʃər",
+            "meaning": "项目结构"
+          },
+          {
+            "word": "project pane",
+            "pronunciation": "ˈprɒdʒekt peɪn",
+            "meaning": "项目面板"
+          },
+          {
+            "word": "editor",
+            "pronunciation": "ˈedɪtər",
+            "meaning": "编辑器"
+          },
+          {
+            "word": "tool window",
+            "pronunciation": "tuːl ˈwɪndoʊ",
+            "meaning": "工具窗口"
+          },
+          {
+            "word": "run configuration",
+            "pronunciation": "rʌn ˌkɒnfɪɡjʊˈreɪʃn",
+            "meaning": "运行配置"
+          },
+          {
+            "word": "device manager",
+            "pronunciation": "dɪˈvaɪs ˈmænɪdʒər",
+            "meaning": "设备管理器"
+          },
+          {
+            "word": "sdk manager",
+            "pronunciation": "es dei keɪ ˈmænɪdʒər",
+            "meaning": "SDK管理器"
+          }
+        ]
+      },
+      {
+        "name": "第五十四组 - Logcat",
+        "description": "Logcat",
+        "vocabs": [
+          {
+            "word": "logcat",
+            "pronunciation": "lɒɡkæt",
+            "meaning": "日志查看器"
+          },
+          {
+            "word": "log",
+            "pronunciation": "lɒɡ",
+            "meaning": "日志"
+          },
+          {
+            "word": "log.d",
+            "pronunciation": "lɒɡ diː",
+            "meaning": "调试日志"
+          },
+          {
+            "word": "log.i",
+            "pronunciation": "lɒɡ aɪ",
+            "meaning": "信息日志"
+          },
+          {
+            "word": "log.w",
+            "pronunciation": "lɒɡ dʌbəljuː",
+            "meaning": "警告日志"
+          },
+          {
+            "word": "log.e",
+            "pronunciation": "lɒɡ iː",
+            "meaning": "错误日志"
+          },
+          {
+            "word": "log.v",
+            "pronunciation": "lɒɡ viː",
+            "meaning": "详细日志"
+          },
+          {
+            "word": "log.wtf",
+            "pronunciation": "lɒɡ dʌbəljuː tiː ef",
+            "meaning": "致命日志"
+          },
+          {
+            "word": "tag",
+            "pronunciation": "tæɡ",
+            "meaning": "日志标签"
+          },
+          {
+            "word": "message",
+            "pronunciation": "ˈmesɪdʒ",
+            "meaning": "日志消息"
+          }
+        ]
+      },
+      {
+        "name": "第五十五组 - 调试工具",
+        "description": "调试工具",
+        "vocabs": [
+          {
+            "word": "debugger",
+            "pronunciation": "diːˈbʌɡər",
+            "meaning": "调试器"
+          },
+          {
+            "word": "breakpoint",
+            "pronunciation": "ˈbreɪkpɔɪnt",
+            "meaning": "断点"
+          },
+          {
+            "word": "watch",
+            "pronunciation": "wɒtʃ",
+            "meaning": "监视"
+          },
+          {
+            "word": "step over",
+            "pronunciation": "step ˈoʊvər",
+            "meaning": "单步跳过"
+          },
+          {
+            "word": "step into",
+            "pronunciation": "step ˈɪntuː",
+            "meaning": "单步进入"
+          },
+          {
+            "word": "step out",
+            "pronunciation": "step aʊt",
+            "meaning": "单步退出"
+          },
+          {
+            "word": "evaluate expression",
+            "pronunciation": "ɪˈvæljueɪt ɪkˈspreʃn",
+            "meaning": "计算表达式"
+          },
+          {
+            "word": "inspect",
+            "pronunciation": "ɪnˈspekt",
+            "meaning": "检查"
+          },
+          {
+            "word": "trace",
+            "pronunciation": "treɪs",
+            "meaning": "跟踪"
+          }
+        ]
+      },
+      {
+        "name": "第五十六组 - Layout Inspector",
+        "description": "Layout Inspector",
+        "vocabs": [
+          {
+            "word": "layout inspector",
+            "pronunciation": "ˈleɪaʊt ɪnˈspektər",
+            "meaning": "布局检查器"
+          },
+          {
+            "word": "view hierarchy",
+            "pronunciation": "vjuː ˈhaɪərɑːrki",
+            "meaning": "视图层级"
+          },
+          {
+            "word": "component tree",
+            "pronunciation": "kəmˈpoʊnənt triː",
+            "meaning": "组件树"
+          },
+          {
+            "word": "properties panel",
+            "pronunciation": "ˈprɒpərtiz ˈpænl",
+            "meaning": "属性面板"
+          },
+          {
+            "word": "capture",
+            "pronunciation": "ˈkæptʃər",
+            "meaning": "捕获布局"
+          },
+          {
+            "word": "compare layout",
+            "pronunciation": "kəmˈpeər ˈleɪaʊt",
+            "meaning": "比较布局"
+          }
+        ]
+      },
+      {
+        "name": "第五十七组 - 测试基础",
+        "description": "测试基础",
+        "vocabs": [
+          {
+            "word": "unit test",
+            "pronunciation": "ˈjuːnɪt test",
+            "meaning": "单元测试"
+          },
+          {
+            "word": "instrumented test",
+            "pronunciation": "ˌɪnstrʊˈmentɪd test",
+            "meaning": "设备测试"
+          },
+          {
+            "word": "integration test",
+            "pronunciation": "ˌɪntɪˈɡreɪʃn test",
+            "meaning": "集成测试"
+          },
+          {
+            "word": "ui test",
+            "pronunciation": "juː aɪ test",
+            "meaning": "UI测试"
+          },
+          {
+            "word": "test case",
+            "pronunciation": "test keɪs",
+            "meaning": "测试用例"
+          },
+          {
+            "word": "assertion",
+            "pronunciation": "əˈserʃn",
+            "meaning": "断言"
+          },
+          {
+            "word": "mock",
+            "pronunciation": "mɒk",
+            "meaning": "模拟"
+          },
+          {
+            "word": "stub",
+            "pronunciation": "stʌb",
+            "meaning": "桩"
+          }
+        ]
+      },
+      {
+        "name": "第五十八组 - JUnit",
+        "description": "JUnit",
+        "vocabs": [
+          {
+            "word": "junit",
+            "pronunciation": "dʒeɪ juː nɪt",
+            "meaning": "JUnit测试框架"
+          },
+          {
+            "word": "@Test",
+            "pronunciation": "æt test",
+            "meaning": "测试注解"
+          },
+          {
+            "word": "@Before",
+            "pronunciation": "æt bɪˈfɔːr",
+            "meaning": "前置注解"
+          },
+          {
+            "word": "@After",
+            "pronunciation": "æt ˈɑːftər",
+            "meaning": "后置注解"
+          },
+          {
+            "word": "@BeforeClass",
+            "pronunciation": "æt bɪˈfɔːr klæs",
+            "meaning": "类前置注解"
+          },
+          {
+            "word": "@AfterClass",
+            "pronunciation": "æt ˈɑːftər klæs",
+            "meaning": "类后置注解"
+          },
+          {
+            "word": "@Ignore",
+            "pronunciation": "æt ɪɡˈnɔːr",
+            "meaning": "忽略注解"
+          },
+          {
+            "word": "assertEquals",
+            "pronunciation": "əˈsɜːrt ˈiːkwəlz",
+            "meaning": "断言相等"
+          },
+          {
+            "word": "assertTrue",
+            "pronunciation": "əˈsɜːrt truː",
+            "meaning": "断言为真"
+          },
+          {
+            "word": "assertFalse",
+            "pronunciation": "əˈsɜːrt ˈfɔːls",
+            "meaning": "断言为假"
+          },
+          {
+            "word": "assertNull",
+            "pronunciation": "əˈsɜːrt nʌl",
+            "meaning": "断言为空"
+          },
+          {
+            "word": "assertNotNull",
+            "pronunciation": "əˈsɜːrt nɒt nʌl",
+            "meaning": "断言非空"
+          },
+          {
+            "word": "assertThrows",
+            "pronunciation": "əˈsɜːrt θroʊz",
+            "meaning": "断言抛出异常"
+          }
+        ]
+      },
+      {
+        "name": "第五十九组 - Espresso",
+        "description": "Espresso",
+        "vocabs": [
+          {
+            "word": "espresso",
+            "pronunciation": "eˈspresoʊ",
+            "meaning": "Espresso测试框架"
+          },
+          {
+            "word": "@RunWith",
+            "pronunciation": "æt rʌn wɪð",
+            "meaning": "运行器注解"
+          },
+          {
+            "word": "@Rule",
+            "pronunciation": "æt ruːl",
+            "meaning": "规则注解"
+          },
+          {
+            "word": "onView",
+            "pronunciation": "ɒn vjuː",
+            "meaning": "视图匹配"
+          },
+          {
+            "word": "withId",
+            "pronunciation": "wɪð aɪ diː",
+            "meaning": "按ID匹配"
+          },
+          {
+            "word": "withText",
+            "pronunciation": "wɪð tekst",
+            "meaning": "按文本匹配"
+          },
+          {
+            "word": "perform",
+            "pronunciation": "pərˈfɔːrm",
+            "meaning": "执行动作"
+          },
+          {
+            "word": "click",
+            "pronunciation": "klɪk",
+            "meaning": "点击"
+          },
+          {
+            "word": "typeText",
+            "pronunciation": "taɪp tekst",
+            "meaning": "输入文本"
+          },
+          {
+            "word": "clearText",
+            "pronunciation": "klɪr tekst",
+            "meaning": "清除文本"
+          },
+          {
+            "word": "check",
+            "pronunciation": "tʃek",
+            "meaning": "检查"
+          },
+          {
+            "word": "matches",
+            "pronunciation": "mætʃɪz",
+            "meaning": "匹配"
+          },
+          {
+            "word": "isChecked",
+            "pronunciation": "ɪz tʃekt",
+            "meaning": "是否选中"
+          },
+          {
+            "word": "isVisible",
+            "pronunciation": "ɪz ˈvɪzəbl",
+            "meaning": "是否可见"
+          }
+        ]
+      },
+      {
+        "name": "第六十组 - Robolectric",
+        "description": "Robolectric",
+        "vocabs": [
+          {
+            "word": "robolectric",
+            "pronunciation": "roʊboʊˈlektrɪk",
+            "meaning": "Robolectric测试框架"
+          },
+          {
+            "word": "@Config",
+            "pronunciation": "æt kənˈfɪɡ",
+            "meaning": "配置注解"
+          },
+          {
+            "word": "robolectricpackage",
+            "pronunciation": "roʊboʊˈlektrɪk ˈpækɪdʒ",
+            "meaning": "Robolectric包"
+          },
+          {
+            "word": "shadows",
+            "pronunciation": "ˈʃædoʊz",
+            "meaning": "阴影"
+          },
+          {
+            "word": "activitycontroller",
+            "pronunciation": "ækˈtɪvəti kənˈtroʊlər",
+            "meaning": "Activity控制器"
+          },
+          {
+            "word": "build",
+            "pronunciation": "bɪld",
+            "meaning": "构建"
+          },
+          {
+            "word": "create",
+            "pronunciation": "kriːˈeɪt",
+            "meaning": "创建"
+          },
+          {
+            "word": "start",
+            "pronunciation": "stɑːrt",
+            "meaning": "启动"
+          },
+          {
+            "word": "resume",
+            "pronunciation": "rɪˈzjuːm",
+            "meaning": "恢复"
+          },
+          {
+            "word": "pause",
+            "pronunciation": "pɔːz",
+            "meaning": "暂停"
+          },
+          {
+            "word": "stop",
+            "pronunciation": "stɒp",
+            "meaning": "停止"
+          },
+          {
+            "word": "destroy",
+            "pronunciation": "dɪˈstrɔɪ",
+            "meaning": "销毁"
+          },
+          {
+            "word": "recreate",
+            "pronunciation": "riːkriːˈeɪt",
+            "meaning": "重新创建"
+          }
+        ]
+      },
+      {
+        "name": "第六十一组 - 性能分析",
+        "description": "性能分析",
+        "vocabs": [
+          {
+            "word": "profiler",
+            "pronunciation": "ˈproʊfaɪlər",
+            "meaning": "性能分析器"
+          },
+          {
+            "word": "cpu profiler",
+            "pronunciation": "siː juː piː ˈproʊfaɪlər",
+            "meaning": "CPU分析器"
+          },
+          {
+            "word": "memory profiler",
+            "pronunciation": "ˈmeməri ˈproʊfaɪlər",
+            "meaning": "内存分析器"
+          },
+          {
+            "word": "network profiler",
+            "pronunciation": "ˈnetwɜːrk ˈproʊfaɪlər",
+            "meaning": "网络分析器"
+          },
+          {
+            "word": "energy profiler",
+            "pronunciation": "ˈenərdʒi ˈproʊfaɪlər",
+            "meaning": "能量分析器"
+          },
+          {
+            "word": "allocation tracker",
+            "pronunciation": "ˌæləˈkeɪʃn ˈtrækər",
+            "meaning": "内存分配追踪器"
+          },
+          {
+            "word": "heap dump",
+            "pronunciation": "hiːp dʌmp",
+            "meaning": "堆转储"
+          },
+          {
+            "word": "memory leak",
+            "pronunciation": "ˈmeməri liːk",
+            "meaning": "内存泄漏"
+          },
+          {
+            "word": "gc",
+            "pronunciation": "dʒiː siː",
+            "meaning": "垃圾回收"
+          }
+        ]
+      },
+      {
+        "name": "第六十二组 - 内存优化",
+        "description": "内存优化",
+        "vocabs": [
+          {
+            "word": "bitmap",
+            "pronunciation": "ˈbɪtmæp",
+            "meaning": "位图"
+          },
+          {
+            "word": "recycle",
+            "pronunciation": "rɪˈsaɪkl",
+            "meaning": "回收"
+          },
+          {
+            "word": "lrucache",
+            "pronunciation": "el ɑːr juː kæʃ",
+            "meaning": "LRU缓存"
+          },
+          {
+            "word": "weakreference",
+            "pronunciation": "wiːk ˈrefrəns",
+            "meaning": "弱引用"
+          },
+          {
+            "word": "softreference",
+            "pronunciation": "sɒft ˈrefrəns",
+            "meaning": "软引用"
+          },
+          {
+            "word": "image loading",
+            "pronunciation": "ˈɪmɪdʒ ˈloʊdɪŋ",
+            "meaning": "图片加载"
+          },
+          {
+            "word": "glide",
+            "pronunciation": "ɡlaɪd",
+            "meaning": "Glide图片库"
+          },
+          {
+            "word": "picasso",
+            "pronunciation": "pɪˈkæsoʊ",
+            "meaning": "Picasso图片库"
+          },
+          {
+            "word": "coil",
+            "pronunciation": "kɔɪl",
+            "meaning": "Coil图片库"
+          }
+        ]
+      },
+      {
+        "name": "第六十三组 - UI性能",
+        "description": "UI性能",
+        "vocabs": [
+          {
+            "word": "overdraw",
+            "pronunciation": "ˈoʊvərdrɔː",
+            "meaning": "过度绘制"
+          },
+          {
+            "word": "hierarchy viewer",
+            "pronunciation": "ˈhaɪərɑːrki ˈvjuːər",
+            "meaning": "层级查看器"
+          },
+          {
+            "word": "layout inspector",
+            "pronunciation": "ˈleɪaʊt ɪnˈspektər",
+            "meaning": "布局检查器"
+          },
+          {
+            "word": "gpu rendering",
+            "pronunciation": "dʒiː piː juː rɪˈndərɪŋ",
+            "meaning": "GPU渲染"
+          },
+          {
+            "word": "profile gpu rendering",
+            "pronunciation": "ˈproʊfaɪl dʒiː piː juː rɪˈndərɪŋ",
+            "meaning": "GPU渲染分析"
+          },
+          {
+            "word": "60fps",
+            "pronunciation": "sɪkstɪ ef piː es",
+            "meaning": "60帧每秒"
+          },
+          {
+            "word": "vsync",
+            "pronunciation": "viː sɪŋk",
+            "meaning": "垂直同步"
+          },
+          {
+            "word": "choreographer",
+            "pronunciation": "kəˈriːəɡrəfər",
+            "meaning": "编舞者"
+          }
+        ]
+      },
+      {
+        "name": "第六十四组 - 权限",
+        "description": "权限",
+        "vocabs": [
+          {
+            "word": "permission",
+            "pronunciation": "pərˈmɪʃn",
+            "meaning": "权限"
+          },
+          {
+            "word": "runtime permission",
+            "pronunciation": "ˈrʌntaɪm pərˈmɪʃn",
+            "meaning": "运行时权限"
+          },
+          {
+            "word": "manifest permission",
+            "pronunciation": "ˈmænɪfest pərˈmɪʃn",
+            "meaning": "清单权限"
+          },
+          {
+            "word": "dangerous permission",
+            "pronunciation": "ˈdeɪndʒərəs pərˈmɪʃn",
+            "meaning": "危险权限"
+          },
+          {
+            "word": "normal permission",
+            "pronunciation": "ˈnɔːrml pərˈmɪʃn",
+            "meaning": "正常权限"
+          },
+          {
+            "word": "request permission",
+            "pronunciation": "rɪˈkwest pərˈmɪʃn",
+            "meaning": "请求权限"
+          },
+          {
+            "word": "shouldShowRequestPermissionRationale",
+            "pronunciation": "ʃʊd ʃoʊ rɪˈkwest pərˈmɪʃn ˌræʃəˈneli",
+            "meaning": "是否显示权限理由"
+          },
+          {
+            "word": "onRequestPermissionsResult",
+            "pronunciation": "ɒn rɪˈkwest pərˈmɪʃnz rɪˈzʌlt",
+            "meaning": "权限请求结果回调"
+          },
+          {
+            "word": "GRANTED",
+            "pronunciation": "ˈɡrɑːntɪd",
+            "meaning": "已授权"
+          },
+          {
+            "word": "DENIED",
+            "pronunciation": "dɪˈnaɪdɪd",
+            "meaning": "已拒绝"
+          }
+        ]
+      },
+      {
+        "name": "第六十五组 - 安全",
+        "description": "安全",
+        "vocabs": [
+          {
+            "word": "encryption",
+            "pronunciation": "ɪnˈkrɪpʃn",
+            "meaning": "加密"
+          },
+          {
+            "word": "decryption",
+            "pronunciation": "diːkrɪpʃn",
+            "meaning": "解密"
+          },
+          {
+            "word": "keystore",
+            "pronunciation": "kiː stɔːr",
+            "meaning": "密钥库"
+          },
+          {
+            "word": "cryptokey",
+            "pronunciation": "ˈkrɪptoʊ kiː",
+            "meaning": "加密密钥"
+          },
+          {
+            "word": "security provider",
+            "pronunciation": "sɪˈkjʊrəti prəˈvaɪdər",
+            "meaning": "安全提供者"
+          },
+          {
+            "word": "ssl",
+            "pronunciation": "es es el",
+            "meaning": "安全套接层"
+          },
+          {
+            "word": "tls",
+            "pronunciation": "tiː el es",
+            "meaning": "传输层安全"
+          },
+          {
+            "word": "certificate",
+            "pronunciation": "sərˈtɪfɪkət",
+            "meaning": "证书"
+          },
+          {
+            "word": "pinning",
+            "pronunciation": "ˈpɪnɪŋ",
+            "meaning": "证书固定"
+          },
+          {
+            "word": "proguard",
+            "pronunciation": "proʊˈɡɑːrd",
+            "meaning": "代码混淆"
+          },
+          {
+            "word": "dex",
+            "pronunciation": "deks",
+            "meaning": "Dalvik可执行文件"
+          }
+        ]
+      },
+      {
+        "name": "第六十六组 - 属性动画",
+        "description": "属性动画",
+        "vocabs": [
+          {
+            "word": "objectAnimator",
+            "pronunciation": "ˈɒbdʒɪkt ˈænɪmeɪtər",
+            "meaning": "对象动画器"
+          },
+          {
+            "word": "valueAnimator",
+            "pronunciation": "ˈvæljuː ˈænɪmeɪtər",
+            "meaning": "值动画器"
+          },
+          {
+            "word": "animatorSet",
+            "pronunciation": "ˈænɪmeɪtər set",
+            "meaning": "动画集"
+          },
+          {
+            "word": "propertyValuesHolder",
+            "pronunciation": "ˈprɒpərti ˈvæljuːz ˈhoʊldər",
+            "meaning": "属性值持有者"
+          },
+          {
+            "word": "animatorInflater",
+            "pronunciation": "ˈænɪmeɪtər ɪnˈfleɪtər",
+            "meaning": "动画填充器"
+          },
+          {
+            "word": "ofInt",
+            "pronunciation": "əv aɪnt",
+            "meaning": "Int类型"
+          },
+          {
+            "word": "ofFloat",
+            "pronunciation": "əv flaɪt",
+            "meaning": "Float类型"
+          },
+          {
+            "word": "ofObject",
+            "pronunciation": "əv ˈɒbdʒɪkt",
+            "meaning": "Object类型"
+          }
+        ]
+      },
+      {
+        "name": "第六十七组 - 视图动画",
+        "description": "视图动画",
+        "vocabs": [
+          {
+            "word": "alphaAnimation",
+            "pronunciation": "ˈælfə ˌænɪˈmeɪʃn",
+            "meaning": "透明度动画"
+          },
+          {
+            "word": "scaleAnimation",
+            "pronunciation": "skeɪl ˌænɪˈmeɪʃn",
+            "meaning": "缩放动画"
+          },
+          {
+            "word": "translateAnimation",
+            "pronunciation": "trænsˈleɪt ˌænɪˈmeɪʃn",
+            "meaning": "位移动画"
+          },
+          {
+            "word": "rotateAnimation",
+            "pronunciation": "roʊˈteɪt ˌænɪˈmeɪʃn",
+            "meaning": "旋转动画"
+          },
+          {
+            "word": "animationSet",
+            "pronunciation": "ˌænɪˈmeɪʃn set",
+            "meaning": "动画集合"
+          },
+          {
+            "word": "interpolator",
+            "pronunciation": "ɪnˈtɜːrpəleɪtər",
+            "meaning": "插值器"
+          },
+          {
+            "word": "accelerateDecelerateInterpolator",
+            "pronunciation": "əkˈseləreɪt diːˈseləreɪt ɪnˈtɜːrpəleɪtər",
+            "meaning": "加速减速插值器"
+          },
+          {
+            "word": "bounceInterpolator",
+            "pronunciation": "ˈbaʊns ɪnˈtɜːrpəleɪtər",
+            "meaning": "弹跳插值器"
+          },
+          {
+            "word": "cycleInterpolator",
+            "pronunciation": "ˈsaɪkl ɪnˈtɜːrpəleɪtər",
+            "meaning": "循环插值器"
+          }
+        ]
+      },
+      {
+        "name": "第六十八组 - 过渡动画",
+        "description": "过渡动画",
+        "vocabs": [
+          {
+            "word": "transition",
+            "pronunciation": "trænˈzɪʃn",
+            "meaning": "过渡"
+          },
+          {
+            "word": "scene",
+            "pronunciation": "siːn",
+            "meaning": "场景"
+          },
+          {
+            "word": "transitionManager",
+            "pronunciation": "trænˈzɪʃn ˈmænɪdʒər",
+            "meaning": "过渡管理器"
+          },
+          {
+            "word": "fade",
+            "pronunciation": "feɪd",
+            "meaning": "淡入淡出"
+          },
+          {
+            "word": "slide",
+            "pronunciation": "slaɪd",
+            "meaning": "滑动"
+          },
+          {
+            "word": "explode",
+            "pronunciation": "ɪkˈsploʊd",
+            "meaning": "爆炸"
+          },
+          {
+            "word": "changeBounds",
+            "pronunciation": "tʃeɪndʒ baʊndz",
+            "meaning": "边界变化"
+          },
+          {
+            "word": "changeTransform",
+            "pronunciation": "tʃeɪndʒ trænsˈfɔːrm",
+            "meaning": "变换变化"
+          },
+          {
+            "word": "changeClipBounds",
+            "pronunciation": "tʃeɪndʒ klɪp baʊndz",
+            "meaning": "裁剪边界变化"
+          }
+        ]
+      },
+      {
+        "name": "第六十九组 - 传感器",
+        "description": "传感器",
+        "vocabs": [
+          {
+            "word": "sensor",
+            "pronunciation": "ˈsensər",
+            "meaning": "传感器"
+          },
+          {
+            "word": "sensorManager",
+            "pronunciation": "ˈsensər ˈmænɪdʒər",
+            "meaning": "传感器管理器"
+          },
+          {
+            "word": "accelerometer",
+            "pronunciation": "əkˌseləˈrɒmɪtər",
+            "meaning": "加速度计"
+          },
+          {
+            "word": "gyroscope",
+            "pronunciation": "ˈdʒaɪrəskoʊp",
+            "meaning": "陀螺仪"
+          },
+          {
+            "word": "magnetometer",
+            "pronunciation": "ˌmæɡnɪˈtɒmɪtər",
+            "meaning": "磁场传感器"
+          },
+          {
+            "word": "proximity sensor",
+            "pronunciation": "prəkˈsɪməti ˈsensər",
+            "meaning": "距离传感器"
+          },
+          {
+            "word": "light sensor",
+            "pronunciation": "laɪt ˈsensər",
+            "meaning": "光线传感器"
+          },
+          {
+            "word": "pressure sensor",
+            "pronunciation": "ˈpreʃər ˈsensər",
+            "meaning": "气压传感器"
+          }
+        ]
+      },
+      {
+        "name": "第七十组 - 位置服务",
+        "description": "位置服务",
+        "vocabs": [
+          {
+            "word": "location manager",
+            "pronunciation": "loʊˈkeɪʃn ˈmænɪdʒər",
+            "meaning": "位置管理器"
+          },
+          {
+            "word": "gps provider",
+            "pronunciation": "dʒiː piː es prəˈvaɪdər",
+            "meaning": "GPS提供者"
+          },
+          {
+            "word": "network provider",
+            "pronunciation": "ˈnetwɜːrk prəˈvaɪdər",
+            "meaning": "网络位置提供者"
+          },
+          {
+            "word": "fused location provider",
+            "pronunciation": "fjuːzd loʊˈkeɪʃn prəˈvaɪdər",
+            "meaning": "融合位置提供者"
+          },
+          {
+            "word": "location request",
+            "pronunciation": "loʊˈkeɪʃn rɪˈkwest",
+            "meaning": "位置请求"
+          },
+          {
+            "word": "location callback",
+            "pronunciation": "loʊˈkeɪʃn ˈkɔːlbæk",
+            "meaning": "位置回调"
+          },
+          {
+            "word": "getLastLocation",
+            "pronunciation": "ɡet last ˈloʊˈkeɪʃn",
+            "meaning": "获取最后位置"
+          },
+          {
+            "word": "requestLocationUpdates",
+            "pronunciation": "rɪˈkwest loʊˈkeɪʃn ʌpˈdeɪts",
+            "meaning": "请求位置更新"
+          },
+          {
+            "word": "removeLocationUpdates",
+            "pronunciation": "rɪˈmuːv loʊˈkeɪʃn ʌpˈdeɪts",
+            "meaning": "移除位置更新"
+          }
+        ]
+      },
+      {
+        "name": "第七十一组 - Camera",
+        "description": "Camera",
+        "vocabs": [
+          {
+            "word": "camera",
+            "pronunciation": "ˈkæmərə",
+            "meaning": "相机"
+          },
+          {
+            "word": "camerax",
+            "pronunciation": "ˈkæmərə eks",
+            "meaning": "CameraX库"
+          },
+          {
+            "word": "preview",
+            "pronunciation": "ˈpriːvjuː",
+            "meaning": "预览"
+          },
+          {
+            "word": "capture",
+            "pronunciation": "ˈkæptʃər",
+            "meaning": "捕获"
+          },
+          {
+            "word": "imageAnalysis",
+            "pronunciation": "ˈɪmɪdʒ əˈnæləsɪs",
+            "meaning": "图像分析"
+          },
+          {
+            "word": "imageCapture",
+            "pronunciation": "ˈɪmɪdʒ ˈkæptʃər",
+            "meaning": "图像捕获"
+          },
+          {
+            "word": "imageAnalyzer",
+            "pronunciation": "ˈɪmɪdʒ ˈænəlaɪzər",
+            "meaning": "图像分析器"
+          },
+          {
+            "word": "takePicture",
+            "pronunciation": "teɪk ˈpɪktʃər",
+            "meaning": "拍照"
+          },
+          {
+            "word": "rotation",
+            "pronunciation": "roʊˈteɪʃn",
+            "meaning": "旋转"
+          },
+          {
+            "word": "focus",
+            "pronunciation": "ˈfoʊkəs",
+            "meaning": "对焦"
+          },
+          {
+            "word": "exposure",
+            "pronunciation": "ɪkˈspoʊʒər",
+            "meaning": "曝光"
+          }
+        ]
+      },
+      {
+        "name": "第七十二组 - Notification",
+        "description": "Notification",
+        "vocabs": [
+          {
+            "word": "notification",
+            "pronunciation": "ˌnoʊtɪfɪˈkeɪʃn",
+            "meaning": "通知"
+          },
+          {
+            "word": "notificationManager",
+            "pronunciation": "ˌnoʊtɪfɪˈkeɪʃn ˈmænɪdʒər",
+            "meaning": "通知管理器"
+          },
+          {
+            "word": "notificationChannel",
+            "pronunciation": "ˌnoʊtɪfɪˈkeɪʃn ˈtʃænl",
+            "meaning": "通知渠道"
+          },
+          {
+            "word": "notificationBuilder",
+            "pronunciation": "ˌnoʊtɪfɪˈkeɪʃn ˈbɪldər",
+            "meaning": "通知构建器"
+          },
+          {
+            "word": "notificationCompat",
+            "pronunciation": "ˌnoʊtɪfɪˈkeɪʃn kəmˈpæt",
+            "meaning": "兼容通知"
+          },
+          {
+            "word": "pendingIntent",
+            "pronunciation": "ˈpendɪŋ ɪnˈtent",
+            "meaning": "待定意图"
+          },
+          {
+            "word": "smallIcon",
+            "pronunciation": "smɔːl ˈaɪkɒn",
+            "meaning": "小图标"
+          },
+          {
+            "word": "largeIcon",
+            "pronunciation": "lɑːrdʒ ˈaɪkɒn",
+            "meaning": "大图标"
+          },
+          {
+            "word": "bigTextStyle",
+            "pronunciation": "bɪɡ tekst staɪl",
+            "meaning": "大文本样式"
+          },
+          {
+            "word": "bigPictureStyle",
+            "pronunciation": "bɪɡ ˈpɪktʃər staɪl",
+            "meaning": "大图样式"
+          },
+          {
+            "word": "inboxStyle",
+            "pronunciation": "ˈɪnbɒks staɪl",
+            "meaning": "收件箱样式"
+          }
+        ]
+      },
+      {
+        "name": "第七十三组 - JobScheduler",
+        "description": "JobScheduler",
+        "vocabs": [
+          {
+            "word": "jobscheduler",
+            "pronunciation": "dʒɒb ˈʃedjʊlər",
+            "meaning": "作业调度器"
+          },
+          {
+            "word": "jobinfo",
+            "pronunciation": "dʒɒb ˈɪnfoʊ",
+            "meaning": "作业信息"
+          },
+          {
+            "word": "jobscheduler",
+            "pronunciation": "dʒɒb ˈʃedjʊlər",
+            "meaning": "作业调度器"
+          },
+          {
+            "word": "scheduleJob",
+            "pronunciation": "ˈʃedjuːl dʒɒb",
+            "meaning": "调度作业"
+          },
+          {
+            "word": "cancelJob",
+            "pronunciation": "ˈkænsəl dʒɒb",
+            "meaning": "取消作业"
+          },
+          {
+            "word": "jobService",
+            "pronunciation": "dʒɒb ˈsɜːrvɪs",
+            "meaning": "作业服务"
+          },
+          {
+            "word": "onStartJob",
+            "pronunciation": "ɒn stɑːrt dʒɒb",
+            "meaning": "开始作业回调"
+          },
+          {
+            "word": "onStopJob",
+            "pronunciation": "ɒn stɒp dʒɒb",
+            "meaning": "停止作业回调"
+          },
+          {
+            "word": "jobParameters",
+            "pronunciation": "dʒɒb pəˈræmɪtərz",
+            "meaning": "作业参数"
+          }
+        ]
+      },
+      {
+        "name": "第七十四组 - Material Design",
+        "description": "Material Design",
+        "vocabs": [
+          {
+            "word": "material design",
+            "pronunciation": "məˈtɪriəl dɪˈzaɪn",
+            "meaning": "Material Design设计语言"
+          },
+          {
+            "word": "material components",
+            "pronunciation": "məˈtɪriəl kəmˈpoʊnənts",
+            "meaning": "Material组件库"
+          },
+          {
+            "word": "materialthemebuilder",
+            "pronunciation": "məˈtɪriəl θiːm ˈbɪldər",
+            "meaning": "Material主题构建器"
+          },
+          {
+            "word": "floatingActionButton",
+            "pronunciation": "ˈfloʊtɪŋ ˈækʃn ˈbʌtn",
+            "meaning": "悬浮操作按钮"
+          },
+          {
+            "word": "bottomNavigationView",
+            "pronunciation": "ˈbɒtəm ˌnævɪˈɡeɪʃn vjuː",
+            "meaning": "底部导航视图"
+          },
+          {
+            "word": "navigationView",
+            "pronunciation": "ˌnævɪˈɡeɪʃn vjuː",
+            "meaning": "导航视图"
+          },
+          {
+            "word": "drawerLayout",
+            "pronunciation": "ˈdrɔːər ˈleɪaʊt",
+            "meaning": "抽屉布局"
+          },
+          {
+            "word": "toolbar",
+            "pronunciation": "ˈtuːlbɑːr",
+            "meaning": "工具栏"
+          },
+          {
+            "word": "appbar",
+            "pronunciation": "æp bɑːr",
+            "meaning": "应用栏"
+          },
+          {
+            "word": "collapsingToolbarLayout",
+            "pronunciation": "kəˈlæpsɪŋ ˈtuːlbɑːr ˈleɪaʊt",
+            "meaning": "可折叠工具栏布局"
+          },
+          {
+            "word": "snackbar",
+            "pronunciation": "ˈsnækbɑːr",
+            "meaning": "消息条"
+          },
+          {
+            "word": "bottomSheet",
+            "pronunciation": "ˈbɒtəm ʃiːt",
+            "meaning": "底部表单"
+          }
+        ]
+      },
+      {
+        "name": "第七十五组 - Kotlin协程进阶",
+        "description": "Kotlin协程进阶",
+        "vocabs": [
+          {
+            "word": "flowOn",
+            "pronunciation": "floʊ ɒn",
+            "meaning": "Flow调度"
+          },
+          {
+            "word": "buffer",
+            "pronunciation": "ˈbʌfər",
+            "meaning": "缓冲区"
+          },
+          {
+            "word": "conflate",
+            "pronunciation": "kənˈfleɪt",
+            "meaning": "合并"
+          },
+          {
+            "word": "collectLatest",
+            "pronunciation": "kəˈlekt ˈlætɪst",
+            "meaning": "收集最新"
+          },
+          {
+            "word": "retry",
+            "pronunciation": "rɪˈtraɪ",
+            "meaning": "重试"
+          },
+          {
+            "word": "retryWhen",
+            "pronunciation": "rɪˈtraɪ wen",
+            "meaning": "条件重试"
+          },
+          {
+            "word": "zip",
+            "pronunciation": "zɪp",
+            "meaning": "压缩合并"
+          },
+          {
+            "word": "combine",
+            "pronunciation": "kəmˈbaɪn",
+            "meaning": "合并"
+          },
+          {
+            "word": "distinctUntilChanged",
+            "pronunciation": "dɪˈstɪŋkt ʌnˈtʃeɪndʒd",
+            "meaning": "变化去重"
+          }
+        ]
+      },
+      {
+        "name": "第七十六组 - Kotlin多平台",
+        "description": "Kotlin多平台",
+        "vocabs": [
+          {
+            "word": "kmp",
+            "pronunciation": "keɪ em piː",
+            "meaning": "Kotlin多平台"
+          },
+          {
+            "word": "common",
+            "pronunciation": "ˈkɒmən",
+            "meaning": "公共模块"
+          },
+          {
+            "word": "expect",
+            "pronunciation": "ɪkˈspekt",
+            "meaning": "期望声明"
+          },
+          {
+            "word": "actual",
+            "pronunciation": "ˈæktʃuəl",
+            "meaning": "实际实现"
+          },
+          {
+            "word": "expectActual",
+            "pronunciation": "ɪkˈspekt ˈæktʃuəl",
+            "meaning": "期望实际配对"
+          },
+          {
+            "word": "kotlinx.coroutines",
+            "pronunciation": "kɒtlɪn ɪks kəˈroʊtuːnz",
+            "meaning": "Kotlin协程库"
+          },
+          {
+            "word": "kotlinx.serialization",
+            "pronunciation": "kɒtlɪn ɪks ˌsɪriəlaɪˈzeɪʃn",
+            "meaning": "Kotlin序列化库"
+          }
+        ]
+      },
+      {
+        "name": "第七十七组 - 其他框架",
+        "description": "其他框架",
+        "vocabs": [
+          {
+            "word": "rxjava",
+            "pronunciation": "ɑːr eks ˈdʒɑːvə",
+            "meaning": "RxJava响应式库"
+          },
+          {
+            "word": "observable",
+            "pronunciation": "ˌɒbzərˈveɪəbl",
+            "meaning": "可观察对象"
+          },
+          {
+            "word": "subject",
+            "pronunciation": "ˈsʌbdʒɪkt",
+            "meaning": "主题"
+          },
+          {
+            "word": "subscriber",
+            "pronunciation": "səbˈskraɪbər",
+            "meaning": "订阅者"
+          },
+          {
+            "word": "subscription",
+            "pronunciation": "səbˈskrɪpʃn",
+            "meaning": "订阅"
+          },
+          {
+            "word": "disposable",
+            "pronunciation": "dɪˈspoʊzəbl",
+            "meaning": "可处置对象"
+          },
+          {
+            "word": "compose navigation",
+            "pronunciation": "kəmˈpoʊz ˌnævɪˈɡeɪʃn",
+            "meaning": "Compose导航"
+          },
+          {
+            "word": "paging 3",
+            "pronunciation": "ˈpeɪdʒɪŋ θriː",
+            "meaning": "Paging3分页库"
+          }
+        ]
+      }
+    ]
+  }
+];
