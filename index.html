@@ -1,0 +1,2014 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英语技术词汇大全 - 5大开发分类</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 加载完整的词汇数据 -->
+    <script src="vocab_data.js" defer></script>
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --secondary-color: #3a0ca3;
+            --accent-color: #4cc9f0;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --success-color: #4caf50;
+            --warning-color: #ff9800;
+            --danger-color: #f44336;
+            --border-radius: 12px;
+            --box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 头部样式 */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 40px 0;
+            border-radius: 0 0 var(--border-radius) var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 40px;
+        }
+
+        .header-content {
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto 25px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px 30px;
+            border-radius: var(--border-radius);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            min-width: 180px;
+            transition: var(--transition);
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        /* 控制面板样式 */
+        .control-panel {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: var(--box-shadow);
+        }
+
+        .search-container {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 18px 20px;
+            padding-left: 55px;
+            border: 2px solid #e0e0e0;
+            border-radius: var(--border-radius);
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #666;
+            font-size: 1.2rem;
+        }
+
+        .category-filter {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .category-btn {
+            padding: 12px 24px;
+            background: #f0f2f5;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--dark-color);
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .category-btn:hover {
+            background: #e4e6e9;
+            transform: translateY(-2px);
+        }
+
+        .category-btn.active {
+            background: var(--primary-color);
+            color: white;
+            box-shadow: 0 4px 15px rgba(67, 97, 238, 0.3);
+        }
+
+        .category-btn i {
+            font-size: 1.1rem;
+        }
+
+        /* 主要内容区域 */
+        .main-content {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        @media (max-width: 1024px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* 侧边导航 */
+        .sidebar {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 25px;
+            box-shadow: var(--box-shadow);
+            height: fit-content;
+            position: sticky;
+            top: 20px;
+        }
+
+        .sidebar h3 {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-nav {
+            max-height: 500px;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+
+        .section-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: var(--transition);
+            border-left: 4px solid transparent;
+        }
+
+        .section-item:hover {
+            background: #e9ecef;
+            border-left-color: var(--accent-color);
+            transform: translateX(5px);
+        }
+
+        .section-item.active {
+            background: var(--primary-color);
+            color: white;
+            border-left-color: var(--secondary-color);
+        }
+
+        .section-name {
+            font-weight: 600;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-number {
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .section-item.active .section-number {
+            color: white;
+        }
+
+        .section-count {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* 词汇展示区域 */
+        .vocab-content {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--box-shadow);
+        }
+
+        .category-header {
+            margin-bottom: 30px;
+        }
+
+        .category-title {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .category-description {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .vocab-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        @media (max-width: 768px) {
+            .vocab-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .vocab-card {
+            background: #f8f9fa;
+            border-radius: var(--border-radius);
+            padding: 25px;
+            transition: var(--transition);
+            border: 2px solid transparent;
+        }
+
+        .vocab-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            border-color: var(--accent-color);
+        }
+
+        .vocab-word {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .word-text {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+        }
+
+        .pronunciation {
+            background: var(--accent-color);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .meaning {
+            font-size: 1.2rem;
+            color: var(--dark-color);
+            line-height: 1.6;
+            padding-top: 15px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        /* 卡片动作区域 */
+        .card-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .action-btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .learn-btn {
+            background: var(--light-color);
+            color: var(--dark-color);
+        }
+
+        .learn-btn.learned {
+            background: var(--success-color);
+            color: white;
+        }
+
+        .favorite-btn {
+            background: var(--light-color);
+            color: var(--dark-color);
+        }
+
+        .favorite-btn.favorited {
+            background: var(--danger-color);
+            color: white;
+        }
+
+        .pronunciation-btn {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .pronunciation-btn:hover {
+            background: var(--primary-color);
+            transform: scale(1.05);
+        }
+
+        .favorite-btn:hover {
+            background: #f8d7da;
+        }
+
+        .favorite-btn.favorited:hover {
+            background: #dc3545;
+        }
+
+        .learn-btn:hover {
+            background: #d1ecf1;
+        }
+
+        .learn-btn.learned:hover {
+            background: #28a745;
+        }
+
+        /* 发音图标动画 */
+        .speaker-icon {
+            transition: transform 0.2s ease;
+        }
+
+        .pronunciation-btn:hover .speaker-icon {
+            transform: scale(1.2);
+        }
+
+        /* 发音状态 */
+        .pronunciation-btn.playing {
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(76, 201, 240, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(76, 201, 240, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(76, 201, 240, 0); }
+        }
+
+        /* 收藏夹按钮 */
+        .favorites-btn {
+            background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 12px 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .favorites-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.3);
+        }
+
+        /* 记忆标签样式 */
+        .memory-tag {
+            display: inline-block;
+            background: var(--warning-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-left: 10px;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* 选中状态增强 */
+        .vocab-card.active {
+            border-color: var(--primary-color);
+            background: rgba(67, 97, 238, 0.05);
+            box-shadow: 0 10px 25px rgba(67, 97, 238, 0.1);
+            animation: cardPulse 2s ease;
+        }
+
+        @keyframes cardPulse {
+            0% { box-shadow: 0 10px 25px rgba(67, 97, 238, 0.1); }
+            50% { box-shadow: 0 10px 30px rgba(67, 97, 238, 0.3); }
+            100% { box-shadow: 0 10px 25px rgba(67, 97, 238, 0.1); }
+        }
+
+        /* 进度条增强 */
+        .progress-fill {
+            transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            background: linear-gradient(90deg, var(--accent-color), var(--primary-color), var(--secondary-color));
+            background-size: 200% 100%;
+            animation: progressGradient 3s ease infinite;
+        }
+
+        @keyframes progressGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* 响应式按钮调整 */
+        @media (max-width: 768px) {
+            .action-buttons {
+                flex-wrap: wrap;
+            }
+            
+            .action-btn {
+                padding: 6px 12px;
+                font-size: 0.85rem;
+            }
+            
+            .favorites-btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* 加载状态 */
+        .loading {
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* 空状态 */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .empty-icon {
+            font-size: 4rem;
+            color: #ddd;
+            margin-bottom: 20px;
+        }
+
+        .empty-text {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #666;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 50px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-link:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+
+        /* 工具提示 */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltip-text {
+            visibility: hidden;
+            width: 200px;
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* 进度条 */
+        .progress-bar {
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            margin: 15px 0;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+        
+        /* Toast动画 */
+        @keyframes toastSlideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes toastSlideOut {
+            from { transform: translateX(0); opacity: 1; }
+            to { transform: translateX(100%); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h1>英语技术词汇大全</h1>
+                <p class="subtitle">汇集5大开发领域，共3643个专业词汇。支持实时搜索、分类筛选，助力技术学习与交流。</p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="total-categories">5</span>
+                        <span class="stat-label">开发分类</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="total-sections">495</span>
+                        <span class="stat-label">技术部分</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="total-vocabs">3,638</span>
+                        <span class="stat-label">专业词汇</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="current-category">0</span>
+                        <span class="stat-label">当前显示</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="learned-vocabs">0</span>
+                        <span class="stat-label">已学词汇</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="unlearned-vocabs">0</span>
+                        <span class="stat-label">未学词汇</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- 控制面板 -->
+        <div class="control-panel">
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="search-input" placeholder="搜索词汇、发音或中文释义... (支持拼音首字母搜索)">
+                </div>
+                <button class="category-btn" id="clear-search">
+                    <i class="fas fa-times"></i> 清除搜索
+                </button>
+            </div>
+            
+            <div class="category-filter" id="category-buttons">
+                <!-- 分类按钮将通过JavaScript动态生成 -->
+            </div>
+            
+            <div class="action-buttons-row" style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px; padding-top: 20px; border-top: 1px solid #e0e0e0;">
+                <div style="display: flex; gap: 15px;">
+                    <button class="favorites-btn" id="show-favorites">
+                        <i class="fas fa-heart"></i> 我的收藏夹
+                    </button>
+                    <button class="favorites-btn" id="show-learned" style="background: linear-gradient(135deg, #4caf50, #2e7d32);">
+                        <i class="fas fa-check-circle"></i> 已学习词汇
+                    </button>
+                </div>
+                <div style="color: #666; font-size: 0.9rem;">
+                    <i class="fas fa-info-circle"></i> 点击卡片标记学习/收藏，三击复制
+                </div>
+            </div>
+        </div>
+
+        <!-- 主要内容区域 -->
+        <div class="main-content">
+            <!-- 侧边导航 -->
+            <div class="sidebar">
+                <h3><i class="fas fa-list-ul"></i> 部分导航</h3>
+                <div class="section-nav" id="section-nav">
+                    <!-- 部分导航将通过JavaScript动态生成 -->
+                </div>
+            </div>
+
+            <!-- 词汇展示区域 -->
+            <div class="vocab-content">
+                <div class="category-header">
+                    <h2 class="category-title" id="current-category-title">
+                        <i class="fas fa-folder-open"></i> 选择分类开始浏览
+                    </h2>
+                    <p class="category-description" id="current-category-description">
+                        请从上方选择一个开发分类，或使用搜索功能查找特定词汇。
+                    </p>
+                </div>
+
+                <div class="progress-bar" id="category-progress">
+                    <div class="progress-fill" style="width: 0%"></div>
+                </div>
+
+                <div id="vocab-list-container">
+                    <!-- 加载状态 -->
+                    <div class="loading" id="loading-state">
+                        <div class="loading-spinner"></div>
+                        <p>正在加载词汇数据...</p>
+                    </div>
+
+                    <!-- 词汇列表将通过JavaScript动态生成 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#" class="footer-link"><i class="fas fa-question-circle"></i> 使用帮助</a>
+                <a href="#" class="footer-link"><i class="fas fa-download"></i> 导出数据</a>
+                <a href="#" class="footer-link"><i class="fas fa-code"></i> API文档</a>
+                <a href="#" class="footer-link"><i class="fas fa-envelope"></i> 联系我们</a>
+            </div>
+            <p>© 2026 英语技术词汇大全 | 专为开发者设计 | 最后更新: 2026-03-26</p>
+            <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.7;">
+                <i class="fas fa-info-circle"></i> 数据来源: iOS开发、HarmonyOS开发、软件开发、前端开发、Android开发 完整词汇大全
+            </p>
+        </div>
+    </footer>
+
+    <!-- 主JavaScript代码 -->
+    <script>
+        // 全局变量 - vocabData 现在从外部文件 vocab_data.js 加载
+        let allCategories = [];
+        let currentCategory = null;
+        let currentSection = null;
+        let searchQuery = '';
+        let pinyinMap = {};
+
+        // DOM元素
+        const categoryButtonsContainer = document.getElementById('category-buttons');
+        const sectionNavContainer = document.getElementById('section-nav');
+        const vocabListContainer = document.getElementById('vocab-list-container');
+        const loadingState = document.getElementById('loading-state');
+        const searchInput = document.getElementById('search-input');
+        const clearSearchBtn = document.getElementById('clear-search');
+        const currentCategoryTitle = document.getElementById('current-category-title');
+        const currentCategoryDescription = document.getElementById('current-category-description');
+        const categoryProgress = document.getElementById('category-progress');
+        let progressFill = null; // 延迟初始化
+        
+        // 统计元素
+        const totalCategoriesEl = document.getElementById('total-categories');
+        const totalSectionsEl = document.getElementById('total-sections');
+        const totalVocabsEl = document.getElementById('total-vocabs');
+        const currentCategoryEl = document.getElementById('current-category');
+        const learnedVocabsEl = document.getElementById('learned-vocabs');
+        const unlearnedVocabsEl = document.getElementById('unlearned-vocabs');
+
+        // 初始化拼音映射（简单版）
+        function initPinyinMap() {
+            const pinyinDict = {
+                'a': '啊阿吖呵', 'b': '不八吧把爸白百', 'c': '从次此才存查',
+                'd': '大的地得对多打', 'e': '而二儿耳恶', 'f': '分发非方方法',
+                'g': '个过国工高关', 'h': '和会后好会还', 'i': '', // 中文没有i开头的拼音
+                'j': '就今进经将加', 'k': '可开看快口', 'l': '了来理里两老',
+                'm': '们明么没马每', 'n': '你年能那内', 'o': '', // 中文没有o开头的拼音
+                'p': '平评片品朋', 'q': '去前请强求', 'r': '人如日让认',
+                's': '是时上生说', 't': '他她它天同', 'u': '', // 中文没有u开头的拼音
+                'v': '', // 中文没有v开头的拼音
+                'w': '我为文我无', 'x': '心下小想学', 'y': '一有要以用',
+                'z': '在作子自总'
+            };
+            
+            // 反向映射：汉字 -> 拼音首字母
+            pinyinMap = {};
+            for (const [pinyin, chars] of Object.entries(pinyinDict)) {
+                for (const char of chars) {
+                    pinyinMap[char] = pinyin;
+                }
+            }
+        }
+
+        // 检查是否匹配搜索（支持拼音首字母）
+        function matchesSearch(vocab, query) {
+            if (!query.trim()) return true;
+            
+            const lowerQuery = query.toLowerCase();
+            
+            // 检查单词
+            if (vocab.word.toLowerCase().includes(lowerQuery)) return true;
+            
+            // 检查音标
+            if (vocab.pronunciation.toLowerCase().includes(lowerQuery)) return true;
+            
+            // 检查中文释义
+            if (vocab.meaning.toLowerCase().includes(lowerQuery)) return true;
+            
+            // 检查拼音首字母
+            const pinyinFirstLetter = getPinyinFirstLetter(vocab.meaning);
+            if (pinyinFirstLetter && pinyinFirstLetter.includes(lowerQuery)) return true;
+            
+            return false;
+        }
+
+        // 获取中文的拼音首字母
+        function getPinyinFirstLetter(chinese) {
+            let result = '';
+            for (const char of chinese) {
+                if (pinyinMap[char]) {
+                    result += pinyinMap[char];
+                }
+            }
+            return result;
+        }
+
+        // 初始化应用
+        function initApp() {
+            console.log('🎯 开始初始化应用...');
+            
+            try {
+                // 测试：直接显示一些数据
+                console.log('=== 数据测试开始 ===');
+                console.log('1. 检查vocabData类型:', typeof vocabData);
+                console.log('2. 检查vocabData值:', vocabData);
+                console.log('3. 检查vocabData长度:', vocabData ? vocabData.length : 'null/undefined');
+                
+                // 如果vocabData是数组，显示第一个元素
+                if (vocabData && Array.isArray(vocabData) && vocabData.length > 0) {
+                    console.log('4. 第一个分类:', vocabData[0].name);
+                    console.log('5. 第一个分类的sections数量:', vocabData[0].sections.length);
+                }
+                console.log('=== 数据测试结束 ===');
+                
+                if (!vocabData || vocabData.length === 0) {
+                    console.error('❌ vocabData为空或未定义');
+                    showError('词汇数据加载失败，没有找到词汇数据');
+                    return;
+                }
+                
+                console.log('✅ 词汇数据已加载，数据量:', vocabData.length);
+                allCategories = vocabData;
+                
+                // 初始化拼音映射
+                initPinyinMap();
+                
+                // 更新统计信息
+                updateStats();
+                
+                // 渲染分类按钮
+                renderCategoryButtons();
+                
+                // 隐藏加载状态
+                hideLoading();
+                
+                // 默认选择第一个分类
+                if (allCategories.length > 0) {
+                    console.log('✅ 选择第一个分类:', allCategories[0].name);
+                    selectCategory(allCategories[0].id);
+                    
+                    // 等待页面加载完成，然后滚动到最后学习的单词
+                    setTimeout(() => {
+                        scrollToLastLearnedWord();
+                    }, 500);
+                } else {
+                    console.error('❌ 没有可用的分类数据');
+                    showError('没有找到词汇数据，请检查数据文件格式');
+                }
+                
+                console.log('✅ 应用初始化完成');
+            } catch (error) {
+                console.error('❌ 应用初始化失败:', error);
+                showError('页面加载失败: ' + error.message);
+            }
+        }
+
+        // 更新统计信息
+        function updateStats() {
+            totalCategoriesEl.textContent = allCategories.length;
+            
+            const totalSections = allCategories.reduce((sum, cat) => sum + cat.sections.length, 0);
+            totalSectionsEl.textContent = totalSections;
+            
+            // 计算总词汇数量（如果没有stats属性，就手动计算）
+            const totalVocabs = allCategories.reduce((sum, cat) => {
+                if (cat.stats && cat.stats.vocabs) {
+                    return sum + cat.stats.vocabs;
+                } else {
+                    // 手动计算：遍历所有部分的词汇并累加
+                    return sum + cat.sections.reduce((sectionSum, section) => sectionSum + section.vocabs.length, 0);
+                }
+            }, 0);
+            totalVocabsEl.textContent = totalVocabs.toLocaleString();
+            
+            // 计算已学和未学词汇数量
+            let learnedCount = 0;
+            let unlearnedCount = 0;
+            
+            if (window.vocabEnhancements?.progress) {
+                // 获取学习进度统计
+                const stats = window.vocabEnhancements.progress.getEnhancedStats();
+                learnedCount = stats.learnedWords || 0;
+                unlearnedCount = totalVocabs - learnedCount;
+            }
+            
+            // 更新已学和未学词汇显示
+            if (learnedVocabsEl) {
+                learnedVocabsEl.textContent = learnedCount.toLocaleString();
+            }
+            if (unlearnedVocabsEl) {
+                unlearnedVocabsEl.textContent = unlearnedCount.toLocaleString();
+            }
+        }
+
+        // 渲染分类按钮
+        function renderCategoryButtons() {
+            categoryButtonsContainer.innerHTML = '';
+            
+            allCategories.forEach(category => {
+                const button = document.createElement('button');
+                button.className = 'category-btn';
+                button.dataset.categoryId = category.id;
+                
+                // 根据分类设置图标
+                let icon = 'fas fa-code';
+                if (category.name.includes('iOS')) icon = 'fab fa-apple';
+                if (category.name.includes('Android')) icon = 'fab fa-android';
+                if (category.name.includes('前端')) icon = 'fab fa-html5';
+                if (category.name.includes('HarmonyOS')) icon = 'fas fa-mobile-alt';
+                if (category.name.includes('软件')) icon = 'fas fa-laptop-code';
+                
+                // 计算分类的统计信息
+                const sectionCount = category.sections.length;
+                const vocabCount = category.sections.reduce((sum, section) => sum + section.vocabs.length, 0);
+                
+                button.innerHTML = `
+                    <i class="${icon}"></i>
+                    ${category.name}
+                    <span class="tooltip">
+                        <i class="fas fa-info-circle"></i>
+                        <span class="tooltip-text">${sectionCount} 个部分, ${vocabCount} 个词汇</span>
+                    </span>
+                `;
+                
+                button.addEventListener('click', () => selectCategory(category.id));
+                categoryButtonsContainer.appendChild(button);
+            });
+        }
+
+        // 选择分类
+        function selectCategory(categoryId) {
+            // 更新按钮状态
+            document.querySelectorAll('.category-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.categoryId === categoryId);
+            });
+            
+            // 查找分类
+            currentCategory = allCategories.find(cat => cat.id === categoryId);
+            if (!currentCategory) return;
+            
+            // 更新标题和描述
+            // 计算当前分类的词汇数量
+            const currentCategoryVocabCount = currentCategory.sections.reduce((sum, section) => sum + section.vocabs.length, 0);
+            
+            currentCategoryTitle.innerHTML = `
+                <i class="fas fa-folder-open"></i> ${currentCategory.name}
+                <span style="font-size: 1rem; background: var(--accent-color); color: white; padding: 5px 15px; border-radius: 20px;">
+                    ${currentCategoryVocabCount} 词汇
+                </span>
+            `;
+            currentCategoryDescription.textContent = currentCategory.description;
+            
+            // 更新当前分类显示数量
+            currentCategoryEl.textContent = currentCategoryVocabCount;
+            
+            // 渲染部分导航
+            renderSectionNav();
+            
+            // 默认选择第一个部分
+            if (currentCategory.sections.length > 0) {
+                selectSection(currentCategory.sections[0]);
+            }
+        }
+
+        // 渲染部分导航
+        function renderSectionNav() {
+            sectionNavContainer.innerHTML = '';
+            
+            if (!currentCategory) return;
+            
+            // 为每个部分添加序号
+            currentCategory.sections.forEach((section, index) => {
+                const sectionItem = document.createElement('div');
+                sectionItem.className = 'section-item';
+                sectionItem.dataset.sectionName = section.name;
+                
+                // 提取原始名称，去掉可能的冒号前缀
+                const rawName = section.name.replace('：', '').trim();
+                
+                sectionItem.innerHTML = `
+                    <div class="section-name">
+                        <span class="section-number">
+                            第${index + 1}组
+                        </span>
+                        ${rawName}
+                    </div>
+                    <div class="section-count">${section.vocabs.length} 个词汇</div>
+                `;
+                
+                sectionItem.addEventListener('click', () => selectSection(section));
+                sectionNavContainer.appendChild(sectionItem);
+            });
+        }
+
+        // 选择部分
+        function selectSection(section) {
+            currentSection = section;
+            
+            // 更新导航项状态
+            document.querySelectorAll('.section-item').forEach(item => {
+                item.classList.toggle('active', item.dataset.sectionName === section.name);
+            });
+            
+            // 获取部分序号
+            const sectionIndex = currentCategory.sections.findIndex(s => s.name === section.name);
+            const sectionNumber = sectionIndex + 1;
+            
+            // 渲染词汇列表，传入序号
+            renderVocabList(section.vocabs, section.name, sectionNumber);
+            
+            // 更新进度条
+            updateProgressBar(section);
+        }
+
+        // 更新进度条
+        function updateProgressBar(section) {
+            if (!currentCategory) return;
+            
+            // 延迟初始化progressFill
+            if (!progressFill && categoryProgress) {
+                progressFill = categoryProgress.querySelector('.progress-fill');
+            }
+            
+            if (!progressFill) return;
+            
+            const sectionIndex = currentCategory.sections.findIndex(s => s.name === section.name);
+            const progress = ((sectionIndex + 1) / currentCategory.sections.length) * 100;
+            progressFill.style.width = `${progress}%`;
+        }
+
+        // 渲染词汇列表
+        function renderVocabList(vocabs, sectionName, sectionNumber = null) {
+            // 过滤搜索结果
+            let filteredVocabs = vocabs;
+            if (searchQuery) {
+                filteredVocabs = vocabs.filter(vocab => matchesSearch(vocab, searchQuery));
+            }
+            
+            // 清空容器
+            vocabListContainer.innerHTML = '';
+            
+            // 如果没有词汇
+            if (filteredVocabs.length === 0) {
+                vocabListContainer.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3 class="empty-text">${searchQuery ? '未找到匹配的词汇' : '该部分暂无词汇'}</h3>
+                        ${searchQuery ? '<p>请尝试其他搜索关键词</p>' : ''}
+                    </div>
+                `;
+                return;
+            }
+            
+            // 添加部分标题（带序号）
+            if (sectionNumber !== null) {
+                const sectionHeader = document.createElement('div');
+                sectionHeader.style.marginBottom = '25px';
+                sectionHeader.style.padding = '20px';
+                sectionHeader.style.background = 'linear-gradient(135deg, var(--primary-color), var(--secondary-color))';
+                sectionHeader.style.color = 'white';
+                sectionHeader.style.borderRadius = 'var(--border-radius)';
+                sectionHeader.style.boxShadow = 'var(--box-shadow)';
+                
+                // 提取原始名称，去掉可能的冒号前缀
+                const rawName = sectionName.replace('：', '').trim();
+                
+                sectionHeader.innerHTML = `
+                    <h3 style="margin-bottom: 10px; font-size: 1.5rem;">
+                        <i class="fas fa-list-ol"></i> 第${sectionNumber}组: ${rawName}
+                    </h3>
+                    <p style="opacity: 0.9; font-size: 1.1rem;">
+                        本组包含 ${filteredVocabs.length} 个词汇
+                        ${searchQuery ? `（搜索到 ${filteredVocabs.length} 个匹配"${searchQuery}"的词汇）` : ''}
+                    </p>
+                    <div style="margin-top: 10px; font-size: 0.9rem; opacity: 0.8;">
+                        <i class="fas fa-info-circle"></i> 总进度: ${sectionNumber}/${currentCategory.sections.length} 组
+                    </div>
+                `;
+                vocabListContainer.appendChild(sectionHeader);
+            }
+            
+            // 创建词汇列表
+            const vocabList = document.createElement('div');
+            vocabList.className = 'vocab-list';
+            
+            filteredVocabs.forEach(vocab => {
+                const vocabCard = document.createElement('div');
+                vocabCard.className = 'vocab-card';
+                vocabCard.dataset.word = vocab.word;
+                
+                // 生成HTML时，我们留空，用JavaScript动态生成
+                const cardContent = document.createElement('div');
+                cardContent.className = 'vocab-card-content';
+                
+                vocabCard.appendChild(cardContent);
+                vocabList.appendChild(vocabCard);
+                
+                // 渲染卡片内容
+                renderVocabCard(cardContent, vocab);
+            });
+            
+            vocabListContainer.appendChild(vocabList);
+            
+            // 添加搜索结果提示（如果没有显示部分标题）
+            if (searchQuery && filteredVocabs.length > 0 && sectionNumber === null) {
+                const resultsHeader = document.createElement('div');
+                resultsHeader.style.marginBottom = '20px';
+                resultsHeader.style.padding = '15px';
+                resultsHeader.style.background = 'var(--light-color)';
+                resultsHeader.style.borderRadius = 'var(--border-radius)';
+                resultsHeader.innerHTML = `
+                    <i class="fas fa-search" style="color: var(--primary-color); margin-right: 10px;"></i>
+                    在 "${sectionName}" 中找到了 ${filteredVocabs.length} 个匹配"${searchQuery}"的词汇
+                `;
+                vocabListContainer.prepend(resultsHeader);
+            }
+        }
+
+        // 搜索词汇
+        function searchVocabs() {
+            searchQuery = searchInput.value.trim();
+            
+            if (!currentCategory) return;
+            
+            if (searchQuery) {
+                // 搜索所有部分的词汇
+                const allVocabs = currentCategory.sections.flatMap(section => 
+                    section.vocabs.map(vocab => ({
+                        ...vocab,
+                        sectionName: section.name
+                    }))
+                );
+                
+                const filteredVocabs = allVocabs.filter(vocab => matchesSearch(vocab, searchQuery));
+                
+                // 清空容器
+                vocabListContainer.innerHTML = '';
+                
+                if (filteredVocabs.length === 0) {
+                    vocabListContainer.innerHTML = `
+                        <div class="empty-state">
+                            <div class="empty-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h3 class="empty-text">未找到匹配"${searchQuery}"的词汇</h3>
+                            <p>请尝试其他搜索关键词</p>
+                        </div>
+                    `;
+                } else {
+                    // 按部分分组显示结果
+                    const groupedBySection = {};
+                    filteredVocabs.forEach(vocab => {
+                        if (!groupedBySection[vocab.sectionName]) {
+                            groupedBySection[vocab.sectionName] = [];
+                        }
+                        groupedBySection[vocab.sectionName].push(vocab);
+                    });
+                    
+                    // 显示搜索结果摘要
+                    const resultsHeader = document.createElement('div');
+                    resultsHeader.style.marginBottom = '30px';
+                    resultsHeader.style.padding = '20px';
+                    resultsHeader.style.background = 'linear-gradient(135deg, var(--primary-color), var(--secondary-color))';
+                    resultsHeader.style.color = 'white';
+                    resultsHeader.style.borderRadius = 'var(--border-radius)';
+                    resultsHeader.innerHTML = `
+                        <h3 style="margin-bottom: 10px;">
+                            <i class="fas fa-search"></i> 搜索结果
+                        </h3>
+                        <p>在 "${currentCategory.name}" 中找到了 ${filteredVocabs.length} 个匹配"${searchQuery}"的词汇，分布在 ${Object.keys(groupedBySection).length} 个部分中</p>
+                    `;
+                    vocabListContainer.appendChild(resultsHeader);
+                    
+                    // 显示每个部分的搜索结果（带序号）
+                    let sectionIndex = 0;
+                    for (const [sectionName, vocabs] of Object.entries(groupedBySection)) {
+                        sectionIndex++;
+                        
+                        // 查找这个部分的实际序号
+                        const actualSection = currentCategory.sections.find(s => s.name === sectionName);
+                        const actualSectionIndex = currentCategory.sections.findIndex(s => s.name === sectionName);
+                        const sectionNumber = actualSectionIndex !== -1 ? actualSectionIndex + 1 : sectionIndex;
+                        
+                        // 提取原始名称，去掉可能的冒号前缀
+                        const rawName = sectionName.replace('：', '').trim();
+                        
+                        const sectionHeader = document.createElement('div');
+                        sectionHeader.style.marginTop = '30px';
+                        sectionHeader.style.marginBottom = '20px';
+                        sectionHeader.style.padding = '15px';
+                        sectionHeader.style.background = 'var(--light-color)';
+                        sectionHeader.style.borderRadius = 'var(--border-radius)';
+                        sectionHeader.style.borderLeft = '4px solid var(--primary-color)';
+                        sectionHeader.innerHTML = `
+                            <h4 style="color: var(--primary-color); margin-bottom: 5px;">
+                                <i class="fas fa-list-ol"></i> 第${sectionNumber}组: ${rawName}
+                            </h4>
+                            <p style="color: #666; font-size: 0.95rem;">
+                                找到 ${vocabs.length} 个匹配"${searchQuery}"的词汇
+                            </p>
+                        `;
+                        vocabListContainer.appendChild(sectionHeader);
+                        
+                        const vocabList = document.createElement('div');
+                        vocabList.className = 'vocab-list';
+                        
+                        vocabs.forEach(vocab => {
+                            const vocabCard = document.createElement('div');
+                            vocabCard.className = 'vocab-card';
+                            
+                            vocabCard.innerHTML = `
+                                <div class="vocab-word">
+                                    <div class="word-text">${vocab.word}</div>
+                                    <div class="pronunciation">/${vocab.pronunciation}/</div>
+                                </div>
+                                <div class="meaning">${vocab.meaning}</div>
+                            `;
+                            
+                            vocabList.appendChild(vocabCard);
+                        });
+                        
+                        vocabListContainer.appendChild(vocabList);
+                    }
+                }
+            } else {
+                // 如果没有搜索词，显示当前部分
+                if (currentSection) {
+                    renderVocabList(currentSection.vocabs, currentSection.name);
+                }
+            }
+        }
+
+        // 清除搜索
+        function clearSearch() {
+            searchInput.value = '';
+            searchQuery = '';
+            
+            if (currentSection) {
+                // 获取部分序号
+                const sectionIndex = currentCategory.sections.findIndex(s => s.name === currentSection.name);
+                const sectionNumber = sectionIndex + 1;
+                renderVocabList(currentSection.vocabs, currentSection.name, sectionNumber);
+            }
+        }
+
+        // 渲染词汇卡片（带按钮功能）
+        function renderVocabCard(container, vocab) {
+            // 检查学习状态和收藏状态
+            const isLearned = window.vocabEnhancements?.progress?.isLearned?.(vocab.word) || false;
+            const isFavorited = window.vocabEnhancements?.cards?.isFavorite?.(vocab.word) || false;
+            
+            container.innerHTML = `
+                <div class="vocab-word">
+                    <div class="word-text">${vocab.word}</div>
+                    <div class="pronunciation">/${vocab.pronunciation}/</div>
+                </div>
+                <div class="meaning">${vocab.meaning}</div>
+                <div class="card-actions">
+                    <div class="action-buttons">
+                        <button class="action-btn learn-btn ${isLearned ? 'learned' : ''}" data-word="${vocab.word}">
+                            <i class="fas ${isLearned ? 'fa-check-circle' : 'fa-book'}"></i>
+                            ${isLearned ? '已学习' : '标记学习'}
+                        </button>
+                        <button class="action-btn favorite-btn ${isFavorited ? 'favorited' : ''}" data-word="${vocab.word}">
+                            <i class="fas ${isFavorited ? 'fa-heart' : 'fa-heart'}"></i>
+                            ${isFavorited ? '已收藏' : '收藏'}
+                        </button>
+                        <button class="action-btn pronunciation-btn" data-word="${vocab.word}" data-pronunciation="${vocab.pronunciation}">
+                            <i class="fas fa-volume-up speaker-icon"></i> 发音
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            // 添加事件监听器
+            const learnBtn = container.querySelector('.learn-btn');
+            const favoriteBtn = container.querySelector('.favorite-btn');
+            const pronunciationBtn = container.querySelector('.pronunciation-btn');
+            const card = container.closest('.vocab-card');
+
+            // 标记学习按钮
+            learnBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const word = e.target.closest('button').dataset.word;
+                toggleLearnedStatus(word, card, learnBtn);
+            });
+
+            // 收藏按钮
+            favoriteBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const word = e.target.closest('button').dataset.word;
+                toggleFavoriteStatus(word, card, favoriteBtn);
+            });
+
+            // 发音按钮
+            pronunciationBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const word = e.target.closest('button').dataset.word;
+                const pronunciation = e.target.closest('button').dataset.pronunciation;
+                playPronunciation(word, pronunciation, pronunciationBtn);
+            });
+
+            // 点击卡片标记为最后学习
+            card.addEventListener('click', () => {
+                markAsLastLearned(vocab);
+            });
+        }
+
+        // 切换学习状态
+        function toggleLearnedStatus(word, card, button) {
+            if (window.vocabEnhancements?.progress) {
+                const isLearned = window.vocabEnhancements.progress.isLearned?.(word);
+                
+                if (isLearned) {
+                    // 取消学习标记
+                    window.vocabEnhancements.progress.unmarkAsLearned?.(word);
+                    button.classList.remove('learned');
+                    button.innerHTML = '<i class="fas fa-book"></i> 标记学习';
+                } else {
+                    // 标记为已学习
+                    window.vocabEnhancements.progress.markAsLearned?.(word, currentCategory?.name, currentSection?.name);
+                    button.classList.add('learned');
+                    button.innerHTML = '<i class="fas fa-check-circle"></i> 已学习';
+                    card.classList.add('active');
+                    
+                    // 保存为最后学习的单词
+                    markAsLastLearned({
+                        word: word,
+                        pronunciation: card.querySelector('.pronunciation')?.textContent.replace(/[\/]/g, ''),
+                        meaning: card.querySelector('.meaning')?.textContent
+                    });
+                    
+                    setTimeout(() => card.classList.remove('active'), 2000);
+                }
+                
+                // 更新统计信息显示
+                updateStats();
+            }
+        }
+
+        // 切换收藏状态
+        function toggleFavoriteStatus(word, card, button) {
+            if (window.vocabEnhancements?.cards) {
+                const isFavorited = window.vocabEnhancements.cards.isFavorite?.(word);
+                
+                if (isFavorited) {
+                    // 取消收藏
+                    window.vocabEnhancements.cards.removeFromFavorite?.(word);
+                    button.classList.remove('favorited');
+                    button.innerHTML = '<i class="fas fa-heart"></i> 收藏';
+                } else {
+                    // 添加收藏
+                    const pronunciation = card.querySelector('.pronunciation')?.textContent.replace(/[\/]/g, '');
+                    const meaning = card.querySelector('.meaning')?.textContent;
+                    window.vocabEnhancements.cards.addToFavorite?.(word, pronunciation, meaning);
+                    button.classList.add('favorited');
+                    button.innerHTML = '<i class="fas fa-heart"></i> 已收藏';
+                    card.classList.add('active');
+                    setTimeout(() => card.classList.remove('active'), 1500);
+                }
+            }
+        }
+
+        // 播放发音
+        function playPronunciation(word, pronunciation, button) {
+            // 添加播放动画
+            button.classList.add('playing');
+            
+            try {
+                // 使用浏览器语音合成API
+                if ('speechSynthesis' in window) {
+                    const utterance = new SpeechSynthesisUtterance(word);
+                    utterance.lang = 'en-US';
+                    utterance.rate = 0.8;
+                    utterance.pitch = 1;
+                    
+                    // 播放完成后移除动画
+                    utterance.onend = () => {
+                        button.classList.remove('playing');
+                    };
+                    
+                    // 播放错误处理
+                    utterance.onerror = () => {
+                        button.classList.remove('playing');
+                        // 如果语音合成失败，尝试使用音频文件
+                        fallbackPronunciation(word);
+                    };
+                    
+                    speechSynthesis.speak(utterance);
+                } else {
+                    // 浏览器不支持语音合成
+                    fallbackPronunciation(word);
+                }
+            } catch (error) {
+                console.error('发音播放失败:', error);
+                button.classList.remove('playing');
+            }
+        }
+
+        // 备用发音方法
+        function fallbackPronunciation(word) {
+            // 可以在这里添加备用发音方案
+            // 例如使用音频文件或第三方API
+            console.log('备用发音:', word);
+        }
+
+        // 标记为最后学习的单词
+        function markAsLastLearned(vocab) {
+            try {
+                localStorage.setItem('lastLearnedWord', JSON.stringify({
+                    word: vocab.word,
+                    pronunciation: vocab.pronunciation,
+                    meaning: vocab.meaning,
+                    category: currentCategory?.name,
+                    section: currentSection?.name,
+                    timestamp: new Date().toISOString()
+                }));
+            } catch (error) {
+                console.error('保存最后学习单词失败:', error);
+            }
+        }
+
+        // 获取最后学习的单词
+        function getLastLearnedWord() {
+            try {
+                const saved = localStorage.getItem('lastLearnedWord');
+                return saved ? JSON.parse(saved) : null;
+            } catch (error) {
+                console.error('获取最后学习单词失败:', error);
+                return null;
+            }
+        }
+
+        // 滚动到最后学习的单词
+        function scrollToLastLearnedWord() {
+            const lastLearned = getLastLearnedWord();
+            if (lastLearned && lastLearned.word) {
+                // 查找包含这个单词的卡片
+                const card = document.querySelector(`.vocab-card[data-word="${lastLearned.word}"]`);
+                if (card) {
+                    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    card.classList.add('active');
+                    setTimeout(() => card.classList.remove('active'), 3000);
+                    
+                    // 显示记忆标签
+                    const tag = document.createElement('span');
+                    tag.className = 'memory-tag';
+                    tag.textContent = '上次学习';
+                    card.querySelector('.word-text').appendChild(tag);
+                }
+            }
+        }
+
+        // 显示收藏夹
+        function showFavorites() {
+            if (!window.vocabEnhancements?.cards) {
+                showToast('收藏功能未初始化');
+                return;
+            }
+            
+            const favorites = window.vocabEnhancements.cards.getAllFavorites();
+            
+            if (favorites.length === 0) {
+                vocabListContainer.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="empty-text">收藏夹为空</h3>
+                        <p>点击词汇卡片上的"收藏"按钮添加单词到收藏夹</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            // 更新标题
+            currentCategoryTitle.innerHTML = `
+                <i class="fas fa-heart"></i> 我的收藏夹
+                <span style="font-size: 1rem; background: linear-gradient(135deg, #ff6b6b, #ff8e53); color: white; padding: 5px 15px; border-radius: 20px;">
+                    ${favorites.length} 个收藏
+                </span>
+            `;
+            currentCategoryDescription.textContent = '您收藏的词汇列表，按添加时间排序';
+            
+            // 清空容器
+            vocabListContainer.innerHTML = '';
+            
+            // 创建收藏列表
+            const vocabList = document.createElement('div');
+            vocabList.className = 'vocab-list';
+            
+            favorites.forEach(fav => {
+                const vocabCard = document.createElement('div');
+                vocabCard.className = 'vocab-card';
+                vocabCard.dataset.word = fav.word;
+                
+                const cardContent = document.createElement('div');
+                cardContent.className = 'vocab-card-content';
+                
+                cardContent.innerHTML = `
+                    <div class="vocab-word">
+                        <div class="word-text">${fav.word}</div>
+                        <div class="pronunciation">/${fav.pronunciation}/</div>
+                    </div>
+                    <div class="meaning">${fav.meaning}</div>
+                    <div class="card-actions">
+                        <div class="action-buttons">
+                            <button class="action-btn favorite-btn favorited" data-word="${fav.word}">
+                                <i class="fas fa-heart"></i> 已收藏
+                            </button>
+                            <button class="action-btn pronunciation-btn" data-word="${fav.word}" data-pronunciation="${fav.pronunciation}">
+                                <i class="fas fa-volume-up speaker-icon"></i> 发音
+                            </button>
+                        </div>
+                        <div style="font-size: 0.85rem; color: #666;">
+                            收藏于: ${new Date(fav.addedAt).toLocaleDateString()}
+                        </div>
+                    </div>
+                `;
+                
+                // 添加事件监听器
+                const favoriteBtn = cardContent.querySelector('.favorite-btn');
+                const pronunciationBtn = cardContent.querySelector('.pronunciation-btn');
+                
+                favoriteBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const word = e.target.closest('button').dataset.word;
+                    if (window.vocabEnhancements?.cards) {
+                        window.vocabEnhancements.cards.removeFromFavorite?.(word);
+                        showToast('已从收藏夹移除');
+                        // 重新加载收藏夹
+                        setTimeout(showFavorites, 300);
+                    }
+                });
+                
+                pronunciationBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const word = e.target.closest('button').dataset.word;
+                    const pronunciation = e.target.closest('button').dataset.pronunciation;
+                    playPronunciation(word, pronunciation, pronunciationBtn);
+                });
+                
+                vocabCard.appendChild(cardContent);
+                vocabList.appendChild(vocabCard);
+            });
+            
+            vocabListContainer.appendChild(vocabList);
+        }
+
+        // 显示已学习词汇
+        function showLearnedWords() {
+            if (!window.vocabEnhancements?.progress) {
+                showToast('学习进度功能未初始化');
+                return;
+            }
+            
+            const stats = window.vocabEnhancements.progress.getEnhancedStats();
+            
+            if (stats.learnedWords === 0) {
+                vocabListContainer.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3 class="empty-text">暂无已学习词汇</h3>
+                        <p>点击词汇卡片上的"标记学习"按钮开始记录学习进度</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            // 更新标题
+            currentCategoryTitle.innerHTML = `
+                <i class="fas fa-check-circle"></i> 已学习词汇
+                <span style="font-size: 1rem; background: linear-gradient(135deg, #4caf50, #2e7d32); color: white; padding: 5px 15px; border-radius: 20px;">
+                    ${stats.learnedWords} 个已学习
+                </span>
+            `;
+            currentCategoryDescription.textContent = `您已学习的词汇，学习时间：${stats.lastLearned ? new Date(stats.lastLearned.learnedAt).toLocaleDateString() : '暂无'}`;
+            
+            // 清空容器
+            vocabListContainer.innerHTML = '';
+            
+            // 创建统计卡片
+            const statsCard = document.createElement('div');
+            statsCard.style.marginBottom = '30px';
+            statsCard.style.padding = '20px';
+            statsCard.style.background = 'linear-gradient(135deg, #4caf50, #2e7d32)';
+            statsCard.style.color = 'white';
+            statsCard.style.borderRadius = 'var(--border-radius)';
+            statsCard.style.boxShadow = 'var(--box-shadow)';
+            
+            let categoriesText = '';
+            if (Object.keys(stats.categories).length > 0) {
+                categoriesText = Object.entries(stats.categories)
+                    .map(([cat, count]) => `${cat}: ${count}`)
+                    .join(', ');
+            }
+            
+            statsCard.innerHTML = `
+                <h3 style="margin-bottom: 10px;">
+                    <i class="fas fa-chart-line"></i> 学习统计
+                </h3>
+                <p>已学习 ${stats.learnedWords} 个词汇</p>
+                ${categoriesText ? `<p>分类分布: ${categoriesText}</p>` : ''}
+                ${stats.lastLearned ? `<p>最近学习: ${stats.lastLearned.word} (${new Date(stats.lastLearned.learnedAt).toLocaleDateString()})</p>` : ''}
+            `;
+            
+            vocabListContainer.appendChild(statsCard);
+            
+            // 显示需要复习的单词
+            const reviewWords = window.vocabEnhancements.progress.getWordsForReview(5);
+            if (reviewWords.length > 0) {
+                const reviewCard = document.createElement('div');
+                reviewCard.style.marginBottom = '30px';
+                reviewCard.style.padding = '20px';
+                reviewCard.style.background = 'var(--warning-color)';
+                reviewCard.style.color = 'white';
+                reviewCard.style.borderRadius = 'var(--border-radius)';
+                reviewCard.style.boxShadow = 'var(--box-shadow)';
+                
+                reviewCard.innerHTML = `
+                    <h4 style="margin-bottom: 10px;">
+                        <i class="fas fa-clock"></i> 建议复习
+                    </h4>
+                    <p>以下 ${reviewWords.length} 个词汇建议复习:</p>
+                    <div style="margin-top: 10px;">
+                        ${reviewWords.map(word => 
+                            `<span style="display: inline-block; background: rgba(255,255,255,0.2); padding: 5px 10px; margin: 3px; border-radius: 15px;">
+                                ${word.word}
+                            </span>`
+                        ).join('')}
+                    </div>
+                `;
+                
+                vocabListContainer.appendChild(reviewCard);
+            }
+            
+            // 提示信息
+            const infoCard = document.createElement('div');
+            infoCard.style.padding = '15px';
+            infoCard.style.background = 'var(--light-color)';
+            infoCard.style.borderRadius = 'var(--border-radius)';
+            infoCard.style.marginBottom = '30px';
+            infoCard.innerHTML = `
+                <i class="fas fa-info-circle" style="color: var(--primary-color); margin-right: 10px;"></i>
+                已学习的词汇会保存在本地浏览器中，下次打开网站时会自动加载
+            `;
+            
+            vocabListContainer.appendChild(infoCard);
+        }
+
+        // 显示Toast消息
+        function showToast(message, duration = 3000) {
+            // 移除已有的toast
+            const existingToast = document.querySelector('.vocab-toast');
+            if (existingToast) {
+                existingToast.remove();
+            }
+            
+            // 创建新toast
+            const toast = document.createElement('div');
+            toast.className = 'vocab-toast';
+            toast.textContent = message;
+            toast.style.cssText = `
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: var(--primary-color);
+                color: white;
+                padding: 12px 24px;
+                border-radius: var(--border-radius);
+                box-shadow: var(--box-shadow);
+                z-index: 1000;
+                animation: toastSlideIn 0.3s ease;
+            `;
+            
+            document.body.appendChild(toast);
+            
+            // 自动移除
+            setTimeout(() => {
+                toast.style.animation = 'toastSlideOut 0.3s ease';
+                setTimeout(() => toast.remove(), 300);
+            }, duration);
+        }
+
+        // 显示错误
+        function showError(message) {
+            // 隐藏加载状态
+            if (loadingState) {
+                loadingState.style.display = 'none';
+            }
+            
+            vocabListContainer.innerHTML = `
+                <div class="empty-state">
+                    <div class="empty-icon" style="color: var(--danger-color);">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3 class="empty-text">${message}</h3>
+                    <p>请检查词汇数据文件是否正确</p>
+                </div>
+            `;
+        }
+
+        // 隐藏加载状态
+        function hideLoading() {
+            if (loadingState) {
+                loadingState.style.display = 'none';
+                console.log('✅ 加载状态已隐藏');
+            } else {
+                console.error('❌ loadingState元素未找到');
+            }
+        }
+
+        // 事件监听器
+        searchInput.addEventListener('input', searchVocabs);
+        clearSearchBtn.addEventListener('click', clearSearch);
+        
+        // 收藏夹和已学习按钮
+        document.getElementById('show-favorites')?.addEventListener('click', showFavorites);
+        document.getElementById('show-learned')?.addEventListener('click', showLearnedWords);
+        
+        // 防抖搜索
+        let searchTimeout;
+        searchInput.addEventListener('keyup', () => {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(searchVocabs, 300);
+        });
+
+        // 页面加载完成后初始化
+        function startApp() {
+            console.log('🚀 启动应用...');
+            try {
+                initApp();
+                initEnhancedFeatures();
+                console.log('✅ 应用启动完成');
+            } catch (error) {
+                console.error('❌ 应用启动失败:', error);
+                showError('应用启动失败: ' + error.message);
+            }
+        }
+        
+        // 立即尝试启动应用
+        console.log('🔄 尝试启动应用...');
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', startApp);
+        } else {
+            startApp();
+        }
+
+        // 增强功能管理器
+        class VocabCardManager {
+            constructor() {
+                this.favorites = new Set();
+                this.loadFavorites();
+            }
+            
+            addToFavorite(word, pronunciation, meaning) {
+                const favorite = {word, pronunciation, meaning, addedAt: new Date().toISOString()};
+                this.favorites.add(JSON.stringify(favorite));
+                this.saveFavorites();
+            }
+            
+            removeFromFavorite(word) {
+                for (const favStr of this.favorites) {
+                    const fav = JSON.parse(favStr);
+                    if (fav.word === word) {
+                        this.favorites.delete(favStr);
+                        break;
+                    }
+                }
+                this.saveFavorites();
+            }
+            
+            isFavorite(word) {
+                for (const favStr of this.favorites) {
+                    const fav = JSON.parse(favStr);
+                    if (fav.word === word) return true;
+                }
+                return false;
+            }
+            
+            saveFavorites() {
+                localStorage.setItem('vocabFavorites', JSON.stringify([...this.favorites]));
+            }
+            
+            loadFavorites() {
+                const saved = localStorage.getItem('vocabFavorites');
+                if (saved) this.favorites = new Set(JSON.parse(saved));
+            }
+            
+            getAllFavorites() {
+                const favorites = [];
+                for (const favStr of this.favorites) {
+                    favorites.push(JSON.parse(favStr));
+                }
+                return favorites.sort((a, b) => new Date(b.addedAt) - new Date(a.addedAt));
+            }
+        }
+
+        // 学习进度管理器
+        class LearningProgress {
+            constructor() {
+                this.progress = {};
+                this.loadProgress();
+            }
+            
+            markAsLearned(word, category, section) {
+                if (!this.progress[word]) {
+                    this.progress[word] = {
+                        learned: true,
+                        learnedAt: new Date().toISOString(),
+                        category,
+                        section,
+                        reviewCount: 0,
+                        lastReviewed: null
+                    };
+                } else {
+                    this.progress[word].learned = true;
+                    this.progress[word].learnedAt = new Date().toISOString();
+                }
+                this.saveProgress();
+            }
+            
+            isLearned(word) {
+                return this.progress[word]?.learned || false;
+            }
+            
+            unmarkAsLearned(word) {
+                if (this.progress[word]) {
+                    this.progress[word].learned = false;
+                    this.saveProgress();
+                }
+            }
+            
+            getEnhancedStats() {
+                const stats = {
+                    totalWords: 0,
+                    learnedWords: 0,
+                    reviewNeeded: 0,
+                    categories: {},
+                    lastLearned: null
+                };
+                
+                for (const [word, progress] of Object.entries(this.progress)) {
+                    if (progress.learned) {
+                        stats.learnedWords++;
+                        if (progress.category) {
+                            if (!stats.categories[progress.category]) stats.categories[progress.category] = 0;
+                            stats.categories[progress.category]++;
+                        }
+                        if (!stats.lastLearned || new Date(progress.learnedAt) > new Date(stats.lastLearned.learnedAt)) {
+                            stats.lastLearned = { word, ...progress };
+                        }
+                    }
+                }
+                return stats;
+            }
+            
+            getWordsForReview(limit = 5) {
+                const reviewWords = [];
+                for (const [word, progress] of Object.entries(this.progress)) {
+                    if (progress.learned) {
+                        const daysSinceReview = progress.lastReviewed ? 
+                            (new Date() - new Date(progress.lastReviewed)) / (1000 * 60 * 60 * 24) : 999;
+                        if (daysSinceReview > 3 || (progress.reviewCount || 0) < 3) {
+                            reviewWords.push({word, ...progress, daysSinceReview: Math.floor(daysSinceReview)});
+                        }
+                    }
+                }
+                reviewWords.sort((a, b) => new Date(a.learnedAt) - new Date(b.learnedAt));
+                return reviewWords.slice(0, limit);
+            }
+            
+            saveProgress() {
+                localStorage.setItem('vocabLearningProgress', JSON.stringify(this.progress));
+            }
+            
+            loadProgress() {
+                const saved = localStorage.getItem('vocabLearningProgress');
+                if (saved) this.progress = JSON.parse(saved);
+            }
+        }
+
+        // 初始化增强功能
+        function initEnhancedFeatures() {
+            console.log('🎯 初始化增强功能...');
+            const cardManager = new VocabCardManager();
+            const progressManager = new LearningProgress();
+            
+            window.vocabEnhancements = {
+                cards: cardManager,
+                progress: progressManager
+            };
+            
+            console.log('✅ 增强功能已加载');
+            
+            // 添加键盘快捷键
+            document.addEventListener('keydown', (e) => {
+                if ((e.ctrlKey || e.metaKey) && e.key === 'f') {
+                    e.preventDefault();
+                    const searchInput = document.getElementById('search-input');
+                    if (searchInput) {
+                        searchInput.focus();
+                        searchInput.select();
+                    }
+                }
+                if (e.key === 'Escape') {
+                    const searchInput = document.getElementById('search-input');
+                    if (searchInput && searchInput.value) {
+                        searchInput.value = '';
+                        searchInput.dispatchEvent(new Event('input'));
+                    }
+                }
+            });
+            
+            // 三击复制功能
+            document.addEventListener('click', (e) => {
+                const vocabCard = e.target.closest('.vocab-card');
+                if (vocabCard && e.detail === 3) {
+                    const word = vocabCard.querySelector('.word-text')?.textContent;
+                    const pronunciation = vocabCard.querySelector('.pronunciation')?.textContent;
+                    const meaning = vocabCard.querySelector('.meaning')?.textContent;
+                    const textToCopy = `${word} ${pronunciation} ${meaning}`;
+                    navigator.clipboard.writeText(textToCopy).then(() => {
+                        showToast('✅ 已复制到剪贴板');
+                    }).catch(err => {
+                        console.error('复制失败:', err);
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+</html>
